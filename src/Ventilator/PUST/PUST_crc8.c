@@ -17,11 +17,11 @@
 /******************************************************************************/
 
 
-#include "typedef.h" 
+#include "../GENERAL/typedef.h" 
 #include "PUST_crc8.h"
 
 /* locate boot code to specific section */
-#include "locate_boot_code.h"
+#include "../GENERAL/locate_boot_code.h"
 
 
 /******************************************************************************/

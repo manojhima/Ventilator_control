@@ -25,9 +25,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
 #include "SEC_LedCmd.h"
 void SEC_LedCmd(e_DB_ALARM_LEVEL_PRIORITY Led_Command_Type)
 {

@@ -25,11 +25,11 @@
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Rtc.h"
-#include "DB_Event.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/DB_Event.h"
 #include "SET_RTC_Mngt.h"	
 
 

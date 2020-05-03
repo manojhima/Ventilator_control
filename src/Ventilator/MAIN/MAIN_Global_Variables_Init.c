@@ -32,29 +32,29 @@
 #else                    
 #include "regf276e.h"    
 #endif                   
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "io_declare.h"
-#include "define.h"
-#include "Db_Config.h"
-#include "Db_AlarmStatus.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/Db_Config.h"
+#include "../DATABASE/Db_AlarmStatus.h"
 #include "MAIN_Global_Variables_Init.h"
 #include "Main_Data.h"
 	#define DECLARATION_SYSTEM_DATAS
-#include "DB_Event.h"
-#include "System_Datas.h"
+#include "../DATABASE/DB_Event.h"
+#include "../SYSTEM/System_Datas.h"
 	#define DECLARATION_TIMER_DATA
-#include "Timer_Data.h"
+#include "../TIMERS/Timer_Data.h"
 	#define DECLARATION_EEPROM_DATA
-#include "Eeprom_Data.h"
+#include "../EEPROM/Eeprom_Data.h"
 	#define DECLARATION_DISPLAY_DATA
-#include "Display_Data.h"
+#include "../DISPLAY/Display_Data.h"
 	#define DECLARATION_FLASH_DATA
-#include "Flash_Event_Data.h"
+#include "../DRIVERS_FLASH_EVENT/Flash_Event_Data.h"
 	#define DECLARATION_RTC_DRIVER_DATA
-#include "RTC_Driver_Data.h"
-#include "DRV_SPI_POWER_Data.h"
+#include "../DRIVERS_RTC/RTC_Driver_Data.h"
+#include "../DRIVERS_SPI/DRV_SPI_POWER_Data.h"
 						 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

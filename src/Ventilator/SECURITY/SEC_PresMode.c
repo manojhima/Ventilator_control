@@ -24,16 +24,16 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "DB_Compute.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
 #include "SEC_PresMode.h"
-#include "Security_Datas.h"
+#include "../SECURITY/Security_Datas.h"
 
 /* locate security code to specific section */  
-#include "locate_security_code.h" 
+#include "../SECURITY/locate_security_code.h" 
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

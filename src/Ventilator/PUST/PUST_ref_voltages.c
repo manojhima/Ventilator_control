@@ -22,14 +22,14 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
  
 #include "PUST_ref_voltages.h"
 
 /* locate boot code to specific section */
-#include "locate_boot_code.h"
+#include "../GENERAL/locate_boot_code.h"
 
 
 /******************************************************************************/

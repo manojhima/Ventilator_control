@@ -24,17 +24,17 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Timer_Data.h"
-#include "DB_Event.h"
-#include "DB_Compute.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
 #include "SEC_CheckFio2.h"
-#include "Security_Datas.h"
+#include "../SECURITY/Security_Datas.h"
 
 
 /******************************************************************************/

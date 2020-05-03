@@ -24,16 +24,16 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "DB_Event.h"
-#include "enum.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Control.h"
-#include "Ventilation_compute_data.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Event.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_Control.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 #include "SEC_ControlledCycles.h"
 
 /* locate security code to specific section */  
-#include "locate_security_code.h" 
+#include "../SECURITY/locate_security_code.h" 
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -30,9 +30,9 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "typedef.h"
-#include "enum.h"
-#include "io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/io_declare.h"
 #include "System_Datas.h"
 
 #define DECLARATION_KEY_TOUCH_DETECTION

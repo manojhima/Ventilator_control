@@ -52,7 +52,7 @@ typedef unsigned long idata  	UWORD32_I;
 typedef   signed char idata 	SBYTE_I;
 typedef   signed int  idata	    SWORD16_I;
 typedef   signed long idata 	SWORD32_I;
-typedef   		 float idata	FLOAT32_I;	   
+//typedef   		 float idata	FLOAT32_I;	   // platform specific sudheer
 #else
 typedef char                	BIT;
 #define idata

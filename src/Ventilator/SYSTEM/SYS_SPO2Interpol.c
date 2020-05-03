@@ -29,9 +29,9 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
 #include "SYS_SPO2Interpol.h"
 
 void SYS_SPO2Interpol(void)

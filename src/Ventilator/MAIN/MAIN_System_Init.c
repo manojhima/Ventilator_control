@@ -25,12 +25,12 @@
 /*                                INCLUDE FILES	                             */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Control.h"
-#include "DB_RTC.h"
-#include "System_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../SYSTEM/System_Datas.h"
 #include "MAIN_System_Init.h"
 
 /******************************************************************************/

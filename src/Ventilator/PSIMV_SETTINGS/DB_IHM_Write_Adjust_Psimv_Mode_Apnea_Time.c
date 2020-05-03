@@ -27,17 +27,17 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Control.h"
-#include "DB_Rtc.h"
-#include "Timer_Data.h"
-#include "DRV_VarEeprom.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/

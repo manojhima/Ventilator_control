@@ -27,11 +27,11 @@
 /******************************************************************************/
 
 #include "../GENERAL/typedef.h"
-#include "DB_Current.h"
-#include "DB_IHM_Setting_Adjust_Vsimv_Mode.h"
+#include "../DATABASE/DB_Current.h" //MODIFIED BY SUDHEER
+#include "../VSIMV_SETTINGS/DB_IHM_Setting_Adjust_Vsimv_Mode.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

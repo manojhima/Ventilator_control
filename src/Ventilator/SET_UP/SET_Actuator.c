@@ -28,18 +28,18 @@
 #else                    
 #include "regf276e.h"    
 #endif                   	
-#include "typedef.h"
-#include "enum.h"
-#include "io_declare.h"
-#include "define.h"
-#include "Ventilation_Constants.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "System_Datas.h"
-#include "Ventilation_Datas.h"
-#include "SET_Actuator.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/define.h"
+#include "../VENTILATION/Ventilation_Constants.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
+#include "../SYSTEM/System_Datas.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../SET_UP/SET_Actuator.h"
 
 
 /******************************************************************************/

@@ -34,10 +34,10 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "define.h"
-#include "io_declare.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
 #include "MAIN_Target_Init.h"
   
 									 

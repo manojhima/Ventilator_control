@@ -27,11 +27,11 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "DB_Usb.h"
-#include "DB_IHM_Setting_Adjust_Usb_Monitor_Transfer.h"
-#include "DB_IHM_Setting_Adjust_Usb_Trend_Transfer.h"
-#include "DB_IHM_Setting_Adjust_Usb_Default.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb_Monitor_Transfer.h"
+#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb_Trend_Transfer.h"
+#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb_Default.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

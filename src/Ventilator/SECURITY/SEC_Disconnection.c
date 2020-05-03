@@ -25,19 +25,19 @@
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "DB_Event.h"
-#include "DB_Control.h"
-#include "Security_Datas.h"
-#include "DB_Compute.h"
-#include "DB_AlarmStatus.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Control.h"
+#include "../SECURITY/Security_Datas.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 #include "SEC_Disconnection.h"
-#include "Ventilation_Datas.h"
+#include "../VENTILATION/Ventilation_Datas.h"
 
 /* locate security code to specific section */  
-#include "locate_security_code.h" 
+#include "../SECURITY/locate_security_code.h" 
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
