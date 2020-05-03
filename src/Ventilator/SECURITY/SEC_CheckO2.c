@@ -24,16 +24,16 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Compute.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "DB_Event.h"
-#include "DB_AlarmStatus.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 #include "SEC_CheckO2.h"
-#include "Security_Datas.h"
+#include "../SECURITY/Security_Datas.h"
 
 
 /******************************************************************************/

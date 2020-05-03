@@ -23,13 +23,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_AlarmStatus.h"
-#include "System_Datas.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../SYSTEM/System_Datas.h"
 #include "SET_CalibrationVerification.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

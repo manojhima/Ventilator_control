@@ -22,14 +22,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Timer_Data.h"
-#include "DB_Control.h"
-#include "DB_AlarmStatus.h"
-#include "Ventilation_Datas.h"
-#include "VEN_O2_Autorization.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../VENTILATION/VEN_O2_Autorization.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

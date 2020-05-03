@@ -30,23 +30,23 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Timer_Data.h"
-#include "Driver_Datas.h"
-#include "Security_Datas.h"
-#include "DB_Event.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_AlarmStatus.h"
-#include "DB_KeyboardEvent.h"
-#include "DB_Current.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DRIVERS/Driver_Datas.h"
+#include "../SECURITY/Security_Datas.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
+#include "../DATABASE/DB_Current.h"
 #include "DB_IhmAccessParaDataBase.h "
 	#define DECLARATION_ALARM_INDICATION
-#include "SEC_AlarmIndication.h"
+#include "../SECURITY/SEC_AlarmIndication.h"
 
-#include "DB_Compute.h"
+#include "../DATABASE/DB_Compute.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

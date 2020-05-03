@@ -30,14 +30,14 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "io_declare.h"
-#include "Main_Data.h"
-#include "SCHED_Ventilation_Scheduler_Config.h"
-#include "Scheduler_Data.h"
-#include "SCHED_Ventilation_Main.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/io_declare.h"
+#include "../MAIN/Main_Data.h"
+#include "../SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"
+#include "../SCHEDULER/Scheduler_Data.h"
+#include "../SCHEDULER/SCHED_Ventilation_Main.h"
 
 /************************************************************************/
 /*                             #DEFINE		                        		*/

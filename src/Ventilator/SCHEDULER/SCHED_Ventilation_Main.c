@@ -29,12 +29,12 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Main_Data.h"
-#include "SCHED_Ventilation_Main.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../MAIN/Main_Data.h"
+#include "../SCHEDULER/SCHED_Ventilation_Main.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -29,10 +29,10 @@
 #else
 #include "regf276e.h"
 #endif
-#include "io_declare.h"	
-#include "typedef.h"
-#include "enum.h"
-#include "Driver_Display_Data.h"
+#include "../GENERAL/io_declare.h"	
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
 #include "MAIN_Airox_Symbol_Display.h"					 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

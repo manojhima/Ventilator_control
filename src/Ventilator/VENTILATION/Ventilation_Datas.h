@@ -26,7 +26,7 @@
 #ifndef VENTILATION_DATAS_H
 #define VENTILATION_DATAS_H
 
-#include "enum.h"
+#include "../GENERAL/enum.h"
 
 
 /******************************************************************************/

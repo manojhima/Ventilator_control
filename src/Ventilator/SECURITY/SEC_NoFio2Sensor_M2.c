@@ -25,14 +25,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "DB_Event.h"
-#include "DB_AlarmStatus.h"
-#include "Security_Datas.h"
-#include "Ventilation_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../SECURITY/Security_Datas.h"
+#include "../VENTILATION/Ventilation_Datas.h"
 #include "SEC_NoFio2Sensor.h"
 
 /******************************************************************************/

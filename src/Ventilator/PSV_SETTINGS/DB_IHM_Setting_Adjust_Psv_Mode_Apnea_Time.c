@@ -35,17 +35,17 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DRV_VarEeprom.h"
-#include "DB_Control.h"
-#include "DB_Rtc.h"
-#include "DB_IhmAccessParaDataBase.h"
-#include "DB_IHM_Setting_Adjust_Psv_Mode_Apnea_Time.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../PSV_SETTINGS/DB_IHM_Setting_Adjust_Psv_Mode_Apnea_Time.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/

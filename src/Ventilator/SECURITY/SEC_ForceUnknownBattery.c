@@ -24,9 +24,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_PowerSupply.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_PowerSupply.h"
 #include "SEC_ForceUnknownBattery.h"      
 
 /******************************************************************************/

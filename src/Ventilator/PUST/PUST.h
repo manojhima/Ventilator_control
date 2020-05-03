@@ -1,4 +1,4 @@
-#include "typedef.h"																	   /*****************************************************************************/
+#include "../GENERAL/typedef.h"																	   /*****************************************************************************/
 /*                                                                            */
 /* Project N°  :  RB0505                                                      */
 /*                                                                            */
@@ -16,7 +16,7 @@
 /*%C          Power Up Self Test routines header file    					  */
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 #ifndef PUST_h
 #define PUST_h

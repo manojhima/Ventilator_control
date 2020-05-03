@@ -23,9 +23,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #include "SET_TechnicalAlarms.h"
 
 /******************************************************************************/

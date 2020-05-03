@@ -25,19 +25,19 @@
 /*                                INCLUDE FILES	                             */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "Structure.h"
-#include "DB_Event.h"
-#include "DB_Control.h"
-#include "DB_Current.h"
-#include "DB_Config.h"
-#include "DB_Rtc.h"
-#include "DB_AlarmStatus.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/Db_Config.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/Db_AlarmStatus.h"
 #include "Security_Datas.h"
 #include "MAIN_Security_Init.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 
 /******************************************************************************/

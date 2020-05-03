@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_Usb.h"
-#include "DB_Current.h"
-#include "DB_Config.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/

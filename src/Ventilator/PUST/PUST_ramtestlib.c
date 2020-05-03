@@ -9,7 +9,7 @@
 
 #include "PUST_ramtestlib.h"
 
-#include "locate_boot_code.h"
+#include "../GENERAL/locate_boot_code.h"
 
 /* START DON'T MOVE THIS... unless you exactly know why... */
 

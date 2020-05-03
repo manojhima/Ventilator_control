@@ -16,14 +16,14 @@
 /*%C                     Voltage Check routine                                */
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #ifndef _TASKING
 #include "LH_ST10F276.h"
 #include <intrins.h>
 #else
 #include "regf276e.h"
 #endif	
-#include "io_declare.h"
+#include "../GENERAL/io_declare.h"
 
 #ifndef PUST_RefVoltages_h
 #define PUST_RefVoltages_h

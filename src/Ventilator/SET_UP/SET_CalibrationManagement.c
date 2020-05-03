@@ -23,18 +23,18 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
-#include "Ventilation_Constants.h"
-#include "Structure.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "DB_Compute.h"
-#include "DB_AlarmStatus.h"
-#include "System_Datas.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../VENTILATION/Ventilation_Constants.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../SYSTEM/System_Datas.h"
 #include "SET_CalibrationManagement.h"
-#include "Driver_Datas.h"
+#include "../DRIVERS/Driver_Datas.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
