@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C                     Functionnal description :                            */
+/*%C                     Functional description :                            */
 /*%C   This function computes the average pressure on one cycle			      */
 /*                                                                            */
 /******************************************************************************/
@@ -24,11 +24,11 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Compute.h"
-#include "Ventilation_datas.h"
-#include "Ventilation_Compute_data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 #include "CMP_AveragePressureComputing.h"
 
 /******************************************************************************/

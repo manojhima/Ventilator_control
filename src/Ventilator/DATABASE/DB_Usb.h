@@ -22,7 +22,7 @@
 #ifndef USB_H
 #define USB_H
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 
 /******************************************************************************/
@@ -90,7 +90,7 @@ typedef enum {
 #define E_USB_KEY_DISCONNECTED					24
 /* A voir pour chgt d'heure et de date */
 
-/* Code d'erreur prêt ? */
+/* Code d'erreur prï¿½t ? */
 #define FLAG_ERROR_CODE_READY       1
 #define FLAG_ERROR_CODE_NOT_READY   0
 

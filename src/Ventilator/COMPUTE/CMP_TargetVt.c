@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,17 +24,17 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Compute.h"
-#include "DB_AlarmStatus.h"
-#include "Ventilation_Datas.h"
-#include "Ventilation_Compute_Data.h"
-#include "Ventilation_Constants.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../VENTILATION/Ventilation_Constants.h"
 #include "CMP_TargetVt.h"
 
 /******************************************************************************/
@@ -144,10 +144,10 @@ UWORD16 CMP_TargetVt(void)
       else if (ComputedVti < Adjust_Target_Vt)
 		{
 			CMP_DownStep_Mutex = FALSE;
-			// Si la consigne de pression est inférieure à la pression max autorisée 			
+			// Si la consigne de pression est infï¿½rieure ï¿½ la pression max autorisï¿½e 			
 			if (CMP_TargetVT_Pi < AdjustMaxPressure)
 			{
-				// Calcul de l'incrément à appliquer
+				// Calcul de l'incrï¿½ment ï¿½ appliquer
 				if (CMP_UpStep_Mutex == FALSE)
 				{
 			      VEN_PressureUpStep = cMIN_STEP;

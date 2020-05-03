@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C 			Functionnal description : 	this function writes the values in the	*/
+/*%C 			Functional description : 	this function writes the values in the	*/
 /*%C         config base																		*/
 /*                                                            				  		*/
 /******************************************************************************/
@@ -25,10 +25,10 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DRV_VarEeprom.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "DB_TrendWrite.h"
 /******************************************************************************/

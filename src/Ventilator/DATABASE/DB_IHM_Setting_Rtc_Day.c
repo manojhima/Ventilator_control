@@ -26,15 +26,15 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
 #include "DB_Rtc.h"
 #include "DB_Current.h"
 #include "DB_Config.h"
 #include "DB_Event.h"
-#include "DB_IhmAccessParaDatabase.h"
-#include "DRV_VarEeprom.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

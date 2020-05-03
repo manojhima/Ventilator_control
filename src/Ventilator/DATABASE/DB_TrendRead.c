@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C 		Functionnal description : 	this function reads the values in the */
+/*%C 		Functional description : 	this function reads the values in the */
 /*%C        trend base														  */
 /*                                                            				  */
 /******************************************************************************/
@@ -24,9 +24,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DRV_VarEeprom.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                          */

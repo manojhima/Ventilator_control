@@ -38,11 +38,11 @@
 #endif /* _BORLAND */
 
 
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #include "DB_Current.h"
-#include "Structure.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_Revision.h"
 
 
@@ -53,12 +53,12 @@
 
 /*%C Constant declaration to locate revision and version information at the end of binary file */
 
-const UBYTE Version_Number[19] = {'V','e','r','s','i','o','n',' ',':',' ',
-								CFG_REVISION_VERSION_NUMBER_0/256,CFG_REVISION_VERSION_NUMBER_0%256,
-								CFG_REVISION_VERSION_NUMBER_1/256,CFG_REVISION_VERSION_NUMBER_1%256,
-								CFG_REVISION_VERSION_NUMBER_2/256,CFG_REVISION_VERSION_NUMBER_2%256,
-								CFG_REVISION_VERSION_NUMBER_3/256,CFG_REVISION_VERSION_NUMBER_3%256,(UBYTE) NULL};
-
+//const UBYTE Version_Number[19] = {'V','e','r','s','i','o','n',' ',':',' ',
+//		CFG_REVISION_VERSION_NUMBER_0/256,CFG_REVISION_VERSION_NUMBER_0%256,
+//								CFG_REVISION_VERSION_NUMBER_1/256,CFG_REVISION_VERSION_NUMBER_1%256,
+//								CFG_REVISION_VERSION_NUMBER_2/256,CFG_REVISION_VERSION_NUMBER_2%256,
+//								CFG_REVISION_VERSION_NUMBER_3/256,CFG_REVISION_VERSION_NUMBER_3%256,(UBYTE) NULL};
+// 56 - 60 i.e above 5 lines are commented by manoj to check if its compiler specific
 const UBYTE* Revision = "Revision : " CFG_REVISION_REVISION_VALUE "."
 						"Date : " CFG_REVISION_BUILD_DATE_YEAR "/" 
 								  CFG_REVISION_BUILD_DATE_MONTH "/"

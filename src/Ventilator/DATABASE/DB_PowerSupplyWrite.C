@@ -25,12 +25,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DRV_VarEeprom.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #define DECLARATION_POWERSUPPLY_BASE
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_PowerSupply.h"
 /******************************************************************************/
 /*                    EXTERNAL FUNCTION DECLARATION                          	*/

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C                     Functionnal description :                            */
+/*%C                     Functional description :                            */
 /*%C                                                                          */
 /*%C This function computes a correction value for the control command        */
 /*                                                                            */
@@ -26,12 +26,12 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 #include "typedef.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "enum.h"
-#include "Ventilation_Compute_Data.h"
-#include "Ventilation_Datas.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../GENERAL/enum.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../VENTILATION/Ventilation_Datas.h"
 #include "CMP_CalculAutoAdaptInsp.h"
 
 /******************************************************************************/

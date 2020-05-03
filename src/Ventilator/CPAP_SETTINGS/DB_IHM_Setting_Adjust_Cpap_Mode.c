@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C 			Functionnal description : 	this function schedules the different	*/
+/*%C 			Functional description : 	this function schedules the different	*/
 /*%C        settings in DataBase for the CPAP mode: 									*/
 /*                                                            				  		*/
 /******************************************************************************/
@@ -25,12 +25,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "DB_Current.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Current.h"
 #include "DB_IHM_Setting_Adjust_Cpap_Mode.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

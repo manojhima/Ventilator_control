@@ -24,7 +24,7 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 #define DECLARATION_CURRENT_BASE
 #include "DB_Current.h"

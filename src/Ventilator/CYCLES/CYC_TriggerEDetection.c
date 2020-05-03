@@ -1,7 +1,7 @@
 
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -27,13 +27,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "Ventilation_Datas.h"
-#include "Ventilation_Cycles_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../VENTILATION/Ventilation_Cycles_Datas.h"
 #include "CYC_TriggerEDetection.h"
 
 

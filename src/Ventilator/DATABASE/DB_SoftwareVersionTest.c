@@ -9,10 +9,10 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
-
+//lot of compiler related checks need to fix manoj
 
 /******************************************************************************/
-/*%C 			Functionnal description : 	this function tests the software    	*/
+/*%C 			Functional description : 	this function tests the software    	*/
 /*%C        version   																			*/
 /*                                                            				  		*/
 /******************************************************************************/
@@ -24,31 +24,31 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#ifndef _BORLAND
-   #ifndef _TASKING
-      #include "LH_ST10F276.h"
-      #include <intrins.h>
-   #else
-      #include "regf276e.h"
-   #endif
-#endif
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Define.h"
+//#ifndef _BORLAND
+//   #ifndef _TASKING
+//      #include "LH_ST10F276.h"
+//      #include <intrins.h>
+//   #else
+//      #include "regf276e.h"
+//   #endif
+//#endif				// compiler specifics commented out manoj
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
 #include "DB_Control.h"
-#include "DB_current.h"
-#include "DB_config.h"
+#include "DB_Current.h"
+#include "DB_Config.h"
 #include "DB_Event.h"
 #include "DB_Rtc.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "DB_SoftwareVersionTest.h"
 #include "DRV_VarEeprom.h"
-#include "MAIN_Data.h"
-#ifndef _BORLAND
-	#include "Pust.h"
-#endif	
+#include "../MAIN/Main_Data.h"
+//#ifndef _BORLAND
+	#include "PUST.h"
+//#endif
 
 
 /******************************************************************************/

@@ -31,16 +31,16 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
 #include "DB_Control.h"
 #include "DB_Current.h"
 #include "DB_Rtc.h"
 #include "DB_Config.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_LoadAndCheckEepromIntoRam.h"
-#include "DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 
 
 /******************************************************************************/

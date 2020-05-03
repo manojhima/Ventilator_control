@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,15 +24,15 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                      */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Current.h"
-#include "DB_Compute.h"
-#include "DB_Control.h"
-#include "Ventilation_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Control.h"
+#include "../VENTILATION/Ventilation_Datas.h"
 #include "CMP_LeakFactors.h"
-#include "DB_Measurement.h"
-#include "Ventilation_Compute_data.h"
+#include "../DATABASE/DB_Measurement.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 #include "math.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
@@ -66,7 +66,7 @@ void CMP_LeakFactors(void)
 	static UBYTE Count = 0;
 	SWORD32 QeeScale = 100;
 
-//Décalage du pointeur acquisition à 100 ms avant le début inspi, si trigger, en gérant le buffer circulaire	
+//Dï¿½calage du pointeur acquisition ï¿½ 100 ms avant le dï¿½but inspi, si trigger, en gï¿½rant le buffer circulaire	
 	//Offset of the acquisition of 100 ms pointer before the beginning of inspiration, if trigger, managing the circular buffer	
 	if (Ventil_State == VEN_INSPIRATION_TRIGGERED)
 	{	
@@ -80,7 +80,7 @@ void CMP_LeakFactors(void)
    		}
     	Increment = 1;
 	}
-//Détermination de la durée d'échantillonage sur laquelle on réalise les calculs, selon le TE
+//Dï¿½termination de la durï¿½e d'ï¿½chantillonage sur laquelle on rï¿½alise les calculs, selon le TE
 	// Determine the sampling time on which calculations are performed, as the TE
 	if (MeasureTe < 300 )
 	{
@@ -103,17 +103,17 @@ void CMP_LeakFactors(void)
 		PlateauLenght = 60;
 	}	
 		
-// Calcul Qi moyen sur les 10 échantillons les plus récents. Utilisé pour critère stabilité
+// Calcul Qi moyen sur les 10 ï¿½chantillons les plus rï¿½cents. Utilisï¿½ pour critï¿½re stabilitï¿½
 	// Calculate average Qi on the most recent 10 samples. Used to test stability
 	QinspTest1 = CMP_MeanTable(VEN_PtrMesureFlowPress, 10,VEN_MesureFlowQinsp,cPLATEAU_TABLES_LENGHT);
-//Boucle incrementant le plateau selon le critère de stabilité +/-5% QinspTest1 
-//Saturé à la taille du plateau déduit du TE 
+//Boucle incrementant le plateau selon le critï¿½re de stabilitï¿½ +/-5% QinspTest1 
+//Saturï¿½ ï¿½ la taille du plateau dï¿½duit du TE 
 	// Loop incrementing the plate according to the criterion of stability + / -5% QinspTest1
 	// Saturated size tray deducted from TE
 	i = 0;
 	while ((CriterePlateau < cSTABILITY_CONDITION_POS )&&(CriterePlateau > cSTABILITY_CONDITION_NEG )&& (PlateauLenght - ( 10 * i) >= 10 ))
 	{
-//Décalage de 10 échantillons en gérant le buffer circulaire
+//Dï¿½calage de 10 ï¿½chantillons en gï¿½rant le buffer circulaire
 		// Offset of 10 samples in the circular buffer manager
 		if (VEN_PtrMesureFlowPress >= 10 * ( i + 1 ))
    		{
@@ -126,20 +126,20 @@ void CMP_LeakFactors(void)
 //Calcul sur la plage de 100ms courante de la moyenne Qi
 		// Calculate the current range of 100ms average Qi
 		QinspTest2 = CMP_MeanTable(j, 10,VEN_MesureFlowQinsp,cPLATEAU_TABLES_LENGHT);
-//Calcul de l'écart entre QinspTest1entre le Qi moyen sur la plage courante
+//Calcul de l'ï¿½cart entre QinspTest1entre le Qi moyen sur la plage courante
 		// Calculate the difference between the average QinspTest1entre Qi on the current track
 		CriterePlateau = (QinspTest1 - QinspTest2) * QeeScale / QinspTest1;
 
-//Incrément de l'indice
+//Incrï¿½ment de l'indice
 		i = i + 1;
 	}
 	PlateauLenght = 10 * i;
 
-//Pour la régression linéaire, on règle aussi le produit de la moyenne des temps, au carré, par
-//la moyenne des carrés des temps.
-//Exemple, pour PlateauLenght = 20, la durée des acquisitions est 200 ms.
-// Le temps moyen est 105, au carré donne 11025. La moyenne des carrés des temps (partant de 10 à 200ms)
-//donne 14350. La différence donne 3325. Voir méthode régression linéaire.
+//Pour la rï¿½gression linï¿½aire, on rï¿½gle aussi le produit de la moyenne des temps, au carrï¿½, par
+//la moyenne des carrï¿½s des temps.
+//Exemple, pour PlateauLenght = 20, la durï¿½e des acquisitions est 200 ms.
+// Le temps moyen est 105, au carrï¿½ donne 11025. La moyenne des carrï¿½s des temps (partant de 10 ï¿½ 200ms)
+//donne 14350. La diffï¿½rence donne 3325. Voir mï¿½thode rï¿½gression linï¿½aire.
 	//
 	// Calculate the difference between the average QinspTest1entre Qi on the current track
 	// For linear regression, also sets the product of the average time squared by
@@ -170,8 +170,8 @@ void CMP_LeakFactors(void)
 			break;
 	}
 	
-//Calcul de la moyenne des produits Qi * temps, sur une durée (PlateauLenght*10)ms, variable selon Te, 
-//En démarrant (PlateauLenght*10)ms avant fin d'expi et allant jusqu'à la fin expi. (décalé de 100ms si trigg) 
+//Calcul de la moyenne des produits Qi * temps, sur une durï¿½e (PlateauLenght*10)ms, variable selon Te, 
+//En dï¿½marrant (PlateauLenght*10)ms avant fin d'expi et allant jusqu'ï¿½ la fin expi. (dï¿½calï¿½ de 100ms si trigg) 
 	//
 	// Calculate the average time * Qi products over a period ( PlateauLenght * 10) ms , varying Te,
 	// When starting ( PlateauLenght * 10) ms before the end of expiration and up to the end expiration . (shifted 100ms if trigg )
@@ -181,7 +181,7 @@ void CMP_LeakFactors(void)
 	{
 		Start = cPLATEAU_TABLES_LENGHT + Start;
 	}
-	// Calcule de la somme entre l'indice de début et l'indice de fin.
+	// Calcule de la somme entre l'indice de dï¿½but et l'indice de fin.
 	// Calculate the sum from the start index and end index
 	if (Start <= VEN_PtrMesureFlowPress)
 	{
@@ -194,7 +194,7 @@ void CMP_LeakFactors(void)
 	
 	}
 	else
-	// Calcule de la somme entre l'indice de début et l'indice de fin.
+	// Calcule de la somme entre l'indice de dï¿½but et l'indice de fin.
 	// Calculate the sum from the start index and end index
 	{ 
 		for (j = 0; j <= VEN_PtrMesureFlowPress;j++)
@@ -214,23 +214,23 @@ void CMP_LeakFactors(void)
 	// Calculate Qee on the board before inspiration
 	Qee_glob = CMP_MeanTable(VEN_PtrMesureFlowPress, PlateauLenght,VEN_MesureFlowQinsp,cPLATEAU_TABLES_LENGHT);
 
-//Calcul de la pente PetitA de la courbe de débit selon regression linéaire	
-// PetitA = (Moyenne[debit*temps] - moyenne[temps]*moyenne[débit]) / (Moyenne[temps carré]- carré[temps moyen])
-// Pour ajouter de la précision, multiplié par 100
+//Calcul de la pente PetitA de la courbe de dï¿½bit selon regression linï¿½aire	
+// PetitA = (Moyenne[debit*temps] - moyenne[temps]*moyenne[dï¿½bit]) / (Moyenne[temps carrï¿½]- carrï¿½[temps moyen])
+// Pour ajouter de la prï¿½cision, multipliï¿½ par 100
 	// 
 	// Calculate the slope of the curve PETITA flow according linear regression
 	// PETITA = (Average [ flow * time ] - average [ time ] * mean [ speed ] ) / ( Average [ time square ] - square [ mean time ] )
 	// To add precision, multiplied by 100 or QeeScale
 	PetitA = (MoyenneDebitParTemps - ((SWORD32)PlateauLenght + 1)* 5 * Qee_glob)* QeeScale / MoyenneCarreParCarreMoyenne;
 
-//Gestion de la pente négative, que l'on ignore et force à 0
+//Gestion de la pente nï¿½gative, que l'on ignore et force ï¿½ 0
 	// Handle the negative slope, it is unknown and strength 0
 	if (PetitA < 0) 
 	{
 		PetitA = 0;
 	}
-//Calcul du décalage à l'origine PetitB de la courbe de débit selon regression linéaire
-//PetitB = Moyenne [débit] - PetitA * Moyenne[temps]
+//Calcul du dï¿½calage ï¿½ l'origine PetitB de la courbe de dï¿½bit selon regression linï¿½aire
+//PetitB = Moyenne [dï¿½bit] - PetitA * Moyenne[temps]
 //On divise le produit de PetitA par 100, cf. ci-dessus.
 	//
 	// Calculation of offset originally PetitB of the flow curve by linear regression
@@ -275,7 +275,7 @@ void CMP_LeakFactors(void)
 	QLeakTheoritical4mm = sqrt((double)ComputedPeep);
 	QLeakTheoritical4mm = QLeakTheoritical4mm * c4MM_LEAK_COEFF ;
 
-	// Calcul du débit de fuite parasite.
+	// Calcul du dï¿½bit de fuite parasite.
 	// Calculate the flow of parasitic leakage 
 	QLeak = (SWORD32)(Qee) - (SWORD32) QLeakTheoritical4mm; 
 	

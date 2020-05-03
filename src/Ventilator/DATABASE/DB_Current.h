@@ -22,7 +22,7 @@
 #ifndef CURRENT_H
 #define CURRENT_H
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 /******************************************************************************/
 /*                     ENUM DECLARATION				                         	*/

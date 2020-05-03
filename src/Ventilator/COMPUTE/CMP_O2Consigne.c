@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RC0306                                                      */
+/* Project Nï¿½  :  RC0306                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C                     Functionnal description :                            */
+/*%C                     Functional description :                            */
 /*%C                       Valve management						     		  */
 /*%C     															  		  */
 /******************************************************************************/
@@ -24,15 +24,15 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "Ventilation_Constants.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../VENTILATION/Ventilation_Constants.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
 #include "CMP_O2Consigne.h"
 
 /******************************************************************************/
@@ -42,7 +42,7 @@
 
 SWORD32 CMP_O2Consigne(void)
 {
-	 // Récupération de la valeur 100% O2	active
+	 // Rï¿½cupï¿½ration de la valeur 100% O2	active
 	UWORD16 o2_100p100 = DB_ControlRead (FIO2_100_ACTIVE);
 	// Lecture du type de mode de ventilation
 	UWORD16 CurrentMode = DB_ControlRead(CURRENT_MODE_U16);
@@ -50,13 +50,13 @@ SWORD32 CMP_O2Consigne(void)
 	UWORD16 MeasureIT = DB_ComputeRead(MEASURE_IT_U16);
 	// Lecture du vt
 	UWORD16 AdjustVt = DB_CurrentRead(ADJUST_VOL_CONTROL_U16);
-	//Info Présence Valve
+	//Info Prï¿½sence Valve
 	UWORD16 ValveDetected = DB_ControlRead(VALVE_DETECTED_U16);
 	
-	// Récupération du débit inspiratoire
+	// Rï¿½cupï¿½ration du dï¿½bit inspiratoire
 	SWORD16 Qinsp = (SWORD16)DB_ComputeRead(MEASURE_QINSP_S16); 
 	
-	//Recupération du VT	
+	//Recupï¿½ration du VT	
 	UWORD16 CmpVti = DB_ComputeRead(COMPUTED_VTI_U16);
 	
 	e_VEN_SIMVCycle VaciPhase =DB_ControlRead(SIMV_CYCLES_U16);
@@ -68,11 +68,11 @@ SWORD32 CMP_O2Consigne(void)
 	
 	static UWORD16 Mutex_FIO2_100_Active = FALSE;
 
-  //Test si 100% O2 demandé
+  //Test si 100% O2 demandï¿½
    if (o2_100p100 == TRUE)
    {
 	  AdjustFio2 = 100;
-	  //Réglage des seuils d'alarmes Low et High
+	  //Rï¿½glage des seuils d'alarmes Low et High
 	  if (Mutex_FIO2_100_Active == FALSE)
 	  {
 	  		//Flag d'exclusion
@@ -81,11 +81,11 @@ SWORD32 CMP_O2Consigne(void)
 			DB_ConfigWrite(ADJUST_HIGH_FIO2 , AdjustFio2 + cDELTA_HIGH_FIO2);
 	  }
    }
-   //Sinon récupération de la FIO2 réglée
+   //Sinon rï¿½cupï¿½ration de la FIO2 rï¿½glï¿½e
    else
    {
       AdjustFio2 = DB_ConfigRead(ADJUST_FIO2);
- 	  //Réglage des seuils d'alarmes Low et High
+ 	  //Rï¿½glage des seuils d'alarmes Low et High
 	  if (Mutex_FIO2_100_Active == TRUE)
 	  {
 	  		//Flag d'exclusion
@@ -96,15 +96,15 @@ SWORD32 CMP_O2Consigne(void)
 
    }
 
-   // Non prise en compte d'un débit inspiré négatif pour la régul O2
+   // Non prise en compte d'un dï¿½bit inspirï¿½ nï¿½gatif pour la rï¿½gul O2
    if (Qinsp < 0)
    {
       Qinsp = 0;
    }	 
 
    // Calcul de la Consigne O2
-	//	(Signification du "AdjustFio2+2": Translation de 2% de l'ensemble de la régulation des modes à valves
-	// pour compenser une faibesse générale de celle-ci).
+	//	(Signification du "AdjustFio2+2": Translation de 2% de l'ensemble de la rï¿½gulation des modes ï¿½ valves
+	// pour compenser une faibesse gï¿½nï¿½rale de celle-ci).
   if (ValveDetected == TRUE)
   		ConsigneO2 = ((SWORD32)((((SWORD32)AdjustFio2+2) - 21)*100) / 79);
   else 	
@@ -197,7 +197,7 @@ SWORD32 CMP_O2Consigne(void)
 				  		CorrectionO2 = 0; break;
 				  }
 			}
-			// Pour les modes Pression à valve (VPC(VPAC)à valve et AI(AIFR) à valve.
+			// Pour les modes Pression ï¿½ valve (VPC(VPAC)ï¿½ valve et AI(AIFR) ï¿½ valve.
 			else
 			{ 
 			 switch (AdjustFio2)
@@ -227,8 +227,8 @@ SWORD32 CMP_O2Consigne(void)
 		}	 				  
 	CorrectionO2 /= 1000;
 
-	// Calcul de la consigne O2 corrigée: 
-	// Intégration de la Correction fonction du VT et de la correction fonction du %O2 réglé.
+	// Calcul de la consigne O2 corrigï¿½e: 
+	// Intï¿½gration de la Correction fonction du VT et de la correction fonction du %O2 rï¿½glï¿½.
 	ConsigneO2 = ConsigneO2 * (100 + CorrectionVt + CorrectionO2)/100;
    }
 
@@ -241,7 +241,7 @@ SWORD32 CMP_O2Consigne(void)
 
    else if  (CurrentMode != CPAP)			
 	{ 	
-	   //Si I/T est supérieur à 45%
+	   //Si I/T est supï¿½rieur ï¿½ 45%
 	   if (MeasureIT >= 45)
 		{
 		   if  (AdjustFio2 <= 60)
@@ -305,7 +305,7 @@ SWORD32 CMP_O2Consigne(void)
 				  }
 			}
 		}
-		// Si I/T est inférieur à 33%
+		// Si I/T est infï¿½rieur ï¿½ 33%
 		else 
 			{
 		  	if  (AdjustFio2 <= 60)
@@ -340,7 +340,7 @@ SWORD32 CMP_O2Consigne(void)
 
 	CorrectionO2/= 1000;
 
-	// Calcul de la consigne O2 corrigée
+	// Calcul de la consigne O2 corrigï¿½e
 	ConsigneO2 = ConsigneO2 * (100 + CorrectionO2)/100;
    	
 	}
@@ -373,7 +373,7 @@ SWORD32 CMP_O2Consigne(void)
 
       CorrectionO2/= 1000;
 
-   	// Calcul de la consigne O2 corrigée
+   	// Calcul de la consigne O2 corrigï¿½e
    	ConsigneO2 = ConsigneO2 * (100 + CorrectionO2)/100;
  	}
 

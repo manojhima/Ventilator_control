@@ -25,11 +25,11 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
 #include "DB_Config.h"
-#include "DB_event.h"
+#include "DB_Event.h"
 #include "DB_Control.h"
 #include "DB_Current.h"
 	#define DECLARATION_ALARM_STATUS_BASE
@@ -38,11 +38,11 @@
 #include "DB_Usb.h"
 #include "DB_StartInitDb.h"
 	#define DECLARATION_IHM_ACCESS_PARA_DATABASE
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 	#define DECLARATION_SECURITY_DATAS
-#include "Security_Datas.h"
-#include "DRV_VarEeprom.h"
-#include "Ventilation_Compute_data.h"
+#include "../SECURITY/Security_Datas.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

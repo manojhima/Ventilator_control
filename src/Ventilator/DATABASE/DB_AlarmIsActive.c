@@ -13,10 +13,10 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #include "DB_AlarmStatus.h"
-#include "Security_Datas.h"
+#include "../SECURITY/Security_Datas.h"
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/
 /******************************************************************************/

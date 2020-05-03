@@ -26,16 +26,16 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "DRV_VarEeprom.h"
-#include "DB_Current.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DATABASE/DB_Current.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_IHM_Write_Adjust_Cpap_Mode.h"
-#include "Timer_Data.h"
+#include "../TIMERS/Timer_Data.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

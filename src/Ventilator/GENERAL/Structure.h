@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C Functionnal description : 	Structure Type redéfinition       				*/
+/*%C Functionnal description : 	Structure Type redï¿½finition       				*/
 /*                                                            				  		*/
 /******************************************************************************/
 /*%I 	Input Parameter : 			None		       			                  	*/
@@ -54,15 +54,15 @@ typedef struct
 	UWORD32 autovalue;
 }t_TIM_MINUTE_TAB_DEF_ELEMENT;
 
-#ifndef _BORLAND
-typedef struct 
-	{
-	UWORD16 mini;
-	UWORD16 current;
-	UWORD16 maxi;
-	}
-   idata t_MEASURES_TIMES;
-#else
+//#ifndef _BORLAND				// platform specific manoj
+//typedef struct				// platform specific manoj
+//	{							// platform specific manoj
+//	UWORD16 mini;				// platform specific manoj
+//	UWORD16 current;			// platform specific manoj
+//	UWORD16 maxi;				// platform specific manoj
+//	}							// platform specific manoj
+//   idata t_MEASURES_TIMES;	// platform specific manoj
+//#else
 typedef struct 
 	{
 	UWORD16 mini;
@@ -70,7 +70,7 @@ typedef struct
 	UWORD16 maxi;
 	}
    t_MEASURES_TIMES;
-#endif
+//#endif // _BORLAND
 
 typedef struct {
 	UWORD16 DisplayFunction;
@@ -110,7 +110,7 @@ typedef struct
 
 typedef struct {
 	e_EEP_ACCESS_STATE state;
-	UWORD16 xhuge *ptr_DataRam;
+//	UWORD16 xhuge *ptr_DataRam;  //platform specific manoj
 } t_EEP_ACCESS_CONTROL;
 
 typedef struct {

@@ -30,20 +30,20 @@
 
 #define DECLARATION_REVISION_BASE
 
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_Control.h"
-#include "DB_Rtc.h"
-#include "DB_Usb.h"
-#include "DRV_VarEeprom.h"
-#include "DB_IHMAccessParaDatabase.h"
-#include "DB_Compute.h"
-#include "DB_Revision.h"
-#include "DB_AlarmStatus.h"
-#include "DB_PowerSupply.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Revision.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_PowerSupply.h"
 #include "DB_IHM_Read_Access.h"
-#include "DB_KeyboardEvent.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
 #include "DB_IHM_Read_Access.h"
 
 

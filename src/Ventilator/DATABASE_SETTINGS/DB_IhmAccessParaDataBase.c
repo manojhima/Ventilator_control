@@ -28,13 +28,13 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "DB_Rtc.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/DB_Config.h"
 #include "DB_IhmAccessParaDataBase.h"
 
 /******************************************************************************/

@@ -23,9 +23,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
 #include "DB_Rtc.h"
 #include "DB_Control.h"
 #include "DB_Config.h"
@@ -139,7 +139,7 @@ void DB_EventMngt (UWORD16 EventNb)
         case DB_CONTROL :                                                  
             {                                                                  
                 DataToPush = DB_ControlRead(DB_CommonEventMngtParam[i].DataId); 
-                // Stockage du Mode spécifique à la com		
+                // Stockage du Mode spï¿½cifique ï¿½ la com		
                 if (DB_CommonEventMngtParam[i].DataId == CURRENT_MODE_U16)
                 {
                     switch (DataToPush)
@@ -221,7 +221,7 @@ void DB_EventMngt (UWORD16 EventNb)
                     if (DB_ControlRead(ERROR_SPO2_SENSOR_DETECTED) == TRUE)
                         DataToPush = 0;
                 }
-                // Le stockage de la MEASURE_FIO2 sera divisé par 10 et arrondi		
+                // Le stockage de la MEASURE_FIO2 sera divisï¿½ par 10 et arrondi		
                 else if (DB_CommonEventMngtParam[i].DataId == MEASURE_FIO2)
                 {
                     if (DB_ControlRead(DETECTED_FIO2_SENSOR) == TRUE)

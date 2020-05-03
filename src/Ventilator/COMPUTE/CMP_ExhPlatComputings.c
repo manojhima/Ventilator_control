@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Compute.h"
-#include "DB_AlarmStatus.h"
-#include "Ventilation_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../VENTILATION/Ventilation_Datas.h"
 #include "CMP_ExhPlatComputings.h"
-#include "Ventilation_Compute_data.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

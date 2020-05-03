@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C 			Functionnal description : 	this function makes a copy from the		*/
+/*%C 			Functional description : 	this function makes a copy from the		*/
 /*%C         adjust to the current base       											*/
 /*                                                            				  		*/
 /******************************************************************************/
@@ -24,18 +24,18 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "define.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
 #include "DB_AlarmStatus.h"
 #include "DB_Control.h"
 #include "DB_Current.h"
 #include "DB_Rtc.h"
 #include "DB_Event.h"
-#include "DB_IhmAccessParaDataBase.h"
-#include "DRV_VarEeprom.h"
-#include "Security_Datas.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../SECURITY/Security_Datas.h"
 #include "DB_Compute.h"
 #include "DB_CopyMngt.h"
 /******************************************************************************/
@@ -88,10 +88,10 @@ void DB_CopyMngt(void)
 
 
     /* Voir fichier sous VSS:                                                     */
-    /* "Etude Soft\Analyse Data Base\Gestion  des  réglages  des  paramètres.doc" */
-    /* Vérifier qu'on ne recopie la base dans current que lorsqu'on a modifie     */
-    /* un paramètre (sauf lors d'un changement de mode)                           */
-    /*  => créer un flag modif_param (data globale)                               */
+    /* "Etude Soft\Analyse Data Base\Gestion  des  rï¿½glages  des  paramï¿½tres.doc" */
+    /* Vï¿½rifier qu'on ne recopie la base dans current que lorsqu'on a modifie     */
+    /* un paramï¿½tre (sauf lors d'un changement de mode)                           */
+    /*  => crï¿½er un flag modif_param (data globale)                               */
 
     /*%C At each change mode, an alarm reset is made         */
     /*%C The inhibited and reset flag are reseted too         */

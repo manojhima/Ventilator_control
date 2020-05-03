@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -19,11 +19,11 @@
 /*%C    	The average and deviation are computed cycle by cycle             */
 /*%C         			with those formulas                                   */
 /*%C       	Avg(n) = (n/(n-1)*Avg(n-1) + Val(n)/n)							  */
-/*%C		AvgVar(n) = (n/(n-1)*AvgVar(n-1) + (Val(n) - Avg(n))²/n			  */
+/*%C		AvgVar(n) = (n/(n-1)*AvgVar(n-1) + (Val(n) - Avg(n))ï¿½/n			  */
 /*%C        Sigma(n) = Sqrt(AvgVar(n))                                        */          
 /*%C																		  */
 /*%C 		Beware using the SquareRoot function with Tasking : 			  */
-/*%C   		long time compute (400µS per Op) and false result				  */		
+/*%C   		long time compute (400ï¿½S per Op) and false result				  */		
 /*																			  */
 /******************************************************************************/
 /*%I Input Parameter : NONE                                                   */
@@ -35,19 +35,19 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 #include <math.h>
-#ifndef _TASKING
-#include <intrins.h>
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "DB_Compute.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "Ventilation_compute_data.h"
+//#ifndef _TASKING			// platform specific manoj
+//#include <intrins.h>		// platform specific manoj
+//#include "LH_ST10F276.h"	// platform specific manoj
+//#else						// platform specific manoj
+//#include "regf276e.h"		// platform specific manoj
+//#endif	 				// platform specific manoj
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 #include "CMP_VentilationReport.h"
 #include "math.h"
 
@@ -93,7 +93,7 @@ void CMP_VentilationReport(void)
 	{
 		Counter = Counter - 1 ;
 		/****************************************************************************/
-		/*						Volume courant inspiré								*/
+		/*						Volume courant inspirï¿½								*/
 		/****************************************************************************/
 	
 		Value_U32 = (UWORD32)(DB_ComputeRead(COMPUTED_VTI_U16));
@@ -110,7 +110,7 @@ void CMP_VentilationReport(void)
 	
 		 
 		/******************************************************************************/
-		/*						Volume courant expiré			    				  */
+		/*						Volume courant expirï¿½			    				  */
 		/******************************************************************************/
 		
 		Value_U32 = (UWORD32)(DB_ComputeRead(COMPUTED_VTE_U16));
@@ -197,7 +197,7 @@ void CMP_VentilationReport(void)
 
 	
 		/******************************************************************************/
-		/*							Presssion inspiré								*/
+		/*							Presssion inspirï¿½								*/
 		/******************************************************************************/
 	
 		Value_U32 = (UWORD32)(DB_ComputeRead(COMPUTED_PIP_U16));
@@ -214,7 +214,7 @@ void CMP_VentilationReport(void)
 	
 	
 		/******************************************************************************/
-		/*							 Temps Apnée 									*/
+		/*							 Temps Apnï¿½e 									*/
 		/******************************************************************************/
 	
 	   	if (CMP_VentilReport_Array[DB_TREND_NB_APNEA] >= 1)	
@@ -228,7 +228,7 @@ void CMP_VentilationReport(void)
 		}		
 	
 		 /******************************************************************************/
-		/*							  Index Apnée									*/
+		/*							  Index Apnï¿½e									*/
 		/******************************************************************************/
 	
 		if (CMP_VentilReport_Array[DB_TREND_VENTIL_HOUR] >=1)	

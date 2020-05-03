@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C                     Functionnal description :                            */
+/*%C                     Functional description :                            */
 /*%C                Detection of the Inspiration trigger                 		*/
 /*                                                                            */
 /******************************************************************************/
@@ -26,14 +26,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "Timer_Data.h"
-#include "Ventilation_Cycles_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../VENTILATION/Ventilation_Cycles_Datas.h"
 #include "CYC_TriggerIDetection.h"
 
 /******************************************************************************/

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RR0505                                                      */
+/* Project Nï¿½  :  RR0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C                     Functionnal description :                            */
+/*%C                     Functional description :                            */
 /*%C           Respiratory cycle management in PSVT  mode           			   */
 /*                                                                            */
 /******************************************************************************/
@@ -25,12 +25,12 @@
 /*                              INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
-#include "DB_Current.h"
-#include "Ventilation_Datas.h"
-#include "Ventilation_Cycles_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Current.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../VENTILATION/Ventilation_Cycles_Datas.h"
 #include "CYC_Psvt_CyclesMngt.h"
 
 /******************************************************************************/

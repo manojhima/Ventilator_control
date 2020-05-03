@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Compute.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Compute.h"
 #include "CMP_PiSetPointPsimvMode.h"
 
 /******************************************************************************/

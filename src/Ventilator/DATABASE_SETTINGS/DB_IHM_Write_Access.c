@@ -29,20 +29,20 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DB_Control.h"
-#include "DB_Rtc.h"
-#include "DRV_VarEeprom.h"
-#include "DB_Event.h" 
-#include "DB_AlarmStatus.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 #include "DB_IHM_Write_Access.h"
 #include "DB_IhmAccessParaDataBase.h"
-#include "DB_KeyboardEvent.h"
-#include "DB_PowerSupply.h"
-#include "DB_Usb.h"
-#include "DB_Compute.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
+#include "../DATABASE/DB_PowerSupply.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_Compute.h"
 
 
 /******************************************************************************/
