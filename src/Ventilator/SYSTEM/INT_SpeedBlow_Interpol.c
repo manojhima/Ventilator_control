@@ -24,12 +24,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Compute.h"
-#include "Timer_Data.h"
-#include "Driver_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DRIVERS/Driver_Datas.h"
 #include "INT_SpeedBlow_Interpol.h"
 
 

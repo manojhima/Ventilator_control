@@ -30,8 +30,8 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "io_declare.h"
-#include "DB_Control.h"
+#include "../GENERAL/io_declare.h"
+#include "../DATABASE/DB_Control.h"
 #include "SYS_Alarm_Remote_Detect.h"
 
 /******************************************************************************/

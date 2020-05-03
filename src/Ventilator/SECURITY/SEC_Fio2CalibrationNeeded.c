@@ -24,20 +24,20 @@
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_KeyboardEvent.h"
-#include "DB_Event.h"
-#include "DB_Compute.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
 #include "SEC_Fio2CalibrationNeeded.h"
-#include "Security_Datas.h"
+#include "../SECURITY/Security_Datas.h"
 
 /* locate security code to specific section */  
-#include "locate_security_code.h" 
+#include "../SECURITY/locate_security_code.h" 
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

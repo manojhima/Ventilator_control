@@ -24,14 +24,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Compute.h"
-#include "DB_Measurement.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Measurement.h"
+#include "../DATABASE/DB_Config.h"
 #include "INT_ValvePress_Interpol.h"
-#include "Driver_Datas.h"
+#include "../DRIVERS/Driver_Datas.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -29,18 +29,18 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "DRV_VarEeprom.h"
-#include "DB_Current.h"
-#include "DB_Control.h"
-#include "DB_Rtc.h"
-#include "DB_IHMAccessparaDataBase.h"
-#include "DB_IHM_Write_Adjust_Vol_Mode_Vol_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../VOL_SETTINGS/DB_IHM_Write_Adjust_Vol_Mode_Vol_Control.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/

@@ -25,15 +25,15 @@
 /*                           INCLUDE FILES                                    */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "define.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "driver_Datas.h"
-#include "Timer_Data.h"
-#include "DRV_VarEeprom.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DRIVERS/Driver_Datas.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "SYS_Fio2Detection.h"
 
 /******************************************************************************/

@@ -25,18 +25,18 @@
 /******************************************************************************/
 /*                               INCLUDE FILES                                */
 /******************************************************************************/
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "define.h"
-#include "DB_Rtc.h"
-#include "DB_Current.h"
-#include "DB_Compute.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
 #include "SYS_Monit_Buffer_Write.h"
-#include "Structure.h"
-#include "Flash_Monit_Data.h"
+#include "../GENERAL/Structure.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
 
 
 /******************************************************************************/

@@ -15,7 +15,7 @@
 /*%C                     Functionnal description :                            */
 /*%C          RAM Test routines                                               */
 /******************************************************************************/
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "PUST.h"
 
 #ifndef _TASKING

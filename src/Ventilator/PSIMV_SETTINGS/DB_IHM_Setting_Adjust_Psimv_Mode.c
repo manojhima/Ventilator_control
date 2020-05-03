@@ -26,12 +26,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "DB_Current.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Current.h"
 #include "DB_IHM_Setting_Adjust_Psimv_Mode.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

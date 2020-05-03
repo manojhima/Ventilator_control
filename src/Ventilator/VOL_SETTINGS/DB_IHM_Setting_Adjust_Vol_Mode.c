@@ -27,12 +27,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "DB_IHM_Setting_Adjust_Vol_Mode.h"
-#include "DB_Current.h"
+#include "../GENERAL/typedef.h"
+#include "../VOL_SETTINGS/DB_IHM_Setting_Adjust_Vol_Mode.h"
+#include "../DATABASE/DB_Current.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

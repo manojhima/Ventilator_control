@@ -25,11 +25,11 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Timer_Data.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DATABASE/DB_Control.h"
 #include "SEC_BuzzerCmd.h"
 
 

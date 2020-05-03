@@ -30,18 +30,18 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "DB_Event.h"
-#include "DB_Control.h"
-#include "DB_KeyboardEvent.h"
-#include "DB_AlarmStatus.h"
-#include "security_datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../SECURITY/Security_Datas.h"
 #include "SEC_CpuReferenceFailure.h"
 
 /* locate security code to specific section */  
-#include "locate_security_code.h" 
+#include "../SECURITY/locate_security_code.h" 
 
 #define cTIME_CPU_REF_FAILURE 1000
 /******************************************************************************/

@@ -25,11 +25,11 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Compute.h"
-#include "Driver_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DRIVERS/Driver_Datas.h"
 #include "INT_BlowerTemperatureInterpol.h"
 
 void INT_BlowerTemperatureInterpol(void)

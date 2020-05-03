@@ -28,9 +28,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
 #include "INT_Flow_Conversion_Equation.h"
 
 /******************************************************************************/

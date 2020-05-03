@@ -26,20 +26,20 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "io_declare.h"
-#include "Structure.h"
-#include "DB_Control.h"
-#include "DB_Current.h"
-#include "DB_Compute.h"
-#include "DB_Config.h"
-#include "Timer_Data.h"
-#include "Ventilation_Constants.h"
-#include "Ventilation_Datas.h"
-#include "Ventilation_Cycles_Datas.h"
-#include "VEN_Cycles.h"
-#include "Ventilation_Compute_data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Config.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../VENTILATION/Ventilation_Constants.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../VENTILATION/Ventilation_Cycles_Datas.h"
+#include "../VENTILATION/VEN_Cycles.h"
+#include "../VENTILATION/Ventilation_Compute_Data.h"
 
 
 

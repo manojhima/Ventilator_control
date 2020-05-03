@@ -30,9 +30,9 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "io_declare.h"
-#include "DB_Control.h"
-#include "DB_PowerSupply.h"
+#include "../GENERAL/io_declare.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_PowerSupply.h"
 #include "SYS_SupplyDetect.h"
 
 

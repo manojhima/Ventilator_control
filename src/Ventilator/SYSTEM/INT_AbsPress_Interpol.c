@@ -25,14 +25,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "define.h"
-#include "DB_Compute.h"
-#include "DB_Measurement.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Measurement.h"
 #include "INT_AbsPress_Interpol.h"
-#include "Driver_Datas.h"
+#include "../DRIVERS/Driver_Datas.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -31,43 +31,43 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "Structure.h"
-#include "define.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Rtc.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "DB_PowerSupply.h"
-#include "DB_EventMngt.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/Db_Config.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_PowerSupply.h"
+#include "../DATABASE/DB_EventMngt.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "MAIN_Interfaces_Init.h"
 #include "Main_Data.h"
-#include "PUST.h"
-#include "SCHED_Ventilation_Main.h"	
-#include "SCHED_Ventilation_Scheduler_Config.h"	
+#include "../PUST/PUST.h"
+#include "../SCHEDULER/SCHED_Ventilation_Main.h"
+#include "../SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"	
 
 /*********************************************************/
-#include "Driver_Display_Data.h"
-#include "DIS_FifoRead.h"
+#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
+#include "../DISPLAY/DIS_FifoRead.h"
 /*********************************************************/
 
 	#define EEPROM_DATA_DECLARATION
-#include "Driver_Eeprom_Data.h"
+#include "../DRIVERS_EEPROM/Driver_Eeprom_Data.h"
 
 	#define DECLARATION_COM_DATA
-#include "DRV_COM_Data.h"
+#include "../DRIVERS_COM/DRV_COM_Data.h"
 
 	#define DECLARATION_DRIVER_DATAS
 #include "Driver_Datas.h"	
 
 	#define DECLARATION_DRV_SPI_POWER_DATA
-#include "DRV_SPI_POWER_Data.h"
+#include "../DRIVERS_SPI/DRV_SPI_POWER_Data.h"
 
- #include "DRV_VarEeprom.h"
+ #include "../DRIVERS/DRV_VarEeprom.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

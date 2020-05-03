@@ -24,9 +24,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Current.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Current.h"
 #include "SEC_VolMode.h"
 
 /******************************************************************************/

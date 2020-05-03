@@ -25,19 +25,19 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #include "PUST.h"
 #include "PUST_crc8.h"
 #include "PUST_ramtestlib.h"
 #include "PUST_ref_voltages.h"
-#include "Driver_Display_Data.h"
-#include "DIS_FifoRead.h"
-#include "DRV_VarEeprom.h"
+#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
+#include "../DISPLAY/DIS_FifoRead.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 
 /* locate boot code to specific section */
-#include "locate_boot_code.h"
+#include "../GENERAL/locate_boot_code.h"
 
 /* Uncomment the following line to display a detailed error code message
    If commented, "VERSION SOFTWARE ERROR" is displayed whatever the error code value */

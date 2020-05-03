@@ -31,13 +31,13 @@
 #else                    
 #include "regf276e.h"    
 #endif                   	
-#include "io_declare.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_KeyboardEvent.h"
-#include "Timer_Data.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
+#include "../TIMERS/Timer_Data.h"
 #include "SYS_Backlight_Mngt.h"
 #include "System_Datas.h"
 
