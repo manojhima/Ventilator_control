@@ -24,12 +24,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "enum.h"
-#include "define.h"
-#include "typedef.h"
-#include "DB_Usb.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Usb.h"
 #include "Driver_USB_Data.h"
-#include "Flash_Event_Data.h"
+#include "../DRIVERS_FLASH_EVENT/Flash_Event_Data.h"
 #include "DRV_USB_WriteEventFlash.h"
 
 /******************************************************************************/

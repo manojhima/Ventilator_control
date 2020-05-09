@@ -29,11 +29,11 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "io_declare.h"
-#include "Driver_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/io_declare.h"
+#include "../DRIVERS/Driver_Datas.h"
 					 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

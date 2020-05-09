@@ -28,8 +28,8 @@
 #include "HMI_IhmType.hpp"
 extern "C"
 {
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 }
 
 /******************************************************************************/

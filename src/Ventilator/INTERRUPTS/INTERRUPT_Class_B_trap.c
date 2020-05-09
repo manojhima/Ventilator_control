@@ -29,11 +29,11 @@
 #else
 #include "regf276e.h"
 #endif 	
-#include "typedef.h"
-#include "enum.h"
-#include "io_declare.h"
-#include "Structure.h"
-#include "Timer_Data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
 					 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

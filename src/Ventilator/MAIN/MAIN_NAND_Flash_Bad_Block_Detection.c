@@ -35,7 +35,7 @@
 #include "../GENERAL/define.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-#include "Flash_Monit_data.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_data.h"
 #include "MAIN_NAND_Flash_Bad_Block_Detection.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

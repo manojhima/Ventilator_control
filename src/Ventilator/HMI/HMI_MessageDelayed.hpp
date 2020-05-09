@@ -26,7 +26,7 @@
 /*                           	INCLUDE                    	      			  	*/
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "HMI_VTimer.hpp"
 #include "HMI_MessageDialog.hpp"
 

@@ -40,7 +40,7 @@
 #include "DB_KeyboardEvent.h"
 #include "DRV_VarEeprom.h"
 #include "System_Datas.h"
-#include "define.h"
+#include "../GENERAL/define.h"
 #include "HMI_Controller_Data.hpp"
 
 #ifdef _BORLAND
@@ -51,8 +51,8 @@
 extern "C"
 {
 #include "stdfile.h"
-#include "DB_Usb.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDatabase.h"
 #include <intrins.h>
     void DB_ComputeBreathTimingRatios(void);
 }

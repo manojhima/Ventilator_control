@@ -35,23 +35,23 @@
 #ifdef _BORLAND
    /* Attention, conserver cette inclusion _après_ l'inclucion du io_declare.h
       car redéfinition des valeurs de JUMPER pour chaque produit */
-      #include "io_declare.h"
+      #include "../GENERAL/io_declare.h"
       #include "HMI_Product.hpp"
 #else
-   #include "io_declare.h"
+   #include "../GENERAL/io_declare.h"
 #endif
 
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "Structure.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "DB_Usb.h"
-#include "DB_Event.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_Event.h"
 #include "Driver_USB_Data.h"
-#include "CRC16_Table.h"
-#include "Flash_Monit_Data.h"
+#include "../GENERAL/CRC16_Table.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
 #include "DRV_USB_CheckReplyFrame.h"
 
 											

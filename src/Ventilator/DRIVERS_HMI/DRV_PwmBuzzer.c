@@ -31,16 +31,16 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "io_declare.h"
-#include "Timer_Data.h" 
-#include "DB_Config.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/io_declare.h"
+#include "../TIMERS/Timer_Data.h" 
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_Control.h"
 #include "DRV_PwmBuzzer.h"
-#include "Driver_Datas.h"
+#include "../DRIVERS/Driver_Datas.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

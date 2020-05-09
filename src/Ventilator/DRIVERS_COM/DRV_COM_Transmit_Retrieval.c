@@ -31,9 +31,9 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Transmit_Retrieval.h"
 

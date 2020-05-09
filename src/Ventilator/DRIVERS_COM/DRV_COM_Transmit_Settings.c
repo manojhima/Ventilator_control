@@ -31,13 +31,13 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Current.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Current.h"
 #include "DRV_COM_Data.h"
-#include "CRC16_Table.h"
+#include "../GENERAL/CRC16_Table.h"
 #include "DRV_COM_Transmit_Settings.h"
 
 /******************************************************************************/

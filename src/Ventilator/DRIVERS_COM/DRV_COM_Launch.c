@@ -25,10 +25,10 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Config.h"
-#include "DB_Usb.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Usb.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Launch.h"
 

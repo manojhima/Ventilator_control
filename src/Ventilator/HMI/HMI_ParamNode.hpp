@@ -28,7 +28,7 @@
 #include "HMI_Controller.hpp"
 extern "C"
 {
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 }
 
 /******************************************************************************/

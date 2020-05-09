@@ -24,14 +24,14 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "enum.h"
-#include "define.h"
-#include "typedef.h"
-#include "Structure.h"
-#include "Ventilation_Datas.h"
-#include "DB_Usb.h"
-#include "DB_RTC.h"
-#include "Flash_Monit_Data.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/Structure.h"
+#include "../VENTILATION/Ventilation_Datas.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_RTC.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_WriteMonitoringFlashMonit.h"
 

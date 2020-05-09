@@ -25,8 +25,8 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Control.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Receive_Machine_Counter.h"
 

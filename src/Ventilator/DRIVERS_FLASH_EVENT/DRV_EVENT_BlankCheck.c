@@ -25,11 +25,11 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "define.h"
-#include "DB_AlarmStatus.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 #include "DRV_EVENT_BlankCheck.h"
 #include "Flash_Event_Data.h"
 

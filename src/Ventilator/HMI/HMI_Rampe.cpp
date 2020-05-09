@@ -31,7 +31,7 @@
 
 extern "C"
 {
-#include "enum.h"
+#include "../GENERAL/enum.h"
 #include "stdfile.h"
 }
 /******************************************************************************/

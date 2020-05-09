@@ -24,12 +24,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "structure.h"
-#include "Main_Data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../GENERAL/Structure.h"
+#include "../MAIN/Main_Data.h"
 #include "DRV_EVENT_RazPointerSector.h"
 #include "Flash_Event_Data.h"
 

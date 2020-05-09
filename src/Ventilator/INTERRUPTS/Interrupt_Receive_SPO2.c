@@ -29,10 +29,10 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "System_Datas.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../SYSTEM/System_Datas.h"
 
 
 

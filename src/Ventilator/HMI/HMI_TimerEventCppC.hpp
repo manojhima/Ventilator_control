@@ -30,7 +30,7 @@
 extern "C"
 {
 #include "io_declare.h"
-#include "enum.h"
+#include "../GENERAL/enum.h"
 }
 
 /******************************************************************************/

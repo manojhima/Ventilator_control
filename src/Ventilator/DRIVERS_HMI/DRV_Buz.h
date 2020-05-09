@@ -18,8 +18,8 @@
 /*	                                                                       */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 
 #ifndef DRV_BUZ_H
 #define DRV_BUZ_H

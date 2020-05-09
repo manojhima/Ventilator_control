@@ -25,16 +25,16 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "define.h"
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Compute.h"
-#include "DB_Control.h"
-#include "DB_AlarmStatus.h"
-#include "DB_KeyboardEvent.h"
-#include "DB_Config.h"
-#include "SEC_AlarmIndication.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
+#include "../DATABASE/DB_Config.h"
+#include "../SECURITY/SEC_AlarmIndication.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_Transmit_Events.h"
 

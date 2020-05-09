@@ -26,7 +26,7 @@
 /*                           	INCLUDE                    	      			  	*/
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "HMI_Tools.hpp"
 #include "HMI_DisplayObject.hpp"
 #include "HMI_ValueField.hpp"

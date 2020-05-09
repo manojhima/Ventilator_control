@@ -30,9 +30,9 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "INTERRUPT_ADC_ConvertError.h"
-#include "Driver_ADConverter_data.h"
+#include "../DRIVERS_ADC/Driver_ADConverter_data.h"
 
 
 /******************************************************************************/

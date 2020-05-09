@@ -33,7 +33,7 @@
 #include "HMI_InterfaceCppC.hpp"
 #include "HMI_FrameVentilation.hpp"
 #include "HMI_FrameAlarme.hpp"
-#include "DB_IHMAccessParaDatabase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDatabase.h"
 /******************************************************************************/
 /*                           CONSTRUCTEUR/DESTRUCTEUR                			*/
 /******************************************************************************/

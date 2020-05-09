@@ -25,11 +25,11 @@
 /******************************************************************************/
 
 
-#include "typedef.h"
-#include "define.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Config.h"
 #include "Flash_Monit_data.h"
 #include "DRV_NAND_Flash_Init.h"
 

@@ -31,7 +31,7 @@
 #include "HMI_Controller.hpp"
 extern "C"
 {
-#include "DB_AlarmStatus.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 }
 
 /******************************************************************************/

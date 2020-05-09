@@ -31,10 +31,10 @@
 #include "HMI_DisplayObject.hpp"
 #include "HMI_DataBaseAccess.hpp"
 #include "HMI_Message.hpp"
-#include "DB_Control.h"
-#include "DB_Compute.h"
-#include "DB_PowerSupply.h"
-#include "DB_AlarmStatus.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_PowerSupply.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 
 /* local defines */
 #define CURRENT_DISPLAY_PERCENT 0

@@ -33,7 +33,7 @@
 #include "HMI_InterfaceCppC.hpp"
 #include "HMI_Tools.hpp"
 #include "HMI_Message.hpp"
-#include "DB_Config.h"
+#include "../DATABASE/DB_Config.h"
 
 
 #define BACKGROUND_HEIGHT			   22

@@ -31,7 +31,7 @@
 #include "HMI_Config.hpp"
 extern "C"
 {
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 }
 
 /******************************************************************************/

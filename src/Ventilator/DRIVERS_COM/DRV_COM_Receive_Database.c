@@ -25,8 +25,8 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Receive_Database.h"
 

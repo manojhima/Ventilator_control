@@ -38,12 +38,12 @@
 
 extern "C"
 {
-#include "enum.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "DB_Usb.h"
-#include "DB_Rtc.h"
-#include "DB_Current.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DATABASE/DB_Current.h"
 
 #ifdef _BORLAND
     #define DECLARATION_SYSTEM_DATAS

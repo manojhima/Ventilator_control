@@ -29,8 +29,8 @@
 #include "HMI_DataBaseAccess.hpp"
 extern "C"
 {
-#include "enum.h"
-#include "DB_Control.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
 }
 /******************************************************************************/
 /*                           CONSTRUCTEUR/DESTRUCTEUR                			*/

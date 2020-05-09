@@ -24,7 +24,7 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "Driver_Display_Data.h"
 #include "DRV_DIS_grControlPage.h"						 
 /******************************************************************************/

@@ -30,13 +30,13 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "enum.h"
-#include "structure.h"
-#include "define.h"
-#include "DRV_COM_Data.h"
-#include "Flash_Monit_Data.h"
-#include "Driver_USB_data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
+#include "../DRIVERS_COM/DRV_COM_Data.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
+#include "../DRIVERS_USB/Driver_USB_data.h"
 #include "INTERRUPT_USB_SpiBus.h"
 						
 /******************************************************************************/

@@ -25,10 +25,10 @@
 /******************************************************************************/
 
 	
-#include "enum.h"
-#include "typedef.h"
-#include "define.h"
-#include "Structure.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/Structure.h"
 #include "Flash_Monit_data.h"
 
 

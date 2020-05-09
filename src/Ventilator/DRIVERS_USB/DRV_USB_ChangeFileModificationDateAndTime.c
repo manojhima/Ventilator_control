@@ -24,9 +24,9 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "DB_RTC.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_RTC.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_ChangeFileModificationDateAndTime.h"
 

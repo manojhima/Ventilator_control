@@ -25,7 +25,7 @@
 
 #include "HMI_Loupe.hpp"
 #include "HMI_FrameVentilation.hpp"
-#include "enum.h"
+#include "../GENERAL/enum.h"
 
 /******************************************************************************/
 /*                           OTHER INCLUDE FILE		                     	   */

@@ -27,7 +27,7 @@
 
 extern "C"
 {
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 }
 #include "HMI_Pixel.hpp"
 

@@ -31,16 +31,16 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "Structure.h"
-#include "DB_Control.h"
-#include "Flash_Monit_Data.h"
-#include "Timer_Data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
+#include "../TIMERS/Timer_Data.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Treatment_Buffer.h"
-#include "Driver_USB_Data.h"
+#include "../DRIVERS_USB/Driver_USB_Data.h"
 
 
 

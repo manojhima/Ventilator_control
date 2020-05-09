@@ -24,8 +24,8 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_WriteAtTheEndOfFile.h"
 

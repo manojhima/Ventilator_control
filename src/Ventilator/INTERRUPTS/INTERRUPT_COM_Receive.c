@@ -28,8 +28,8 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "DRV_COM_Data.h"
+#include "../GENERAL/typedef.h"
+#include "../DRIVERS_COM/DRV_COM_Data.h"
 					 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

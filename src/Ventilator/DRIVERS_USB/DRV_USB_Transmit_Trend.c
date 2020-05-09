@@ -31,13 +31,13 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "DB_RTC.h"
-#include "DB_Control.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "CRC16_Table.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Current.h"
+#include "../GENERAL/CRC16_Table.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_Transmit_Trend.h"
 

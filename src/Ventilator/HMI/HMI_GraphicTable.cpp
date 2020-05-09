@@ -30,8 +30,8 @@
 
 #include "HMI_Tools.hpp"
 #include "HMI_InterfaceCppC.hpp"
-#include "enum.h"
-#include "DB_Config.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
 #include "HMI_DataBaseAccess.hpp"
 #include "HMI_Message.hpp"
 

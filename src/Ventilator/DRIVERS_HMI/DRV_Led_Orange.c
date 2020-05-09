@@ -35,11 +35,11 @@
 #else                    
 #include "regf276e.h"    
 #endif                   	
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Driver_Datas.h"
-#include "io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DRIVERS/Driver_Datas.h"
+#include "../GENERAL/io_declare.h"
 
 void DRV_Led_Orange(e_TYPE_BLINK Blink)
 {

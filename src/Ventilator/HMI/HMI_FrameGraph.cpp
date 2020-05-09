@@ -36,8 +36,8 @@
 #include "HMI_Tools.hpp"
 extern "C"
 {
-#include "DB_Config.h"
-#include "DB_Current.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Current.h"
 }
 
 /******************************************************************************/

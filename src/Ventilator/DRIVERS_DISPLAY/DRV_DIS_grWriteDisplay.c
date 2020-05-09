@@ -27,7 +27,7 @@
 #ifndef _TASKING
 	#include <intrins.h>
 #endif	 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "Driver_Display_Data.h"
 					 
 /******************************************************************************/

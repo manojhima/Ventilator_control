@@ -29,7 +29,7 @@
 
 extern "C"
 {
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 }
 
 /* Alarm Manager double message alarms */

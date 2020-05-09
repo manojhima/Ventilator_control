@@ -39,7 +39,7 @@
 
 extern "C"
 {
-#include "DB_Control.h"
+#include "../DATABASE/DB_Control.h"
 }
 /******************************************************************************/
 /*                           CONSTANT DECLARATION		                	   	*/

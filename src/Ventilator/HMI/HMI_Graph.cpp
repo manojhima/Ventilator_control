@@ -35,7 +35,7 @@
 #include "HMI_Label.hpp"
 extern "C"
 {
-#include "DB_Config.h"
+#include "../DATABASE/DB_Config.h"
 }
 
 /******************************************************************************/

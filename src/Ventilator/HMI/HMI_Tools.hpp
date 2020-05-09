@@ -27,9 +27,9 @@
 
 extern "C"
 {
-#include "typedef.h"
-#include "enum.h"
-#include "Db_PowerSupply.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_PowerSupply.h"
 }
 #include "HMI_IhmType.hpp"
 
