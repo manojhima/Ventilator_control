@@ -29,12 +29,12 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "io_declare.h"
-#include "typedef.h"
-#include "define.h"
-#include "enum.h"
-#include "DB_Config.h"
-#include "Structure.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
+#include "../GENERAL/Structure.h"
 	#define DECLARATION_MONITFLASH_DATA
 #include "Flash_Monit_data.h"
 #include "DRV_MONIT_Launch.h"

@@ -24,15 +24,15 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "enum.h"
-#include "define.h"
-#include "typedef.h"
-#include "Structure.h"
-#include "DB_Control.h" 
-#include "Timer_Data.h" 
-#include "DB_Usb.h"
-#include "DB_RTC.h"
-#include "DB_Event.h"										  
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h" 
+#include "../TIMERS/Timer_Data.h" 
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Event.h"										  
 #include "Driver_USB_Data.h"
 #include "DRV_USB_WriteContinuousRecording.h"
 

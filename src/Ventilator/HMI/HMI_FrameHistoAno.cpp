@@ -34,8 +34,8 @@
 
 extern "C"
 {
-#include "DB_Event.h"
-#include "define.h"
+#include "../DATABASE/DB_Event.h"
+#include "../GENERAL/define.h"
 }
 
 /******************************************************************************/

@@ -25,12 +25,12 @@
 
 extern "C"
 {
-#include "typedef.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Event.h"
-#include "DB_Control.h"
-#include "Enum.h"
-#include "define.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_Event.h"
+#include "../DATABASE/DB_Control.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
 }
 
 

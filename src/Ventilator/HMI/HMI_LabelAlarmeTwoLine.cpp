@@ -36,7 +36,7 @@
 
 extern "C"
 {
-#include "DB_AlarmStatus.h"
+#include "../DATABASE/DB_AlarmStatus.h"
 }
 /******************************************************************************/
 /*                           CONSTRUCTEUR/DESTRUCTEUR                			*/

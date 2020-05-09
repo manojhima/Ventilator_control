@@ -27,8 +27,8 @@
 
 extern "C"
 {
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 }
 #include "HMI_LabelOneValue.hpp"
 #include "HMI_MonitoringObject.hpp"

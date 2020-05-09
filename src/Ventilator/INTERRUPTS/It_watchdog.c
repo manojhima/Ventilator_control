@@ -30,7 +30,7 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "io_declare.h"
+#include "../GENERAL/io_declare.h"
 
 void It_watchdog(void)
 {           

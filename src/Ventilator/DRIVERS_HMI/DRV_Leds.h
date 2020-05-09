@@ -18,8 +18,8 @@
 /*	                                                                       */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 
 #ifndef DRV_LED_H
 #define DRV_LED_H

@@ -30,15 +30,15 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "enum.h"
-#include "io_declare.h"
-#include "typedef.h"
-#include "define.h"
-#include "Structure.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
 #include "Flash_Monit_data.h"
-#include "Driver_USB_Data.h"
+#include "../DRIVERS_USB/Driver_USB_Data.h"
 #include "DRV_TREND_PageRead.h"
 
 			 

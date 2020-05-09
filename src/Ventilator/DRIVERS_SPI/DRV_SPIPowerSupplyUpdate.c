@@ -25,19 +25,19 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #ifndef _TASKING
 #include "LH_ST10F276.h"
 #else
 #include "regf276e.h"
 #endif	 
-#include "io_declare.h"
+#include "../GENERAL/io_declare.h"
 
-#include "DB_PowerSupply.h"
-#include "DB_Control.h"
-#include "Structure.h"
-#include "Timer_Data.h"
+#include "../DATABASE/DB_PowerSupply.h"
+#include "../DATABASE/DB_Control.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
 #include "DRV_SPIPowerSupplyUpdate.h"
 #include "DRV_SPI_POWER_Data.h"
 

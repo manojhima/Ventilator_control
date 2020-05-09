@@ -32,13 +32,13 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "io_declare.h"
-#include "enum.h"
-#include "define.h"
-#include "typedef.h"
-#include "Structure.h"
-#include "Timer_Data.h"
-#include "DB_Usb.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DATABASE/DB_Usb.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_ReadFifo.h"
 

@@ -29,7 +29,7 @@
 /******************************************************************************/
 #include "HMI_Config.hpp"
 #include "HMI_DataBaseAccess.hpp"
-#include "define.h"
+#include "../GENERAL/define.h"
 
 /******************************************************************************/
 /*                           CONSTRUCTEUR/DESTRUCTEUR                			*/

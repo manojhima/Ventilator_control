@@ -31,10 +31,10 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Control.h"
 #include "DRV_COM_Data.h"
-#include "CRC16_Table.h"
+#include "../GENERAL/CRC16_Table.h"
 #include "DRV_COM_Ready.h"
 
 void DRV_COM_Ready(void)

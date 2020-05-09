@@ -30,12 +30,12 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "io_declare.h"
-#include "structure.h"
-#include "Main_Data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/Structure.h"
+#include "../MAIN/Main_Data.h"
 #include "Flash_Event_Data.h"
 
 /******************************************************************************/

@@ -33,7 +33,7 @@
 #include "HMI_DataBaseAccess.hpp"
 extern "C"
 {
-#include "DB_Compute.h"
+#include "../DATABASE/DB_Compute.h"
 }
 
 /******************************************************************************/

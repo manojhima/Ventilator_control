@@ -26,7 +26,7 @@
 /*                           OTHER INCLUDE FILE		                  			*/
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 #include "HMI_Controller.hpp"
 #include "HMI_DataBaseAccess.hpp"

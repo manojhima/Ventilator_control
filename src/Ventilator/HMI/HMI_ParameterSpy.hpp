@@ -28,7 +28,7 @@
 #include "HMI_DisplayObject.hpp"
 extern "C"
 {
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 }
 
 /******************************************************************************/

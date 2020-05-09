@@ -56,9 +56,9 @@
 /********************************************************************************/
 
 
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Read_Buffer.h"
 

@@ -34,12 +34,12 @@
 #endif
 extern "C"
 {
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "DB_Rtc.h"
-#include "DRV_Leds.h"
-#include "DRV_Buz.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Rtc.h"
+#include "../DRIVERS_HMI/DRV_Leds.h"
+#include "../DRIVERS_HMI/DRV_Buz.h"
 
 }
 

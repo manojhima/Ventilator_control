@@ -31,15 +31,15 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "enum.h" 
-#include "define.h" 
-#include "typedef.h" 
-#include "Structure.h" 
-#include "Ventilation_Datas.h" 
-#include "Ventilation_Compute_data.h" 
-#include "DB_Control.h" 
-#include "Timer_Data.h" 
-#include "DB_Usb.h" 
+#include "../GENERAL/enum.h" 
+#include "../GENERAL/define.h" 
+#include "../GENERAL/typedef.h" 
+#include "../GENERAL/Structure.h" 
+#include "../VENTILATION/Ventilation_Datas.h" 
+#include "../VENTILATION/Ventilation_Compute_data.h" 
+#include "../DATABASE/DB_Control.h" 
+#include "../TIMERS/Timer_Data.h" 
+#include "../DATABASE/DB_Usb.h" 
 #include "Driver_USB_Data.h" 
 #include "DRV_USB_WriteInContinuousRecordBuffer.h"
 

@@ -30,8 +30,8 @@
 /******************************************************************************/
 extern "C"
 {
-#include "typedef.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Config.h"
 }
 
 

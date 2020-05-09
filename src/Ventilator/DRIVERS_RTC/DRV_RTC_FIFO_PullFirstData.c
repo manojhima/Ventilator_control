@@ -25,11 +25,11 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "define.h"
-#include "Main_Data.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
+#include "../MAIN/Main_Data.h"
 #include "RTC_Driver_Data.h"
 
 /******************************************************************************/

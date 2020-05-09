@@ -30,9 +30,9 @@
 #else	    
  		#include "regf276e.h"
 #endif 	
-#include "io_declare.h"
-#include "enum.h"
-#include "typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/typedef.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_Send_Frame.h"
 

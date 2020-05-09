@@ -29,14 +29,14 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Config.h"
-#include "io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Config.h"
+#include "../GENERAL/io_declare.h"
 #include "INTERRUPT_Timer5.h"
-#include "Driver_Datas.h"
-#include "Timer_Data.h"
+#include "../DRIVERS/Driver_Datas.h"
+#include "../TIMERS/Timer_Data.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

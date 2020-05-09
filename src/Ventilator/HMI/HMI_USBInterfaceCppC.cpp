@@ -18,7 +18,7 @@
 /*                           OTHER INCLUDE FILE		                  			*/
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "HMI_Controller.hpp"
 
 extern "C" UWORD16 HMI_USBSendCmd(UWORD16 usb_cmd_id, UWORD16 incr)

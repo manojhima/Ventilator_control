@@ -25,8 +25,8 @@
 /*                           	INCLUDE                    	      			  	*/
 /******************************************************************************/
 
-#include "enum.h"
-#include "typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/typedef.h"
 #include "HMI_EventNode.hpp"
 
 /******************************************************************************/

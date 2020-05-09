@@ -30,11 +30,11 @@
 #else
 #include "regf276e.h"
 #endif
-#include "io_declare.h"	
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "define.h"
+#include "../GENERAL/io_declare.h"	
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../GENERAL/define.h"
 #include "DRV_RTC_ReadWriteHardwareRTC.h"
 #include "RTC_Driver_Data.h"
 

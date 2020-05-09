@@ -32,10 +32,10 @@
 
 extern "C"
 {
-#include "enum.h"
-#include "define.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Rtc.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_Rtc.h"
 }
 
 

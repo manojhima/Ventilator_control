@@ -32,9 +32,9 @@
 #else
   	#include "regf276e.h"
 #endif 	
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
 #include "DRV_Led_Ventil.h"
 
 void DRV_Led_Ventil(e_BOOL VentilLedCommand)

@@ -30,14 +30,14 @@
 #else
 #include "regf276e.h"
 #endif	
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
-#include "io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../GENERAL/io_declare.h"
 #include "DRV_BuzInit.h"
-#include "Driver_Datas.h"
+#include "../DRIVERS/Driver_Datas.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

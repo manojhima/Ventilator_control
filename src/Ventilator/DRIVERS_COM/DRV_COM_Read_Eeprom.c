@@ -30,7 +30,7 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 //#include "enum.h"
 #include "DRV_COM_Data.h"
 

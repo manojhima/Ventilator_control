@@ -32,7 +32,7 @@
 #include "HMI_Config.hpp"
 extern "C"
 {
-#include "enum.h"
+#include "../GENERAL/enum.h"
 }
 
 #ifdef HMI_CONFIG_SPO2

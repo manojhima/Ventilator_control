@@ -32,8 +32,8 @@
 #include "HMI_Message.hpp"
 extern "C"
 {
-#include "DB_Config.h"
-#include "DB_Rtc.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Rtc.h"
 }
 
 /******************************************************************************/

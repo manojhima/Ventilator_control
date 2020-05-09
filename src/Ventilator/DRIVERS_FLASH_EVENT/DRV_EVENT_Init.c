@@ -25,10 +25,10 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "define.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/define.h"
+#include "../DATABASE/DB_Config.h"
 #include "DRV_EVENT_Init.h"
 #include "Flash_Event_Data.h"
 

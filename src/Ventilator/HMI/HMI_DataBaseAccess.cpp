@@ -31,7 +31,7 @@
 #include "HMI_InterfaceCppC.hpp"
 extern "C"
 {
-#include "DB_IhmAccessParaDatabase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDatabase.h"
 }
 
 

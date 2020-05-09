@@ -31,11 +31,11 @@
 #else
 #include "regf276e.h"
 #endif
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
 #include "DRV_COM_Data.h"
-#include "CRC16_Table.h"
+#include "../GENERAL/CRC16_Table.h"
 #include "DRV_COM_Transmit_ID.h"
 
 /******************************************************************************/

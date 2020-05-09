@@ -24,11 +24,11 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "enum.h"
-#include "typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/typedef.h"
 #include "Driver_USB_Data.h"
-#include "DB_Usb.h"
-#include "DB_Event.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../DATABASE/DB_Event.h"
 #include "DRV_USB_ReadWriteSettings.h"
 
 

@@ -24,12 +24,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Config.h"
-#include "DB_Usb.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Usb.h"
 #include "Driver_USB_Data.h"
-#include "CRC16_Table.h"
+#include "../GENERAL/CRC16_Table.h"
 #include "DRV_USB_VerifyCompatibility.h"
 			
 											

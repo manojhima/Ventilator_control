@@ -33,9 +33,9 @@
 
 extern "C"
 {
-#include "DB_Control.h"
-#include "DB_Compute.h"
-#include "DB_PowerSupply.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_PowerSupply.h"
 }
 
 /******************************************************************************/

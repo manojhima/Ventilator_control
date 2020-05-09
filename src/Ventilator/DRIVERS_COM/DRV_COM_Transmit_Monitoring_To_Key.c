@@ -31,15 +31,15 @@
 #else
 #include "regf276e.h"
 #endif	 
-#include "typedef.h"
-#include "DB_Control.h"
-#include "DB_Compute.h"
-#include "DB_Usb.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_Usb.h"
+#include "../GENERAL/enum.h"
 #include "DRV_COM_Data.h"
-#include "CRC16_Table.h"
+#include "../GENERAL/CRC16_Table.h"
 #include "DRV_COM_Transmit_Monitoring_To_Key.h"
-#include "Driver_USB_Data.h"
+#include "../DRIVERS_USB/Driver_USB_Data.h"
 
 void DRV_COM_Transmit_Monitoring_To_Key(void)
 {

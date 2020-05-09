@@ -33,8 +33,8 @@
 
 extern "C"
 {
-#include "DB_Control.h"
-#include "DB_Rtc.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Rtc.h"
 }
 
 
