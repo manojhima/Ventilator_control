@@ -35,7 +35,7 @@
 /******************************************************************************/
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
-#include "../GENERAL/structure.h"
+#include "../GENERAL/Structure.h"
 #include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"

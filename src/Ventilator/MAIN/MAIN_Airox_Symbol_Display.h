@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,7 +23,7 @@
 #ifndef MAIN_AIROX_SYMBOL_DISPLAY_H
 #define MAIN_AIROX_SYMBOL_DISPLAY_H
 
-
+#define bit char	//manoj
 extern void DRV_DIS_HostRequest ( bit etat );
 extern void DIS_ErasePage( UBYTE page ) ;
 extern void DIS_DisplayPage( UBYTE page, UBYTE mode ) ;

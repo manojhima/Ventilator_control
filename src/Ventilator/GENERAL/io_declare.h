@@ -23,6 +23,9 @@
 #define IO_DECLARE_H
 
 #include "typedef.h"
+#include "io_stubs.h"
+#define sfr unsigned int			// manoj
+#define sbit int			// manoj
 
 /************************************************************************/
 /*                         ENUM DECLARATION    	                		*/
@@ -45,29 +48,29 @@
 /************************************************************************/
 /* Io Declare pour Keil									*/
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
 /*----------------------------------------------------------------------*/
 /* Pilotage  de la turbine	par PWM													*/
 /*----------------------------------------------------------------------*/
-sfr   BLOWER_CMD     = 0xFE30; //plat form specific manoj
-sbit CONS_VIT =		P7^0;	//
-sbit DEF_TURB = 	P2^2;		//
-sbit ENABLE_TURB = P2^3;		//
-sbit BRAKE_BLOWER = P2^1;		//
-sbit SPEED_BLOWER_PIN = P2^0;	//
+sfr BLOWER_CMD = 0xFE30; //platform specific manoj
+sbit CONS_VIT =		P7_0;	//
+sbit DEF_TURB = 	P2_2;		//
+sbit ENABLE_TURB = P2_3;		//
+sbit BRAKE_BLOWER = P2_1;		//
+sbit SPEED_BLOWER_PIN = P2_0;	//
  
 /*----------------------------------------------------------------------*/
 /* Variable de pilotage de la valve par PWM										*/
 /*----------------------------------------------------------------------*/
 sfr   VALVE_CMD      = 0xFE32;
-sbit CD_VALVE 	=	P7^1;
+sbit CD_VALVE 	=	P7_1;
 
 /*----------------------------------------------------------------------*/
 /* Pilotage direct de la Vanne O2 par le port									*/
 /*----------------------------------------------------------------------*/
 sfr   VANNE_O2_CMD   = 0xFE34;	 
-sbit CD_VANNE_FIO2 =	P7^2;
+sbit CD_VANNE_FIO2 =	P7_2;
 
 /*----------------------------------------------------------------------*/
 /* Acitvation du Buzzer																	*/
@@ -78,68 +81,68 @@ sfr 	FREQ_BUZ			= 0xF03E;
 /*----------------------------------------------------------------------*/
 /* Alim Failure																			*/
 /*----------------------------------------------------------------------*/
-sbit ALIM_FAILURE_3_3V  =	P2^5;
-sbit ALIM_FAILURE_5VREF  =	P2^6;
-sbit ALIM_FAILURE_10VREF  =	P2^7;
+sbit ALIM_FAILURE_3_3V  =	P2_5;
+sbit ALIM_FAILURE_5VREF  =	P2_6;
+sbit ALIM_FAILURE_10VREF  =	P2_7;
 
 /*----------------------------------------------------------------------*/
 /* USB declaration																		*/
 /*----------------------------------------------------------------------*/
-sbit USB_BUSY = 	P2^10;
-sbit RESET_USB =  	P3^5;
+sbit USB_BUSY = 	P2_10;
+sbit RESET_USB =  	P3_5;
 
 /*----------------------------------------------------------------------*/
 /* REMOTE ALARM STATE																	*/
 /*----------------------------------------------------------------------*/
-sbit ALARM_REMOTE_STATE =	P2^12;
-sbit RAPPEL_ALARM =	P2^14; 	
+sbit ALARM_REMOTE_STATE =	P2_12;
+sbit RAPPEL_ALARM =	P2_14;
 
 /*----------------------------------------------------------------------*/
 /* WATCHDOG																					*/
 /*----------------------------------------------------------------------*/
-sbit WDOG =	P2^4;
+sbit WDOG =	P2_4;
 
 /*----------------------------------------------------------------------*/
 /* ARRET INVOLONTAIRE																	*/
 /*----------------------------------------------------------------------*/
-sbit ARRET_INVOLONTAIRE =	P2^13;
+sbit ARRET_INVOLONTAIRE =	P2_13;
 
 /*----------------------------------------------------------------------*/
 /* Flash        																			*/
 /*----------------------------------------------------------------------*/
-sbit BUSY_MEM1  	= P2^8;
-sbit BUSY_MEM2 	= P2^9;
-sbit CMD_ME1  	=	P2^15;
-sbit ALE_ME1  	=	P3^15;
+sbit BUSY_MEM1  	= P2_8;
+sbit BUSY_MEM2 	= P2_9;
+sbit CMD_ME1  	=	P2_15;
+sbit ALE_ME1  	=	P3_15;
 
 /*----------------------------------------------------------------------*/
 /* RAM	        																			*/
 /*----------------------------------------------------------------------*/
-sbit BHE  =	P3^12;
+sbit BHE  =	P3_12;
 
 /*----------------------------------------------------------------------*/
 /* UART																						*/
 /*----------------------------------------------------------------------*/
-sbit RF  	=	P3^7;
-sbit IRQ_UART = P8^5;
+sbit RF  	=	P3_7;
+sbit IRQ_UART = P8_5;
 
 /*----------------------------------------------------------------------*/
 /* UART ST																					*/
 /*----------------------------------------------------------------------*/
-sbit TX_UART_ST = P3^10;
-sbit RX_UART_ST = P3^11;
+sbit TX_UART_ST = P3_10;
+sbit RX_UART_ST = P3_11;
 
 /*----------------------------------------------------------------------*/
 /* Driver SPI																				*/
 /*----------------------------------------------------------------------*/
 
-sbit MRST_SPI_ALIM  =	P6^7;
-sbit MTSR_SPI_ALIM  =	P6^6;
-sbit CLK_SPI_ALIM   =	P6^5;
+sbit MRST_SPI_ALIM  =	P6_7;
+sbit MTSR_SPI_ALIM  =	P6_6;
+sbit CLK_SPI_ALIM   =	P6_5;
 
-sbit MRST_SPI_CPU  =	P3^8;
-sbit MTSR_SPI_CPU  =	P3^9;
-sbit SCLK_SPI_CPU  =	P3^13;
+sbit MRST_SPI_CPU  =	P3_8;
+sbit MTSR_SPI_CPU  =	P3_9;
+sbit SCLK_SPI_CPU  =	P3_13;
 
 #define SPI_PORT  	P3
 
@@ -152,24 +155,24 @@ sbit SCLK_SPI_CPU  =	P3^13;
 /*----------------------------------------------------------------------*/
 /* Device Identification																*/
 /*----------------------------------------------------------------------*/
-sbit JUMPER_JP8 = P8^2;
-sbit JUMPER_JP7 = P8^3;
+sbit JUMPER_JP8 = P8_2;
+sbit JUMPER_JP7 = P8_3;
 
 /*----------------------------------------------------------------------*/
 /* Buzzer 																					*/
 /*----------------------------------------------------------------------*/
-sbit SEC_BUZ =	P7^5;
+sbit SEC_BUZ =	P7_5;
 
 /*----------------------------------------------------------------------*/
 /* Afficheur																				*/
 /*----------------------------------------------------------------------*/
-sbit MASTERBUSY =	P2^11;
+sbit MASTERBUSY =	P2_11;
 
 /*----------------------------------------------------------------------*/
 /* Keyboard + LEDs																		*/
 /*----------------------------------------------------------------------*/
 #define  KEY_PORT  		P3 	 // Port 3
-sbit INHIB_DETECTED 	=	P3^6;
+sbit INHIB_DETECTED 	=	P3_6;
 
 #define RAZ_COM      		0x0007 // RAZ des COM1, 2 et 3
 #define COM1         	  	0xFFFE // P3^0
@@ -179,11 +182,11 @@ sbit INHIB_DETECTED 	=	P3^6;
 #define TOUCHE_2     		0x0010 // P3^4
 #define TOUCHE_INHIB   		0x0040 // P3^6
 
-sbit LED_ALARME_ROUGE  =	P7^7;
-sbit LED_ALARME_ORANGE =	P7^6;
+sbit LED_ALARME_ROUGE  =	P7_7;
+sbit LED_ALARME_ORANGE =	P7_6;
 
-sbit AC_SELECT 	=		P8^0;
-sbit DC_SELECT 	=		P8^1;
+sbit AC_SELECT 	=		P8_0;
+sbit DC_SELECT 	=		P8_1;
 
 
 
@@ -335,4 +338,4 @@ sbit DC_SELECT 	=		P8^1;
 
 #endif /* #ifndef _BORLAND */
 /************************************************************************/
-#endif
+//#endif

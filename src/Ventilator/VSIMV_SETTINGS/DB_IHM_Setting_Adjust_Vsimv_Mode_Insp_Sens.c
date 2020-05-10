@@ -37,7 +37,7 @@
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /* locate database code to specific section */
-#include "locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/

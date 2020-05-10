@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -42,7 +42,9 @@ extern void VENTILATION_HMI_Start(void);
 extern void SETUP_HMI_Start(void);
 extern void CIRCUIT_CHECK_HMI_Start(void);
 extern void DB_EventMngt (UWORD16 Value);
-extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//												e_EEP_ACCESS_STATE access_type);
+extern void EEP_FIFO_PushOneData(	UWORD16 *ptr_DataRam,
 												e_EEP_ACCESS_STATE access_type);
 
 extern void DB_ControlWrite(e_DB_CONTROL Id, UWORD16 Value);

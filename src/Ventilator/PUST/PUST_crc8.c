@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -57,7 +57,8 @@ UBYTE PUST_CalcCrc8(T_FLASH_MEM_RANGE* PtMem)
 		   		_srvwdt_();
 			}
 
-			byte = *(UBYTE xhuge *) address;
+//			byte = *(UBYTE xhuge *) address;
+			byte = *(UBYTE *) address;
 
 			crc += byte;			
 

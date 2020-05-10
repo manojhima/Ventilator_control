@@ -12,7 +12,7 @@
 
 
 /******************************************************************************/
-/*%C Functionnal description : 	Type redéfinition      								*/
+/*%C Functionnal description : 	Type redï¿½finition      								*/
 /*                                                            				  		*/
 /******************************************************************************/
 /*%I 	Input Parameter : 			None		       			                  	*/
@@ -46,13 +46,21 @@ typedef int  e_BOOL;
 // RAM interne
 #ifndef  _BORLAND 
 typedef unsigned int         	BIT;
-typedef unsigned char idata 	UBYTE_I;
-typedef unsigned int  idata 	UWORD16_I;
-typedef unsigned long idata  	UWORD32_I;
-typedef   signed char idata 	SBYTE_I;
-typedef   signed int  idata	    SWORD16_I;
-typedef   signed long idata 	SWORD32_I;
-//typedef   		 float idata	FLOAT32_I;	   // platform specific sudheer
+//typedef unsigned char idata 	UBYTE_I;		// platform specific sudheer
+typedef unsigned char  	UBYTE_I;
+//typedef unsigned int  idata 	UWORD16_I;		// platform specific sudheer
+typedef unsigned int   	UWORD16_I;
+//typedef unsigned long idata  	UWORD32_I;		// platform specific sudheer
+typedef unsigned long UWORD32_I;
+//typedef   signed char idata 	SBYTE_I;		// platform specific sudheer
+typedef   signed char 	SBYTE_I;
+//typedef   signed int  idata	    SWORD16_I;		// platform specific sudheer
+typedef   signed int	    SWORD16_I;
+//typedef   signed long idata 	SWORD32_I;		// platform specific sudheer
+typedef   signed long 	SWORD32_I;
+//typedef   		 float idata	FLOAT32_I;	   	// platform specific sudheer
+typedef float	FLOAT32_I;
+
 #else
 typedef char                	BIT;
 #define idata

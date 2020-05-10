@@ -52,7 +52,9 @@ extern UWORD16 DB_IHM_Write_Adjust_Psv_Mode_Max_Pressure(UWORD16 *Value);
 
 extern UWORD16 DB_IHM_Write_Adjust_Psv_Mode_Target_Vt(UWORD16 *Value);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//												UWORD16 value); // manoj
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,
 												UWORD16 value);
 
 extern void DB_CurrentWrite(e_DB_ADJUST_CURRENT Id,

@@ -33,7 +33,10 @@
 extern void DB_ControlWrite(e_DB_CONTROL Id,
                             UWORD16 Value);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//                                    UWORD16 value);				// manoj commented
+
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,
                                     UWORD16 value);
 
 #endif

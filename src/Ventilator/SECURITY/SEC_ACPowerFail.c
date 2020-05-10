@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -32,7 +32,7 @@
 #include "../DATABASE/DB_KeyboardEvent.h"
 #include "../DATABASE/DB_Event.h"
 #include "../DATABASE/DB_PowerSupply.h"
-#include "../SECURITY/SEC_ACPowerfail.h"
+#include "../SECURITY/SEC_ACPowerFail.h"
 #include "../TIMERS/Timer_Data.h"
 #include "../SECURITY/Security_Datas.h"
 

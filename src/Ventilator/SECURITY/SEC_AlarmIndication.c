@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -42,7 +42,7 @@
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "../DATABASE/DB_KeyboardEvent.h"
 #include "../DATABASE/DB_Current.h"
-#include "DB_IhmAccessParaDataBase.h "
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 	#define DECLARATION_ALARM_INDICATION
 #include "../SECURITY/SEC_AlarmIndication.h"
 
@@ -156,7 +156,7 @@ void  SEC_AlarmIndication(void)
 			DB_ConfigWrite(SOUND_LEVEL_SELECT_U16, PreviousSoundLevelSelect);		
 		  	DRV_BuzInit();	
 		}
-/*%C 	Medium level detection (Word N°1, N°2 et N°3) */
+/*%C 	Medium level detection (Word Nï¿½1, Nï¿½2 et Nï¿½3) */
 	   if ( (SEC_Medium_Priority_1 != 0)
 	    ||  (SEC_Medium_Priority_2 != 0)
 	    ||  (SEC_Medium_Priority_3 != 0) )

@@ -22,7 +22,7 @@
 #ifndef CONTROL_H
 #define CONTROL_H
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 
 /******************************************************************************/
@@ -140,7 +140,11 @@ typedef enum
     SIMV_CONTROLLED_INSP_U16,
     END_OF_OPERATION_U16,
     CIRCUIT_CHECK_MODE_U16,
-    end_of_db_control_table
+    end_of_db_control_table,
+	LIMIT_LOW_VM_U16,	// temp added by manoj
+	LIMIT_HIGH_VM_U16,	// temp added by manoj
+	HIGH_PRESSURE_DETECTED_PRESSURE_MODE_U16, //temp added by manoj
+	HIGH_PRESSURE_EXHALATION_DETECTED_PRESSURE_MODE_U16
 } e_DB_CONTROL;
 
 

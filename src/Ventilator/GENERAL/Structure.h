@@ -111,6 +111,7 @@ typedef struct
 typedef struct {
 	e_EEP_ACCESS_STATE state;
 //	UWORD16 xhuge *ptr_DataRam;  //platform specific manoj
+	UWORD16 *ptr_DataRam;
 } t_EEP_ACCESS_CONTROL;
 
 typedef struct {

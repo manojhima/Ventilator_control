@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -56,7 +56,8 @@ const UWORD32  adresse_secteur_top[12] =
 														,0x7FFFF};	
 
 BIT Suspend_Erase = FALSE; 
-UWORD16 xhuge *Ptr_Flash = NULL; 
+//UWORD16 xhuge *Ptr_Flash = NULL;
+UWORD16 *Ptr_Flash = NULL;
 UWORD16 Ptr_Evenement = 0; 
 BIT Mutex_Read_Adresse = FALSE;
 UBYTE Num_Sector = 0;
@@ -66,7 +67,8 @@ UBYTE Ptr_Num_evenement_Write = 0;
 BIT Buffer_Empty = FALSE;
 UWORD32 End_Of_Event_Flash = 0;
 BIT Mutex_Flag_Erase = FALSE;
-UWORD16 xhuge *Erase_Adress = NULL;
+//UWORD16 xhuge *Erase_Adress = NULL;
+UWORD16 *Erase_Adress = NULL;
 e_DRV_EVENT_STATE Flash_State = DRV_EVENT_FREE;
 
 	#else

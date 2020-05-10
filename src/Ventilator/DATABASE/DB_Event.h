@@ -22,7 +22,7 @@
 #ifndef DB_EVENT_H
 #define DB_EVENT_H
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 
 /****************************************************************************/
@@ -30,7 +30,7 @@
 /****************************************************************************/
 /* Base EVENT */
 typedef enum {
- 	/* Evènements de réglages */
+ 	/* Evï¿½nements de rï¿½glages */
 	NO_EVENT = 0,	/* Event number:	0	*/
 	EVENT_START,	/* Event number:	1	*/
 	EVENT_VENTIL,	/* Event number:	2	*/

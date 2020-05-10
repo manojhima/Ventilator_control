@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,17 +23,19 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"	
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
-#include "MAIN_Airox_Symbol_Display.h"					 
+#include "MAIN_Airox_Symbol_Display.h"
+
+#define bit char	//manoj
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

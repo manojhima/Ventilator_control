@@ -22,8 +22,8 @@
 #ifndef IHMACCESSPARADATABASE_H
 #define IHMACCESSPARADATABASE_H
 
-#include "DB_Compute.h"
-#include "DB_PowerSupply.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../DATABASE/DB_PowerSupply.h"
 /* NONE fixed to 0xAAAA */
 #define NONE 0xAAAA
 
@@ -1805,7 +1805,9 @@ extern UWORD16 DB_IHM_Read_Info_Access( UWORD16 *Value,
                                         UWORD16 Id, 
                                         e_TYPE_OF_DB_TARGET DbType);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//                                    UWORD16 value);				// manoj commented
+extern void DB_WriteDataInEepAndRam(UWORD16  *data_address,
                                     UWORD16 value);
 
 extern UWORD16 DB_IHM_Write_Access(UWORD16 *Value,

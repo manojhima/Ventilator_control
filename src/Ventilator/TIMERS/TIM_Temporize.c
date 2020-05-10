@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -22,12 +22,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
@@ -58,13 +59,13 @@ void TIM_Temporize(UWORD32 useconde)
 	nbre_de_debordement_timer = (useconde / (((65535 * 8) / FCPU)));
 /*%C Timer 2 configuration  */
 /*%C timer T2	control register  */
-/*%C Prédivideur = 8 T2I = 000  */
+/*%C Prï¿½divideur = 8 T2I = 000  */
 /*%C Mode timer 	   T2M = 000	*/
 /*%C running Timer T2R = 1		*/
 /*%C select countdown function without T2 Input T2EUD = 01
 /*%C Output Control of T2OUT P31 	not used.T6OE = 0	 */
 /*%C latch of the output T2OL = 0	 */
-/*%C Bit 9 10 11 12  13 14 15 non utilisés = 0000000		*/
+/*%C Bit 9 10 11 12  13 14 15 non utilisï¿½s = 0000000		*/
 /*%C Controle reload mode, No reload from CAPREL	 T2SR = 0  */
 /*%C T2CON =  00000 0 0 01 1 000 000 = 0000000011000000 b = 0xC0	  */
 /*%C Computing of delay loading value */
@@ -83,9 +84,9 @@ void TIM_Temporize(UWORD32 useconde)
 	T2CON = 0xC0;
 /*%C Interrupt control register */
 		/* Revoir sa localisation dans le projet voir peut etre pour un 	 */
-		/* module de gestion des niveaux de priorité des interruptions 	 */
+		/* module de gestion des niveaux de prioritï¿½ des interruptions 	 */
 		/* et de gestion des PEC														 */
-		/* Priorité  des interruptions T2											 */
+		/* Prioritï¿½  des interruptions T2											 */
 	/*%IR = 0 ,IE = 1; ILVL  = 13 ,GLVL = 0 	 */
 	T2IC = 0x74;
 

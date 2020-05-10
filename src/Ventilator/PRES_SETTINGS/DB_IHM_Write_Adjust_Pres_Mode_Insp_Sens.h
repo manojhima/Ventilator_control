@@ -28,7 +28,9 @@
 /*                 EXTERNAL FUNCTION DECLARATION	                          	*/
 /******************************************************************************/
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//												UWORD16 value); //manoj
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,
 												UWORD16 value);
 
 extern void DB_CurrentWrite(e_DB_ADJUST_CURRENT Id,

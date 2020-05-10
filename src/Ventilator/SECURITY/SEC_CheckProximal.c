@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -32,7 +32,7 @@
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_KeyboardEvent.h"
-#include "SEC_Checkproximal.h"
+#include "../SECURITY/SEC_CheckProximal.h"
 #include "../SECURITY/Security_Datas.h"
 
 /* locate security code to specific section */  

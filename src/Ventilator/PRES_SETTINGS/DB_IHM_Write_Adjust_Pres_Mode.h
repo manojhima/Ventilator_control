@@ -44,7 +44,8 @@ extern UWORD16 DB_IHM_Write_Adjust_Pres_Mode_Low_Vti(UWORD16 *Value);
 
 extern UWORD16 DB_IHM_Write_Adjust_Pres_Mode_High_Vti(UWORD16 *Value);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value); //manoj
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,UWORD16 value);
 
 extern UWORD16 DB_IHM_Write_Adjust_Cpap_Mode_Disco_Delay(UWORD16 *Value);
 

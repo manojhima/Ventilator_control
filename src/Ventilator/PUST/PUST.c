@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -19,12 +19,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
@@ -57,7 +57,8 @@ static e_BOOL PUST_HasTimerExpired(void);
 
 #define MAX_CHARS 50
 
-const UBYTE near  
+//const UBYTE near //manoj
+const UBYTE
 PustProblemDisplayedCodes[PUST_ERR_MAX][MAX_CHARS] = {  "",	  /* PUST_ERR_OK */
                                                   		"9",  /* PUST_ERR_DATA_BUS (Ram error) */
 											      		"9",  /* PUST_ERR_ADDRESS_BUS (Ram error) */
@@ -96,9 +97,11 @@ static e_PUST_ERROR_CODE PUST_Check_Flash(T_FLASH_MEM_RANGE* PtMem)
 	CalculatedCrc = PUST_CalcCrc8(PtMem);
 
 	FlashCalculatedCrc = CalculatedCrc;
-	FlashRomedCrc = *(UBYTE xhuge *)MEM_CRC_ADDRESS;
+//	FlashRomedCrc = *(UBYTE xhuge *)MEM_CRC_ADDRESS;
+	FlashRomedCrc = *(UBYTE *)MEM_CRC_ADDRESS;
 
-	if(CalculatedCrc == *(UBYTE xhuge *)MEM_CRC_ADDRESS)
+//	if(CalculatedCrc == *(UBYTE xhuge *)MEM_CRC_ADDRESS)
+	if(CalculatedCrc == *(UBYTE *)MEM_CRC_ADDRESS)
 	{
 		CalculatedCrc = PUST_ERR_OK;
 	}
@@ -507,7 +510,7 @@ static void PUST_LaunchTimer(void)
 /******************************************************************************/
 static e_BOOL PUST_HasTimerExpired(void)
 {
-	static counter = 0;
+	static int counter = 0;
 	e_BOOL rc = FALSE;
 	
 	if(T2IR == 1)

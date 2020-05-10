@@ -63,7 +63,9 @@ extern UWORD16 DB_IHM_Write_Adjust_Psimv_Mode_Exh_Sens_Neg(UWORD16 *Value);
 
 extern UWORD16 DB_IHM_Write_Adjust_Psimv_Mode_Exh_Sens(UWORD16 *Value);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//                                    UWORD16 value);		// manoj
+extern void DB_WriteDataInEepAndRam(UWORD16  *data_address,
                                     UWORD16 value);
 
 extern void DB_CurrentWrite(e_DB_ADJUST_CURRENT Id,

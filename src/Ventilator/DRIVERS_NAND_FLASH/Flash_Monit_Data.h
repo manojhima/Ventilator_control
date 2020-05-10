@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505													  */
+/* Project Nï¿½  :  RB0505													  */
 /*																		   	  */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -43,17 +43,17 @@ La flash monitoring fonctionne sur le BUSCON0
 
 Soit BUSCON0 = 0x00BF ;
 
-	Les broches ALE et CMD sont commandée par le µc ;
+	Les broches ALE et CMD sont commandï¿½e par le ï¿½c ;
 
-	Les données envoyées dans le XBUS par le µc sont placée dans un tampon,
-	d'ou le µc execute la suite des instructions sans avoir fini de tranférer
-	l'intégralité des données ;
+	Les donnï¿½es envoyï¿½es dans le XBUS par le ï¿½c sont placï¿½e dans un tampon,
+	d'ou le ï¿½c execute la suite des instructions sans avoir fini de tranfï¿½rer
+	l'intï¿½gralitï¿½ des donnï¿½es ;
 
 	Pour contrer ce temps, ajouter une tempo (_nop()) avant la retomber des
 	commandes ALE et CMD.
 
-	Cette tempo doit être de 1 _nop() supplémentaire par rapport au nombre
-	de waitstate présente sur le BUSCON0.
+	Cette tempo doit ï¿½tre de 1 _nop() supplï¿½mentaire par rapport au nombre
+	de waitstate prï¿½sente sur le BUSCON0.
 
 	Ici on placera un _nop() dans toutes nos fonctions et 0 Waitstate sur
 	BUSCON0
@@ -62,10 +62,10 @@ Soit BUSCON0 = 0x00BF ;
 
 De plus:
 
-	- Accès à un pointeur en global trop long 
+	- Accï¿½s ï¿½ un pointeur en global trop long 
 	- Placer les pointeurs en local
-	- Xhuge non nécessaires 
-	- Pour gagner sur les temps d'accès pointeur, dans une custom optimisation
+	- Xhuge non nï¿½cessaires 
+	- Pour gagner sur les temps d'accï¿½s pointeur, dans une custom optimisation
 	cocher CSE
 
 Pour une meilleure optimisation taille + vitesse de code, cocher :
@@ -193,7 +193,8 @@ Pour une meilleure optimisation taille + vitesse de code, cocher :
 		extern UWORD16 DRV_NAND_Second_Partition_Block_End;
 		extern UBYTE DRV_NAND_Maximum_Bad_Block;
 
-		extern UBYTE huge DRV_NAND_Bad_Block_Map[NAND_FLASH_BLOCK_NUMBER_LIMIT];
+//		extern UBYTE huge DRV_NAND_Bad_Block_Map[NAND_FLASH_BLOCK_NUMBER_LIMIT]; // manoj
+		extern UBYTE DRV_NAND_Bad_Block_Map[NAND_FLASH_BLOCK_NUMBER_LIMIT];
 	  
 	  	extern e_NAND_FLASH_STATE DRV_NAND_Flash_State;
 

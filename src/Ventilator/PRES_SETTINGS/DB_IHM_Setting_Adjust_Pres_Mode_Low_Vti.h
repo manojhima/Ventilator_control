@@ -33,6 +33,7 @@
 extern void DB_ControlWrite(e_DB_CONTROL Id, UWORD16 Value);
 
 /* Access to the eeprom write function */
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value); //manoj
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,UWORD16 value);
 
 #endif

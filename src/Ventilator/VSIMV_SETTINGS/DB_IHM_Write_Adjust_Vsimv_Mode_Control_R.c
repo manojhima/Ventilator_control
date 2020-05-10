@@ -46,7 +46,7 @@
 #include "../DATABASE/DB_Current.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
-#include "../DATABASE_SETTINGS/DB_IHMAccessparaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "../VSIMV_SETTINGS/DB_IHM_Write_Adjust_Vsimv_Mode_Control_R.h"
 
 /* locate database code to specific section */

@@ -22,7 +22,7 @@
 #ifndef POWERSUPPLY_H
 #define POWERSUPPLY_H
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 
 /******************************************************************************/

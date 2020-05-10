@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,6 +25,8 @@
 #ifndef SEC_NMI_TRAP_H
 #define SEC_NMI_TRAP_H
 
+#define bit char
+
 /************************************************************************/
 /*                   EXTERNAL FUNCTION DECLARATION	                     */
 /************************************************************************/
@@ -35,10 +37,13 @@ extern void DRV_EEP_tempo_CE(void);
 extern void	CheckPageAndRetransmitAddress(UWORD16 Address);
 extern void DRV_ResetOnReturnSupply(void);
 extern e_DRV_EVENT_STATE DRV_EVENT_TransStateFlash(void);
-extern UWORD16 xhuge * DRV_EVENT_TransPtrMemory(void);
+//extern UWORD16 xhuge * DRV_EVENT_TransPtrMemory(void);
+extern UWORD16 * DRV_EVENT_TransPtrMemory(void);
 extern UWORD16 DRV_EVENT_TransfIdent(void);
-extern UBYTE DRV_EVENT_Program_Flash(UWORD16 data_prog,UWORD16 xhuge *adr_prog);
-extern UWORD16 xhuge * DRV_EVENT_TransAdressErase(void);
+//extern UBYTE DRV_EVENT_Program_Flash(UWORD16 data_prog,UWORD16 xhuge *adr_prog);
+extern UBYTE DRV_EVENT_Program_Flash(UWORD16 data_prog,UWORD16 *adr_prog);
+//extern UWORD16 xhuge * DRV_EVENT_TransAdressErase(void);
+extern UWORD16 * DRV_EVENT_TransAdressErase(void);  // manoj
 extern void	DRV_CheckPageAndRetransmitAddress(UWORD16 Address);
 extern void DRV_DIS_HostRequest ( bit etat );
 extern void DRV_DIS_grBackLight ( UWORD16 _Level );

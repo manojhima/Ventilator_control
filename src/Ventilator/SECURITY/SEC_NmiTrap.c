@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,13 +25,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 	#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 	#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -52,21 +53,23 @@
 #include "../PUST/PUST.h"
 
 
-#ifndef MCB167
-	#ifndef _TASKING
-void SEC_Nmitrap (void) interrupt 0x02 
-	#else	    
-interrupt 0x02
+//#ifndef MCB167
+//	#ifndef _TASKING
+//void SEC_Nmitrap (void) interrupt 0x02
+//	#else
+//interrupt 0x02
 void SEC_Nmitrap (void) 
-	#endif 	
+//	#endif
 {
 	UWORD16 adresse = 0;
 	UWORD16 AdrFlashMsb = 0 ;
 	UWORD16 AdrFlashLsb = 0 ;
 	UWORD16 Concaten16bit = 0 ;
 	UWORD32 i = 0 ;
-	UWORD16 xhuge *adr_flash = 0; 
-	UWORD16 xhuge *adr_flash_erase = 0; 
+//	UWORD16 xhuge *adr_flash = 0; // manoj
+	UWORD16 *adr_flash = 0;
+//	UWORD16 xhuge *adr_flash_erase = 0;
+	UWORD16 *adr_flash_erase = 0;
 	e_DRV_EVENT_STATE NMI_State_Flash =0;
 	UBYTE Array_Event_trap[10];
 	UWORD16 id_read_event = 0 ;
@@ -136,7 +139,7 @@ else
 	/*%C RAZ du flag underflow timer 2 */
 	T2IR = 0;		
 	T2IC = 0;
-	/*%C 5000*200ns, duree du timer2 = 1 ms Temps alloué a l'exécution */
+	/*%C 5000*200ns, duree du timer2 = 1 ms Temps allouï¿½ a l'exï¿½cution */
 	T2 = 5000;   	
 	/*%C count down,Prescaller 200nS FCPU/8, start timer */
 	T2CON  = 0x00C0;   
@@ -290,7 +293,7 @@ else
 	while ((SSCRB & 0x0001)  != 0x00); 	
 
 /*%C  If power falls down or disapears with initialization not finished       */
-/*%C Si coupure ou baisse  de l'alimentation alors que l'init n'est pas terminée => ne pas executer le trap
+/*%C Si coupure ou baisse  de l'alimentation alors que l'init n'est pas terminï¿½e => ne pas executer le trap*/
 /*%C et attendre le retour de l'alimentation   */
 	if (MAIN_End_of_init == FALSE)
 		{		  
@@ -392,15 +395,21 @@ else
 /*%C with a shift to do a 16 bits word */
 				Concaten16bit = Concaten16bit | Array_Event_trap[i];
 /*%C			Programation of data */
-			  	DRV_EVENT_Program_Flash(Concaten16bit, 
-			 		(UWORD16 xhuge *)((UWORD32)adr_flash + EVENT_FLASH_START_ADDRESS));
-/*%C			Incréasing programing adress */
+//			  	DRV_EVENT_Program_Flash(Concaten16bit,
+//			 		(UWORD16 xhuge *)((UWORD32)adr_flash + EVENT_FLASH_START_ADDRESS));
+// manoj
+				DRV_EVENT_Program_Flash(Concaten16bit,
+							 		(UWORD16 *)((UWORD32)adr_flash + EVENT_FLASH_START_ADDRESS));
+/*%C			Incrï¿½asing programing adress */
 				adr_flash++;
 				}
 			}
 /*%C Index on the next event adress */
-		adr_flash = (UWORD16 xhuge *)((((UWORD32)adr_flash / EVENT_Last_Event_Parameter) * EVENT_Last_Event_Parameter)
-																						 + EVENT_Last_Event_Parameter);
+//		adr_flash = (UWORD16 xhuge *)((((UWORD32)adr_flash / EVENT_Last_Event_Parameter) * EVENT_Last_Event_Parameter)
+//																						 + EVENT_Last_Event_Parameter);
+// manoj
+	  	adr_flash = (UWORD16 *)((((UWORD32)adr_flash / EVENT_Last_Event_Parameter) * EVENT_Last_Event_Parameter)
+	  																							 + EVENT_Last_Event_Parameter);
 		}
  
 /*%C  Check to be sure to store a whole ebvent */
@@ -415,7 +424,7 @@ else
 		adr_flash_erase = DRV_EVENT_TransAdressErase();
 		*adr_flash_erase = 0x00B0;
 		}
-/*%C  24.8µs delay : waiting erazing validation    	*/
+/*%C  24.8ï¿½s delay : waiting erazing validation    	*/
 /*%C  Delay validated with oscilloscope					*/
 	for (i=0;i<165;i++) 
 		{
@@ -440,14 +449,20 @@ else
 /*%C with a shift to do a 16 bits word */
 		Concaten16bit = Concaten16bit | Array_Event_trap[i];
 /*%C	Programation of data */
+//		DRV_EVENT_Program_Flash(Concaten16bit,
+//					(UWORD16 xhuge *)((UWORD32)adr_flash + EVENT_FLASH_START_ADDRESS));
+// manoj
 		DRV_EVENT_Program_Flash(Concaten16bit, 
-					(UWORD16 xhuge *)((UWORD32)adr_flash + EVENT_FLASH_START_ADDRESS));
-/*%C	Incréasing programing adress */
+							(UWORD16 *)((UWORD32)adr_flash + EVENT_FLASH_START_ADDRESS));
+/*%C	Incrï¿½asing programing adress */
 		adr_flash = adr_flash +1;
 		}
 /*%C Index on the next event adress */
-	adr_flash = (UWORD16 xhuge *)((((UWORD32)adr_flash / EVENT_Last_Event_Parameter) * EVENT_Last_Event_Parameter)
-																						 + EVENT_Last_Event_Parameter);
+//	adr_flash = (UWORD16 xhuge *)((((UWORD32)adr_flash / EVENT_Last_Event_Parameter) * EVENT_Last_Event_Parameter)
+//																						 + EVENT_Last_Event_Parameter);
+	// manoj
+	adr_flash = (UWORD16 *)((((UWORD32)adr_flash / EVENT_Last_Event_Parameter) * EVENT_Last_Event_Parameter)
+																							 + EVENT_Last_Event_Parameter);
 	 	 	 
 /*%C  Check to be sure to store a whole ebvent */
 	if ((UWORD32)adr_flash + EVENT_Last_Event_Parameter 
@@ -533,7 +548,7 @@ else
 	DRV_CheckPageAndRetransmitAddress(adresse);
 
 /*%C Sending MSB for Patient Minute counter */ 
-	SSCTB  = 0xFF; /* complément de 0 */											
+	SSCTB  = 0xFF; /* complï¿½ment de 0 */											
 /*%C End of transmission waiting on the SPI bus                             */
 	DRV_EEP_WaitEndTransmit();						
 	adresse ++;
@@ -593,7 +608,7 @@ else
 	DRV_CheckPageAndRetransmitAddress(adresse); 
 
 /*%C Sending LSB for Machine Minute counter */ 
- 	SSCTB  =0xFF; /* complément de 0 */										  
+ 	SSCTB  =0xFF; /* complï¿½ment de 0 */										  
 /*%C End of transmission waiting on the SPI bus                             */
 	DRV_EEP_WaitEndTransmit();					   
 	adresse ++;
@@ -997,5 +1012,5 @@ else
 	DRV_ResetOnReturnSupply();
 
 }
-#endif
+//#endif
 

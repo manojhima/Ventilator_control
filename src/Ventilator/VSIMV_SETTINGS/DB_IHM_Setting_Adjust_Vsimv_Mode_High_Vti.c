@@ -42,7 +42,7 @@
 #include "../VSIMV_SETTINGS/DB_IHM_Setting_Adjust_Vsimv_Mode_High_Vti.h"
 
 /* locate database code to specific section */
-#include "./GENERAL/locate_database_code.h"
+#include "../GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/

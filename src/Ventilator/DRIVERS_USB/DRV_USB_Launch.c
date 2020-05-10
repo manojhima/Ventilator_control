@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505																		*/
+/* Project Nï¿½  :  RB0505																		*/
 /*																										*/
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,40 +20,40 @@
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
 
-/*%C Mesure des temps de tâches */
+/*%C Mesure des temps de tï¿½ches */
 
 /*%C Temps au repos sans clef */
-/* Maximum = 39,2 µs */
+/* Maximum = 39,2 ï¿½s */
 
-/*%C Temps au repos (sans action IHM) avec clé */
-/* Maximum = 42 µs */
+/*%C Temps au repos (sans action IHM) avec clï¿½ */
+/* Maximum = 42 ï¿½s */
 
 /*%C Temps avec commande d'effacement total */
-/* Maximum = 17 µs */
+/* Maximum = 17 ï¿½s */
 
-/*%C Temps avec commande d'écriture de réglage sur cle */
-/* Maximum = 45 µs */
+/*%C Temps avec commande d'ï¿½criture de rï¿½glage sur cle */
+/* Maximum = 45 ï¿½s */
 
-/*%C Temps avec commande de lecture de réglages sur cle */
-/* Maximum = 75 µs */
+/*%C Temps avec commande de lecture de rï¿½glages sur cle */
+/* Maximum = 75 ï¿½s */
 
 /*%C Temps avec commande de transfert en continu */
-/* Maximum = 97 µs */
+/* Maximum = 97 ï¿½s */
 
-/*%C Temps avec commande de monitorage detaillé */
-/* Maximum = 434 µs */
+/*%C Temps avec commande de monitorage detaillï¿½ */
+/* Maximum = 434 ï¿½s */
 
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/define.h"
@@ -1067,11 +1067,11 @@ void DRV_USB_Launch(void)
 /******************************************************************************/
 /*%C Reset the bridge 																			*/
 /******************************************************************************/
-		/*%C Reset the bridge during 1.6µs minimum (Using T2)*/
+		/*%C Reset the bridge during 1.6ï¿½s minimum (Using T2)*/
 		RESET_USB = 0;
 		/*%C Raz flag underflow timer 2 														*/
 		T2IR = 0 ;
-		/*%C 16 * 200ns, duree du timer 2 = 3.2 µs 				*/
+		/*%C 16 * 200ns, duree du timer 2 = 3.2 ï¿½s 				*/
 		T2 = 16 ;
 		/*%C count down, fc=fcpu/8, start timer 											*/
 		T2CON = 0x00C0 ;
@@ -1103,7 +1103,7 @@ void DRV_USB_Launch(void)
 /******************************************************************************/
 /*%C Gestion de la pile des messages USB pour l'IHM							*/
 /******************************************************************************/
-	/*%C Permet d'envoyer le message contenu dans la pile à l'IHM			*/
+	/*%C Permet d'envoyer le message contenu dans la pile ï¿½ l'IHM			*/
 	DRV_USB_ReadFifo();
 	
 	/*%C Permet de mettre le message en pile si l'IHM n'est pas prete		*/

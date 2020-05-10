@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -86,12 +86,12 @@
 typedef enum
 {
   	/*%C enum state transmission receive */
-	COM_RX_B1_START_FRAME = 0, //1ier octet d'entête de trame
-	COM_RX_B2_START_FRAME, 	   //2ième octet d'entête de trame	
-	COM_RX_B3_START_FRAME, 	   //3ièmer octet d'entête de trame		
+	COM_RX_B1_START_FRAME = 0, //1ier octet d'entï¿½te de trame
+	COM_RX_B2_START_FRAME, 	   //2iï¿½me octet d'entï¿½te de trame	
+	COM_RX_B3_START_FRAME, 	   //3iï¿½mer octet d'entï¿½te de trame		
 	COM_RX_COMMAND, 		   //indentifiant de commande de trame
-	COM_RX_NB_ARG,			   // nombre d'arguments (données dans la trame 				
-	COM_RX_BufferSize = 96	   //Taille du buffer de reception liaison série			
+	COM_RX_NB_ARG,			   // nombre d'arguments (donnï¿½es dans la trame 				
+	COM_RX_BufferSize = 96	   //Taille du buffer de reception liaison sï¿½rie			
 }e_COM_RX_REMOTE;
 
 typedef enum
@@ -126,7 +126,7 @@ typedef enum
 	COM_READY,
 	COM_READ_EEPROM,
 	COM_TRANSMIT_SETTINGS,
-	COM_TRANSMIT_STOP	      			 // arrêt de la transmission
+	COM_TRANSMIT_STOP	      			 // arrï¿½t de la transmission
 }e_COM_STATE;
    
 typedef enum
@@ -202,11 +202,13 @@ UBYTE DRV_COM_Receive_ID_Buffer[COM_ID_BUFFER_SIZE];
 UBYTE DRV_COM_Transmit_Database_Full_Speed;
 
 /*%C  Reading of Memory flash Writing index */
-UWORD16 xhuge *adr_flash_retrieval; 
+//UWORD16 xhuge *adr_flash_retrieval;
+UWORD16 *adr_flash_retrieval;
 
 /*%C Reading array datas stored in eeprom  */
 UWORD16 EepromData[COM_EEPROM_BUFFER_SIZE]; 
-volatile UBYTE xhuge *EepromDataRead;
+//volatile UBYTE xhuge *EepromDataRead;
+volatile UBYTE *EepromDataRead;
 
 /*%C Transmition frame end issue from PECC2 */
 volatile UWORD16 DRV_COM_End_of_Transmit = TRUE;

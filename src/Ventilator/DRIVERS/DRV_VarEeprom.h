@@ -31,10 +31,10 @@
 /************************************************************************/
 /*                           INCLUDE FILES		                        */
 /************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Current.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Current.h"
+#include "../DATABASE/DB_Config.h"
 
 /************************************************************************/
 /*                   EXTERNAL CONSTANT DECLARATION                     	*/
@@ -76,7 +76,7 @@
 /* Version number */
 _EXTERN UWORD16  EEP_DB_Version_Number[end_of_db_version_table];
 
-// Définition de la Table des para de réglage pour la configuration
+// Dï¿½finition de la Table des para de rï¿½glage pour la configuration
 _EXTERN UWORD16  EEP_DB_Config[end_of_db_config_table];
 
 /* Setting parameter table for the VOL mode */
@@ -101,10 +101,10 @@ _EXTERN UWORD16  EEP_DB_CPAP_Adjust[end_of_adjust_table];
 _EXTERN UWORD16  EEP_DB_TREND[end_of_db_trend_table];
 
 /* PUST ERROR variable definition and location */
-_EXTERN UWORD16 huge End_Of_Database;
+//_EXTERN UWORD16 huge End_Of_Database;	// commented by manoj
 
 /* PUST ERROR variable definition and location */
-_EXTERN UWORD16 huge PUST_ERROR;
+//_EXTERN UWORD16 huge PUST_ERROR;		// commented by manoj
 
 
 
@@ -112,7 +112,7 @@ _EXTERN UWORD16 huge PUST_ERROR;
 /* Version number */
 _EXTERN UWORD16 _huge EEP_DB_Version_Number[end_of_db_version_table];
 
-// Définition de la Table des para de réglage pour la configuration
+// Dï¿½finition de la Table des para de rï¿½glage pour la configuration
 _EXTERN UWORD16 _huge EEP_DB_Config[end_of_db_config_table];
 
 /* Setting parameter table for the VOL mode */
@@ -147,7 +147,7 @@ _EXTERN UWORD16 _huge PUST_ERROR;
 #else
 _EXTERN UWORD16 EEP_DB_Version_Number[end_of_db_version_table];
 
-// Définition de la Table des para de réglage pour la configuration
+// Dï¿½finition de la Table des para de rï¿½glage pour la configuration
 _EXTERN UWORD16 EEP_DB_Config[end_of_db_config_table];
 
 /* Setting parameter table for the VOL mode */

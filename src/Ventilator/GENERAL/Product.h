@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -14,7 +14,7 @@
 /******************************************************************************/
 /*%C                     Functionnal description :                            */
 /*%C																		  */
-/*%C Choix du produit à compiler          				 					  */
+/*%C Choix du produit ï¿½ compiler          				 					  */
 /*%C			                                                              */
 /******************************************************************************/
 
@@ -60,7 +60,8 @@
 	#define CONFIG_SMALL_BATTERIES_THRESHOLD (3000)
 
 #else
-      #error Il faut définir un produit valide (SUPPORTAIR_M2, LEGENDAIR_XL2 ou LEGENDAIR_S2) en directive de compilation !
+//		#error nothing
+//      #error Il faut definir un produit valide (SUPPORTAIR_M2, LEGENDAIR_XL2 ou LEGENDAIR_S2) en directive de compilation !
 #endif
 
 #endif //#ifndef PRODUCT_H

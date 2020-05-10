@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -31,7 +31,7 @@
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Current.h"
-#include "SEC_Highrate.h"
+#include "SEC_HighRate.h"
 #include "../SECURITY/Security_Datas.h"
 
 /* locate security code to specific section */  

@@ -40,6 +40,7 @@
 //    #include "regf276e.h"
 //#endif
 /******************************************************************************/
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
@@ -47,7 +48,7 @@
 #include "../SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"	
 #include "Main_Data.h"
 #include "../DATABASE/DB_Event.h"
-#include "../DATABASE/Db_Config.h"
+#include "../DATABASE/DB_Config.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DRIVERS/DRV_VarEeprom.h"
 #include "MAIN.h"
@@ -55,7 +56,7 @@
 
 
 /* locate boot code to specific section */
-#include "locate_boot_code.h"
+#include "../GENERAL/locate_boot_code.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -8,7 +8,7 @@
 
 
 #include "PUST_ramtestlib.h"
-
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/locate_boot_code.h"
 
 /* START DON'T MOVE THIS... unless you exactly know why... */
@@ -24,8 +24,10 @@ UWORD16 _error_code;
 
 
 /* statics */
-static datum memTestDataBus(volatile datum xhuge * address);
-static datum xhuge *memTestAddressBus(volatile datum xhuge * baseAddress, UWORD32 nBytes);
+//static datum memTestDataBus(volatile datum xhuge * address);
+static datum memTestDataBus(volatile datum * address);
+//static datum xhuge *memTestAddressBus(volatile datum xhuge * baseAddress, UWORD32 nBytes);
+static datum *memTestAddressBus(volatile datum * baseAddress, UWORD32 nBytes);
 #if 0
 static datum xhuge *memTestDevice(volatile datum xhuge * baseAddress, UWORD32 nBytes);
 #endif
@@ -45,7 +47,8 @@ static datum xhuge *memTestDevice(volatile datum xhuge * baseAddress, UWORD32 nB
  *              A non-zero result is the first pattern that failed.
  *
  *******************************************************************/
-datum memTestDataBus(volatile datum xhuge * address)
+//datum memTestDataBus(volatile datum xhuge * address)
+datum memTestDataBus(volatile datum * address)
 {
   datum pattern;
   
@@ -100,7 +103,8 @@ datum memTestDataBus(volatile datum xhuge * address)
  *              additional information about the problem.
  *
  **********************************************************************/
-datum xhuge *memTestAddressBus(volatile datum xhuge * baseAddress, UWORD32 nBytes)
+//datum xhuge *memTestAddressBus(volatile datum xhuge * baseAddress, UWORD32 nBytes)
+datum *memTestAddressBus(volatile datum * baseAddress, UWORD32 nBytes)
 {
   UWORD32 addressMask = (nBytes - 1);
   UWORD32 offset;
@@ -128,7 +132,8 @@ datum xhuge *memTestAddressBus(volatile datum xhuge * baseAddress, UWORD32 nByte
   {
     if (baseAddress[offset] != pattern)
     {
-      return ((datum xhuge *) &baseAddress[offset]);
+//      return ((datum xhuge *) &baseAddress[offset]);
+      return ((datum *) &baseAddress[offset]);
     }
 	_srvwdt_();
   }
@@ -149,7 +154,8 @@ datum xhuge *memTestAddressBus(volatile datum xhuge * baseAddress, UWORD32 nByte
 	  _srvwdt_();
       if ((baseAddress[offset] != pattern) && (offset != testOffset))
       {
-        return ((datum xhuge *) &baseAddress[testOffset]);
+//        return ((datum xhuge *) &baseAddress[testOffset]);
+        return ((datum *) &baseAddress[testOffset]);
       }
     }
     
@@ -278,12 +284,14 @@ e_RAM_ERROR_CODE RamTest(T_RAM_MEM_RANGE* PtMem)
    	  _baseAddress = PtMem->MinAddress;
 	  _nbOfBytes = PtMem->MaxAddress - PtMem->MinAddress + 1;
 
-	  if( (rc == RAM_ERR_OK) &&  (memTestAddressBus((volatile datum xhuge *)_baseAddress, _nbOfBytes) != NULL) )
+//	  if( (rc == RAM_ERR_OK) &&  (memTestAddressBus((volatile datum xhuge *)_baseAddress, _nbOfBytes) != NULL) )
+		  if( (rc == RAM_ERR_OK) &&  (memTestAddressBus((volatile datum *)_baseAddress, _nbOfBytes) != NULL) )
 	  {
 	  		rc = RAM_ERR_ADDRESS_BUS_KO;
 	  }
 
-	  if( (rc == RAM_ERR_OK) &&  (memTestDataBus((volatile datum xhuge *)_baseAddress) != 0) )
+//	  if( (rc == RAM_ERR_OK) &&  (memTestDataBus((volatile datum xhuge *)_baseAddress) != 0) )
+		  if( (rc == RAM_ERR_OK) &&  (memTestDataBus((volatile datum *)_baseAddress) != 0) )
 	  {
 	  		rc = RAM_ERR_DATABUS_BUS_KO;
 	  }	  		

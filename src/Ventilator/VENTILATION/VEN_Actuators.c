@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -22,12 +22,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING         
-#include "LH_ST10F276.h" 
-#include <intrins.h>     
-#else                    
-#include "regf276e.h"    
-#endif                   	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -79,7 +79,7 @@ UWORD16 AdjustPediatricCircuit = DB_ConfigRead(ADJUST_PEDIATRIC_CIRCUIT_U16);
 /*%C Reading measure Q insp in data base */
 SWORD16 MeasureQinsp = (SWORD16)DB_ComputeRead(MEASURE_QINSP_S16);
 /* Pediatric Circuit state recovery from base */
-   UWORD16 PediatricCircuit = DB_ConfigRead(ADJUST_PEDIATRIC_CIRCUIT_U16);
+//   UWORD16 PediatricCircuit = DB_ConfigRead(ADJUST_PEDIATRIC_CIRCUIT_U16); // manoj commented since notused
 /*%C Valve detection flag recovery */
 UWORD16 ValveDetected = DB_ControlRead(VALVE_DETECTED_U16);
 UWORD16 AdjustRamp = DB_CurrentRead(ADJUST_RAMP_U16);
@@ -106,7 +106,7 @@ static BIT FirstExhalationActive = TRUE;
 
 static UWORD16 MutexBlower = FALSE;
 
-static UWORD16 PreviousCurrentMode = PRES;
+//static UWORD16 PreviousCurrentMode = PRES;		// manoj commented since notused
 
 #ifdef CONFIG_REGUL_O2
 /*%C O2 correction variable */
@@ -285,7 +285,7 @@ SWORD32 ConsQO2 = 0 ;
 					ACT_ValveCmd((UWORD16)(ValveCmd));
 				}
 	
-				// Commande Turbine désactivée
+				// Commande Turbine dï¿½sactivï¿½e
 				BLOWER_CMD = cBLOWER_CMD_OFF;
 				
 				/*%C  Breaking adjust depends on Pe value and on the patient circuit type */
@@ -538,7 +538,7 @@ SWORD32 ConsQO2 = 0 ;
 		                                     cVEN_CMP_KPB_FLOW_TI_MIN,
 		                                     cVEN_KPB_FLOW_INSP_MAX);
 						Ki_Insp = cVEN_KIB_FLOW_INSP;
-/*%C 						Modification of régulation parameters to prohibe overflow of more : -30% */
+/*%C 						Modification of rï¿½gulation parameters to prohibe overflow of more : -30% */
 		       			Kp_Insp = Kp_Insp + (Kp_Insp * VEN_PerCentRiseQI)/100;
 		       			Ki_Insp = Ki_Insp + (Ki_Insp * VEN_PerCentRiseQI)/100;
 					}
@@ -718,5 +718,5 @@ if(VEN_MutexVanneO2 == FALSE)
 }
 /******************************************************************************/
 
-	PreviousCurrentMode = CurrentMode;
+//	PreviousCurrentMode = CurrentMode;  commented manoj
 }

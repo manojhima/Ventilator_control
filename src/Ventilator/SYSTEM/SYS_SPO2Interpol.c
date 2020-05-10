@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505 				                                          */
+/* Project Nï¿½  :  RB0505 				                                          */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -39,13 +39,13 @@ void SYS_SPO2Interpol(void)
 	t_DataSpo2 Data;
 	Data = SYS_ReadDataSpo2();
 
-// Détection d'une erreur sur le capteur
-// Possibilité de lire data.status mais à chaque fois que la mesure est impossible data.spo2 = 127
-// Data.Spo2 = 0 -> Capteur non branché - rien sur la liaison série
+// Dï¿½tection d'une erreur sur le capteur
+// Possibilitï¿½ de lire data.status mais ï¿½ chaque fois que la mesure est impossible data.spo2 = 127
+// Data.Spo2 = 0 -> Capteur non branchï¿½ - rien sur la liaison sï¿½rie
 //if((Data.Spo2 == 0) || (Data.Spo2 == 127))
 //	DB_ControlWrite(ERROR_SPO2_SENSOR_DETECTED, TRUE);
 //else
 //  DB_ControlWrite(ERROR_SPO2_SENSOR_DETECTED, FALSE);
-// Ecriture en base de donnée
+// Ecriture en base de donnï¿½e
 //DB_ComputeWrite(MEASURE_SPO2_U16, Data.Spo2);
 }

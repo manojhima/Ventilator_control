@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -35,6 +35,7 @@ extern UWORD16 TIM_ReadDecounterValue(e_TIM_TABLE_ID offset_table);
 /* Access to the decounter command                                            */
 extern void TIM_StartDecounter(e_TIM_TABLE_ID offset_table,
                                UWORD16 Value);
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value); // manoj
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,UWORD16 value);
 
 #endif

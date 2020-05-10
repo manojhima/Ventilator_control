@@ -98,7 +98,9 @@ UWORD16 DB_IHM_Write_Adjust_Psv_Mode_Backup_R(UWORD16 *Value)
  
 	DB_WriteDataInEepAndRam(&EEP_DB_PSV_Adjust[AUTO_APNEA_SELECT_U16],
 									      TRUE);
-	DB_IHM_Write_Adjust_Psv_Mode_Apnea_Time((UWORD16 huge*)&EEP_DB_PSV_Adjust[ADJUST_APNEA_U16]);
+//	DB_IHM_Write_Adjust_Psv_Mode_Apnea_Time((UWORD16 huge*)&EEP_DB_PSV_Adjust[ADJUST_APNEA_U16]);
+	// manoj
+	DB_IHM_Write_Adjust_Psv_Mode_Apnea_Time((UWORD16 *)&EEP_DB_PSV_Adjust[ADJUST_APNEA_U16]);
 
 /*%C Ti min / Backup R dependance */
    Adjust_Ti_Min_Limit = cTiMinCoeff / Adjust_Backup_R;

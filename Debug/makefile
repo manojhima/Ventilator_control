@@ -66,10 +66,10 @@ endif
 all: test.elf
 
 # Tool invocations
-test.elf: $(OBJS) $(USER_OBJS) C:\Users\Win7\Swasa\Ventilator_control/LinkerScript.ld
+test.elf: $(OBJS) $(USER_OBJS) /home/manoj/Stm32_f446/st_exmples/test/LinkerScript.ld
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mthumb -mfloat-abi=soft -T"C:/Users/Win7/Swasa/Ventilator_control/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-gcc -mthumb -mfloat-abi=soft -T"/home/manoj/Stm32_f446/st_exmples/test/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

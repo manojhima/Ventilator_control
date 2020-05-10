@@ -22,7 +22,7 @@
 #ifndef KEYBOARD_EVENT_H
 #define KEYBOARD_EVENT_H
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 
 /******************************************************************************/
 /*                     ENUM DECLARATION				                         	*/
