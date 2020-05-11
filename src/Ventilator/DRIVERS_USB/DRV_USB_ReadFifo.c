@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505																		*/
+/* Project Nï¿½  :  RB0505																		*/
 /*																										*/
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -26,12 +26,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/define.h"
@@ -55,7 +55,7 @@ void DRV_USB_ReadFifo(void)
 {
 	UWORD16 UsbErrorCodeReadyIhm = DB_UsbRead(USB_ERROR_CODE_READY_IHM_U16);
 	
-	/*Teste si le message precédent à été affiché et qu'il y a un message à afficher*/		
+	/*Teste si le message precï¿½dent ï¿½ ï¿½tï¿½ affichï¿½ et qu'il y a un message ï¿½ afficher*/		
 	if	(	(UsbErrorCodeReadyIhm == FLAG_ERROR_CODE_NOT_READY)
 		&& 	(TIM_ReadDecounterValue(USB_WAIT_READ_FIFO) == 0)
 		&& 	(UsbPtrReadFifoErrorCodeToIHM != UsbPtrWriteFifoErrorCodeToIHM))
@@ -67,7 +67,7 @@ void DRV_USB_ReadFifo(void)
 		DB_UsbWrite(USB_ERROR_CODE_READY_IHM_U16 , FLAG_ERROR_CODE_READY);
 #endif
 		TIM_StartDecounter(USB_WAIT_READ_FIFO,TIME_USB_WAIT_READ_FIFO);
-		/*Incrémente le pointeur de pile*/
+		/*Incrï¿½mente le pointeur de pile*/
 		UsbPtrReadFifoErrorCodeToIHM ++ ;
 		UsbPtrReadFifoErrorCodeToIHM = (UBYTE)(UsbPtrReadFifoErrorCodeToIHM % FIFO_ERROR_CODE_TO_IHM_SIZE);
 	}

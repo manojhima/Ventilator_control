@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505													  */
+/* Project Nï¿½  :  RB0505													  */
 /*																			  */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,18 +25,18 @@
 /******************************************************************************/
 
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
-          #include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+//          #include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/define.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-#include "Flash_Monit_data.h"
+#include "Flash_Monit_Data.h"
 
 						  
 /******************************************************************************/
@@ -55,7 +55,7 @@ void DRV_NAND_CommandInput(UBYTE Flash_Command)
 	/* Command is sent */
 	*MONITFLASH_Data = Flash_Command ;
 
-/* small delay to let the µc sending the command onto the bus */
+/* small delay to let the ï¿½c sending the command onto the bus */
 	_nop_() ;
 
 }

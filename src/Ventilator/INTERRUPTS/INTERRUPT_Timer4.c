@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h" 	
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
@@ -41,27 +41,27 @@ extern void DRV_OutputPort(e_OUTPUT_NAME _Port, UWORD16 _Value);
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_Timer4(void) interrupt 0x24
-#else
-interrupt (0x24)
+//#ifndef _TASKING
+//void INTERRUPT_Timer4(void) interrupt 0x24
+//#else
+//interrupt (0x24)
  void INTERRUPT_Timer4(void)
-#endif
+//#endif
 {
 // Tempo de 1s pour la Led Orange
 CounterBlink++;
 // Chargement du timer - 0.25s
-// T4 = seconde / 25.6µs;
+// T4 = seconde / 25.6ï¿½s;
 T4 = 9766;
 
-// Clignottement Led Red - 2Hz - 1/2 période = 0.25 s
+// Clignottement Led Red - 2Hz - 1/2 pï¿½riode = 0.25 s
 if (Id_Led_Red == TRUE)
 	{
 	// Activation des Buzzers
 	LED_ALARME_ROUGE = !LED_ALARME_ROUGE;
 	}
 
-// Clignottement Led Orange - 0.5Hz - 1/2 période = 1 s
+// Clignottement Led Orange - 0.5Hz - 1/2 pï¿½riode = 1 s
 if ((Id_Led_Orange == TRUE) && (CounterBlink == 4))
 	{
 	// Activation des Buzzers
@@ -69,7 +69,7 @@ if ((Id_Led_Orange == TRUE) && (CounterBlink == 4))
 	}	
 
 #ifdef CONFIG_REGUL_O2
-// Clignottement Led White - 0.5Hz - 1/2 période = 1 s
+// Clignottement Led White - 0.5Hz - 1/2 pï¿½riode = 1 s
 if ((Id_Led_White == TRUE) && (CounterBlink == 4))
 	{
 	   Led_White_On = !Led_White_On;

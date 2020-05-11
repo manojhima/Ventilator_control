@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,17 +24,17 @@
 /************************************************************************/
 /*                           INCLUDE FILES		                        */
 /************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 
 void It_watchdog(void)
 {           
-/*%C Watch dog Hard activé dans le scheduler toutes les 20 ms */
+/*%C Watch dog Hard activï¿½ dans le scheduler toutes les 20 ms */
 	WDOG = !WDOG;
 
 /*%C Watch dog interne */

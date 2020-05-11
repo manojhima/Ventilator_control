@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -39,12 +39,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_Timer1Overflow (void) interrupt 0x21
-#else
-interrupt (0x21)
+//#ifndef _TASKING
+//void INTERRUPT_Timer1Overflow (void) interrupt 0x21
+//#else
+//interrupt (0x21)
  void INTERRUPT_Timer1Overflow (void)
-#endif
+//#endif
 {
 	Cpt_Timer1_Overflow = Cpt_Timer1_Overflow + 1;
 }

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505													  */
+/* Project Nï¿½  :  RB0505													  */
 /*																			  */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,12 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/enum.h"
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
@@ -37,7 +37,7 @@
 #include "../GENERAL/Structure.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Config.h"
-#include "Flash_Monit_data.h"
+#include "Flash_Monit_Data.h"
 #include "../DRIVERS_USB/Driver_USB_Data.h"
 #include "DRV_TREND_PageRead.h"
 
@@ -309,8 +309,8 @@ void DRV_TREND_PageRead(void)
 		/* Page Read Second command */
 		DRV_NAND_CommandInput(0x30);
 		CMD_ME1 = 0 ;
-/*%C waiting for BUSY signal or a time out of 50 µs (the read operation  */
-/*%C should be less than 25 µs). */
+/*%C waiting for BUSY signal or a time out of 50 ï¿½s (the read operation  */
+/*%C should be less than 25 ï¿½s). */
  	  	T2IR  = 0;
 		T2    = 0x01;
 		T2CON = 0x00C7;

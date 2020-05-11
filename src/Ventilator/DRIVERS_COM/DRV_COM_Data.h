@@ -241,11 +241,13 @@ extern UBYTE DRV_COM_Receive_ID_Buffer[];
 extern UBYTE DRV_COM_Transmit_Database_Full_Speed;
 
 /*%C  Reading of Memory flash Writing index */
-extern UWORD16 xhuge *adr_flash_retrieval; 
+//extern UWORD16 xhuge *adr_flash_retrieval;
+extern UWORD16 *adr_flash_retrieval;
 
 
 extern UWORD16 EepromData[]; /*%C Reading array datas stored in eeprom  */
-extern volatile UBYTE xhuge *EepromDataRead;
+//extern volatile UBYTE xhuge *EepromDataRead;
+extern volatile UBYTE *EepromDataRead;
 
 
 /*%C Transmition frame end issue from PECC2 */

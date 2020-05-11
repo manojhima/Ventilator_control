@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,11 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -39,12 +40,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
- void INTERRUPT_COM_EndTransmit(void) interrupt (0x47)
-#else
-interrupt (0x47)
+//#ifndef _TASKING
+// void INTERRUPT_COM_EndTransmit(void) interrupt (0x47)
+//#else
+//interrupt (0x47)
  void INTERRUPT_COM_EndTransmit(void)
-#endif	 
+//#endif
 { 
 	/*%C Interrupt inhibit  */
 	S0TBIE = 0;

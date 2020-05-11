@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,11 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../DRIVERS_COM/DRV_COM_Data.h"
 					 
@@ -35,12 +36,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
- void INTERRUPT_COM_Receive(void) interrupt (0x2B)
-#else
-interrupt (0x2B)
+//#ifndef _TASKING
+// void INTERRUPT_COM_Receive(void) interrupt (0x2B)
+//#else
+//interrupt (0x2B)
  void INTERRUPT_COM_Receive(void)
-#endif	 
+//#endif
 	{ 
 	UWORD16 Received_Data;
    	

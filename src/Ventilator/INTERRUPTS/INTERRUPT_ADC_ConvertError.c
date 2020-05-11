@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,36 +24,38 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "INTERRUPT_ADC_ConvertError.h"
-#include "../DRIVERS_ADC/Driver_ADConverter_data.h"
+#include "../DRIVERS_ADC/Driver_ADConverter_Data.h"
 
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_ADC_ConvertError(void) interrupt 0x29
-#else
-interrupt (0x29)
+//#ifndef _TASKING
+//void INTERRUPT_ADC_ConvertError(void) interrupt 0x29
+//#else
+//interrupt (0x29)
   void INTERRUPT_ADC_ConvertError(void)
-#endif
+//#endif
 { 
 	UWORD16 Read;
 
 	ADST = 0;
 	ADEIE = 0;
 	ADEIR = 0;
-	//Vidage des registres du résultat de convertion
+	//Vidage des registres du rï¿½sultat de convertion
  	Read = ADDAT;
 	Read = ADDAT2;
+	Read = Read+1;// to avoid warning
 	DRV_ADC_ConvertInit();
 	ErrorNumber++;
 	ADEIE = 1;

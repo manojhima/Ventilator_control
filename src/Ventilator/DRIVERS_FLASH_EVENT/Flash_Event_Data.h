@@ -76,7 +76,8 @@ extern const UWORD32 adresse_secteur_bottom[12];
 extern const UWORD32  adresse_secteur_top[12];
 
 extern BIT Suspend_Erase; 
-extern UWORD16 xhuge *Ptr_Flash; 
+//extern UWORD16 xhuge *Ptr_Flash;
+extern UWORD16 *Ptr_Flash;
 extern UWORD16 Ptr_Evenement; 
 extern BIT Mutex_Read_Adresse;
 extern UBYTE Num_Sector;
@@ -86,7 +87,8 @@ extern UBYTE Ptr_Num_evenement_Write;
 extern BIT Buffer_Empty;
 extern UWORD32 End_Of_Event_Flash;
 extern BIT Mutex_Flag_Erase;
-extern UWORD16 xhuge *Erase_Adress;
+//extern UWORD16 xhuge *Erase_Adress;
+extern UWORD16 *Erase_Adress;
 extern e_DRV_EVENT_STATE Flash_State;
 
 	#endif

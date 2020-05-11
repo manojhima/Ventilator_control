@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -26,18 +26,18 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _BORLAND
-   #ifndef _TASKING
-      #include "LH_ST10F276.h"
-      #include <intrins.h>
-   #else
-      #include "regf276e.h"
-   #endif
-#endif
+//#ifndef _BORLAND
+//   #ifndef _TASKING
+//      #include "LH_ST10F276.h"
+//      #include <intrins.h>
+//   #else
+//      #include "regf276e.h"
+//   #endif
+//#endif
 
 #ifdef _BORLAND
-   /* Attention, conserver cette inclusion _après_ l'inclucion du io_declare.h
-      car redéfinition des valeurs de JUMPER pour chaque produit */
+   /* Attention, conserver cette inclusion _aprï¿½s_ l'inclucion du io_declare.h
+      car redï¿½finition des valeurs de JUMPER pour chaque produit */
       #include "../GENERAL/io_declare.h"
       #include "HMI_Product.hpp"
 #else
@@ -48,12 +48,12 @@
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Current.h"
 #include "../DATABASE/DB_Config.h"
-#include "DRV_VarEeprom.h"
-#include "DB_IhmAccessParaDataBase.h "
+#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_Usb.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_Transmit_Settings.h"

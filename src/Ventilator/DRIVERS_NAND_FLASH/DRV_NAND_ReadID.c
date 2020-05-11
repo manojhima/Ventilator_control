@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                     */
+/* Project Nï¿½  :  RB0505                                                     */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,18 +24,18 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/define.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-#include "Flash_Monit_data.h"
+#include "Flash_Monit_Data.h"
 #include "../DATABASE/DB_Config.h"
 #include "DRV_NAND_ReadID.h"
 			 
@@ -46,7 +46,7 @@
 void DRV_NAND_ReadID(void)
 
 {
-	/* Déclaration du pointeur d'adresse en local */
+	/* Dï¿½claration du pointeur d'adresse en local */
 	UBYTE *MONITFLASH_Data = (UBYTE *)MONITORING_FLASH_POINTER_ADDRESS;
  	UBYTE Cycle_Lecture = 0;
 	UBYTE Compterror = 0 ;

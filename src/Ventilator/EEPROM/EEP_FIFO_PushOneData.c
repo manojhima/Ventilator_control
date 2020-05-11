@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -32,20 +32,22 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-void EEP_FIFO_PushOneData(UWORD16 xhuge *ptr_data,
+//void EEP_FIFO_PushOneData(UWORD16 xhuge *ptr_data,
+//										e_EEP_ACCESS_STATE access_type)
+void EEP_FIFO_PushOneData(UWORD16 *ptr_data,
 										e_EEP_ACCESS_STATE access_type)
 {
-// Attente de libération d'une case dans la FIFO
+// Attente de libï¿½ration d'une case dans la FIFO
 while (EEP_FIFO_NbDataInFifo == SIZE_OF_FIFO_EEP_ACCESS);	// ATTENTION : BOUCLE INFINI quand NbDataInFifo = 16
 
 
 EEP_FIFO_AccessDriver[EEP_FIFO_IdxPush].state = access_type;
 EEP_FIFO_AccessDriver[EEP_FIFO_IdxPush].ptr_DataRam = ptr_data;
 
-// Incrémentation du pointeur du FIFO
+// Incrï¿½mentation du pointeur du FIFO
 EEP_FIFO_NbDataInFifo++;
 
- // Si accès en lecture attente de la fin de lecture de l'e2prom
+ // Si accï¿½s en lecture attente de la fin de lecture de l'e2prom
 while ((access_type == READ_EEP) && (EEP_FIFO_AccessDriver[EEP_FIFO_IdxPush].ptr_DataRam == ptr_data));
 
 // Limitation du pointeur de la FIFO

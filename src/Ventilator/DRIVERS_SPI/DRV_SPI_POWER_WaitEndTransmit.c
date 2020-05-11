@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -42,7 +43,7 @@
 void DRV_SPI_POWER_WaitEndTransmit(void)
 {
 	T3IR = 0;			// RAZ du flag underflow timer 3
-	T3 = 50;   	// 50 * 200ns, duree du timer3 > 4.8µs
+	T3 = 50;   	// 50 * 200ns, duree du timer3 > 4.8ï¿½s
 	//--------------------------------------------------------
 /*%C  T3 CON = 0x00C0 = 1100 0000b					*/
 /*%C  T3I = 000 	: Prescaler factor = 8			*/
@@ -50,10 +51,10 @@ void DRV_SPI_POWER_WaitEndTransmit(void)
 /*%C  				: Resolution = 200ns				*/
 /*%C  				: Period = 26ms					*/
 /*%C  T3M = 000	: Timer Mode						*/
-/*%C  T3R = 1		: Timer/Counter3 démarrage		*/
-/*%C  T3UD = 1 et 
+/*%C  T3R = 1		: Timer/Counter3 dï¿½marrage		*/
+/*%C  T3UD = 1 et */
 /*%C  T3UDE = 0	: Count Down						*/
-	T3CON  = 0x00C0;	/*%C   count down, fc=fcpu/8, start timer
+	T3CON  = 0x00C0;	/*%C   count down, fc=fcpu/8, start timer*/
 
 /*%C  attente de la fin du transfert ou timeout(10us)		 */
 	while ( SSCBSY == 0 && T3IR == 0);

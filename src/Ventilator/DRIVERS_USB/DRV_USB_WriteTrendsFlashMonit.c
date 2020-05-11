@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505																		*/
+/* Project Nï¿½  :  RB0505																		*/
 /*																										*/
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -33,7 +33,7 @@
 #include "../TIMERS/Timer_Data.h"
 #include "Driver_USB_Data.h"
 #include "../DATABASE/DB_Usb.h"
-#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Rtc.h"
 #include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
 #include "DRV_USB_WriteTrendsFlashMonit.h"
 

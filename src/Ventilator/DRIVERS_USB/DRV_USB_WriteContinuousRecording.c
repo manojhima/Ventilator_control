@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505																		*/
+/* Project Nï¿½  :  RB0505																		*/
 /*																										*/
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -31,7 +31,7 @@
 #include "../DATABASE/DB_Control.h" 
 #include "../TIMERS/Timer_Data.h" 
 #include "../DATABASE/DB_Usb.h"
-#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE/DB_Event.h"										  
 #include "Driver_USB_Data.h"
 #include "DRV_USB_WriteContinuousRecording.h"
@@ -165,9 +165,9 @@ void DRV_USB_WriteContinuousRecording(void)
 			/*%C No Records */
 			else
 			{
-				/*%C Permet d'avoir l'alarme de déconnexion pendant ce transfert*/
+				/*%C Permet d'avoir l'alarme de dï¿½connexion pendant ce transfert*/
 				/*%C si on arrache la key alors qu'il n'y a pas de transfert */
-				/*%C de données vers le CYPRESS*/
+				/*%C de donnï¿½es vers le CYPRESS*/
 				DRV_USB_AskKeyConnected(CurrentUsbKey);
 			}
 			break ;

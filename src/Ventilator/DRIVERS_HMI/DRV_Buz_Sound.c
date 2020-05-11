@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -28,12 +28,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING         
-#include "LH_ST10F276.h" 
-#include <intrins.h>     
-#else                    
-#include "regf276e.h"    
-#endif                   	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -54,22 +54,22 @@ void DRV_Buz_Sound(e_TYPE_SOUND sound,
 
    /* Configuration du timer 5 */
    /* Registre de controle du timer T5	*/
-	/* Prédiviseur = 24 T5I = 111	*/  
+	/* Prï¿½diviseur = 24 T5I = 111	*/  
 	/* Mode timer 	   T5M = 000	*/
 	/* Timer en marche T5R = 1	*/
-	/* Direction "décomptage" sans tenir compte de l'entrée T5 T8EUD = 01	*/
-	/* Contrôle de la sortie T8OUT P31 	non utilisée.T5OE = 0	*/
+	/* Direction "dï¿½comptage" sans tenir compte de l'entrï¿½e T5 T8EUD = 01	*/
+	/* Contrï¿½le de la sortie T8OUT P31 	non utilisï¿½e.T5OE = 0	*/
 	/* latch de la sortie T5OL = 0	*/
-	/* Bit 11 12  13 14 15 non utilisés = 00000	*/
-	/* Controle du mode reload pas de reload à partir de CAPREL	 T5SR = 0	*/
+	/* Bit 11 12  13 14 15 non utilisï¿½s = 00000	*/
+	/* Controle du mode reload pas de reload ï¿½ partir de CAPREL	 T5SR = 0	*/
 	/* T5CON =  00000 0 0 01 1 000 000 = 0000000011000111 b = 0xC7	*/
    T5CON = 0xC7;
 
-   /* Registre de contrôle de l'interruption	*/
+   /* Registre de contrï¿½le de l'interruption	*/
 	/* Revoir sa localisation dans le projet voir peut etre pour un	*/ 
-	/* module de gestion des niveaux de priorité des interruptions	*/ 
+	/* module de gestion des niveaux de prioritï¿½ des interruptions	*/ 
 	/* et de gestion des PEC	*/
-	/* Priorité  des interruptions T5	*/
+	/* Prioritï¿½  des interruptions T5	*/
    /*%IR = 0 ,IE = 0; ILVL  = 12 ,GLVL = 2 	 */
    T5IC = 0x32;
 

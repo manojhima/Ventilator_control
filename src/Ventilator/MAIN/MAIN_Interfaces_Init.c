@@ -55,6 +55,8 @@
 #include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
 #include "../DISPLAY/DIS_FifoRead.h"
 /*********************************************************/
+_EXTERN UWORD16 End_Of_Database;
+
 
 	#define EEPROM_DATA_DECLARATION
 #include "../DRIVERS_EEPROM/Driver_Eeprom_Data.h"

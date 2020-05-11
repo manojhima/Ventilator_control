@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505 		                                        			*/
+/* Project Nï¿½  :  RB0505 		                                        			*/
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 						 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 
 /******************************************************************************/
@@ -42,7 +42,7 @@ UBYTE DRV_USB_WaitBusy(UBYTE State)
 	/*%C Raz flag underflow timer 4 															*/
 	T2IR = 0 ;
 
-	/*%C 50 * 200ns, duree du timer 4 = 10 µs temps d'écriture 						*/
+	/*%C 50 * 200ns, duree du timer 4 = 10 ï¿½s temps d'ï¿½criture 						*/
 	T2 = 0x0032 ;
 
 	/*%C count down, fc=fcpu/8, start timer 												*/

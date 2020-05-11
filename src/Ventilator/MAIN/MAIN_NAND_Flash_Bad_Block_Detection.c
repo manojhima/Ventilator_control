@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,18 +24,19 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/define.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-#include "../DRIVERS_NAND_FLASH/Flash_Monit_data.h"
+#include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
 #include "MAIN_NAND_Flash_Bad_Block_Detection.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

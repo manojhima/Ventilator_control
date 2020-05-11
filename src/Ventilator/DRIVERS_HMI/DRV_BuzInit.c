@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -48,7 +49,7 @@ void DRV_BuzInit(void)
 	static UWORD16 FirstBuzInit = TRUE;
     static UWORD16 Frequency_Buzzer;
 	
-	/*%C Si premiere initialisation au démarrage de l'appareil, on initialise 	 */
+	/*%C Si premiere initialisation au dï¿½marrage de l'appareil, on initialise 	 */
 	/*%C tous les registres PWM et Timer */
 	if (FirstBuzInit == TRUE)
 	{
@@ -63,12 +64,12 @@ void DRV_BuzInit(void)
             Frequency_Buzzer = COMPLIANT_FREQUENCY_BUZZER;
         }
 
-		/*%C Mise à jour du flag de 1ère initialisation */ 
+		/*%C Mise ï¿½ jour du flag de 1ï¿½re initialisation */ 
  	    FirstBuzInit = FALSE; 
 
-		//Programmation du pwm3 génération du niveau sonore du buzzer
+		//Programmation du pwm3 gï¿½nï¿½ration du niveau sonore du buzzer
 		//Registre PWMCON1
-		//PW3 programmé pa PM3 PS3 = 0
+		//PW3 programmï¿½ pa PM3 PS3 = 0
 		//PS2 ne concerne pas le canal 3
 		//PB01 ne concerne pas le canal 3
 		//Canal 3 en mode standard PM3 = 0
@@ -78,55 +79,55 @@ void DRV_BuzInit(void)
 		PWMCON1 &= 0x7F7F;  
 		//Registre PWMCON0
 		//Pas de demande d'interruption PIR3 = 0
-		//Interruption non autorisée PIE3 = 0
-		//Entrée d'horloge = FCPU PT3 = 0
+		//Interruption non autorisï¿½e PIE3 = 0
+		//Entrï¿½e d'horloge = FCPU PT3 = 0
 		//Canal 3 en fonctionnement PTR3 = 1
 		//PWMCON0 =0xxx 0xxx 0xxx 1xxx	
 		PWMCON0 |= 0x0008;	   
 		PWMCON0 &= 0x777F;	   
-		PP3 = 10E8/(25*FREQUENCY_SOUND_LEVEL); //Programmation de la période du PWM3
-		//Programmation du PWM par timer T8 génération de la fréquence buzzer
+		PP3 = 10E8/(25*FREQUENCY_SOUND_LEVEL); //Programmation de la pï¿½riode du PWM3
+		//Programmation du PWM par timer T8 gï¿½nï¿½ration de la frï¿½quence buzzer
 		//Programmation du registre de controle Timer T7
-		//T7I = 000 Prescaler = FCPU/8 résolution 200ns à 40MHz
+		//T7I = 000 Prescaler = FCPU/8 rï¿½solution 200ns ï¿½ 40MHz
 		//T7M = 0 Mode timer
-		//Bit Réservé = 00
-		//T7R = 0 Timer 7 à l'arrêt
+		//Bit Rï¿½servï¿½ = 00
+		//T7R = 0 Timer 7 ï¿½ l'arrï¿½t
 		T78CON &= 0XFFF0;
 		// Programmation du registre CCM2 pour CC28 capture compare mode
 		//Capture compare mode register CCM0
-		// ACC28 alloué au timer 7
-		// CCMOD7 mode 3 compare reset de la sortie à overflow  de timer  
-		// ACC31,ACC30,ACC29,CCMOM31,CCMOD30,CCMOD29 non programmés
+		// ACC28 allouï¿½ au timer 7
+		// CCMOD7 mode 3 compare reset de la sortie ï¿½ overflow  de timer  
+		// ACC31,ACC30,ACC29,CCMOM31,CCMOD30,CCMOD29 non programmï¿½s
 		// ==> CCM7 = xxxx xxxx  xxxx 0111 = 0x XXX7
 		CCM7 &= 0xFFF7;  //Reset ACC27
 		CCM7 |= 0x0007;  //Set CMOD28
 	
 	
-		//Préchargement des valeurs du BUZZER 
- 	    //Calcul du rechargement du timer T7 pour fixer la période du PWM de réglage du niveau sonore 
-	    //T7REL = 65535 - (1/Fréquence buzzer en ns) / Résolution du timer en ns(FCPU /8)200ns voir registre T78CON) 
+		//Prï¿½chargement des valeurs du BUZZER 
+ 	    //Calcul du rechargement du timer T7 pour fixer la pï¿½riode du PWM de rï¿½glage du niveau sonore 
+	    //T7REL = 65535 - (1/Frï¿½quence buzzer en ns) / Rï¿½solution du timer en ns(FCPU /8)200ns voir registre T78CON) 
         T7REL = 65535 - (10E9/Frequency_Buzzer)/(10E3/(FCPU/8)); 
 
 		//Programmation du registre CC28 capture compare pour sortie P7.4
-		//Rapport cyclique du PWM à 50%
+		//Rapport cyclique du PWM ï¿½ 50%
 		CC28 = (UWORD16)(T7REL + (65535 - T7REL)/2);
 		
-		//Arrêt du timer T7
+		//Arrï¿½t du timer T7
 		T7R = 0;
-		// sortie Pwm3 désactivée
+		// sortie Pwm3 dï¿½sactivï¿½e
 		PWMCON1 &= 0xFFF7;    	
-		// Desactivation Buzzer Sécurité
+		// Desactivation Buzzer Sï¿½curitï¿½
 		SEC_BUZ = 0;
 	}
 	else
 	{
 		
-		//Préchargement des valeurs du BUZZER 
- 	    //Calcul du rechargement du timer T7 pour fixer la période du PWM de réglage du niveau sonore 
- 	    //T7REL = 65535 - (1/Fréquence buzzer en ns) / Résolution du timer en ns(FCPU /8)200ns voir registre T78CON) 
+		//Prï¿½chargement des valeurs du BUZZER 
+ 	    //Calcul du rechargement du timer T7 pour fixer la pï¿½riode du PWM de rï¿½glage du niveau sonore 
+ 	    //T7REL = 65535 - (1/Frï¿½quence buzzer en ns) / Rï¿½solution du timer en ns(FCPU /8)200ns voir registre T78CON) 
         T7REL = 65535 - (10E9/Frequency_Buzzer)/(10E3/(FCPU/8)); 
 		//Programmation du registre CC28 capture compare pour sortie P7.4
-		//Rapport cyclique du PWM à 50%
+		//Rapport cyclique du PWM ï¿½ 50%
 		CC28 = (UWORD16)(T7REL + (65535 - T7REL)/2);
 		
 	}

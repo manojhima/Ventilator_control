@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505													  */
+/* Project Nï¿½  :  RB0505													  */
 /*																			  */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -30,7 +30,7 @@
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../DATABASE/DB_Config.h"
-#include "Flash_Monit_data.h"
+#include "Flash_Monit_Data.h"
 #include "DRV_NAND_Flash_Init.h"
 
 

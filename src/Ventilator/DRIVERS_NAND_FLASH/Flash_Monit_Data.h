@@ -141,7 +141,8 @@ Pour une meilleure optimisation taille + vitesse de code, cocher :
 
 
  //	#pragma class HB=EXTERNAL_RAM
-		UBYTE huge DRV_NAND_Bad_Block_Map[NAND_FLASH_BLOCK_NUMBER_LIMIT];
+//		UBYTE huge DRV_NAND_Bad_Block_Map[NAND_FLASH_BLOCK_NUMBER_LIMIT];
+		UBYTE DRV_NAND_Bad_Block_Map[NAND_FLASH_BLOCK_NUMBER_LIMIT];
  //	#pragma class HB=HB		
 
 

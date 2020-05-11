@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                            				*/
+/* Project Nï¿½  :  RB0505                                            				*/
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,26 +24,26 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
-#include "../DRIVERS_USB/Driver_USB_data.h"
+#include "../DRIVERS_USB/Driver_USB_Data.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-#ifndef _TASKING
- void INTERRUPT_USB_Busy(void)	interrupt (0x1A)
-#else
-interrupt (0x1A)
+//#ifndef _TASKING
+// void INTERRUPT_USB_Busy(void)	interrupt (0x1A)
+//#else
+//interrupt (0x1A)
  void INTERRUPT_USB_Busy(void)
-#endif
+//#endif
 {
  	UBYTE ComputeReplyHeaderCheck = 0 ;
 	UWORD16 ReplyHeaderCheck = 0 ;

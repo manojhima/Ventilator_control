@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"	
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
@@ -50,5 +50,5 @@ void DRV_RTC_control (UBYTE data_control)
 	SSCTB  = (UWORD16) data_control;          /*%C loading buffer with writing adressof the control register 	  */
 	DRV_RTC_WaitEndTransmit(); 
 	DRV_OutputPort(CE_RTC1, 0); /*%C Desactivation chip enable RTC																*/
-	DRV_RTC_tempo_CE();      	  /*%C tempo 1,5 µs ( /CS disable time minimum tcwh de 1 µs )}}						*/
+	DRV_RTC_tempo_CE();      	  /*%C tempo 1,5 ï¿½s ( /CS disable time minimum tcwh de 1 ï¿½s )}}						*/
 }

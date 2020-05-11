@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,13 +23,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "io_declare.h"
+#include "io_stubs.h"
 
 					 
 /******************************************************************************/
@@ -40,7 +41,7 @@ void DRV_Temperature_WaitEndTransmit(void)
 {
 /*%CRAZ of flag underflow timer 3	*/
 	T3IR = 0;
-/*%C24 * 200ns, delay of timer3 = 4.8µs	 */
+/*%C24 * 200ns, delay of timer3 = 4.8ï¿½s	 */
 	T3 = 0x0018;   
 	//--------------------------------------------------------
 /*%C T3 CON = 0x00C0 = 1100 0000b					  */
@@ -49,7 +50,7 @@ void DRV_Temperature_WaitEndTransmit(void)
 /*%C 			: Resolution = 400ns			      */
 /*%C			: Period = 26ms					      */
 /*%C T3M = 000	: Timer Mode						  */
-/*%C T3R = 1	: Timer/Counter3 démarrage		      */
+/*%C T3R = 1	: Timer/Counter3 dï¿½marrage		      */
 /*%C T3UD = 1 et 									  */
 /*%C T3UDE = 0	: Count Down						  */
 /*%C count down, fc=fcpu/8, start timer				  */

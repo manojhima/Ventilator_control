@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -36,12 +37,12 @@
 
 
 
-#ifndef _TASKING
-void INTERRUPT_Receive_SPO2(void) interrupt 0x40
-#else
-interrupt 0x40
+//#ifndef _TASKING
+//void INTERRUPT_Receive_SPO2(void) interrupt 0x40
+//#else
+//interrupt 0x40
 void INTERRUPT_Receive_SPO2(void) 
-#endif
+//#endif
 { 
 	UWORD16  ReceivedData;
  	static e_FrameUART1  IdxFrameUART1 = 0;
@@ -52,7 +53,7 @@ void INTERRUPT_Receive_SPO2(void)
 	ReceivedData &= 0x00FF;
 	//Raz du flags ASC1 receive interrupt request
 	XIR0SEL &= 0xFF7F;
-	//Détection et synchronisation sur début de trame (valeur > 127 bit7 toujours = 1)
+	//Dï¿½tection et synchronisation sur dï¿½but de trame (valeur > 127 bit7 toujours = 1)
 	if (ReceivedData > 127)
 		{
 		IdxFrameUART1 = DATA_FRAME0;

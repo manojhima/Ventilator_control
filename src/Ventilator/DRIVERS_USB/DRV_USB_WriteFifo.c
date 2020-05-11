@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505																		*/
+/* Project Nï¿½  :  RB0505																		*/
 /*																										*/
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -26,12 +26,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/define.h"
@@ -58,10 +58,10 @@ void DRV_USB_WriteFifo(void)
 	{
 		/*Positionne le code d'erreur dans la pile*/
 		FifoErrorCodeToIHM[UsbPtrWriteFifoErrorCodeToIHM] = (UBYTE)DB_UsbRead(USB_ERROR_CODE_U16);
-		/*Incrémente le pointeur de pile*/
+		/*Incrï¿½mente le pointeur de pile*/
 		UsbPtrWriteFifoErrorCodeToIHM ++ ;
 		UsbPtrWriteFifoErrorCodeToIHM = (UBYTE)(UsbPtrWriteFifoErrorCodeToIHM % FIFO_ERROR_CODE_TO_IHM_SIZE);
-		/*Permet de détecter le prochain code d'erreur*/
+		/*Permet de dï¿½tecter le prochain code d'erreur*/
 		DB_UsbWrite(USB_ERROR_CODE_READY_U16, FLAG_ERROR_CODE_NOT_READY);
 	}
 	else

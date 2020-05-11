@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505			                                           	*/
+/* Project Nï¿½  :  RB0505			                                           	*/
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,29 +25,30 @@
 /******************************************************************************/
 
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../GENERAL/define.h"
 #include "../DRIVERS_COM/DRV_COM_Data.h"
 #include "../DRIVERS_NAND_FLASH/Flash_Monit_Data.h"
-#include "../DRIVERS_USB/Driver_USB_data.h"
+#include "../DRIVERS_USB/Driver_USB_Data.h"
 #include "INTERRUPT_USB_SpiBus.h"
 						
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-#ifndef _TASKING
- void INTERRUPT_USB_SpiBus_End_Transmit(void)	interrupt (0x41)
-#else
-interrupt (0x41)
+//#ifndef _TASKING
+// void INTERRUPT_USB_SpiBus_End_Transmit(void)	interrupt (0x41)
+//#else
+//interrupt (0x41)
  void INTERRUPT_USB_SpiBus_End_Transmit(void)
-#endif
+//#endif
 
 {														  
 	/*%C Set the PECC7 register, inhibition this interrupt and reset this flag */
@@ -58,12 +59,12 @@ interrupt (0x41)
 
 }	  
 
-#ifndef _TASKING
- void INTERRUPT_USB_SpiBus_End_Receive(void)	interrupt (0x42)
-#else
-interrupt (0x42)
+//#ifndef _TASKING
+// void INTERRUPT_USB_SpiBus_End_Receive(void)	interrupt (0x42)
+//#else
+//interrupt (0x42)
  void INTERRUPT_USB_SpiBus_End_Receive(void)
-#endif
+//#endif
 { 
 	/*%C Set the PECC6 register, inhibition this interrupt and reset this flag */
 	XP2IC &= 0xFF3F ;

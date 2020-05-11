@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,9 +24,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-	#include <intrins.h>
-#endif	 
+//#ifndef _TASKING
+//	#include <intrins.h>
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -45,26 +45,26 @@ void DRV_EVENT_Erase_Flash(void)
 	UWORD16 xhuge *adr_flash;  	 
 	UBYTE i;
 
-/*%C 1st cycle erazing séquence 				 */
+/*%C 1st cycle erazing sï¿½quence 				 */
 	adr_flash = (UWORD16 xhuge *)(EVENT_FLASH_START_ADDRESS + 0xAAA);
 	*adr_flash = 0x00AA;
-/*%C 2d cycle erazing séquence 				 */
+/*%C 2d cycle erazing sï¿½quence 				 */
 	adr_flash = (UWORD16 xhuge *)(EVENT_FLASH_START_ADDRESS +0x554);
 	*adr_flash = 0x0055;
-/*%C 3d cycle erazing séquence 				 */
+/*%C 3d cycle erazing sï¿½quence 				 */
 	adr_flash = (UWORD16 xhuge *)(EVENT_FLASH_START_ADDRESS +0xAAA);
 	*adr_flash = 0x0080;
-/*%C 4ith cycle erazing séquence 				 */
+/*%C 4ith cycle erazing sï¿½quence 				 */
 	adr_flash = (UWORD16 xhuge *)(EVENT_FLASH_START_ADDRESS +0xAAA);
 	*adr_flash = 0x00AA;
-/*%C 5th cycle erazing séquence 				 */
+/*%C 5th cycle erazing sï¿½quence 				 */
 	adr_flash = (UWORD16 xhuge *)(EVENT_FLASH_START_ADDRESS + 0x554);
 	*adr_flash = 0x0055; 
-/*%C 6th cycle erazing séquence 				*/
+/*%C 6th cycle erazing sï¿½quence 				*/
 	adr_flash = (UWORD16 xhuge *)(EVENT_FLASH_START_ADDRESS + 0x0AAA);
 	*adr_flash = 0x0010; 
-/*%C Tempo 24.8µs waiting erazing validation		*/
-/*%C Tempo vérifiée sur oscilloscope					*/
+/*%C Tempo 24.8ï¿½s waiting erazing validation		*/
+/*%C Tempo vï¿½rifiï¿½e sur oscilloscope					*/
 
 	for (i=0;i<165;i++) 
 		{

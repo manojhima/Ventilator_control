@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,7 +23,7 @@
 #ifndef MAIN_VERSION_ERROR_H
 #define MAIN_VERSION_ERROR_H
 
-
+#define bit char
 extern UWORD16 DB_ConfigWrite(e_DB_CONFIG Id,
 										UWORD16 Value);
 extern void DRV_DIS_HostRequest ( bit etat );
@@ -39,7 +39,8 @@ extern void DIS_DisplayPage( UBYTE page
 
 extern UWORD16 DB_ConfigRead(e_DB_CONFIG Id);
 
-extern const UBYTE *const huge cMSG_Alarm[Mark_Displayed_Alarm][NB_LANGUAGE];
+//extern const UBYTE *const huge cMSG_Alarm[Mark_Displayed_Alarm][NB_LANGUAGE];
+extern const UBYTE *const cMSG_Alarm[Mark_Displayed_Alarm][NB_LANGUAGE];
 extern void DB_EventMngt(UWORD16 Value);
 
 #endif

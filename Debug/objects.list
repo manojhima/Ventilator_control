@@ -257,7 +257,6 @@
 "src/Ventilator/GENERAL/DRV_Temperature_WaitEndTransmit.o"
 "src/Ventilator/GENERAL/Saturation.o"
 "src/Ventilator/GENERAL/lsqrt.o"
-"src/Ventilator/GENERAL/start.o"
 "src/Ventilator/HMI/HMI_IhmType.o"
 "src/Ventilator/INTERRUPTS/INTERRUPT_ADC_Convert.o"
 "src/Ventilator/INTERRUPTS/INTERRUPT_ADC_ConvertError.o"

@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505			                                           	*/
+/* Project Nï¿½  :  RB0505			                                           	*/
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,28 +24,29 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
-#include "INTERRUPT_USB_Error.h"
+#include "INTERRUPT_USB_error.h"
 		
 /*****************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-#ifndef _TASKING
- void INTERRUPT_USB_Error(void)	interrupt (0x43)
-#else
-interrupt (0x43)
+//#ifndef _TASKING
+// void INTERRUPT_USB_Error(void)	interrupt (0x43)
+//#else
+//interrupt (0x43)
  void INTERRUPT_USB_Error(void)
-#endif
+//#endif
 {
-	/*Gestion d'erreurs clé USB */
+	/*Gestion d'erreurs clï¿½ USB */
 	/*A finir*/
 	/*%C Reset Flaf IR*/
 	XIR3CLR = 0x0008 ;

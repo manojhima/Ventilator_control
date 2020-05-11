@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505 				                                          */
+/* Project Nï¿½  :  RB0505 				                                          */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -45,6 +45,7 @@
 	extern UWORD16 DB_UsbRead(e_DB_USB Id);
 
 	/*%C Initializee Pointer Flash Events Read */
-	extern UWORD16 xhuge * DRV_EVENT_TransPtrMemory(void);
+//	extern UWORD16 xhuge * DRV_EVENT_TransPtrMemory(void);
+	extern UWORD16 * DRV_EVENT_TransPtrMemory(void);
 
  #endif

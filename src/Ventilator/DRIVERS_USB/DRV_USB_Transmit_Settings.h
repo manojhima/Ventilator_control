@@ -1,5 +1,5 @@
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -38,8 +38,10 @@
 	extern void DB_CurrentWrite(e_DB_ADJUST_CURRENT Id, UWORD16 Value);
 	extern UWORD16 DB_ConfigWrite(e_DB_CONFIG Id, UWORD16 Value);
 	
-	extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
-													UWORD16 value);
+//	extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//													UWORD16 value);
+	extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,
+														UWORD16 value);
 
 	extern UWORD16 CRC16_TableCompute(	UWORD16 StartIndex,
 													UWORD16 StopIndex,

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -27,30 +27,30 @@
 
 
 /******************************************************************************/
-/* -	Pression patient : de -200 à + 900  en 10-1 mbar sur deux octets : 		*/
-/*		1°octet = pression / 256 et 2° octet = pression %256. Le signal de 		*/
-/* 	pression est renvoyé dans un format spécifique 									*/
-/*		permettant de simplifier la transmission des valeurs négatives. Un 		*/
-/* 	offset de + 600 est proposé par défaut. 											*/
-/*		La prise en compte des décimales est nécessaire afin d'éviter une 		*/
+/* -	Pression patient : de -200 ï¿½ + 900  en 10-1 mbar sur deux octets : 		*/
+/*		1ï¿½octet = pression / 256 et 2ï¿½ octet = pression %256. Le signal de 		*/
+/* 	pression est renvoyï¿½ dans un format spï¿½cifique 									*/
+/*		permettant de simplifier la transmission des valeurs nï¿½gatives. Un 		*/
+/* 	offset de + 600 est proposï¿½ par dï¿½faut. 											*/
+/*		La prise en compte des dï¿½cimales est nï¿½cessaire afin d'ï¿½viter une 		*/
 /* 	apparence de courbe en " escalier ".												*/
 
-/* -	Débit inspiré : de 0 à 2000 en dl/min sur deux octets :						*/
-/* 	1°octet = débit / 256 et 2° octet = débit %256.									*/
+/* -	Dï¿½bit inspirï¿½ : de 0 ï¿½ 2000 en dl/min sur deux octets :						*/
+/* 	1ï¿½octet = dï¿½bit / 256 et 2ï¿½ octet = dï¿½bit %256.									*/
 
-/* -	Débit expiré : de 0 à 2000 en dl/min sur deux octets :						*/
-/*    1°octet = débit / 256 et 2° octet = débit %256.									*/
+/* -	Dï¿½bit expirï¿½ : de 0 ï¿½ 2000 en dl/min sur deux octets :						*/
+/*    1ï¿½octet = dï¿½bit / 256 et 2ï¿½ octet = dï¿½bit %256.									*/
 
-/* -	Caractères d'alarme : sur 4 octets utilisables pour transmettre les 		*/
-/* 	états  d'activation ou désactivation des alarmes 								*/
-/*		(voir § Options de monitorage).														*/
+/* -	Caractï¿½res d'alarme : sur 4 octets utilisables pour transmettre les 		*/
+/* 	ï¿½tats  d'activation ou dï¿½sactivation des alarmes 								*/
+/*		(voir ï¿½ Options de monitorage).														*/
 
-/* -	Caractère de fin de trame : sur un octet. Le caractère de fin de trame	*/
+/* -	Caractï¿½re de fin de trame : sur un octet. Le caractï¿½re de fin de trame	*/
 /* 	permet d'identifier les ensembles 													*/
-/*		successifs de données renvoyées à chaque interruption. Ce caractère est	*/
-/* 	aussi utilisé pour identifier 														*/
+/*		successifs de donnï¿½es renvoyï¿½es ï¿½ chaque interruption. Ce caractï¿½re est	*/
+/* 	aussi utilisï¿½ pour identifier 														*/
 /*		des phases du cycle de respiration (inspiration, expiration, veille) :	*/
-/*  	voir § Identification de Ti & Te.		
+/*  	voir ï¿½ Identification de Ti & Te.		
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
@@ -61,7 +61,7 @@
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Rtc.h"
 #include "../GENERAL/CRC16_Table.h"
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "../DATABASE/DB_Config.h"

@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -42,12 +43,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_Timer5(void) interrupt 0x25
-#else
-interrupt(0x25)
+//#ifndef _TASKING
+//void INTERRUPT_Timer5(void) interrupt 0x25
+//#else
+//interrupt(0x25)
 void INTERRUPT_Timer5(void)
-#endif
+//#endif
 {
 #define HIGH_PRIORITY_START_OF_SECOND_BURST_INDEX (SEQUENCE_FAST/2)
 
@@ -59,7 +60,7 @@ void INTERRUPT_Timer5(void)
 /* Max sequence buzzer */
    UWORD16 Sequence_Max = SEQUENCE_MAX;
 
-   // Incrémentation du nombre de boucle
+   // Incrï¿½mentation du nombre de boucle
    // Increasing the number of loops
    CounterOfTurn++;
 
@@ -132,7 +133,7 @@ void INTERRUPT_Timer5(void)
       EndOfOverflow = TRUE;
       StartOfOverflow = TRUE;
       CounterOfTurn = 0;
-      // Inversion du signal à chaque passage
+      // Inversion du signal ï¿½ chaque passage
       // Inversion of the signal at each pass
       Active = !Active;
       T5IE = 0;
@@ -162,7 +163,7 @@ void INTERRUPT_Timer5(void)
       // Loading the timer
       T5 = (UWORD16)(((UWORD32)cDRV_IHM_SIGNAL_BUZ[SoundActive - 1][Id_StatusSignal] * 10000) / 128);
 
-      // Inversion du signal à chaque passage
+      // Inversion du signal ï¿½ chaque passage
       // Inversion of the signal at each pass
       Active = !Active;
       if (Active)
@@ -203,7 +204,7 @@ void INTERRUPT_Timer5(void)
          }
       }
       T5IE = 1;
-      // Incrémentation de l'index du tableau de signal
+      // Incrï¿½mentation de l'index du tableau de signal
       // Increasing the index of the signal table
       Id_StatusSignal++;
       // Initialisation

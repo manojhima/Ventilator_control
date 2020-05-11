@@ -27,11 +27,11 @@
 /******************************************************************************/
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/io_declare.h"
 
 #include "../DATABASE/DB_PowerSupply.h"
@@ -77,7 +77,7 @@ void DRV_SPIPowerSupplyUpdate(void)
 		{
 			SpiPtrReadBufferRx =(UBYTE) ((SpiPtrReadBufferRx + 1) % SPI_POWER_RECEIVE_BufferSize);
 		}
- 		/*%C if frame complète	*/
+ 		/*%C if frame complï¿½te	*/
 		if (((SPI_POWER_RECEIVE_BufferSize - SpiPtrReadBufferRx + SpiPtrWriteBufferRx)
 			 % SPI_POWER_RECEIVE_BufferSize) >= SPI_POWER_RECEIVE_EndOfTable)
 		{

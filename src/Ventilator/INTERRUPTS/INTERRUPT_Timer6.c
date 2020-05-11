@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -31,12 +31,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_Timer6(void) interrupt 0x26
-#else
-interrupt (0x26)
+//#ifndef _TASKING
+//void INTERRUPT_Timer6(void) interrupt 0x26
+//#else
+//interrupt (0x26)
  void INTERRUPT_Timer6(void)
-#endif
+//#endif
 {  
         
  	MAIN_activate_tasks();			  

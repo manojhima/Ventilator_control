@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -44,14 +45,14 @@
 
 void DRV_Buz_Test(e_NUMBER_BUZ NumBuzzer, e_TYPE_TEST_BUZ Mode)
 {
-	// Arrêt des buzzers
+	// Arrï¿½t des buzzers
 	if (Mode == NO_BUZ)
 	{
 		if (NumBuzzer == BUZ_CARD)
 		{ 
-			// sortie Pwm3 désactivée
+			// sortie Pwm3 dï¿½sactivï¿½e
 			PWMCON1 &= 0xFFF7;   
-			/*%C  Arrêt du timer T7													                  */
+			/*%C  Arrï¿½t du timer T7													                  */
 			T7R = 0;
 			T7 = 0;
 	 	
@@ -70,9 +71,9 @@ void DRV_Buz_Test(e_NUMBER_BUZ NumBuzzer, e_TYPE_TEST_BUZ Mode)
 		{
 			/*%C Niveau sonore max */
 			PW3 = 0;
-			// sortie Pwm3 activée
+			// sortie Pwm3 activï¿½e
 			PWMCON1 |= 0x0008;
-			/*%C  Démarrage du timer T7											                  */
+			/*%C  Dï¿½marrage du timer T7											                  */
 			T7R = 1;
 	
 			// Information pour l'anomalie Buzzer

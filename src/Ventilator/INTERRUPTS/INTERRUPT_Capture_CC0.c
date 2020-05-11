@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -39,12 +40,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_Capture_CC0 (void) interrupt 0x10
-#else
-interrupt (0x10)
+//#ifndef _TASKING
+//void INTERRUPT_Capture_CC0 (void) interrupt 0x10
+//#else
+//interrupt (0x10)
  void INTERRUPT_Capture_CC0 (void)
-#endif
+//#endif
 {
 	UBYTE Loop;
 	//Attente de 2us avant de tester s'il s'agit bien d'un front montant
@@ -64,7 +65,7 @@ interrupt (0x10)
 		 	Timer1Measure[1] = (UWORD32)CC0 + ((UWORD32)Cpt_Timer1_Overflow * 65535);
 			SpeedBlowerDigit = Timer1Measure[1] - Timer1Measure[0];
 								   
-			if (SpeedBlowerDigit > 4918) //Saturation à 61000 tr/min
+			if (SpeedBlowerDigit > 4918) //Saturation ï¿½ 61000 tr/min
 			{ 
  				CaptureNumber = 0;
 				CC0IE = 0; 

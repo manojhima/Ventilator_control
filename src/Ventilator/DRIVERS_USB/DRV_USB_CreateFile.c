@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505 				                                          */
+/* Project Nï¿½  :  RB0505 				                                          */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -26,7 +26,7 @@
 
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
-#include "../DATABASE/DB_RTC.h"
+#include "../DATABASE/DB_Rtc.h"
 #include "Driver_USB_Data.h"
 #include "DRV_USB_CreateFile.h"
 

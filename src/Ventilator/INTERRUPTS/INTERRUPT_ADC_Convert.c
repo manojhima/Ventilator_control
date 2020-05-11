@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,34 +24,35 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/io_declare.h"	
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../DRIVERS/Driver_Datas.h"
-#include "../DRIVERS_ADC/Driver_ADConverter_data.h"
+#include "../DRIVERS_ADC/Driver_ADConverter_Data.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_ADC_Convert(void) interrupt 0x28
-#else
-interrupt (0x28)
+//#ifndef _TASKING
+//void INTERRUPT_ADC_Convert(void) interrupt 0x28
+//#else
+//interrupt (0x28)
  void INTERRUPT_ADC_Convert(void)
-#endif
+//#endif
 {  
-	PECC0 = 0x0210 ;			  		    			// Réinitialisation du compteur de PECC
-	DSTP0 = _sof_(conversion_numerique);    	// Réinitialisation du pointeur DESTINATION du PECC0
+	PECC0 = 0x0210 ;			  		    			// Rï¿½initialisation du compteur de PECC
+	DSTP0 = _sof_(conversion_numerique);    	// Rï¿½initialisation du pointeur DESTINATION du PECC0
 
-	// affectation du résultat de conversion
+	// affectation du rï¿½sultat de conversion
  	AD_Digit.PatientPressure 	= NUM_PRESSION_INTERNE;
   	AD_Digit.FlowInsp     		= NUM_DEBIT_INSPIRATOIRE;
   	AD_Digit.TestBuzzer    		= NUM_TEST_BUZZER;

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                           				*/
+/* Project Nï¿½  :  RB0505                                           				*/
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -284,7 +284,8 @@ typedef enum
 	UWORD16 *PtrAdresseSettingTable = 0 ;
 
 	/*%C  Reading of Memory flash Writing index */
-	UWORD16 xhuge *UsbAdressFlashEvent;
+//	UWORD16 xhuge *UsbAdressFlashEvent;
+	UWORD16 *UsbAdressFlashEvent;
 				 
 	/*%C To previous Usb Key Full */
 	UWORD32 UsbNbBytesWriteOnKey = 0 ;
@@ -317,10 +318,11 @@ typedef enum
 	UWORD32 NbBytesMonitoringFlashTrendToWrite = 0 ;
 
 /*********************************************************/
+#define sdata
+#define near
 
 
-
-	/*Déclaration des 2 tableaux en XRAM1 */
+	/*Dï¿½claration des 2 tableaux en XRAM1 */
 	/* Keil  */
 #ifndef _TASKING
    UBYTE sdata PEC_Emission 		[255];
@@ -405,7 +407,8 @@ typedef enum
 	extern UWORD16 *PtrAdresseSettingTable ;
 
 	/*%C  Reading of Memory flash Writing index */
-	extern UWORD16 xhuge *UsbAdressFlashEvent;
+//	extern UWORD16 xhuge *UsbAdressFlashEvent;
+	extern UWORD16 *UsbAdressFlashEvent;
 
 	/*%C To previous Usb Key Full */
 	extern UWORD32 UsbNbBytesWriteOnKey ;
@@ -440,7 +443,8 @@ typedef enum
 /*********************************************************/
 
 
-
+#define sdata
+#define near
 	/* Keil  */
 #ifndef _TASKING
 	extern UBYTE sdata  PEC_Emission 	[];

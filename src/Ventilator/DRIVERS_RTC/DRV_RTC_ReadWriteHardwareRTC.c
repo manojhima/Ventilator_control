@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/io_declare.h"	
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
@@ -47,7 +48,7 @@ void DRV_RTC_ReadWriteHardwareRTC(void)
 	UBYTE bcd;
 	UWORD16 receive;
 
-	/* Prépositionement des niveaux des lignes SCLK et TSR  sur le bus SPI */
+	/* Prï¿½positionement des niveaux des lignes SCLK et TSR  sur le bus SPI */
 	SPI_PORT |= 0x2200;
 
 /*%C If a data is present into RTC Fifo */	

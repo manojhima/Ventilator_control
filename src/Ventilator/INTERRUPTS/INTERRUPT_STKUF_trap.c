@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif 	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/io_declare.h"
 #include "../GENERAL/enum.h"
@@ -39,12 +39,12 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-#ifndef _TASKING
-void INTERRUPT_STKUF_trap(void) interrupt 0x06
-#else
-interrupt (0x06)
+//#ifndef _TASKING
+//void INTERRUPT_STKUF_trap(void) interrupt 0x06
+//#else
+//interrupt (0x06)
  void INTERRUPT_STKUF_trap(void)
-#endif
+//#endif
 {
    while (1) 
   	{ 
