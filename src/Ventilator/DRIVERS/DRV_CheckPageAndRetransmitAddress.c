@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,19 +25,19 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else	    
- 		#include "regf276e.h"
-#endif 	
-#include "io_declare.h"
-#include "enum.h"
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+// 		#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
 #include "DRV_CheckPageAndRetransmitAddress.h"
 
 void	DRV_CheckPageAndRetransmitAddress(UWORD16 Address)
 {
-	//Vérification si début de page mémoire eeprom	 (page de 32 octets)
+	//Vï¿½rification si dï¿½but de page mï¿½moire eeprom	 (page de 32 octets)
 	if (Address % 32 == 0) 
 		{
     	DRV_EEP_tempo_CE();	  	// tempo Chip select disable
@@ -46,17 +46,17 @@ void	DRV_CheckPageAndRetransmitAddress(UWORD16 Address)
 		DRV_OutputPort(CE_EEP, 0); // Activation chip enable EEPROM
 		do
 			{
-			//Contrôle mémoire eeprom libre (pas d'écriture en cours)
+			//Contrï¿½le mï¿½moire eeprom libre (pas d'ï¿½criture en cours)
 			DRV_OutputPort(CE_EEP, 0); // Activation chip enable EEPROM
-			SSCTB  = 0x0005;          // Envoi de l'instruction RDSR	 activation de l'écriture eeprom
+			SSCTB  = 0x0005;          // Envoi de l'instruction RDSR	 activation de l'ï¿½criture eeprom
 			DRV_EEP_WaitEndTransmit();// attente de fin de transmission sur le SPI
 			SSCTB  = 0x0000;	        // generation horloge SCLK_SPI_CPU pour la lecture du status EEPROM
 			DRV_EEP_WaitEndTransmit();// attente de fin de transmission sur le SPI
 			DRV_OutputPort(CE_EEP, 1); // Desactivation chip enable EEPROM
 			DRV_EEP_tempo_CE();		  // activation chip enable EEPROM
 			}
-		while ((SSCRB & 0x0001)  != 0x00); 	  //vérification si écriture en cours
-		//Transmission de l'adresse ( page mémoire suivante)
+		while ((SSCRB & 0x0001)  != 0x00); 	  //vï¿½rification si ï¿½criture en cours
+		//Transmission de l'adresse ( page mï¿½moire suivante)
 		DRV_OutputPort(CE_EEP, 0); // Activation chip enable EEPROM
 		SSCTB   = 0x0006;         // Envoi de l'instruction WREN
 		DRV_EEP_WaitEndTransmit();// attente de fin de transmission sur le SPI

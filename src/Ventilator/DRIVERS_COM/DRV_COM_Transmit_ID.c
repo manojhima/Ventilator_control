@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,12 +25,13 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../DATABASE/DB_Control.h"
@@ -104,7 +105,7 @@ void DRV_COM_Transmit_ID(void)
  	   	/* Size of array to transmit	   								 */
  	   	PECC2 |= End_Of_Table_Com_ID_Device + End_Of_Table_Com_TX_Remote - 1 ; 
 		/*%C Origin index on array												*/
- 	  	SRCP2 = _sof_(&Array_ID); 	
+// 	  	SRCP2 = _sof_(&Array_ID); 	 //manoj
  	   	/*%C Index transformation in adress  0 segment					*/
 		/*%C Destination index on  RS232 transmit register	  			*/
  	   	DSTP2 = (UWORD16) &S0TBUF; 

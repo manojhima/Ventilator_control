@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,13 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/define.h"
@@ -81,11 +82,11 @@ if(DRV_COM_End_of_Transmit == TRUE)
 
 		/*%C Autorisation de l'interruption de transmission RS232 */ 
 		S0TBIR = 0;
-		/*%C incrémentation du pointeur source - transfert d'un word */
+		/*%C incrï¿½mentation du pointeur source - transfert d'un word */
 		PECC2 = 0x0500; 
-		/*%C taille du tableau d'évènement à transférer */
+		/*%C taille du tableau d'ï¿½vï¿½nement ï¿½ transfï¿½rer */
 		PECC2 |= (UBYTE)(DRV_TREND_Received_Data + End_Of_Table_Com_TX_Remote);
-		/*%C adresse du tableau d'évènement 	*/
+		/*%C adresse du tableau d'ï¿½vï¿½nement 	*/
 		SRCP2 = _sof_(&Array_Trend_Monit); 	 
 		/*%C Pointeur destination  pointe sur le registre de transmission RS232 */
 		DSTP2 = (UWORD16) &S0TBUF; 

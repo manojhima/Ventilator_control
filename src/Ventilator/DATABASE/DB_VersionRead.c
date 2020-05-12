@@ -25,9 +25,9 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "DRV_VarEeprom.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

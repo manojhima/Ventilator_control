@@ -1,5 +1,5 @@
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -30,6 +30,7 @@
 /*%C Transmit Settings */
 	/* Keil  */
 #ifndef _TASKING
+#define sdata
 UBYTE sdata Array_Settings[End_Of_Table_TX_Settings + End_Of_Table_Com_TX_Remote - 1];
 	/* Tasking  */
 #else

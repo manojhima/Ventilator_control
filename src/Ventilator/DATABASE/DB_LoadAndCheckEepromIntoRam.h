@@ -28,9 +28,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "typedef.h"
-#include "DB_current.h"
-#include "DB_config.h"
+#include "../GENERAL/typedef.h"
+#include "DB_Current.h"
+#include "DB_Config.h"
 /******************************************************************************/
 /*                 VARIABLE DECLARATION                                       */
 /******************************************************************************/
@@ -43,7 +43,9 @@ UWORD16 DB_EepVsimvAdjustDbError[end_of_adjust_table];
 UWORD16 DB_EepPsimvAdjustDbError[end_of_adjust_table];
 UWORD16 DB_EepCpapAdjustDbError[end_of_adjust_table];
 
-extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//												e_EEP_ACCESS_STATE access_type);
+extern void EEP_FIFO_PushOneData(	UWORD16 *ptr_DataRam,
 												e_EEP_ACCESS_STATE access_type);
 
 #endif												 

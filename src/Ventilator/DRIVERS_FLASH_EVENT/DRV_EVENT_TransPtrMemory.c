@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -35,7 +35,8 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-UWORD16 xhuge * DRV_EVENT_TransPtrMemory(void)
+//UWORD16 xhuge * DRV_EVENT_TransPtrMemory(void)
+UWORD16 * DRV_EVENT_TransPtrMemory(void)
 {
 #ifndef _BORLAND
 return(Ptr_Flash);

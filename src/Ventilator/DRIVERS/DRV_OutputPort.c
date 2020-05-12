@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,9 +24,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
-#include "enum.h"
-#include "io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/io_declare.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
@@ -34,7 +34,8 @@
 
 void DRV_OutputPort(e_OUTPUT_NAME _Port, UWORD16 _Value)
 {
-	UWORD16 *PtrPortWord = (UWORD16 xhuge *)0x800000;
+//	UWORD16 *PtrPortWord = (UWORD16 xhuge *)0x800000;
+	UWORD16 *PtrPortWord = (UWORD16 *)0x800000;
 	UWORD16 Tampon1 = 0x0000;
 	UWORD16 Tampon2 = 0x0000;
 	static UWORD16 OutputPortValue = 0x1FE8;

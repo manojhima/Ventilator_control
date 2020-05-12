@@ -50,7 +50,7 @@
 #define END_FRAME_COM_VALUE_1   							 		0x07
 #define END_FRAME_COM_VALUE_2   							 		0x05
 #define END_FRAME_COM_VALUE_3   							 		0x02
-
+#define ID_VENTIL_TASK_MEASURE										0x00 // manoj mock
 
 /*%C Communication ID Data List */
 #define ID_SERIAL_NUMBER	   		 						 		0x01

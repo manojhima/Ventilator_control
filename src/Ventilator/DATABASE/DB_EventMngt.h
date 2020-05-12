@@ -48,11 +48,11 @@ const   UWORD16 EventDataSchemaVersion = 1;
 /************************************************************************/ 
 
 /* Common parameters to all modes */
-#ifndef _BORLAND
-const t_DB_CommonEventMngtParam DB_CommonEventMngtParam[EndCommonEventParam - BeginCommonEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_CommonEventMngtParam DB_CommonEventMngtParam[EndCommonEventParam - BeginCommonEventParam + 1] =
+//#else
 const t_DB_CommonEventMngtParam DB_CommonEventMngtParam[EVENT_SETFIO2MAX_ID - EVENT_DAY_ID + 1] = 
-#endif
+//#endif
 {
 /* Day (Unit:day) */
 {DB_RTC,			DB_RTC_DAY_U16,		 			   FULL}, 	 
@@ -92,17 +92,17 @@ const t_DB_CommonEventMngtParam DB_CommonEventMngtParam[EVENT_SETFIO2MAX_ID - EV
 {DB_COMPUTE,    MEASURE_PFI_VOLTAGE_U16,	 			   MSB},
 /* LSB Watchdog (Unit : 10-1 V) */
 {DB_COMPUTE,    MEASURE_PFI_VOLTAGE_U16,	 			   LSB},
-/* MSB Internal Temperature (Unit : 10-1 °C) */	 
+/* MSB Internal Temperature (Unit : 10-1 ï¿½C) */	 
 {DB_POWERSUPPLY,		AMBIENT_TEMP_S16,  	MSB},
-/* LSB Internal Temperature (Unit : 10-1 °C) */
+/* LSB Internal Temperature (Unit : 10-1 ï¿½C) */
 {DB_POWERSUPPLY,		AMBIENT_TEMP_S16,  	LSB},
 /* MSB Battery Voltage (Unit : 10-1 V) */	 
 {DB_COMPUTE,		MEASURE_BATTERY_VOLTAGE_U16,		MSB},
 /* LSB Battery Voltage (Unit : 10-1 V) */
 {DB_COMPUTE,		MEASURE_BATTERY_VOLTAGE_U16,		LSB},
-/* MSB Battery Temperature (Unit : 10-1 °C) */
+/* MSB Battery Temperature (Unit : 10-1 ï¿½C) */
 {DB_POWERSUPPLY,		TEMP_BAT_S16,  	MSB},
-/* LSB Battery Temperature (Unit : 10-1 °C) */
+/* LSB Battery Temperature (Unit : 10-1 ï¿½C) */
 {DB_POWERSUPPLY,		TEMP_BAT_S16,  	LSB},
 /* MSB Battery Capacity (Unit : ma/h) */
 {DB_POWERSUPPLY,		CAPACITY_U16,  	MSB},			  
@@ -186,11 +186,11 @@ const t_DB_CommonEventMngtParam DB_CommonEventMngtParam[EVENT_SETFIO2MAX_ID - EV
 
 
 /* Specific parameters for the PSV mode */
-#ifndef _BORLAND
-const t_DB_EventMngtParam DB_PsvEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_EventMngtParam DB_PsvEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] =
+//#else
 const t_DB_EventMngtParam DB_PsvEventMngtParam[EVENT_STATE_ID -	EVENT_SPECPAR_1_ID + 1] = 
-#endif
+//#endif
 {
 {ADJUST_P_SUPPORT_U16,	FULL}, /* Inspirated pression settting (Unit : mbar) */
 {0,     STORAGE_CONSTANT}, /* Reserved */
@@ -227,11 +227,11 @@ const t_DB_EventMngtParam DB_PsvEventMngtParam[EVENT_STATE_ID -	EVENT_SPECPAR_1_
 };
 
 /* Specific parameters for the PRES mode */
-#ifndef _BORLAND
-const t_DB_EventMngtParam DB_PresEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_EventMngtParam DB_PresEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] =
+//#else
 const t_DB_EventMngtParam DB_PresEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1_ID + 1] = 
-#endif
+//#endif
 {
 {ADJUST_P_CONTROL_U16,	FULL}, /* Inspirated pression settting (Unit : mbar) */
 {0,     STORAGE_CONSTANT}, /* Reserved */
@@ -268,11 +268,11 @@ const t_DB_EventMngtParam DB_PresEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1
 };
 
 /* Specific parameters for the VOL mode */
-#ifndef _BORLAND
-const t_DB_EventMngtParam DB_VolEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_EventMngtParam DB_VolEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] =
+//#else
 const t_DB_EventMngtParam DB_VolEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1_ID + 1] = 
-#endif
+//#endif
 {
 {ADJUST_VOL_CONTROL_U16, MSB}, /* Inspirated volume settting (Unit : ml) */
 {ADJUST_VOL_CONTROL_U16, LSB}, /* Inspirated volume settting (Unit : ml) */
@@ -309,11 +309,11 @@ const t_DB_EventMngtParam DB_VolEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1_
 };
 
 /* Specific parameters for the VSIMV mode */
-#ifndef _BORLAND
-const t_DB_EventMngtParam DB_VsimvEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_EventMngtParam DB_VsimvEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] =
+//#else
 const t_DB_EventMngtParam DB_VsimvEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1_ID + 1] = 
-#endif
+//#endif
 {
 {ADJUST_VOL_CONTROL_U16, MSB}, /* Inspirated volume settting (Unit : ml) */
 {ADJUST_VOL_CONTROL_U16, LSB}, /* Inspirated volume settting (Unit : ml) */
@@ -350,11 +350,11 @@ const t_DB_EventMngtParam DB_VsimvEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_
 };
 
 /* Specific parameters for the PSIMV mode */
-#ifndef _BORLAND
-const t_DB_EventMngtParam DB_PsimvEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_EventMngtParam DB_PsimvEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] =
+//#else
 const t_DB_EventMngtParam DB_PsimvEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1_ID + 1] =
-#endif
+//#endif
 {
 {ADJUST_P_CONTROL_U16,  FULL}, /* Inspirated pressure settting (Unit : cmH2o) */
 {0,    	STORAGE_CONSTANT},/* Reserved */
@@ -391,11 +391,11 @@ const t_DB_EventMngtParam DB_PsimvEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_
 };
 
 /* Specific parameters for the CPAP mode */
-#ifndef _BORLAND
-const t_DB_EventMngtParam DB_CpapEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] = 
-#else
+//#ifndef _BORLAND
+//const t_DB_EventMngtParam DB_CpapEventMngtParam[EndSpecificEventParam - BeginSpecificEventParam + 1] =
+//#else
 const t_DB_EventMngtParam DB_CpapEventMngtParam[EVENT_STATE_ID - EVENT_SPECPAR_1_ID + 1] = 
-#endif
+//#endif
 {
 {0,     STORAGE_CONSTANT}, /* Reserved */
 {0,     STORAGE_CONSTANT}, /* Reserved */

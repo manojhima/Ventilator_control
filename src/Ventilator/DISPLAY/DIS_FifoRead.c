@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,20 +23,20 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#ifndef _BORLAND
-   #ifndef _TASKING
-      #include "LH_ST10F276.h"
-      #include <intrins.h>
-   #else
-      #include "regf276e.h"
-   #endif
-#endif
-#include "typedef.h"
-#include "io_declare.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Display_Data.h"
-#include "Main_Data.h"
+//#ifndef _BORLAND
+//   #ifndef _TASKING
+//      #include "LH_ST10F276.h"
+//      #include <intrins.h>
+//   #else
+//      #include "regf276e.h"
+//   #endif
+//#endif
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DISPLAY/Display_Data.h"
+#include "../MAIN/Main_Data.h"
 #include "DIS_FifoRead.h"
 			 
 /******************************************************************************/
@@ -56,14 +56,14 @@ void DIS_FifoRead(void)
 		//Lancement du timer permettant de controler le temps d'excution
 		T2IR = 0;		// RAZ du flag underflow timer 3
 		T2IC = 0;
-		T2 = 1000;   	// 1000*200ns, duree du timer3 = 200us Temps alloué a l'exécution
+		T2 = 1000;   	// 1000*200ns, duree du timer3 = 200us Temps allouï¿½ a l'exï¿½cution
 							// plus maxi le temps pour une commande
 		T2CON  = 0x00C0;   // count down,Prescaller 200nS FCPU/8, start timer
-		//Si données dans la fifo et temps alloué à l'execution non terminé*/
+		//Si donnï¿½es dans la fifo et temps allouï¿½ ï¿½ l'execution non terminï¿½*/
 	
 		//Demande d'ouverture de l'afficheur
 		DRV_DIS_HostRequest ( 1 ) ;
-		// Délai imposé par la carte graphique de façon à attendre la libération du bus
+		// Dï¿½lai imposï¿½ par la carte graphique de faï¿½on ï¿½ attendre la libï¿½ration du bus
 		DRV_DIS_Delay_us(1);
 		if(MASTERBUSY == FALSE)
 			{

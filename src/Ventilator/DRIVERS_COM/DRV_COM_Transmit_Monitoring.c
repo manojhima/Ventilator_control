@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,52 +24,53 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 /******************************************************************************/
-/* -	Pression patient : de -200 à + 900  en 10-1 mbar sur deux octets : 		*/
-/*		1°octet = pression / 256 et 2° octet = pression %256. Le signal de 		*/
-/* 	pression est renvoyé dans un format spécifique 									*/
-/*		permettant de simplifier la transmission des valeurs négatives. Un 		*/
-/* 	offset de + 600 est proposé par défaut. 											*/
-/*		La prise en compte des décimales est nécessaire afin d'éviter une 		*/
+/* -	Pression patient : de -200 ï¿½ + 900  en 10-1 mbar sur deux octets : 		*/
+/*		1ï¿½octet = pression / 256 et 2ï¿½ octet = pression %256. Le signal de 		*/
+/* 	pression est renvoyï¿½ dans un format spï¿½cifique 									*/
+/*		permettant de simplifier la transmission des valeurs nï¿½gatives. Un 		*/
+/* 	offset de + 600 est proposï¿½ par dï¿½faut. 											*/
+/*		La prise en compte des dï¿½cimales est nï¿½cessaire afin d'ï¿½viter une 		*/
 /* 	apparence de courbe en " escalier ".												*/
 
-/* -	Débit inspiré : de 0 à 2000 en dl/min sur deux octets :						*/
-/* 	1°octet = débit / 256 et 2° octet = débit %256.									*/
+/* -	Dï¿½bit inspirï¿½ : de 0 ï¿½ 2000 en dl/min sur deux octets :						*/
+/* 	1ï¿½octet = dï¿½bit / 256 et 2ï¿½ octet = dï¿½bit %256.									*/
 
-/* -	Débit expiré : de 0 à 2000 en dl/min sur deux octets :						*/
-/*    1°octet = débit / 256 et 2° octet = débit %256.									*/
+/* -	Dï¿½bit expirï¿½ : de 0 ï¿½ 2000 en dl/min sur deux octets :						*/
+/*    1ï¿½octet = dï¿½bit / 256 et 2ï¿½ octet = dï¿½bit %256.									*/
 
-/* -	Caractères d'alarme : sur 4 octets utilisables pour transmettre les 		*/
-/* 	états  d'activation ou désactivation des alarmes 								*/
-/*		(voir § Options de monitorage).														*/
+/* -	Caractï¿½res d'alarme : sur 4 octets utilisables pour transmettre les 		*/
+/* 	ï¿½tats  d'activation ou dï¿½sactivation des alarmes 								*/
+/*		(voir ï¿½ Options de monitorage).														*/
 
-/* -	Caractère de fin de trame : sur un octet. Le caractère de fin de trame	*/
+/* -	Caractï¿½re de fin de trame : sur un octet. Le caractï¿½re de fin de trame	*/
 /* 	permet d'identifier les ensembles 													*/
-/*		successifs de données renvoyées à chaque interruption. Ce caractère est	*/
-/* 	aussi utilisé pour identifier 														*/
+/*		successifs de donnï¿½es renvoyï¿½es ï¿½ chaque interruption. Ce caractï¿½re est	*/
+/* 	aussi utilisï¿½ pour identifier 														*/
 /*		des phases du cycle de respiration (inspiration, expiration, veille) :	*/
-/*  	voir § Identification de Ti & Te.
+/*  	voir ï¿½ Identification de Ti & Te.*/
 
 /*		Temps tache : 2.5 ms (templissage + transmission)						*/		
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Current.h"
-#include "DB_AlarmStatus.h"
-#include "DB_KeyboardEvent.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "../DATABASE/DB_KeyboardEvent.h"
 #include "../DATABASE/DB_Config.h"
-#include "SEC_AlarmIndication.h"
+#include "../SECURITY/SEC_AlarmIndication.h"
 #include "../TIMERS/Timer_Data.h"
 #include "DRV_COM_Data.h"
 #include "DRV_COM_Transmit_Monitoring.h"
@@ -208,7 +209,7 @@ UWORD16 Mode_Var;
 		for (Alarm = 1;Alarm < Mark_Displayed_Alarm;Alarm++)
 		{
 			ReadAlarm = DB_AlarmStatusRead(Alarm);
-			/* si CANCELED et alarme sans priorité la zone reste à ZERO */			
+			/* si CANCELED et alarme sans prioritï¿½ la zone reste ï¿½ ZERO */			
 			if ((ReadAlarm == ALARM_DISPLAYED) && (Alarm_Level != WP))
 			{
 				Array_Direct_Monit[COM_TX_DATA_FRAME + MONIT_ALARM_1 + (Alarm/8)] 
@@ -352,9 +353,9 @@ UWORD16 Mode_Var;
   	  		
 		/*%C Autorisation de l'interruption de transmission RS232 					*/
 	  	S0TBIR = 0;
-		PECC2 = 0x0500; // incrémentation du pointeur source - transfert d'un word
-		PECC2 |= End_Of_Table_Com_TX_Remote + End_Of_Table_Direct_Monitoring - 1; // taille du tableau d'évènement à transférer
-		SRCP2 = _sof_(&Array_Direct_Monit); 	// adresse du tableau d'évènement 
+		PECC2 = 0x0500; // incrï¿½mentation du pointeur source - transfert d'un word
+		PECC2 |= End_Of_Table_Com_TX_Remote + End_Of_Table_Direct_Monitoring - 1; // taille du tableau d'ï¿½vï¿½nement ï¿½ transfï¿½rer
+		SRCP2 = _sof_(&Array_Direct_Monit); 	// adresse du tableau d'ï¿½vï¿½nement 
 		// Pointeur destination  pointe sur le registre de transmission RS232
 		DSTP2 = (UWORD16) &S0TBUF;
 		//autorisation de transmission

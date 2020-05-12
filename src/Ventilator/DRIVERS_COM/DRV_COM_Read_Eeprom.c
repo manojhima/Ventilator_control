@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,11 +25,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 //#include "enum.h"
 #include "DRV_COM_Data.h"
@@ -39,13 +40,14 @@ void DRV_COM_Read_Eeprom(void)
 	 
 	if (DRV_COM_End_of_Transmit == TRUE)
 		{
-		PECC2 = 0x0000; //Interruption générée à chaque envoi
+		PECC2 = 0x0000; //Interruption gï¿½nï¿½rï¿½e ï¿½ chaque envoi
 		//autorisation  de transmission
 		DRV_COM_End_of_Transmit = FALSE;
 		S0TBIE = 1;
 		S0TBUF = *EepromDataRead;
 		EepromDataRead = EepromDataRead + 1;
-		if (EepromDataRead >= (UBYTE xhuge *)(&EepromData) + (2 * COM_EEPROM_BUFFER_SIZE))
+//		if (EepromDataRead >= (UBYTE xhuge *)(&EepromData) + (2 * COM_EEPROM_BUFFER_SIZE))
+		if (EepromDataRead >= (UBYTE *)(&EepromData) + (2 * COM_EEPROM_BUFFER_SIZE))
 			{
 			Communication_State = COM_TRANSMIT_STOP;	
 			}

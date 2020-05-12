@@ -36,7 +36,7 @@
 #include "CMP_CalculFlowLeak.h"
 #include "../VENTILATION/Ventilation_Datas.h"
 #include "../GENERAL/Structure.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

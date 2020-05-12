@@ -22,6 +22,7 @@
 #ifndef DB_VERSIONWRITE_H
 #define DB_VERSIONWRITE_H
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,UWORD16 value);
 
 #endif

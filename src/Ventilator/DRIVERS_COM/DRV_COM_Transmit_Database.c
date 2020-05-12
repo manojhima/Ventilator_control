@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,12 +25,13 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#ifndef _TASKING
-#include <intrins.h>
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include <intrins.h>
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../DATABASE/DB_Config.h"

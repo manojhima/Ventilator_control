@@ -26,7 +26,7 @@
 /******************************************************************************/
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
-#include "DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/

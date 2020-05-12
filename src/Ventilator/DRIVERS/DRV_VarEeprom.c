@@ -23,13 +23,13 @@
 
 #ifndef _BORLAND
     #ifndef _TASKING
-    // Permet de ranger les adresses dans l'ordre de leur déclaration
+    // Permet de ranger les adresses dans l'ordre de leur dï¿½claration
       #pragma ORDER
-    // Toutes les variables déclarés ici seront placé à l'adresse EEPROM
+    // Toutes les variables dï¿½clarï¿½s ici seront placï¿½ ï¿½ l'adresse EEPROM
        #pragma RENAMECLASS(HDATA0=EEPROM)
 	#else
-/* le pragma ORDER (ordonner les variables dans la mémoire dans l'ordre des 
-déclaration, est assuré sous TASKING par l'option de compilation sur ce fichier " -Ot" */
+/* le pragma ORDER (ordonner les variables dans la mï¿½moire dans l'ordre des 
+dï¿½claration, est assurï¿½ sous TASKING par l'option de compilation sur ce fichier " -Ot" */
 	   	   #pragma class HB=EEPROM
 		  #endif
 #endif
@@ -37,14 +37,14 @@ déclaration, est assuré sous TASKING par l'option de compilation sur ce fichier 
 
 #define EEP_VAR_SOURCE
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "DRV_VarEeprom.h"
 //#include "database.h"
 
-// Les variables locales sont automatiquement importées par le preprocesseur
+// Les variables locales sont automatiquement importï¿½es par le preprocesseur
 // lors de la compilation.
 
-// Cette déclaration permet de rendre visible toute la base pour l'émulateur
+// Cette dï¿½claration permet de rendre visible toute la base pour l'ï¿½mulateur
 void TestReadBaseEmulator(void) { ; }
 
 #undef EEP_VAR_SOURCE

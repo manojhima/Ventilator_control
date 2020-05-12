@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -35,7 +35,8 @@
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 
-UWORD16 xhuge * DRV_EVENT_TransAdressErase(void)
+//UWORD16 xhuge * DRV_EVENT_TransAdressErase(void)
+UWORD16 * DRV_EVENT_TransAdressErase(void)
 {
 #ifndef _BORLAND
 return(Erase_Adress);

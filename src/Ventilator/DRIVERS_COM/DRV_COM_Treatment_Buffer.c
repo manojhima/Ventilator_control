@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -26,11 +26,12 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#else
-#include "regf276e.h"
-#endif	 
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/define.h"
@@ -63,7 +64,8 @@ void DRV_COM_Treatment_Buffer(void)
 				num_event = 1;
 	  			DRV_COM_End_of_Transmit = TRUE;
 			   	Communication_State = COM_TRANSMIT_RETRIEVAL;
-		  		adr_flash_retrieval = (UWORD16 xhuge *)DRV_EVENT_TransPtrMemory();
+//		  		adr_flash_retrieval = (UWORD16 xhuge *)DRV_EVENT_TransPtrMemory();
+			   	adr_flash_retrieval = (UWORD16 *)DRV_EVENT_TransPtrMemory();
 				break;
 			
 			case CMD_STOP_TRANSMIT_EVENT_FRAME:
@@ -230,7 +232,8 @@ void DRV_COM_Treatment_Buffer(void)
 	  			DRV_MONIT_Read_Request = ENDED;
 				S0TBIE = 0;
 				DRV_COM_End_of_Transmit = TRUE;
-				EepromDataRead = (UBYTE xhuge *) &EepromData;
+//				EepromDataRead = (UBYTE xhuge *) &EepromData;
+				EepromDataRead = (UBYTE *) &EepromData;
 				Communication_State = COM_READ_EEPROM;
 				break;
 		

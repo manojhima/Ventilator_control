@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,24 +24,28 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include <intrins.h>
-#endif	 
+//#ifndef _TASKING
+//	#include <intrins.h>
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "Driver_Display_Data.h"
 					 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-
+#define bit char
 void DRV_DIS_HostRequest ( bit etat )
 {
-UBYTE xhuge *ram;
+//UBYTE xhuge *ram;
+UBYTE *ram;
 
 	if ( etat )
-		ram=(UBYTE xhuge*)REQUEST_ON;
+//		ram=(UBYTE xhuge*)REQUEST_ON;
+		ram=(UBYTE *)REQUEST_ON;
 	else
-		ram=(UBYTE xhuge*)REQUEST_OFF;
+//		ram=(UBYTE xhuge*)REQUEST_OFF;
+		ram=(UBYTE *)REQUEST_OFF;
 	*ram = DUMMY;
 	_nop_();
 	_nop_();

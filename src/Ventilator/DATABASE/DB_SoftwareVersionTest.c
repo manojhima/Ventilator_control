@@ -42,12 +42,12 @@
 #include "DB_Config.h"
 #include "DB_Event.h"
 #include "DB_Rtc.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_SoftwareVersionTest.h"
-#include "DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../MAIN/Main_Data.h"
 //#ifndef _BORLAND
-	#include "PUST.h"
+	#include "../PUST/PUST.h"
 //#endif
 
 
@@ -63,7 +63,7 @@ void DB_SoftwareVersionTest(void)
 
 #ifndef _BORLAND
 /* EraseState Declaration  */
-	e_BadEraseState EraseState = ERASE_OK;
+//	e_BadEraseState EraseState = ERASE_OK; //manoj
 
 	DB_StartInitRequest = FALSE;
 
@@ -112,46 +112,46 @@ void DB_SoftwareVersionTest(void)
 /*%C  Bad Version Detected                                               */
 				BadVersion = TRUE;
 			}
-			else
-			{
-/*%C  First Start detected                                               */
-				NewVersionDetected = TRUE;
-				DB_FirstStart = TRUE;
-			}
-	 	}
-	}
-	else
-	{
-/*%C  Bad Version Detected                                               */
-		BadVersion = TRUE;
-	}
-
-/*%C Test: version compatibility after first start                            */
-/*%C Start test on the first number version (Id = 0 treated just before)      */
-
-   if (BadVersion == FALSE)
-   {
-	   for (Id=1;Id<VERSION_NUMBER_3 + 1;Id++)
-	   {
-		   EEP_FIFO_PushOneData(&EEP_DB_Version_Number[Id], READ_EEP);
-
-/*%C Version change test                                                      */
-		   if	(EEP_DB_Version_Number[Id] != 
-		                        (UWORD16)cDB_TEST_VERSION_DB[Id].defvalue)
-   	   	   {
-			   NewVersionDetected = TRUE;
-
-/*********************************************************************************************/
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!    THIS ONLY FOR  LU010005	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/* In LU010005 version, we need to reload all the database (calibration points will be erased) */
-/* so, DB_FirstStart falg is set to TRUE .*/
-			   if((cDB_TEST_VERSION_DB[VERSION_NUMBER_0].defvalue == 0x4C55) /* LU */
-			   &&(cDB_TEST_VERSION_DB[VERSION_NUMBER_1].defvalue == 0x3031)	 /* 01 */
-			   &&(cDB_TEST_VERSION_DB[VERSION_NUMBER_2].defvalue == 0x3030)	 /* 00 */
-			   &&(cDB_TEST_VERSION_DB[VERSION_NUMBER_3].defvalue == 0x3035)) /* 05 */
-			   {
-			   		DB_FirstStart = TRUE;	
-			   }
+//			else
+//			{
+///*%C  First Start detected                                               */
+//				NewVersionDetected = TRUE;
+//				DB_FirstStart = TRUE;
+//			}
+//	 	}
+//	}
+//	else
+//	{
+///*%C  Bad Version Detected                                               */
+//		BadVersion = TRUE;
+//	}
+//
+///*%C Test: version compatibility after first start                            */
+///*%C Start test on the first number version (Id = 0 treated just before)      */
+//
+//   if (BadVersion == FALSE)
+//   {
+//	   for (Id=1;Id<VERSION_NUMBER_3 + 1;Id++)
+//	   {
+//		   EEP_FIFO_PushOneData(&EEP_DB_Version_Number[Id], READ_EEP);
+//
+///*%C Version change test                                                      */
+//		   if	(EEP_DB_Version_Number[Id] !=
+//		                        (UWORD16)cDB_TEST_VERSION_DB[Id].defvalue)
+//   	   	   {
+//			   NewVersionDetected = TRUE;
+//
+///*********************************************************************************************/
+///* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!    THIS ONLY FOR  LU010005	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+///* In LU010005 version, we need to reload all the database (calibration points will be erased) */
+///* so, DB_FirstStart falg is set to TRUE .*/
+//			   if((cDB_TEST_VERSION_DB[VERSION_NUMBER_0].defvalue == 0x4C55) /* LU */
+//			   &&(cDB_TEST_VERSION_DB[VERSION_NUMBER_1].defvalue == 0x3031)	 /* 01 */
+//			   &&(cDB_TEST_VERSION_DB[VERSION_NUMBER_2].defvalue == 0x3030)	 /* 00 */
+//			   &&(cDB_TEST_VERSION_DB[VERSION_NUMBER_3].defvalue == 0x3035)) /* 05 */
+//			   {
+//			   		DB_FirstStart = TRUE;
+//			   }
 /*********************************************************************************************/
 		   }	
 	   } 
@@ -174,180 +174,180 @@ void DB_SoftwareVersionTest(void)
 #ifndef _BORLAND
 
 /*%C Last erase state read                                                    */
-	EEP_FIFO_PushOneData(&EEP_DB_Config[BAD_ERASE_U16], READ_EEP);
-	EraseState = EEP_DB_Config[BAD_ERASE_U16]; 
-
-/*%C If new version detected,                                                 */
-/*%C EEPROM parameter initialization with the default values :                */
-/*%C -if the new version is correct :                                         */
-/*%C -if the last erase is not good :                                         */
-	if ( (NewVersionDetected == TRUE) 
-	  && (BadVersion == FALSE) 
-	  || (EraseState == BAD_TOTAL_ERASE) )
-	{
+//	EEP_FIFO_PushOneData(&EEP_DB_Config[BAD_ERASE_U16], READ_EEP);
+//	EraseState = EEP_DB_Config[BAD_ERASE_U16];
+//
+///*%C If new version detected,                                                 */
+///*%C EEPROM parameter initialization with the default values :                */
+///*%C -if the new version is correct :                                         */
+///*%C -if the last erase is not good :                                         */
+//	if ( (NewVersionDetected == TRUE)
+//	  && (BadVersion == FALSE)
+//	  || (EraseState == BAD_TOTAL_ERASE) )
+//	{
+//#endif
+//
+///*%C  Flash initialization and erase running indication                       */
+///*%C  The end of treatment indication is saved by:                            */
+///*%C  - the trap if the treatment is interrupted                              */
+///*%C  - the flash driver at the end of init                                   */
+//
+//#ifndef _BORLAND
+//      do
+// 		{
+//	 		DB_WriteDataInEepAndRam(&EEP_DB_Config[BAD_ERASE_U16],
+//	 		                        BAD_TOTAL_ERASE);
+// 			EEP_FIFO_PushOneData(&EEP_DB_Config[BAD_ERASE_U16],
+// 			                     READ_EEP);
+//  		}
+//		while (EEP_DB_Config[BAD_ERASE_U16] != BAD_TOTAL_ERASE);
+//#endif
+///*%C  Database parameters writing (RAM and EEPROM)                            */
+//
+///*%C  Settings writing                                                        */
+//		for (Id=0;Id<end_of_adjust_table;Id++)
+//		{
+///*%C     VOL settings writing                                                 */
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_VOL_Adjust[Id],
+//				                        cDB_VOL_TEST_ADJUST_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_VOL_Adjust[Id],
+//				                     READ_EEP);
+//
+//			}
+//			while (EEP_DB_VOL_Adjust[Id] != cDB_VOL_TEST_ADJUST_DB[Id].defvalue);
+//
+///*%C     PSV settings writing                                                 */
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_PSV_Adjust[Id],
+//				                        cDB_PSV_TEST_ADJUST_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_PSV_Adjust[Id],
+//				                     READ_EEP);
+//			}
+//			while (EEP_DB_PSV_Adjust[Id] != cDB_PSV_TEST_ADJUST_DB[Id].defvalue);
+//
+///*%C     CPAP settings writing                                                */
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_CPAP_Adjust[Id],
+//				                        cDB_CPAP_TEST_ADJUST_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_CPAP_Adjust[Id],
+//				                     READ_EEP);
+//			}
+//			while (EEP_DB_CPAP_Adjust[Id] != cDB_CPAP_TEST_ADJUST_DB[Id].defvalue);
+//
+///*%C     VSIMV settings writing                                               */
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_VSIMV_Adjust[Id],
+//				                        cDB_VSIMV_TEST_ADJUST_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_VSIMV_Adjust[Id],
+//				                     READ_EEP);
+//			}
+//			while (EEP_DB_VSIMV_Adjust[Id] !=
+//			                                cDB_VSIMV_TEST_ADJUST_DB[Id].defvalue);
+//
+///*%C     PRES settings writing                                                */
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_PRES_Adjust[Id],
+//				                        cDB_PRES_TEST_ADJUST_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_PRES_Adjust[Id],
+//				                     READ_EEP);
+//			}
+//			while (EEP_DB_PRES_Adjust[Id] != cDB_PRES_TEST_ADJUST_DB[Id].defvalue);
+//
+///*%C     PSIMV settings writing                                               */
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_PSIMV_Adjust[Id],
+//										cDB_PSIMV_TEST_ADJUST_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_PSIMV_Adjust[Id],
+//									 READ_EEP);
+//			}
+//			while (EEP_DB_PSIMV_Adjust[Id] !=
+//										  cDB_PSIMV_TEST_ADJUST_DB[Id].defvalue);
+//    }
+//
+///*%C  Version number writing                                                  */
+//      for (Id=0;Id<end_of_db_version_table;Id++)
+//      {
+//		if ( (DB_FirstStart == TRUE)
+//		||(Id < SERIAL_NUMBER_1))
+//		{
+//
+//			do
+//			{
+//				DB_WriteDataInEepAndRam(&EEP_DB_Version_Number[Id],
+//				                        cDB_TEST_VERSION_DB[Id].defvalue);
+//
+//				EEP_FIFO_PushOneData(&EEP_DB_Version_Number[Id],
+//				                     READ_EEP);
+//			}
+//			while (EEP_DB_Version_Number[Id] != cDB_TEST_VERSION_DB[Id].defvalue);
+//		}
+//	  }
+//
+///*%C Trend database writing */
+//		for (Id = 0; Id < end_of_db_trend_table; Id++)
+//		{
+//	      do
+//   		{
+//				DB_WriteDataInEepAndRam(&EEP_DB_TREND[Id],
+//   				                     cDB_TEST_TREND_DB[Id].defvalue);
+//
+//   			EEP_FIFO_PushOneData(&EEP_DB_TREND[Id],
+//   				                  READ_EEP);
+//   		}
+//   		while (EEP_DB_TREND[Id] != cDB_TEST_TREND_DB[Id].defvalue);
+//		 }
+//
+///*%C  Config settings writing                                                 */
+//      for (Id=0;Id<end_of_db_config_table;Id++)
+//      {
+//#ifndef _BORLAND
+///*%C     Parameter RAZ (except offset and counter)                            */
+//			if ( (DB_FirstStart == TRUE)
+// 			   ||( (Id < OFFSET_INSP_FLOW_1_U16)
+// 			 	  || ( (Id > OFFSET_VALVE_PRESS_2_U16)
+// 				 	  &&(Id < SAVED_MACHINE_COUNTER_HOUR_U16) )
+// 				  || (Id > SAVED_MACHINE_COUNTER_MIN_U16)
+// 				  && (Id != BAD_ERASE_U16) ) )
+//         	{
+//#endif
+//		         do
+//		   		{
+//					DB_WriteDataInEepAndRam(&EEP_DB_Config[Id],
+//		   				                     cDB_TEST_CONFIG_DB[Id].defvalue);
+//
+//		   			EEP_FIFO_PushOneData(&EEP_DB_Config[Id],
+//		   				                  READ_EEP);
+//		   		}
+//		   		while (EEP_DB_Config[Id] != cDB_TEST_CONFIG_DB[Id].defvalue);
+//
+//#ifndef _BORLAND
+//            }
+//#endif
+//		}
+//
+//#ifndef _BORLAND
+///*%C  Write inhibition and RTC start                                          */
+//		DRV_RTC_control(0x0070);
+///*%C  Flash erase                                                             */
+//		DRV_EVENT_Erase_Flash();
+///*%C  End of erase waiting                                                    */
+//	  	while (BUSY_MEM2 != 1);
+//
+//	}
 #endif
 
-/*%C  Flash initialization and erase running indication                       */
-/*%C  The end of treatment indication is saved by:                            */
-/*%C  - the trap if the treatment is interrupted                              */
-/*%C  - the flash driver at the end of init                                   */
 
-#ifndef _BORLAND
-      do
- 		{
-	 		DB_WriteDataInEepAndRam(&EEP_DB_Config[BAD_ERASE_U16],
-	 		                        BAD_TOTAL_ERASE);
- 			EEP_FIFO_PushOneData(&EEP_DB_Config[BAD_ERASE_U16],
- 			                     READ_EEP);
-  		}	
-		while (EEP_DB_Config[BAD_ERASE_U16] != BAD_TOTAL_ERASE);
-#endif
-/*%C  Database parameters writing (RAM and EEPROM)                            */
-
-/*%C  Settings writing                                                        */
-		for (Id=0;Id<end_of_adjust_table;Id++)
-		{
-/*%C     VOL settings writing                                                 */
-			do
-			{
-				DB_WriteDataInEepAndRam(&EEP_DB_VOL_Adjust[Id],
-				                        cDB_VOL_TEST_ADJUST_DB[Id].defvalue); 
-
-				EEP_FIFO_PushOneData(&EEP_DB_VOL_Adjust[Id],
-				                     READ_EEP);
-
-			}	
-			while (EEP_DB_VOL_Adjust[Id] != cDB_VOL_TEST_ADJUST_DB[Id].defvalue);
-
-/*%C     PSV settings writing                                                 */
-			do
-			{
-				DB_WriteDataInEepAndRam(&EEP_DB_PSV_Adjust[Id],
-				                        cDB_PSV_TEST_ADJUST_DB[Id].defvalue);
-
-				EEP_FIFO_PushOneData(&EEP_DB_PSV_Adjust[Id],
-				                     READ_EEP);
-			}	
-			while (EEP_DB_PSV_Adjust[Id] != cDB_PSV_TEST_ADJUST_DB[Id].defvalue);
-			
-/*%C     CPAP settings writing                                                */
-			do
-			{
-				DB_WriteDataInEepAndRam(&EEP_DB_CPAP_Adjust[Id],
-				                        cDB_CPAP_TEST_ADJUST_DB[Id].defvalue);
-
-				EEP_FIFO_PushOneData(&EEP_DB_CPAP_Adjust[Id],
-				                     READ_EEP);
-			}	
-			while (EEP_DB_CPAP_Adjust[Id] != cDB_CPAP_TEST_ADJUST_DB[Id].defvalue);
-			
-/*%C     VSIMV settings writing                                               */
-			do
-			{			
-				DB_WriteDataInEepAndRam(&EEP_DB_VSIMV_Adjust[Id],
-				                        cDB_VSIMV_TEST_ADJUST_DB[Id].defvalue);
-
-				EEP_FIFO_PushOneData(&EEP_DB_VSIMV_Adjust[Id],
-				                     READ_EEP);
-			}	
-			while (EEP_DB_VSIMV_Adjust[Id] != 
-			                                cDB_VSIMV_TEST_ADJUST_DB[Id].defvalue);
-
-/*%C     PRES settings writing                                                */
-			do
-			{
-				DB_WriteDataInEepAndRam(&EEP_DB_PRES_Adjust[Id],
-				                        cDB_PRES_TEST_ADJUST_DB[Id].defvalue);
-
-				EEP_FIFO_PushOneData(&EEP_DB_PRES_Adjust[Id],
-				                     READ_EEP);
-			}	
-			while (EEP_DB_PRES_Adjust[Id] != cDB_PRES_TEST_ADJUST_DB[Id].defvalue);
-
-/*%C     PSIMV settings writing                                               */
-			do
-			{
-				DB_WriteDataInEepAndRam(&EEP_DB_PSIMV_Adjust[Id],
-										cDB_PSIMV_TEST_ADJUST_DB[Id].defvalue);
-
-				EEP_FIFO_PushOneData(&EEP_DB_PSIMV_Adjust[Id],
-									 READ_EEP);
-			}
-			while (EEP_DB_PSIMV_Adjust[Id] !=
-										  cDB_PSIMV_TEST_ADJUST_DB[Id].defvalue);
-    }
-
-/*%C  Version number writing                                                  */
-      for (Id=0;Id<end_of_db_version_table;Id++)
-      {
-		if ( (DB_FirstStart == TRUE) 
-		||(Id < SERIAL_NUMBER_1)) 
-		{
-		
-			do
-			{
-				DB_WriteDataInEepAndRam(&EEP_DB_Version_Number[Id],
-				                        cDB_TEST_VERSION_DB[Id].defvalue);
-				
-				EEP_FIFO_PushOneData(&EEP_DB_Version_Number[Id],
-				                     READ_EEP);
-			}
-			while (EEP_DB_Version_Number[Id] != cDB_TEST_VERSION_DB[Id].defvalue);
-		}
-	  }
-
-/*%C Trend database writing */
-		for (Id = 0; Id < end_of_db_trend_table; Id++)
-		{
-	      do
-   		{
-				DB_WriteDataInEepAndRam(&EEP_DB_TREND[Id],
-   				                     cDB_TEST_TREND_DB[Id].defvalue);
-
-   			EEP_FIFO_PushOneData(&EEP_DB_TREND[Id],
-   				                  READ_EEP);
-   		}
-   		while (EEP_DB_TREND[Id] != cDB_TEST_TREND_DB[Id].defvalue);
-		 }
-
-/*%C  Config settings writing                                                 */
-      for (Id=0;Id<end_of_db_config_table;Id++)
-      {
-#ifndef _BORLAND
-/*%C     Parameter RAZ (except offset and counter)                            */
-			if ( (DB_FirstStart == TRUE)
- 			   ||( (Id < OFFSET_INSP_FLOW_1_U16)
- 			 	  || ( (Id > OFFSET_VALVE_PRESS_2_U16)
- 				 	  &&(Id < SAVED_MACHINE_COUNTER_HOUR_U16) )
- 				  || (Id > SAVED_MACHINE_COUNTER_MIN_U16)
- 				  && (Id != BAD_ERASE_U16) ) )
-         	{
-#endif
-		         do
-		   		{
-					DB_WriteDataInEepAndRam(&EEP_DB_Config[Id],
-		   				                     cDB_TEST_CONFIG_DB[Id].defvalue);
-		
-		   			EEP_FIFO_PushOneData(&EEP_DB_Config[Id],
-		   				                  READ_EEP);
-		   		}
-		   		while (EEP_DB_Config[Id] != cDB_TEST_CONFIG_DB[Id].defvalue);
-
-#ifndef _BORLAND
-            }
-#endif
-		}
-
-#ifndef _BORLAND
-/*%C  Write inhibition and RTC start                                          */
-		DRV_RTC_control(0x0070);
-/*%C  Flash erase                                                             */
-		DRV_EVENT_Erase_Flash();
-/*%C  End of erase waiting                                                    */
-	  	while (BUSY_MEM2 != 1);
-
-	}
-#endif
-
-
-}
+//} // manoj from 112 till down commented

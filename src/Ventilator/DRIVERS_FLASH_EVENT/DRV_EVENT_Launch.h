@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -35,7 +35,8 @@ extern UWORD16 DB_IhmAccessParaDataBase(UWORD16 *Value,
 													  e_DATA_OPERATION DataOperation);
 extern UWORD16 DRV_EVENT_Identification(void);
 extern UBYTE DRV_EVENT_Erase_Sector(UBYTE secteur);
-extern UBYTE DRV_EVENT_Program_Flash(UWORD16 data_prog,UWORD16 xhuge *adr_prog);
+//extern UBYTE DRV_EVENT_Program_Flash(UWORD16 data_prog,UWORD16 xhuge *adr_prog);
+extern UBYTE DRV_EVENT_Program_Flash(UWORD16 data_prog,UWORD16 *adr_prog);
 extern void DRV_EVENT_BlankCheck(void);
 
  

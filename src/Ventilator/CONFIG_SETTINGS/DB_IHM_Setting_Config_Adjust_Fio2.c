@@ -30,7 +30,7 @@
 #include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/

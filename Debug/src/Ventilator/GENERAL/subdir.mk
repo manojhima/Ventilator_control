@@ -3,6 +3,9 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
+S_SRCS += \
+../src/Ventilator/GENERAL/startup_stm32f446xx.s 
+
 C_SRCS += \
 ../src/Ventilator/GENERAL/Average.c \
 ../src/Ventilator/GENERAL/CRC16_TableCompute.c \
@@ -15,7 +18,8 @@ OBJS += \
 ./src/Ventilator/GENERAL/CRC16_TableCompute.o \
 ./src/Ventilator/GENERAL/DRV_Temperature_WaitEndTransmit.o \
 ./src/Ventilator/GENERAL/Saturation.o \
-./src/Ventilator/GENERAL/lsqrt.o 
+./src/Ventilator/GENERAL/lsqrt.o \
+./src/Ventilator/GENERAL/startup_stm32f446xx.o 
 
 C_DEPS += \
 ./src/Ventilator/GENERAL/Average.d \
@@ -31,6 +35,14 @@ src/Ventilator/GENERAL/%.o: ../src/Ventilator/GENERAL/%.c
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
 	arm-none-eabi-gcc -mthumb -mfloat-abi=soft -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Ventilator/GENERAL/%.o: ../src/Ventilator/GENERAL/%.s
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU GCC Assembler'
+	@echo $(PWD)
+	arm-none-eabi-as -mthumb -mfloat-abi=soft -g -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

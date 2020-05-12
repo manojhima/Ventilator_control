@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,11 +24,11 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "typedef.h"
-#include "Driver_Display_Data.h"
-#include "DB_Config.h"
+#include "../GENERAL/typedef.h"
+#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
+#include "../DATABASE/DB_Config.h"
 #include "DIS_String.h"
-#include "enum.h"
+#include "../GENERAL/enum.h"
 			
 UBYTE GetFontNameFromLang(UBYTE _Font, e_HMI_LANG _Lang);
 /******************************************************************************/
@@ -45,7 +45,7 @@ void DIS_String( UBYTE *str
 UBYTE _FontName = font & ~INV;
 UWORD16 _CurrentLang = DB_ConfigRead(ADJUST_LANGUAGE_U16);
 
-// Déplacement de l'origine caractère en bas à gauche
+// Dï¿½placement de l'origine caractï¿½re en bas ï¿½ gauche
 switch(_FontName)
 {
 	case ARIAL9:
@@ -101,10 +101,10 @@ switch(_FontName)
 	break;
 }
 
-// Mise à jour du paramètre de fonte suivant la langue
+// Mise ï¿½ jour du paramï¿½tre de fonte suivant la langue
 font = GetFontNameFromLang(font, _CurrentLang);
 
-// Interdit les lignes négatives
+// Interdit les lignes nï¿½gatives
 if (line < 1)
 {
 	line = 1;

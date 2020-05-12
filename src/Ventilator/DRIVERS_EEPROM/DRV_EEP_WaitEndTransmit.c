@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -25,12 +25,13 @@
 /******************************************************************************/
 						 
 
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"  
@@ -45,7 +46,7 @@ void DRV_EEP_WaitEndTransmit(void)
 {
 /*%C  RAZ dof flag underflow timer 3			*/
 	T3IR = 0;		
-/*%C 50 * 200ns, delay of timer3 = 10µs  */
+/*%C 50 * 200ns, delay of timer3 = 10ï¿½s  */
 	T3 = 0x0032;   
 /*%C count down, fc=fcpu/8, start timer */
 	T3CON  = 0x00C0;   

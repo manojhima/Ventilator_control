@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"  
@@ -43,7 +43,7 @@
 
 void DRV_EEP_WaitEndWrite(void)
 {
-	DRV_EEP_CounterTimeOutWrite++; 	//incrémentation de la mesure du temps d'écriture
+	DRV_EEP_CounterTimeOutWrite++; 	//incrï¿½mentation de la mesure du temps d'ï¿½criture
 	DRV_OutputPort(CE_EEP, 0); 		// Activation chip enable EEPROM
  	SSCTB  = 0x0005;          		  	// Envoi de l'instruction RDSR lecture du status de l'eeprom
  	DRV_EEP_WaitEndTransmit();			// attente de fin de transmission sur le SPI
@@ -52,10 +52,10 @@ void DRV_EEP_WaitEndWrite(void)
 	DRV_OutputPort(CE_EEP, 1); 		// Desactivation chip enable EEPROM
 	DRV_EEP_tempo_CE();		    		// tempo Chip select disable
 
-	//Surveillance du temps d'écriture de l'eeprom 5ms max
+	//Surveillance du temps d'ï¿½criture de l'eeprom 5ms max
 	if (DRV_EEP_CounterTimeOutWrite < cDRV_EEP_TIME_OUT_10MS)
 		{
-		// Vérification de la fin d'écriture par test du registre de réception 
+		// Vï¿½rification de la fin d'ï¿½criture par test du registre de rï¿½ception 
 		// du bus SPI contenant le status de l'eeprom
 		if ((SSCRB & 0x0001) == 0x00)
 			{
@@ -64,16 +64,16 @@ void DRV_EEP_WaitEndWrite(void)
 			DRV_EEP_WaitEndTransmit();	// attente de fin de transmission sur le SPI
 			DRV_OutputPort(CE_EEP, 1); // Desactivation chip enable EEPROM
  			DRV_EEP_tempo_CE();       	// tempo Chip select disable
-			DRV_EEP_CounterTimeOutWrite =0;	//Raz du temps de surveillance d'écriture
-			DRV_EEP_StateEepDriver = DRV_EEP_FREE;	//Libération d'accés eeprom
+			DRV_EEP_CounterTimeOutWrite =0;	//Raz du temps de surveillance d'ï¿½criture
+			DRV_EEP_StateEepDriver = DRV_EEP_FREE;	//Libï¿½ration d'accï¿½s eeprom
 			DRV_EEP_WriteStatus = DRV_EEP_NO_ERROR;//Gestion d'erreur de l'eeprom pas d'erreur
 			}
 		}
-	//Ecriture non réalisée dans le délais de 10ms
+	//Ecriture non rï¿½alisï¿½e dans le dï¿½lais de 10ms
 	else
 		{
 		DRV_EEP_CounterTimeOutWrite =0; 						//Raz du temps de surveillance de l'eeprom
-		DRV_EEP_StateEepDriver = DRV_EEP_FREE;				//Libération de l'accès eeprom
-  		DRV_EEP_WriteStatus    = DRV_EEP_TIME_OUT_WRITE;//Gestion d'erreur de de l'eeprom écriture non réalisée
+		DRV_EEP_StateEepDriver = DRV_EEP_FREE;				//Libï¿½ration de l'accï¿½s eeprom
+  		DRV_EEP_WriteStatus    = DRV_EEP_TIME_OUT_WRITE;//Gestion d'erreur de de l'eeprom ï¿½criture non rï¿½alisï¿½e
 		}
 }

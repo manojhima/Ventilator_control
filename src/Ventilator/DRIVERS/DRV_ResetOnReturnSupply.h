@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -29,11 +29,13 @@
 /*                   EXTERNAL CONSTANT DECLARATION	                     */
 /************************************************************************/
 
-extern const UBYTE *const huge cMSG_Alarm[Mark_Displayed_Alarm][NB_LANGUAGE];
+//extern const UBYTE *const huge cMSG_Alarm[Mark_Displayed_Alarm][NB_LANGUAGE];
+extern const UBYTE *const cMSG_Alarm[Mark_Displayed_Alarm][NB_LANGUAGE];
 
 /************************************************************************/
 /*                   EXTERNAL FUNCTION DECLARATION	                     */
 /************************************************************************/
+#define bit char
 extern UWORD16 DB_ControlRead(e_DB_CONTROL Id);
 extern UWORD16 DB_ConfigRead(e_DB_CONFIG Id);
 extern void DRV_EEP_WaitEndTransmit(void);

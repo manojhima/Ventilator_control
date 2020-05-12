@@ -1,5 +1,5 @@
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -30,6 +30,7 @@
 
 /* Keil  */
 #ifndef _TASKING
+#define sdata
 UBYTE sdata Array_Event[EVENT_Last_Event_Parameter + End_Of_Table_Com_TX_Remote - 1];
 /* Tasking  */
 #else
@@ -38,9 +39,12 @@ UBYTE near Array_Event[EVENT_Last_Event_Parameter + End_Of_Table_Com_TX_Remote -
 
 
 
+//extern UBYTE DRV_EVENT_Read_Event(UWORD16 num_event
+//											,e_EVENT_PARAMETERS id_event
+//											,UWORD16 xhuge *Ptr_retrieval);
 extern UBYTE DRV_EVENT_Read_Event(UWORD16 num_event
 											,e_EVENT_PARAMETERS id_event
-											,UWORD16 xhuge *Ptr_retrieval);
+											,UWORD16 *Ptr_retrieval);
 extern UWORD16 CRC16_TableCompute(	UWORD16 StartIndex,
 										UWORD16 StopIndex,
 										UBYTE* TransmitArray,

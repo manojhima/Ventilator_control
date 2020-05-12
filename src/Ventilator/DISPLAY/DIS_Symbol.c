@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,7 +24,7 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "DIS_Symbol.h"
 			 
 /******************************************************************************/
@@ -35,7 +35,7 @@ void DIS_Symbol( UBYTE symbol, UBYTE line
 					, UWORD16 column
 					, UBYTE page )
 {
-	// Forçage de NON inversion vidéo
+	// Forï¿½age de NON inversion vidï¿½o
 	DRV_DIS_grNegative(0) ;
 
 	DRV_DIS_grSetPage ( page-1 ) ;

@@ -38,7 +38,7 @@
 #include "../DRIVERS/DRV_VarEeprom.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_Current.h"
-#include "DB_IHM_Setting_Adjust_Usb.h"
+#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

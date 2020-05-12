@@ -40,12 +40,16 @@ extern void DB_CopyMngt(void);
 /*%C Base event management function call            									*/
 extern void DB_CopyMngt(void);
 
-extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//												e_EEP_ACCESS_STATE access_type);
+extern void EEP_FIFO_PushOneData(	UWORD16 *ptr_DataRam,
 												e_EEP_ACCESS_STATE access_type);
 
 extern void DB_EventMngt (UWORD16 Value);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,
+//												UWORD16 value);
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,
 												UWORD16 value);
 
 extern UWORD16 DB_TrendRead(e_DB_Trend Id);

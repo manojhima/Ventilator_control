@@ -29,7 +29,7 @@
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../DRIVERS/DRV_VarEeprom.h"
-#include "DB_IhmAccessParaDataBase.h"
+#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_TrendWrite.h"
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,12 +24,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
@@ -46,7 +46,7 @@
 #include "../MAIN/Main_Data.h"
 #include "DRV_EVENT_Launch.h"
 #include "Flash_Event_Data.h"
-#include "Driver_Datas.h"
+#include "../DRIVERS/Driver_Datas.h"
 
 
 /******************************************************************************/
@@ -137,7 +137,8 @@ else
 /*%C		Logical OR between the first and the second event with a shift of a byte to obtain the result on a word	 */
 			Concaten16bit = Concaten16bit | (UWORD16)EventEnvironment[Ptr_Num_evenement_Read][Ptr_Evenement];
 /*%C		Data Programation						 */
-			DRV_EVENT_Program_Flash(Concaten16bit, (UWORD16 xhuge *)((UWORD32)Ptr_Flash + EVENT_FLASH_START_ADDRESS));
+//			DRV_EVENT_Program_Flash(Concaten16bit, (UWORD16 xhuge *)((UWORD32)Ptr_Flash + EVENT_FLASH_START_ADDRESS));
+			DRV_EVENT_Program_Flash(Concaten16bit, (UWORD16 *)((UWORD32)Ptr_Flash + EVENT_FLASH_START_ADDRESS));
 /*%C		Increasing of the writing index adress	*/
 			Ptr_Flash++;
 /*%C		Increasing of the event index, modulo 2 */
@@ -164,7 +165,7 @@ else
 /*%C		Sector  increasing										*/
 			if (type_memoire == BOTTOM_BOOT)
 				{
-/*%C 			Sector détermination 						*/
+/*%C 			Sector dï¿½termination 						*/
 
 				if ((UWORD32)Ptr_Flash == adresse_secteur_bottom[(Num_Sector+1)])
 					{

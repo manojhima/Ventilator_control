@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -48,7 +48,8 @@ UWORD16 Adress_Calcul_Msb, Adress_Calcul_Lsb;
 /*%C	Compute of the index adress*/		
 	Adress_Calcul_Msb = DB_ConfigRead(RETRIEVAL_EVENT_ADRESS_MSB_U16);
 	Adress_Calcul_Lsb = DB_ConfigRead(RETRIEVAL_EVENT_ADRESS_LSB_U16);
-	Ptr_Flash = (UWORD16 xhuge *)((UWORD32)(Adress_Calcul_Msb * 65536) + Adress_Calcul_Lsb);
+//	Ptr_Flash = (UWORD16 xhuge *)((UWORD32)(Adress_Calcul_Msb * 65536) + Adress_Calcul_Lsb);
+	Ptr_Flash = (UWORD16 *)((UWORD32)(Adress_Calcul_Msb * 65536) + Adress_Calcul_Lsb);
 
 /*%C Blank Flash verification */
 	DRV_EVENT_BlankCheck();

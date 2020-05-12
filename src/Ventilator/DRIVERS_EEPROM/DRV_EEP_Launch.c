@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"  
@@ -51,25 +51,25 @@ void DRV_EEP_Launch(void)
 	// Si Ecriture en cours
 	if ( DRV_EEP_StateEepDriver == DRV_EEP_WRITE_PENDING)
 		{
-		//test de fin d'écriture
+		//test de fin d'ï¿½criture
 		DRV_EEP_WaitEndWrite();
-		// si fin d'écriture eeprom libre
+		// si fin d'ï¿½criture eeprom libre
 		if ( DRV_EEP_StateEepDriver == DRV_EEP_FREE)
 			{
 			EEP_FIFO_FreeFirstData();
 			}
 		}
-	// Si pas d'écriture en cours
+	// Si pas d'ï¿½criture en cours
 	else
 		{
-		//si donnée présente dans la FIFO EEPROM
+		//si donnï¿½e prï¿½sente dans la FIFO EEPROM
 		if (EEP_FIFO_ReadNbDataStored() > 0) 
 			{
 			//Lecture de la FIFO
 		 	DRV_EEP_CurrentDataPull = EEP_FIFO_PullFirstData();
 /* ---------------------------------------------------------------------------*/
 /*		 /\																							*/	
-/*    /!!\		ATTENTION, Bien VERIFIER l'adresse de début EEPROM dans eprom.h*/
+/*    /!!\		ATTENTION, Bien VERIFIER l'adresse de dï¿½but EEPROM dans eprom.h*/
 /*   /____\																							*/
 /* ---------------------------------------------------------------------------*/
 			//Calcul de l'adresse dans l'eeprom
@@ -82,7 +82,7 @@ void DRV_EEP_Launch(void)
 				*DRV_EEP_CurrentDataPull.ptr_DataRam = DRV_EEP_ReadWord(EepIndex);
 				EEP_FIFO_FreeFirstData();
 				}
-			// Si demande d'écriture 
+			// Si demande d'ï¿½criture 
 			else if (DRV_EEP_CurrentDataPull.state == WRITE_EEP)
 				{
 				Data16Bits = *DRV_EEP_CurrentDataPull.ptr_DataRam;

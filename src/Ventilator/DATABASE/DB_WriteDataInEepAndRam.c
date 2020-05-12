@@ -33,7 +33,8 @@
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/
-void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value)
+//void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value)
+void DB_WriteDataInEepAndRam(UWORD16 *data_address,UWORD16 value)
 {
 	// Ecriture dans la RAM
 	*data_address = value;

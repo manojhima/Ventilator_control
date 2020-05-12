@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -27,19 +27,19 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
-#include "Structure.h"
-#include "Timer_Data.h"
-#include "DB_Config.h"
-#include "DB_Control.h"
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../TIMERS/Timer_Data.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
 #include "DRV_Key_Sound_Bip.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

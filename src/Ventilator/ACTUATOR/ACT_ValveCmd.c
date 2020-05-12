@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,22 +24,22 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#ifndef _TASKING
-	#include "LH_ST10F276.h"
-	#include <intrins.h>
-#else
-	#ifdef _TESTRT
-		#include "IO_TestRT.h"
-	#else
-		#include "regf276e.h"
-	#endif
-#endif  
-#include "io_declare.h"
-#include "typedef.h"
-#include "enum.h"
-#include "DB_Control.h"
-#include "DB_Compute.h"
-#include "Ventilation_Constants.h"
+//#ifndef _TASKING
+//	#include "LH_ST10F276.h"
+//	#include <intrins.h>
+//#else
+//	#ifdef _TESTRT
+//		#include "IO_TestRT.h"
+//	#else
+//		#include "regf276e.h"
+//	#endif
+//#endif
+#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Compute.h"
+#include "../VENTILATION/Ventilation_Constants.h"
 #include "ACT_ValveCmd.h"
 
 

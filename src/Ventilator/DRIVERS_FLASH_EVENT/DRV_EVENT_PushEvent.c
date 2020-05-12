@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -34,8 +34,8 @@
 #include "../DATABASE/DB_Config.h"
 #include "../DATABASE/DB_PowerSupply.h"
 #include "../DATABASE/DB_EventMngt.h"
-#include "Driver_Datas.h"
-#include "Driver_Usb_Data.h"
+#include "../DRIVERS/Driver_Datas.h"
+#include "../DRIVERS_USB/Driver_USB_Data.h"
 #include "Flash_Event_Data.h"
 
 

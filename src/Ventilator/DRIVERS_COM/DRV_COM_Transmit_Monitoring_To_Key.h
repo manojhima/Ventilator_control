@@ -1,5 +1,5 @@
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -29,6 +29,7 @@
 /*%C Transmit ID Device */
 	/* Keil  */
 #ifndef _TASKING
+#define sdata
 UBYTE sdata Array_Monitoring_To_Key[End_Of_Table_Com_TX_Remote];
 	/* Tasking  */
 #else

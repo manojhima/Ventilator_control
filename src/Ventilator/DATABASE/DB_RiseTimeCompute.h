@@ -34,6 +34,7 @@ extern UWORD16 DB_CurrentRead(e_DB_ADJUST_CURRENT Id);
 extern void DB_CurrentWrite(e_DB_ADJUST_CURRENT Id,
                                UWORD16 Value);
 
-extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+//extern void DB_WriteDataInEepAndRam(UWORD16 xhuge *data_address,UWORD16 value);
+extern void DB_WriteDataInEepAndRam(UWORD16 *data_address,UWORD16 value);
 
 #endif

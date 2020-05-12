@@ -71,10 +71,10 @@ void DB_StartInitDb(void)
 /*%C an init is needed to the next device start                			      */
    do
 	{
-		DB_WriteDataInEepAndRam(&EEP_DB_Config[BAD_ERASE_U16],
-		                        ERASE_OK);
-		EEP_FIFO_PushOneData(&EEP_DB_Config[BAD_ERASE_U16],
-		                     READ_EEP);
+//		DB_WriteDataInEepAndRam(&EEP_DB_Config[BAD_ERASE_U16],
+//		                        ERASE_OK); // manoj
+//		EEP_FIFO_PushOneData(&EEP_DB_Config[BAD_ERASE_U16],
+//		                     READ_EEP); // manoj
 	}
 	while (EEP_DB_Config[BAD_ERASE_U16] != ERASE_OK);
 

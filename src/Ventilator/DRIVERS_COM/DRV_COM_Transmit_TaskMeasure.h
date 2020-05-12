@@ -1,5 +1,5 @@
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -31,6 +31,7 @@
 /*%C Transmit Task Measure */
 	/* Keil  */
 #ifndef _TASKING
+#define sdata
 UBYTE sdata Array_TaskMeasure	[	(MAXIMUM_VENTILATION_NUMBER_OF_TASKS * 3 * 2 )
  										+ 	End_Of_Table_Com_TX_Remote 
  										- 	1];

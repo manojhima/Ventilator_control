@@ -1,5 +1,5 @@
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -30,6 +30,7 @@
 /*%C Transmit detailled	monitoring data storage */
 	/* Keil  */
 #ifndef _TASKING
+#define sdata
 UBYTE sdata Array_Detailled_Monit[MONIT_BUFFER_SIZE_READ + End_Of_Table_Com_TX_Remote -1];
 	/* Tasking  */
 #else

@@ -25,7 +25,7 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "typedef.h"
+#include "../GENERAL/typedef.h"
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_Current.h"
 #include "../DATABASE/DB_Control.h"

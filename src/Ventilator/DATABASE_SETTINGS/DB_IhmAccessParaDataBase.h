@@ -605,10 +605,11 @@
     #define tADJUST_USB_EVENTS_TRANSFER			      	{FALSE,TRUE,1,FALSE}
 
 /*DB_VERSION*/
-    #define tVERSION_NUMBER_0							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_0} 
-    #define tVERSION_NUMBER_1							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_1} 
-    #define tVERSION_NUMBER_2							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_2} 
-    #define tVERSION_NUMBER_3							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_3}
+//    #define tVERSION_NUMBER_0							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_0}
+//    #define tVERSION_NUMBER_1							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_1}
+//    #define tVERSION_NUMBER_2							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_2}
+//    #define tVERSION_NUMBER_3							{NONE,NONE,NONE,CFG_REVISION_VERSION_NUMBER_3}
+// manoj commented 608-612
 
     #define tSERIAL_NUMBER_1							{NONE,NONE,NONE,0x0000} // 00
     #define tSERIAL_NUMBER_2							{NONE,NONE,NONE,0x0000} // 00
@@ -1371,7 +1372,7 @@ const t_TEST_EEPROM_DB cDB_TEST_CONFIG_DB[end_of_db_config_table]=
     tCURVE_DRAW_MODE,
     tADJUST_CYCLING_MODE,                       
     tADJUST_KEY_TONE,
-    tWAVEFORME_DISPLAY,
+//    tWAVEFORME_DISPLAY, //manoj
     tADJUST_BAROMETRIC_CORRECTOR,
     tADJUST_FIO2,
     tADJUST_FIO2_SELECT,
@@ -1449,10 +1450,10 @@ const t_TEST_EEPROM_DB cDB_TEST_USB_DB [end_of_db_usb_table]=
 /* VERSION CONSTANTS */
 const t_TEST_EEPROM_DB cDB_TEST_VERSION_DB[end_of_db_version_table]=
 {
-    tVERSION_NUMBER_0,                       
-    tVERSION_NUMBER_1,                       
-    tVERSION_NUMBER_2,
-    tVERSION_NUMBER_3,                       
+//    tVERSION_NUMBER_0,
+//    tVERSION_NUMBER_1,
+//    tVERSION_NUMBER_2,
+//    tVERSION_NUMBER_3, //manoj 1453-1456
     tSERIAL_NUMBER_1,                        
     tSERIAL_NUMBER_2,                        
     tSERIAL_NUMBER_3,                        

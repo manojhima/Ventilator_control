@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -23,12 +23,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#ifndef _TASKING
-#include "LH_ST10F276.h"
-#include <intrins.h>
-#else
-#include "regf276e.h"
-#endif	
+//#ifndef _TASKING
+//#include "LH_ST10F276.h"
+//#include <intrins.h>
+//#else
+//#include "regf276e.h"
+//#endif
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"  
@@ -56,15 +56,15 @@ void DRV_EEP_StartWriteWord(UWORD16 donnee, UWORD16 adresse)
 	DRV_EEP_WaitEndTransmit();		// attente de fin de transmission sur le SPI
 	SSCTB  = adresse & 0x00FF; 	// envoie de la valeur basse de l'adresse 
 	DRV_EEP_WaitEndTransmit();		// attente de fin de transmission sur le SPI
-  	SSCTB  =(UBYTE)(donnee >> 8);	// Envoi du MSB de la donnée
+  	SSCTB  =(UBYTE)(donnee >> 8);	// Envoi du MSB de la donnï¿½e
 	DRV_EEP_WaitEndTransmit();	 	// attente de fin de transmission sur le SPI
-	SSCTB  =(UBYTE)(donnee & 0x00FF);//Envoi du LSB de la donnée
+	SSCTB  =(UBYTE)(donnee & 0x00FF);//Envoi du LSB de la donnï¿½e
 	DRV_EEP_WaitEndTransmit();	   // attente de fin de transmission sur le SPI
 
 	donnee =~donnee;
-  	SSCTB  =(UBYTE)(donnee >> 8);	// Envoi du MSB de la donnée
+  	SSCTB  =(UBYTE)(donnee >> 8);	// Envoi du MSB de la donnï¿½e
 	DRV_EEP_WaitEndTransmit();	 	// attente de fin de transmission sur le SPI
-	SSCTB  =(UBYTE)(donnee & 0x00FF);//Envoi du LSB de la donnée
+	SSCTB  =(UBYTE)(donnee & 0x00FF);//Envoi du LSB de la donnï¿½e
 	DRV_EEP_WaitEndTransmit();	   // attente de fin de transmission sur le SPI
 
 	DRV_OutputPort(CE_EEP, 1); 	// Desactivation chip enable EEPROM

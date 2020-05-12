@@ -32,7 +32,9 @@
 /************************************************************************/
 extern void DRV_FLASH_Erase_Flash(void);
 
-extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//extern void EEP_FIFO_PushOneData(	UWORD16 xhuge *ptr_DataRam,
+//												e_EEP_ACCESS_STATE access_type);
+extern void EEP_FIFO_PushOneData(	UWORD16 *ptr_DataRam,
 												e_EEP_ACCESS_STATE access_type);
 
 extern void DRV_RTC_control (UBYTE data_control);

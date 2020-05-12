@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,9 +24,10 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#ifndef _TASKING
-	#include <intrins.h>
-#endif	 
+//#ifndef _TASKING
+//	#include <intrins.h>
+//#endif
+#include "../GENERAL/io_stubs.h"
 #include "../GENERAL/typedef.h"
 #include "Driver_Display_Data.h"
 					 
@@ -36,9 +37,11 @@
 
 void DRV_DIS_grWriteDisplay ( UBYTE dat )
 {
-UBYTE xhuge *ram ;
+//UBYTE xhuge *ram ;
+UBYTE *ram ;
 
-	ram=(UBYTE xhuge*)RAM_ACCES;
+//	ram=(UBYTE xhuge*)RAM_ACCES;
+ram=(UBYTE *)RAM_ACCES;
 	*ram = dat ;
 	_nop_();
 	_nop_();
