@@ -1,0 +1,1376 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+                              startup/sysmem.o (__errno)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o (exit)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o) (_global_impure_ptr)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o (__libc_init_array)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o (memset)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o) (__call_exitprocs)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o) (atexit)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o) (__retarget_lock_acquire_recursive)
+/home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+                              /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o) (__register_exitproc)
+
+Allocating common symbols
+Common symbol       size              file
+
+PECC7               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T1REL               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T2                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DP8                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DP5                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SYS_Num_Keyboard    0x270             Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T7R                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+S0TBUF              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR2SET             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+TIM_TableOfCntAndDecnt
+                    0x630             Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XSSCRB              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADEIC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___atexit_recursive_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+PECC0               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T4IE                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___arc4random_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+SRCP7               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SSCRIC              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR3SET             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+IEN                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+nbre_de_debordement_timer
+                    0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP1IE               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T4                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+S0TBIR              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T8REL               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DSTP7               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+PW3                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP2IE               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SSCCON              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DB_Rtc              0x34              Ventilation/src/DATABASE/DB_RTCWrite.o
+S0RIC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XSSCTB              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP4                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P8                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CCM2                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+temporisation_terminee
+                    0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T2R                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP2IC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP6                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P6                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T7REL               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SSCTIC              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CCM7                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADCIC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+WDTCON              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+PWMCON0             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+S0TBIE              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+S0CON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T6IC                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T1IR                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T5                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P2                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T3IR                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR2CLR             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DataFrameUART1      0x3               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___env_recursive_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+DP4                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___sinit_recursive_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+S0BG                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XSSCCONSET          0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+S0RBUF              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADEIE               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+PUST_ERROR          0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T2CON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC0IE               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___malloc_recursive_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+SRCP6               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP3IC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DIS_FifoDisplay     0xcb20            Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T1IE                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DSTP6               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADCON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T3                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+TIM_MinuteTableOfCntAndDecnt
+                    0x2f8             Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T5IE                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+dernier_chargement_T2
+                    0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+S0TBIC              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+TestSchedulerStep   0x4               src/MAIN.o
+SSCBSY              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP3                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CCM0                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+PECC2               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC10IR              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T7                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P4                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC10IE              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SSCBR               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T6CON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T01CON              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T3CON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T8R                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR3CLR             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T5CON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADCIR               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP2IR               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DSTP0               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XSSCCONCLR          0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T1                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC0IC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP1IC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XS1RBUF             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR1SET             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADEIR               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T2IC                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P3                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+cpt_de_debordement_timer
+                    0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DB_Control          0x1b0             Ventilation/src/DATABASE/DB_ControlRead.o
+DIS_FifoIdxWrite    0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T78CON              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+EEP_DB_Config       0x4               src/MAIN.o
+SRCP0               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR0SEL             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SSCTB               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XSSCBR              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DIS_FifoOverflow    0x1               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T1R                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T4IC                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DP3                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC0                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T1IC                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DP2                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DP7                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP1IR               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T2IR                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T5IC                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T5R                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SSCRB               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+SRCP2               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___at_quick_exit_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+PP3                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ADST                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CAPREL              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC10IC              0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DSTP2               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XP0IC               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP5                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP2                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T4R                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DP6                 0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+PECC6               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP7                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XS1PORT             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P7                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+DIS_FifoIdxRead     0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+Ventilation_TimesOfTask
+                    0x180             src/MAIN.o
+T2IE                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___dd_hash_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+__lock___tz_mutex   0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+CC0IR               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+PWMCON1             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+P5                  0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+CC28                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XIR1CLR             0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+T4CON               0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ODP8                0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+XSSCPORT            0x4               Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+__lock___sfp_recursive_mutex
+                    0x1               /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+ .data          0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .text          0x0000000000000000       0x74 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x20 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_ControlRead.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_ControlRead.o
+ .text          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_ControlRead.o
+ .data          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_ControlRead.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_ControlRead.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_ControlWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_ControlWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_ControlWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_ControlWrite.o
+ .text          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .data          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/DATABASE/DB_ControlWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_EventMngt.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_EventMngt.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_EventMngt.o
+ .text          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_EventMngt.o
+ .data          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_EventMngt.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_EventMngt.o
+ .rodata        0x0000000000000000      0x254 Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/DATABASE/DB_EventMngt.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCRead.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCRead.o
+ .text          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_RTCRead.o
+ .data          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_RTCRead.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_RTCRead.o
+ .text.DB_RTCRead
+                0x0000000000000000       0x24 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_info    0x0000000000000000      0x111 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_abbrev  0x0000000000000000       0xa0 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_aranges
+                0x0000000000000000       0x20 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_ranges  0x0000000000000000       0x10 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_macro   0x0000000000000000       0x24 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_line    0x0000000000000000      0x104 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_str     0x0000000000000000     0x2e9c Ventilation/src/DATABASE/DB_RTCRead.o
+ .comment       0x0000000000000000       0x80 Ventilation/src/DATABASE/DB_RTCRead.o
+ .debug_frame   0x0000000000000000       0x38 Ventilation/src/DATABASE/DB_RTCRead.o
+ .ARM.attributes
+                0x0000000000000000       0x39 Ventilation/src/DATABASE/DB_RTCRead.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE/DB_RTCWrite.o
+ .text          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .data          0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_macro   0x0000000000000000       0x16 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_macro   0x0000000000000000      0x1a2 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .group         0x0000000000000000        0xc Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .text          0x0000000000000000        0x0 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .data          0x0000000000000000        0x0 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .text.DB_IhmAccessParaDataBase
+                0x0000000000000000      0x190 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_info    0x0000000000000000      0x6f1 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_abbrev  0x0000000000000000      0x127 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_aranges
+                0x0000000000000000       0x20 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_ranges  0x0000000000000000       0x10 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_macro   0x0000000000000000       0x97 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_macro   0x0000000000000000       0x16 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_macro   0x0000000000000000      0x1a2 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_line    0x0000000000000000      0x37c Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_str     0x0000000000000000     0x411c Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .comment       0x0000000000000000       0x80 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .debug_frame   0x0000000000000000       0x34 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .ARM.attributes
+                0x0000000000000000       0x39 Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+ .group         0x0000000000000000        0xc Ventilation/src/INTERRUPTS/It_watchdog.o
+ .text          0x0000000000000000        0x0 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .data          0x0000000000000000        0x0 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .text.It_watchdog
+                0x0000000000000000        0xe Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_info    0x0000000000000000       0x3b Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_abbrev  0x0000000000000000       0x2f Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_aranges
+                0x0000000000000000       0x20 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_ranges  0x0000000000000000       0x10 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_macro   0x0000000000000000       0x11 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_line    0x0000000000000000       0x5c Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_str     0x0000000000000000     0x2d06 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .comment       0x0000000000000000       0x80 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .debug_frame   0x0000000000000000       0x30 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .ARM.attributes
+                0x0000000000000000       0x39 Ventilation/src/INTERRUPTS/It_watchdog.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .text          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .data          0x0000000000000000       0x24 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .text          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .data          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .bss           0x0000000000000000        0x4 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000      0x184 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000      0x196 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000      0x1a2 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x0000000000000000       0x10 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_System_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_System_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_System_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_System_Init.o
+ .text          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_System_Init.o
+ .data          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_System_Init.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/MAIN/MAIN_System_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Target_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Target_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Target_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Target_Init.o
+ .text          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .data          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_macro   0x0000000000000000      0x184 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_macro   0x0000000000000000      0x196 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .text          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .data          0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .text          0x0000000000000000        0x0 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .data          0x0000000000000000        0x0 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_macro   0x0000000000000000      0x2a5 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_Temporize.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_Temporize.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_Temporize.o
+ .group         0x0000000000000000        0xc Ventilation/src/TIMERS/TIM_Temporize.o
+ .text          0x0000000000000000        0x0 Ventilation/src/TIMERS/TIM_Temporize.o
+ .data          0x0000000000000000        0x0 Ventilation/src/TIMERS/TIM_Temporize.o
+ .bss           0x0000000000000000        0x0 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_macro   0x0000000000000000      0xa66 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_macro   0x0000000000000000       0x1c Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_macro   0x0000000000000000      0x184 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_macro   0x0000000000000000      0x2a5 Ventilation/src/TIMERS/TIM_Temporize.o
+ .group         0x0000000000000000        0xc src/MAIN.o
+ .group         0x0000000000000000        0xc src/MAIN.o
+ .group         0x0000000000000000        0xc src/MAIN.o
+ .group         0x0000000000000000        0xc src/MAIN.o
+ .group         0x0000000000000000        0xc src/MAIN.o
+ .text          0x0000000000000000        0x0 src/MAIN.o
+ .data          0x0000000000000000        0x0 src/MAIN.o
+ .debug_macro   0x0000000000000000      0xa66 src/MAIN.o
+ .debug_macro   0x0000000000000000       0x1c src/MAIN.o
+ .debug_macro   0x0000000000000000      0x184 src/MAIN.o
+ .debug_macro   0x0000000000000000      0x1ae src/MAIN.o
+ .text          0x0000000000000000       0x14 startup/startup_stm32.o
+ .data          0x0000000000000000        0x0 startup/startup_stm32.o
+ .bss           0x0000000000000000        0x0 startup/startup_stm32.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .group         0x0000000000000000        0xc startup/sysmem.o
+ .text          0x0000000000000000        0x0 startup/sysmem.o
+ .data          0x0000000000000000        0x0 startup/sysmem.o
+ .bss           0x0000000000000000        0x4 startup/sysmem.o
+ .text._sbrk    0x0000000000000000       0x58 startup/sysmem.o
+ .debug_info    0x0000000000000000      0x92c startup/sysmem.o
+ .debug_abbrev  0x0000000000000000      0x1f1 startup/sysmem.o
+ .debug_aranges
+                0x0000000000000000       0x20 startup/sysmem.o
+ .debug_ranges  0x0000000000000000       0x10 startup/sysmem.o
+ .debug_macro   0x0000000000000000      0x1ae startup/sysmem.o
+ .debug_macro   0x0000000000000000      0xa66 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x22 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x58 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x18 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x94 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x35 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x34 startup/sysmem.o
+ .debug_macro   0x0000000000000000      0x174 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x57 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x58 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x1f startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x43 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x20 startup/sysmem.o
+ .debug_macro   0x0000000000000000      0x18e startup/sysmem.o
+ .debug_macro   0x0000000000000000      0x23b startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x16 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x35 startup/sysmem.o
+ .debug_macro   0x0000000000000000      0x330 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x6a startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x1c startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x52 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x40 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x40 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0xd7 startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x1c startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x3d startup/sysmem.o
+ .debug_macro   0x0000000000000000       0x16 startup/sysmem.o
+ .debug_macro   0x0000000000000000      0x16f startup/sysmem.o
+ .debug_line    0x0000000000000000      0x3f6 startup/sysmem.o
+ .debug_str     0x0000000000000000     0x77b4 startup/sysmem.o
+ .comment       0x0000000000000000       0x80 startup/sysmem.o
+ .debug_frame   0x0000000000000000       0x34 startup/sysmem.o
+ .ARM.attributes
+                0x0000000000000000       0x39 startup/sysmem.o
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000        0xc /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000000       0x20 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x20 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .text.memset   0x0000000000000000       0x94 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x38 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x0000000000000000       0xe8 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .text          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .data          0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000020000 xrw
+ROM              0x0000000008000000 0x0000000000080000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+LOAD Ventilation/src/DATABASE/DB_ControlRead.o
+LOAD Ventilation/src/DATABASE/DB_ControlWrite.o
+LOAD Ventilation/src/DATABASE/DB_EventMngt.o
+LOAD Ventilation/src/DATABASE/DB_RTCRead.o
+LOAD Ventilation/src/DATABASE/DB_RTCWrite.o
+LOAD Ventilation/src/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.o
+LOAD Ventilation/src/INTERRUPTS/It_watchdog.o
+LOAD Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+LOAD Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+LOAD Ventilation/src/MAIN/MAIN_System_Init.o
+LOAD Ventilation/src/MAIN/MAIN_Target_Init.o
+LOAD Ventilation/src/MAIN/MAIN_Tasks_Init.o
+LOAD Ventilation/src/TIMERS/TIM_StartDecounter.o
+LOAD Ventilation/src/TIMERS/TIM_Temporize.o
+LOAD src/MAIN.o
+LOAD startup/startup_stm32.o
+LOAD startup/sysmem.o
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a
+START GROUP
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a
+END GROUP
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+LOAD /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x0000000020020000                _estack = 0x20020000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x1c4
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x1c4 startup/startup_stm32.o
+                0x0000000008000000                g_pfnVectors
+                0x00000000080001c4                . = ALIGN (0x4)
+
+.text           0x00000000080001c4      0xa28
+                0x00000000080001c4                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000000080001c4       0x40 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ *(.text*)
+ .text.DB_ControlRead
+                0x0000000008000204       0x24 Ventilation/src/DATABASE/DB_ControlRead.o
+                0x0000000008000204                DB_ControlRead
+ .text.DB_ControlWrite
+                0x0000000008000228       0x2c Ventilation/src/DATABASE/DB_ControlWrite.o
+                0x0000000008000228                DB_ControlWrite
+ .text.DB_EventMngt
+                0x0000000008000254       0x14 Ventilation/src/DATABASE/DB_EventMngt.o
+                0x0000000008000254                DB_EventMngt
+ .text.DB_RTCWrite
+                0x0000000008000268       0x2c Ventilation/src/DATABASE/DB_RTCWrite.o
+                0x0000000008000268                DB_RTCWrite
+ .text.MAIN_Global_Variables_Init
+                0x0000000008000294      0x214 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+                0x0000000008000294                MAIN_Global_Variables_Init
+ .text.MAIN_Interfaces_Init
+                0x00000000080004a8      0x16c Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+                0x00000000080004a8                MAIN_Interfaces_Init
+ .text.MAIN_System_Init
+                0x0000000008000614       0x94 Ventilation/src/MAIN/MAIN_System_Init.o
+                0x0000000008000614                MAIN_System_Init
+ .text._srvwdt_
+                0x00000000080006a8        0xe Ventilation/src/MAIN/MAIN_Target_Init.o
+                0x00000000080006a8                _srvwdt_
+ *fill*         0x00000000080006b6        0x2 
+ .text.MAIN_Target_Init_FirstStep
+                0x00000000080006b8       0xbc Ventilation/src/MAIN/MAIN_Target_Init.o
+                0x00000000080006b8                MAIN_Target_Init_FirstStep
+ .text.MAIN_Target_Init_SecondStep
+                0x0000000008000774       0x58 Ventilation/src/MAIN/MAIN_Target_Init.o
+                0x0000000008000774                MAIN_Target_Init_SecondStep
+ .text.MAIN_Target_Init
+                0x00000000080007cc       0x10 Ventilation/src/MAIN/MAIN_Target_Init.o
+                0x00000000080007cc                MAIN_Target_Init
+ .text.DRV_OutputPort
+                0x00000000080007dc       0x18 Ventilation/src/MAIN/MAIN_Target_Init.o
+                0x00000000080007dc                DRV_OutputPort
+ .text.MAIN_Tasks_Init
+                0x00000000080007f4        0xc Ventilation/src/MAIN/MAIN_Tasks_Init.o
+                0x00000000080007f4                MAIN_Tasks_Init
+ .text.TIM_StartDecounter
+                0x0000000008000800       0x58 Ventilation/src/TIMERS/TIM_StartDecounter.o
+                0x0000000008000800                TIM_StartDecounter
+ .text.TIM_Temporize
+                0x0000000008000858       0xd0 Ventilation/src/TIMERS/TIM_Temporize.o
+                0x0000000008000858                TIM_Temporize
+ .text.main     0x0000000008000928       0xb0 src/MAIN.o
+                0x0000000008000928                main
+ .text.CIRCUIT_CHECK_HMI_Start
+                0x00000000080009d8        0xe src/MAIN.o
+                0x00000000080009d8                CIRCUIT_CHECK_HMI_Start
+ .text.SETUP_HMI_Start
+                0x00000000080009e6        0xe src/MAIN.o
+                0x00000000080009e6                SETUP_HMI_Start
+ .text.VENTILATION_HMI_Start
+                0x00000000080009f4        0xe src/MAIN.o
+                0x00000000080009f4                VENTILATION_HMI_Start
+ .text.KEY_Touch_Detection
+                0x0000000008000a02       0x18 src/MAIN.o
+                0x0000000008000a02                KEY_Touch_Detection
+ *fill*         0x0000000008000a1a        0x2 
+ .text.Reset_Handler
+                0x0000000008000a1c       0x50 startup/startup_stm32.o
+                0x0000000008000a1c                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000a6c        0x2 startup/startup_stm32.o
+                0x0000000008000a6c                RTC_Alarm_IRQHandler
+                0x0000000008000a6c                EXTI2_IRQHandler
+                0x0000000008000a6c                TIM8_CC_IRQHandler
+                0x0000000008000a6c                SPDIF_Rx_IRQHandler
+                0x0000000008000a6c                DebugMon_Handler
+                0x0000000008000a6c                SPI4_IRQHandler
+                0x0000000008000a6c                TIM1_CC_IRQHandler
+                0x0000000008000a6c                QuadSPI_IRQHandler
+                0x0000000008000a6c                DMA2_Stream5_IRQHandler
+                0x0000000008000a6c                HardFault_Handler
+                0x0000000008000a6c                DMA1_Stream5_IRQHandler
+                0x0000000008000a6c                SysTick_Handler
+                0x0000000008000a6c                PVD_IRQHandler
+                0x0000000008000a6c                SDIO_IRQHandler
+                0x0000000008000a6c                TAMP_STAMP_IRQHandler
+                0x0000000008000a6c                PendSV_Handler
+                0x0000000008000a6c                NMI_Handler
+                0x0000000008000a6c                CAN2_RX1_IRQHandler
+                0x0000000008000a6c                EXTI3_IRQHandler
+                0x0000000008000a6c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008000a6c                TIM1_UP_TIM10_IRQHandler
+                0x0000000008000a6c                FMPI2C1_error_IRQHandler
+                0x0000000008000a6c                TIM8_UP_TIM13_IRQHandler
+                0x0000000008000a6c                I2C3_ER_IRQHandler
+                0x0000000008000a6c                EXTI0_IRQHandler
+                0x0000000008000a6c                I2C2_EV_IRQHandler
+                0x0000000008000a6c                DMA1_Stream2_IRQHandler
+                0x0000000008000a6c                CAN1_RX0_IRQHandler
+                0x0000000008000a6c                FPU_IRQHandler
+                0x0000000008000a6c                OTG_HS_WKUP_IRQHandler
+                0x0000000008000a6c                UsageFault_Handler
+                0x0000000008000a6c                CAN2_SCE_IRQHandler
+                0x0000000008000a6c                DMA2_Stream2_IRQHandler
+                0x0000000008000a6c                SPI1_IRQHandler
+                0x0000000008000a6c                TIM6_DAC_IRQHandler
+                0x0000000008000a6c                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008000a6c                DCMI_IRQHandler
+                0x0000000008000a6c                CAN2_RX0_IRQHandler
+                0x0000000008000a6c                DMA2_Stream3_IRQHandler
+                0x0000000008000a6c                FMPI2C1_IRQHandler
+                0x0000000008000a6c                SAI2_IRQHandler
+                0x0000000008000a6c                USART6_IRQHandler
+                0x0000000008000a6c                USART3_IRQHandler
+                0x0000000008000a6c                CAN1_RX1_IRQHandler
+                0x0000000008000a6c                UART5_IRQHandler
+                0x0000000008000a6c                DMA2_Stream0_IRQHandler
+                0x0000000008000a6c                TIM4_IRQHandler
+                0x0000000008000a6c                I2C1_EV_IRQHandler
+                0x0000000008000a6c                HDMI_CEC_IRQHandler
+                0x0000000008000a6c                DMA1_Stream6_IRQHandler
+                0x0000000008000a6c                DMA1_Stream1_IRQHandler
+                0x0000000008000a6c                UART4_IRQHandler
+                0x0000000008000a6c                TIM3_IRQHandler
+                0x0000000008000a6c                RCC_IRQHandler
+                0x0000000008000a6c                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008000a6c                Default_Handler
+                0x0000000008000a6c                EXTI15_10_IRQHandler
+                0x0000000008000a6c                ADC_IRQHandler
+                0x0000000008000a6c                DMA1_Stream7_IRQHandler
+                0x0000000008000a6c                TIM7_IRQHandler
+                0x0000000008000a6c                CAN2_TX_IRQHandler
+                0x0000000008000a6c                TIM5_IRQHandler
+                0x0000000008000a6c                DMA2_Stream7_IRQHandler
+                0x0000000008000a6c                I2C3_EV_IRQHandler
+                0x0000000008000a6c                EXTI9_5_IRQHandler
+                0x0000000008000a6c                RTC_WKUP_IRQHandler
+                0x0000000008000a6c                SPI2_IRQHandler
+                0x0000000008000a6c                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008000a6c                MemManage_Handler
+                0x0000000008000a6c                DMA1_Stream0_IRQHandler
+                0x0000000008000a6c                CAN1_TX_IRQHandler
+                0x0000000008000a6c                SVC_Handler
+                0x0000000008000a6c                EXTI4_IRQHandler
+                0x0000000008000a6c                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008000a6c                WWDG_IRQHandler
+                0x0000000008000a6c                TIM2_IRQHandler
+                0x0000000008000a6c                OTG_FS_WKUP_IRQHandler
+                0x0000000008000a6c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008000a6c                OTG_HS_IRQHandler
+                0x0000000008000a6c                EXTI1_IRQHandler
+                0x0000000008000a6c                USART2_IRQHandler
+                0x0000000008000a6c                I2C2_ER_IRQHandler
+                0x0000000008000a6c                DMA2_Stream1_IRQHandler
+                0x0000000008000a6c                CAN1_SCE_IRQHandler
+                0x0000000008000a6c                FLASH_IRQHandler
+                0x0000000008000a6c                DMA2_Stream4_IRQHandler
+                0x0000000008000a6c                BusFault_Handler
+                0x0000000008000a6c                USART1_IRQHandler
+                0x0000000008000a6c                OTG_FS_IRQHandler
+                0x0000000008000a6c                SPI3_IRQHandler
+                0x0000000008000a6c                DMA1_Stream4_IRQHandler
+                0x0000000008000a6c                I2C1_ER_IRQHandler
+                0x0000000008000a6c                FMC_IRQHandler
+                0x0000000008000a6c                DMA2_Stream6_IRQHandler
+                0x0000000008000a6c                SAI1_IRQHandler
+                0x0000000008000a6c                DMA1_Stream3_IRQHandler
+ *fill*         0x0000000008000a6e        0x2 
+ .text.__libc_init_array
+                0x0000000008000a70       0x48 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+                0x0000000008000a70                __libc_init_array
+ .text.startup.register_fini
+                0x0000000008000ab8       0x14 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0000000008000acc        0xc /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+                0x0000000008000acc                atexit
+ .text.__libc_fini_array
+                0x0000000008000ad8       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+                0x0000000008000ad8                __libc_fini_array
+ .text.__retarget_lock_acquire_recursive
+                0x0000000008000b0c        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x0000000008000b0c                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x0000000008000b10        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x0000000008000b10                __retarget_lock_release_recursive
+ .text.__register_exitproc
+                0x0000000008000b14       0xc0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+                0x0000000008000b14                __register_exitproc
+ *(.glue_7)
+ .glue_7        0x0000000008000bd4        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008000bd4        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008000bd4        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ *(.init)
+ .init          0x0000000008000bd4        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000008000bd4                _init
+ .init          0x0000000008000bd8        0x8 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ *(.fini)
+ .fini          0x0000000008000be0        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0000000008000be0                _fini
+ .fini          0x0000000008000be4        0x8 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x0000000008000bec                . = ALIGN (0x4)
+                0x0000000008000bec                _etext = .
+
+.vfp11_veneer   0x0000000008000bec        0x0
+ .vfp11_veneer  0x0000000008000bec        0x0 linker stubs
+
+.v4_bx          0x0000000008000bec        0x0
+ .v4_bx         0x0000000008000bec        0x0 linker stubs
+
+.iplt           0x0000000008000bec        0x0
+ .iplt          0x0000000008000bec        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+
+.rodata         0x0000000008000bec      0x1c0
+                0x0000000008000bec                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x0000000008000bec      0x1b9 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+                0x0000000008000bec                SYS_InitTimerKey
+                0x0000000008000c1c                PATIENT_PRESSURE_CALIB_POINTS
+                0x0000000008000c3c                FLOW_CALIB_POINTS
+                0x0000000008000c5c                VALVE_PRESSURE_CALIB_POINTS
+                0x0000000008000c7c                VALVE_FAS_PWM_CALIB_POINTS
+                0x0000000008000c88                VALVE_FAS_PRESS_CALIB_POINTS
+                0x0000000008000ca4                FIO2_CALIB_POINTS
+                0x0000000008000cc4                FLOW_O2_CALIB_POINTS
+                0x0000000008000ce4                O2_PRESSURE_CALIB_POINTS
+                0x0000000008000d04                CalibrationParameters
+                0x0000000008000da4                cTIM_TimePeriodMs
+ *(.rodata*)
+ *fill*         0x0000000008000da5        0x3 
+ .rodata._global_impure_ptr
+                0x0000000008000da8        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+                0x0000000008000da8                _global_impure_ptr
+                0x0000000008000dac                . = ALIGN (0x4)
+
+.rel.dyn        0x0000000008000dac        0x0
+ .rel.iplt      0x0000000008000dac        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+
+.ARM.extab      0x0000000008000dac        0x0
+                0x0000000008000dac                . = ALIGN (0x4)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000008000dac                . = ALIGN (0x4)
+
+.ARM            0x0000000008000dac        0x0
+                0x0000000008000dac                . = ALIGN (0x4)
+                0x0000000008000dac                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008000dac                __exidx_end = .
+                0x0000000008000dac                . = ALIGN (0x4)
+
+.preinit_array  0x0000000008000dac        0x0
+                0x0000000008000dac                . = ALIGN (0x4)
+                0x0000000008000dac                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x0000000008000dac                PROVIDE (__preinit_array_end = .)
+                0x0000000008000dac                . = ALIGN (0x4)
+
+.init_array     0x0000000008000dac        0x8
+                0x0000000008000dac                . = ALIGN (0x4)
+                0x0000000008000dac                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ .init_array.00000
+                0x0000000008000dac        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ *(.init_array*)
+ .init_array    0x0000000008000db0        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0000000008000db4                PROVIDE (__init_array_end = .)
+                0x0000000008000db4                . = ALIGN (0x4)
+
+.fini_array     0x0000000008000db4        0x4
+                0x0000000008000db4                . = ALIGN (0x4)
+                0x0000000008000db4                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0000000008000db4        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0000000008000db8                PROVIDE (__fini_array_end = .)
+                0x0000000008000db8                . = ALIGN (0x4)
+                0x0000000008000db8                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000      0x42c load address 0x0000000008000db8
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+ .data.impure_data
+                0x0000000020000000      0x428 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+ .data.__atexit_recursive_mutex
+                0x0000000020000428        0x4 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+                0x0000000020000428                __atexit_recursive_mutex
+                0x000000002000042c                . = ALIGN (0x4)
+                0x000000002000042c                _edata = .
+
+.igot.plt       0x000000002000042c        0x0 load address 0x00000000080011e4
+ .igot.plt      0x000000002000042c        0x0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x000000002000042c                . = ALIGN (0x4)
+
+.bss            0x000000002000042c     0xdd64 load address 0x00000000080011e4
+                0x000000002000042c                _sbss = .
+                0x000000002000042c                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x000000002000042c       0x1c /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .bss           0x0000000020000448       0xb0 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+                0x0000000020000448                CONS_VIT
+                0x000000002000044c                DEF_TURB
+                0x0000000020000450                ENABLE_TURB
+                0x0000000020000454                BRAKE_BLOWER
+                0x0000000020000458                SPEED_BLOWER_PIN
+                0x000000002000045c                CD_VALVE
+                0x0000000020000460                CD_VANNE_FIO2
+                0x0000000020000464                ALIM_FAILURE_3_3V
+                0x0000000020000468                ALIM_FAILURE_5VREF
+                0x000000002000046c                ALIM_FAILURE_10VREF
+                0x0000000020000470                RESET_USB
+                0x0000000020000474                ALARM_REMOTE_STATE
+                0x0000000020000478                WDOG
+                0x000000002000047c                ARRET_INVOLONTAIRE
+                0x0000000020000480                CMD_ME1
+                0x0000000020000484                ALE_ME1
+                0x0000000020000488                BHE
+                0x000000002000048c                RF
+                0x0000000020000490                IRQ_UART
+                0x0000000020000494                TX_UART_ST
+                0x0000000020000498                RX_UART_ST
+                0x000000002000049c                MRST_SPI_ALIM
+                0x00000000200004a0                MTSR_SPI_ALIM
+                0x00000000200004a4                CLK_SPI_ALIM
+                0x00000000200004a8                MRST_SPI_CPU
+                0x00000000200004ac                MTSR_SPI_CPU
+                0x00000000200004b0                SCLK_SPI_CPU
+                0x00000000200004b4                JUMPER_JP8
+                0x00000000200004b8                JUMPER_JP7
+                0x00000000200004bc                SEC_BUZ
+                0x00000000200004c0                MASTERBUSY
+                0x00000000200004c4                INHIB_DETECTED
+                0x00000000200004c8                LED_ALARME_ROUGE
+                0x00000000200004cc                LED_ALARME_ORANGE
+                0x00000000200004d0                AC_SELECT
+                0x00000000200004d4                DC_SELECT
+                0x00000000200004d8                SYS_MutexStartStopVentilUP
+                0x00000000200004dc                SYS_MutexStopInfoVentil
+                0x00000000200004e0                SYS_WaitingForStopConfirm
+                0x00000000200004e4                SYS_CounterPatientMin
+                0x00000000200004e8                SYS_CounterPatientHour
+                0x00000000200004ec                SYS_CounterMachineMin
+                0x00000000200004f0                SYS_CounterMachineHour
+                0x00000000200004f4                SYS_CalibProcessing
+ .bss           0x00000000200004f8        0x4 Ventilation/src/MAIN/MAIN_Target_Init.o
+                0x00000000200004f8                RESET_USB_1
+ .bss           0x00000000200004fc       0x20 src/MAIN.o
+                0x00000000200004fc                CounterTemperature
+                0x0000000020000500                spi_chip_access
+                0x0000000020000504                CounterTop1ms
+                0x0000000020000508                MAIN_Interfaces_Second_Init
+                0x000000002000050c                MAIN_End_of_init
+                0x0000000020000510                MAIN_TopTimer5ms
+                0x0000000020000514                MAIN_CrcEepromTrouble
+                0x0000000020000518                INHIB_DETECTED_1
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x000000002000051c      0x1b0 Ventilation/src/DATABASE/DB_ControlRead.o
+                0x000000002000051c                DB_Control
+ COMMON         0x00000000200006cc       0x34 Ventilation/src/DATABASE/DB_RTCWrite.o
+                0x00000000200006cc                DB_Rtc
+ COMMON         0x0000000020000700     0xd8e4 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+                0x0000000020000700                PECC7
+                0x0000000020000704                T1REL
+                0x0000000020000708                T2
+                0x000000002000070c                DP8
+                0x0000000020000710                DP5
+                0x0000000020000714                SYS_Num_Keyboard
+                0x0000000020000984                T7R
+                0x0000000020000988                S0TBUF
+                0x000000002000098c                XIR2SET
+                0x0000000020000990                TIM_TableOfCntAndDecnt
+                0x0000000020000fc0                XSSCRB
+                0x0000000020000fc4                ADEIC
+                0x0000000020000fc8                PECC0
+                0x0000000020000fcc                T4IE
+                0x0000000020000fd0                SRCP7
+                0x0000000020000fd4                SSCRIC
+                0x0000000020000fd8                XIR3SET
+                0x0000000020000fdc                IEN
+                0x0000000020000fe0                nbre_de_debordement_timer
+                0x0000000020000fe4                XP1IE
+                0x0000000020000fe8                T4
+                0x0000000020000fec                S0TBIR
+                0x0000000020000ff0                T8REL
+                0x0000000020000ff4                DSTP7
+                0x0000000020000ff8                PW3
+                0x0000000020000ffc                XP2IE
+                0x0000000020001000                SSCCON
+                0x0000000020001004                S0RIC
+                0x0000000020001008                XSSCTB
+                0x000000002000100c                ODP4
+                0x0000000020001010                P8
+                0x0000000020001014                CCM2
+                0x0000000020001018                temporisation_terminee
+                0x000000002000101c                T2R
+                0x0000000020001020                XP2IC
+                0x0000000020001024                ODP6
+                0x0000000020001028                P6
+                0x000000002000102c                T7REL
+                0x0000000020001030                SSCTIC
+                0x0000000020001034                CCM7
+                0x0000000020001038                ADCIC
+                0x000000002000103c                WDTCON
+                0x0000000020001040                PWMCON0
+                0x0000000020001044                S0TBIE
+                0x0000000020001048                S0CON
+                0x000000002000104c                T6IC
+                0x0000000020001050                T1IR
+                0x0000000020001054                T5
+                0x0000000020001058                P2
+                0x000000002000105c                T3IR
+                0x0000000020001060                XIR2CLR
+                0x0000000020001064                DataFrameUART1
+                0x0000000020001068                DP4
+                0x000000002000106c                S0BG
+                0x0000000020001070                XSSCCONSET
+                0x0000000020001074                S0RBUF
+                0x0000000020001078                ADEIE
+                0x000000002000107c                PUST_ERROR
+                0x0000000020001080                T2CON
+                0x0000000020001084                CC0IE
+                0x0000000020001088                SRCP6
+                0x000000002000108c                XP3IC
+                0x0000000020001090                DIS_FifoDisplay
+                0x000000002000dbb0                T1IE
+                0x000000002000dbb4                DSTP6
+                0x000000002000dbb8                ADCON
+                0x000000002000dbbc                T3
+                0x000000002000dbc0                TIM_MinuteTableOfCntAndDecnt
+                0x000000002000deb8                T5IE
+                0x000000002000debc                dernier_chargement_T2
+                0x000000002000dec0                S0TBIC
+                0x000000002000dec4                SSCBSY
+                0x000000002000dec8                ODP3
+                0x000000002000decc                CCM0
+                0x000000002000ded0                PECC2
+                0x000000002000ded4                CC10IR
+                0x000000002000ded8                T7
+                0x000000002000dedc                P4
+                0x000000002000dee0                CC10IE
+                0x000000002000dee4                SSCBR
+                0x000000002000dee8                T6CON
+                0x000000002000deec                T01CON
+                0x000000002000def0                T3CON
+                0x000000002000def4                T8R
+                0x000000002000def8                XIR3CLR
+                0x000000002000defc                T5CON
+                0x000000002000df00                ADCIR
+                0x000000002000df04                XP2IR
+                0x000000002000df08                DSTP0
+                0x000000002000df0c                XSSCCONCLR
+                0x000000002000df10                T1
+                0x000000002000df14                CC0IC
+                0x000000002000df18                XP1IC
+                0x000000002000df1c                XS1RBUF
+                0x000000002000df20                XIR1SET
+                0x000000002000df24                ADEIR
+                0x000000002000df28                T2IC
+                0x000000002000df2c                P3
+                0x000000002000df30                cpt_de_debordement_timer
+                0x000000002000df34                DIS_FifoIdxWrite
+                0x000000002000df38                T78CON
+                0x000000002000df3c                SRCP0
+                0x000000002000df40                XIR0SEL
+                0x000000002000df44                SSCTB
+                0x000000002000df48                XSSCBR
+                0x000000002000df4c                DIS_FifoOverflow
+                0x000000002000df50                T1R
+                0x000000002000df54                T4IC
+                0x000000002000df58                DP3
+                0x000000002000df5c                CC0
+                0x000000002000df60                T1IC
+                0x000000002000df64                DP2
+                0x000000002000df68                DP7
+                0x000000002000df6c                XP1IR
+                0x000000002000df70                T2IR
+                0x000000002000df74                T5IC
+                0x000000002000df78                T5R
+                0x000000002000df7c                SSCRB
+                0x000000002000df80                SRCP2
+                0x000000002000df84                PP3
+                0x000000002000df88                ADST
+                0x000000002000df8c                CAPREL
+                0x000000002000df90                CC10IC
+                0x000000002000df94                DSTP2
+                0x000000002000df98                XP0IC
+                0x000000002000df9c                ODP5
+                0x000000002000dfa0                ODP2
+                0x000000002000dfa4                T4R
+                0x000000002000dfa8                DP6
+                0x000000002000dfac                PECC6
+                0x000000002000dfb0                ODP7
+                0x000000002000dfb4                XS1PORT
+                0x000000002000dfb8                P7
+                0x000000002000dfbc                DIS_FifoIdxRead
+                0x000000002000dfc0                T2IE
+                0x000000002000dfc4                CC0IR
+                0x000000002000dfc8                PWMCON1
+                0x000000002000dfcc                P5
+                0x000000002000dfd0                CC28
+                0x000000002000dfd4                XIR1CLR
+                0x000000002000dfd8                T4CON
+                0x000000002000dfdc                ODP8
+                0x000000002000dfe0                XSSCPORT
+ COMMON         0x000000002000dfe4      0x188 src/MAIN.o
+                0x000000002000dfe4                TestSchedulerStep
+                0x000000002000dfe8                EEP_DB_Config
+                0x000000002000dfec                Ventilation_TimesOfTask
+ COMMON         0x000000002000e16c       0x21 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000002000e16c                __lock___atexit_recursive_mutex
+                0x000000002000e170                __lock___arc4random_mutex
+                0x000000002000e174                __lock___env_recursive_mutex
+                0x000000002000e178                __lock___sinit_recursive_mutex
+                0x000000002000e17c                __lock___malloc_recursive_mutex
+                0x000000002000e180                __lock___at_quick_exit_mutex
+                0x000000002000e184                __lock___dd_hash_mutex
+                0x000000002000e188                __lock___tz_mutex
+                0x000000002000e18c                __lock___sfp_recursive_mutex
+                0x000000002000e190                . = ALIGN (0x4)
+ *fill*         0x000000002000e18d        0x3 
+                0x000000002000e190                _ebss = .
+                0x000000002000e190                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x000000002000e190      0x400 load address 0x00000000080011e4
+                0x000000002000e190                . = ALIGN (0x8)
+                0x000000002000e190                PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x000000002000e190                . = (. + _Min_Heap_Size)
+                0x000000002000e590                . = (. + _Min_Stack_Size)
+ *fill*         0x000000002000e190      0x400 
+                0x000000002000e590                . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x22 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+ .ARM.attributes
+                0x0000000000000022       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000056       0x39 Ventilation/src/DATABASE/DB_ControlRead.o
+ .ARM.attributes
+                0x000000000000008f       0x39 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .ARM.attributes
+                0x00000000000000c8       0x39 Ventilation/src/DATABASE/DB_EventMngt.o
+ .ARM.attributes
+                0x0000000000000101       0x39 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .ARM.attributes
+                0x000000000000013a       0x39 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .ARM.attributes
+                0x0000000000000173       0x39 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .ARM.attributes
+                0x00000000000001ac       0x39 Ventilation/src/MAIN/MAIN_System_Init.o
+ .ARM.attributes
+                0x00000000000001e5       0x39 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .ARM.attributes
+                0x000000000000021e       0x39 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .ARM.attributes
+                0x0000000000000257       0x39 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .ARM.attributes
+                0x0000000000000290       0x39 Ventilation/src/TIMERS/TIM_Temporize.o
+ .ARM.attributes
+                0x00000000000002c9       0x39 src/MAIN.o
+ .ARM.attributes
+                0x0000000000000302       0x21 startup/startup_stm32.o
+ .ARM.attributes
+                0x0000000000000323       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000357       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000000000000038b       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000003bf       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000000003f3       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000000000000427       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .ARM.attributes
+                0x000000000000045b       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x000000000000048f       0x22 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+OUTPUT(Ventilation_Maintest.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x8c82
+ .debug_info    0x0000000000000000      0x369 Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_info    0x0000000000000369      0x638 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_info    0x00000000000009a1      0xf6d Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_info    0x000000000000190e      0x693 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_info    0x0000000000001fa1     0x22d6 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_info    0x0000000000004277      0xf3b Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_info    0x00000000000051b2      0xa3b Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_info    0x0000000000005bed      0xa26 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_info    0x0000000000006613       0x3b Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_info    0x000000000000664e      0x503 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_info    0x0000000000006b51      0xa5f Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_info    0x00000000000075b0     0x16b0 src/MAIN.o
+ .debug_info    0x0000000000008c60       0x22 startup/startup_stm32.o
+
+.debug_abbrev   0x0000000000000000      0xba6
+ .debug_abbrev  0x0000000000000000       0xa0 Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_abbrev  0x00000000000000a0      0x10d Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_abbrev  0x00000000000001ad      0x10a Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_abbrev  0x00000000000002b7      0x11e Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_abbrev  0x00000000000003d5      0x130 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_abbrev  0x0000000000000505      0x15c Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_abbrev  0x0000000000000661      0x10f Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_abbrev  0x0000000000000770      0x103 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_abbrev  0x0000000000000873       0x2f Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_abbrev  0x00000000000008a2       0xd1 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_abbrev  0x0000000000000973       0xdd Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_abbrev  0x0000000000000a50      0x144 src/MAIN.o
+ .debug_abbrev  0x0000000000000b94       0x12 startup/startup_stm32.o
+
+.debug_aranges  0x0000000000000000      0x1e8
+ .debug_aranges
+                0x0000000000000000       0x20 Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_aranges
+                0x0000000000000020       0x20 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_aranges
+                0x0000000000000040       0x20 Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_aranges
+                0x0000000000000060       0x20 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_aranges
+                0x0000000000000080       0x20 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_aranges
+                0x00000000000000a0       0x20 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_aranges
+                0x00000000000000c0       0x20 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_aranges
+                0x00000000000000e0       0x40 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_aranges
+                0x0000000000000120       0x20 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_aranges
+                0x0000000000000140       0x20 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_aranges
+                0x0000000000000160       0x20 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_aranges
+                0x0000000000000180       0x40 src/MAIN.o
+ .debug_aranges
+                0x00000000000001c0       0x28 startup/startup_stm32.o
+
+.debug_ranges   0x0000000000000000      0x120
+ .debug_ranges  0x0000000000000000       0x10 Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_ranges  0x0000000000000010       0x10 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_ranges  0x0000000000000020       0x10 Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_ranges  0x0000000000000030       0x10 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_ranges  0x0000000000000040       0x10 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_ranges  0x0000000000000050       0x10 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_ranges  0x0000000000000060       0x10 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_ranges  0x0000000000000070       0x30 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_ranges  0x00000000000000a0       0x10 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_ranges  0x00000000000000b0       0x10 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_ranges  0x00000000000000c0       0x10 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_ranges  0x00000000000000d0       0x30 src/MAIN.o
+ .debug_ranges  0x0000000000000100       0x20 startup/startup_stm32.o
+
+.debug_macro    0x0000000000000000     0x1b49
+ .debug_macro   0x0000000000000000       0x2e Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_macro   0x000000000000002e      0xa66 Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_macro   0x0000000000000a94       0x1c Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_macro   0x0000000000000ab0       0x97 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_macro   0x0000000000000b47       0x16 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_macro   0x0000000000000b5d      0x1a2 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_macro   0x0000000000000cff       0x8e Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_macro   0x0000000000000d8d       0x1c Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_macro   0x0000000000000da9       0x7a Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_macro   0x0000000000000e23       0x10 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_macro   0x0000000000000e33       0xd5 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x0000000000000f08      0x184 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x000000000000108c       0x63 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x00000000000010ef      0x196 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x0000000000001285       0x10 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x0000000000001295       0x10 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x00000000000012a5       0x82 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x0000000000001327      0x2a5 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x00000000000015cc       0x10 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_macro   0x00000000000015dc       0xe0 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x00000000000016bc       0x10 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x00000000000016cc      0x1ae Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_macro   0x000000000000187a       0x6d Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_macro   0x00000000000018e7       0x83 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_macro   0x000000000000196a       0x10 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_macro   0x000000000000197a       0x5b Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_macro   0x00000000000019d5       0x1b Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_macro   0x00000000000019f0       0x48 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_macro   0x0000000000001a38       0x6b Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_macro   0x0000000000001aa3       0x96 src/MAIN.o
+ .debug_macro   0x0000000000001b39       0x10 src/MAIN.o
+
+.debug_line     0x0000000000000000     0x1ec9
+ .debug_line    0x0000000000000000      0x10c Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_line    0x000000000000010c      0x2d9 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_line    0x00000000000003e5      0x193 Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_line    0x0000000000000578      0x2a8 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_line    0x0000000000000820      0x4ca Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_line    0x0000000000000cea      0x53d Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_line    0x0000000000001227      0x2c4 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_line    0x00000000000014eb      0x23b Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_line    0x0000000000001726       0xb1 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_line    0x00000000000017d7      0x140 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_line    0x0000000000001917      0x1d7 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_line    0x0000000000001aee      0x35f src/MAIN.o
+ .debug_line    0x0000000000001e4d       0x7c startup/startup_stm32.o
+
+.debug_str      0x0000000000000000     0xc51c
+ .debug_str     0x0000000000000000     0x36c7 Ventilation/src/DATABASE/DB_ControlRead.o
+                                       0x371c (size before relaxing)
+ .debug_str     0x00000000000036c7      0x942 Ventilation/src/DATABASE/DB_ControlWrite.o
+                                       0x4022 (size before relaxing)
+ .debug_str     0x0000000000004009     0x2203 Ventilation/src/DATABASE/DB_EventMngt.o
+                                       0x5a3e (size before relaxing)
+ .debug_str     0x000000000000620c       0x63 Ventilation/src/DATABASE/DB_RTCWrite.o
+                                       0x41f9 (size before relaxing)
+ .debug_str     0x000000000000626f     0x518b Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+                                       0x8985 (size before relaxing)
+ .debug_str     0x000000000000b3fa      0xd1d Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+                                       0x50dd (size before relaxing)
+ .debug_str     0x000000000000c117       0x97 Ventilation/src/MAIN/MAIN_System_Init.o
+                                       0x4949 (size before relaxing)
+ .debug_str     0x000000000000c1ae      0x191 Ventilation/src/MAIN/MAIN_Target_Init.o
+                                       0x396c (size before relaxing)
+ .debug_str     0x000000000000c33f       0x4d Ventilation/src/MAIN/MAIN_Tasks_Init.o
+                                       0x2d1b (size before relaxing)
+ .debug_str     0x000000000000c38c       0x66 Ventilation/src/TIMERS/TIM_StartDecounter.o
+                                       0x44e2 (size before relaxing)
+ .debug_str     0x000000000000c3f2       0x52 Ventilation/src/TIMERS/TIM_Temporize.o
+                                       0x3e21 (size before relaxing)
+ .debug_str     0x000000000000c444       0xaf src/MAIN.o
+                                       0x6a1b (size before relaxing)
+ .debug_str     0x000000000000c4f3       0x29 startup/startup_stm32.o
+                                         0x59 (size before relaxing)
+
+.comment        0x0000000000000000       0x7f
+ .comment       0x0000000000000000       0x7f Ventilation/src/DATABASE/DB_ControlRead.o
+                                         0x80 (size before relaxing)
+ .comment       0x000000000000007f       0x80 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/DATABASE/DB_EventMngt.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/MAIN/MAIN_System_Init.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .comment       0x000000000000007f       0x80 Ventilation/src/TIMERS/TIM_Temporize.o
+ .comment       0x000000000000007f       0x80 src/MAIN.o
+
+.debug_frame    0x0000000000000000      0x544
+ .debug_frame   0x0000000000000000       0x38 Ventilation/src/DATABASE/DB_ControlRead.o
+ .debug_frame   0x0000000000000038       0x38 Ventilation/src/DATABASE/DB_ControlWrite.o
+ .debug_frame   0x0000000000000070       0x38 Ventilation/src/DATABASE/DB_EventMngt.o
+ .debug_frame   0x00000000000000a8       0x38 Ventilation/src/DATABASE/DB_RTCWrite.o
+ .debug_frame   0x00000000000000e0       0x38 Ventilation/src/MAIN/MAIN_Global_Variables_Init.o
+ .debug_frame   0x0000000000000118       0x38 Ventilation/src/MAIN/MAIN_Interfaces_Init.o
+ .debug_frame   0x0000000000000150       0x34 Ventilation/src/MAIN/MAIN_System_Init.o
+ .debug_frame   0x0000000000000184       0xb0 Ventilation/src/MAIN/MAIN_Target_Init.o
+ .debug_frame   0x0000000000000234       0x2c Ventilation/src/MAIN/MAIN_Tasks_Init.o
+ .debug_frame   0x0000000000000260       0x38 Ventilation/src/TIMERS/TIM_StartDecounter.o
+ .debug_frame   0x0000000000000298       0x38 Ventilation/src/TIMERS/TIM_Temporize.o
+ .debug_frame   0x00000000000002d0       0xb4 src/MAIN.o
+ .debug_frame   0x0000000000000384       0x2c /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+ .debug_frame   0x00000000000003b0       0x5c /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000000000000040c       0x20 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+ .debug_frame   0x000000000000042c       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000460       0xb0 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .debug_frame   0x0000000000000510       0x34 /home/bhavya/Downloads/1/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
