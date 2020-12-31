@@ -40,7 +40,7 @@
 /******************************************************************************/
 void DB_EventMngt (UWORD16 EventNb)
 {
-#if 0
+
 #ifndef _BORLAND
 
     /* Current mode recovery					                                       */
@@ -57,8 +57,7 @@ void DB_EventMngt (UWORD16 EventNb)
     /********************************/  
 
     /*%C Event number writing */
-    DRV_EVENT_PushEvent(EVENT_NB_ID,
-                        EventNb);
+   // DRV_EVENT_PushEvent(EVENT_NB_ID, EventNb); //Driver file //bhavya
 
     /*%C Common parameters flash writing (for all modes) */
     for (i = 0; i < EndCommonEventParam - BeginCommonEventParam + 1; i++)
@@ -247,7 +246,7 @@ void DB_EventMngt (UWORD16 EventNb)
             /*%C     Value reading in powersupply base */
         case DB_POWERSUPPLY :
             {
-                DataToPush = DB_PowerSupplyRead(DB_CommonEventMngtParam[i].DataId); 
+              //  DataToPush = DB_PowerSupplyRead(DB_CommonEventMngtParam[i].DataId);
                 break;                                                          
             }
         default :                                                          
@@ -257,7 +256,7 @@ void DB_EventMngt (UWORD16 EventNb)
             }                                                                  
         }
 
-
+#if 0
         /*%C  Value size test (8 or 16 bits) (flash writing on 8 bits)                */
         /*%C  MSB value test  */
         if (DB_CommonEventMngtParam[i].StorageType == MSB)
@@ -278,11 +277,11 @@ void DB_EventMngt (UWORD16 EventNb)
             DRV_EVENT_PushEvent(i+1, (UBYTE)DataToPush);
         }
     }
-
+#endif
     /*******************************************************/   
     /*%C Specific Parameters memorization for each mode    */
     /*******************************************************/   
-
+#if 0
     /*%C Array address memorization function of the ventilation mode              */
     switch (ActualMode)
     {
@@ -528,7 +527,8 @@ void DB_EventMngt (UWORD16 EventNb)
         {
             DRV_EVENT_PushEvent(BeginSpecificEventParam + i, (UBYTE)DataToPush);
         }
-    }
+
 #endif
+ }
 #endif
 }

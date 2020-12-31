@@ -15,11 +15,14 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Ventilation/src/ACTUATOR \
 Ventilation/src/DATABASE \
 Ventilation/src/DATABASE_SETTINGS \
 Ventilation/src/INTERRUPTS \
 Ventilation/src/MAIN \
+Ventilation/src/SCHEDULER \
 Ventilation/src/TIMERS \
+Ventilation/src/VENTILATION \
 src \
 startup \
 

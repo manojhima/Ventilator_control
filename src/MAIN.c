@@ -183,7 +183,7 @@ void main(void)
 		DB_ControlWrite(MAINTENANCE_MODE_U16, TRUE);
         while (1)
 		{
-		   	//SCHED_Setup_Main();
+		   	SCHED_Setup_Main();
 		}
   	}
     // if the NAVIG (page) key is pressed
@@ -195,7 +195,7 @@ void main(void)
         DB_ControlWrite(CIRCUIT_CHECK_MODE_U16, TRUE);
         while (1)
         {
-            //SCHED_Setup_Main();
+            SCHED_Setup_Main();
         }
     }
     else
@@ -207,7 +207,7 @@ void main(void)
         while (1)
 		{
 
-			//SCHED_Ventilation_Main();
+			SCHED_Ventilation_Main();
 		}
 	}
 }

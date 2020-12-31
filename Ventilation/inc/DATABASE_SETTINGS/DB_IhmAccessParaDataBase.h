@@ -1430,7 +1430,8 @@ const t_TEST_EEPROM_DB cDB_TEST_RTC_DB [end_of_db_rtc_table]=
 };
 
 /*USB CONSTANTS*/
-const t_TEST_EEPROM_DB cDB_TEST_USB_DB [end_of_db_usb_table]=
+//const t_TEST_EEPROM_DB cDB_TEST_USB_DB [end_of_db_usb_table]=
+const t_TEST_EEPROM_DB cDB_TEST_USB_DB [14]=
 {
     tADJUST_USB_ERASE_KEY,
     tADJUST_USB_TRANSFER_APPLY,

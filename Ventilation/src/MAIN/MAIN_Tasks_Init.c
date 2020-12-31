@@ -39,12 +39,12 @@ void MAIN_Tasks_Init(void)
 //	DRV_NAND_Flash_Init(); //by bhavya
 /*%C System	Init function call															   */
   	MAIN_System_Init();
-#if 0
+
 /*%C Ventilation Init function call														   */
 	MAIN_Ventilation_Init();
 /*%C Security Init function call														  		*/
 	MAIN_Security_Init();
-#endif
-	/*%C DRV_EVENT	Init function call															   */
+
+/*%C DRV_EVENT	Init function call															   */
   // DRV_EVENT_Init(); //bhavya
 }

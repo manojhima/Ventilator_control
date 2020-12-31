@@ -10,11 +10,14 @@ RM := rm -rf
 -include sources.mk
 -include startup/subdir.mk
 -include src/subdir.mk
+-include Ventilation/src/VENTILATION/subdir.mk
 -include Ventilation/src/TIMERS/subdir.mk
+-include Ventilation/src/SCHEDULER/subdir.mk
 -include Ventilation/src/MAIN/subdir.mk
 -include Ventilation/src/INTERRUPTS/subdir.mk
 -include Ventilation/src/DATABASE_SETTINGS/subdir.mk
 -include Ventilation/src/DATABASE/subdir.mk
+-include Ventilation/src/ACTUATOR/subdir.mk
 -include subdir.mk
 -include objects.mk
 

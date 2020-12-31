@@ -86,6 +86,7 @@ UWORD16 DB_powerSupply[end_of_db_powersupply_table];
 /*                     CONSTANT DECLARATION			                           */
 /******************************************************************************/
 /* Base Control array */
+UWORD16 DB_PowerSupplyRead(e_DB_POWERSUPPLY Id);
 extern UWORD16 DB_powerSupply[end_of_db_powersupply_table];
 #endif
 
