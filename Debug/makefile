@@ -12,9 +12,14 @@ RM := rm -rf
 -include src/subdir.mk
 -include Ventilation/src/VENTILATION/subdir.mk
 -include Ventilation/src/TIMERS/subdir.mk
+-include Ventilation/src/SYSTEM/subdir.mk
+-include Ventilation/src/SET_UP/subdir.mk
+-include Ventilation/src/SECURITY/subdir.mk
 -include Ventilation/src/SCHEDULER/subdir.mk
 -include Ventilation/src/MAIN/subdir.mk
 -include Ventilation/src/INTERRUPTS/subdir.mk
+-include Ventilation/src/GENERAL/subdir.mk
+-include Ventilation/src/DISPLAY/subdir.mk
 -include Ventilation/src/DATABASE_SETTINGS/subdir.mk
 -include Ventilation/src/DATABASE/subdir.mk
 -include Ventilation/src/ACTUATOR/subdir.mk

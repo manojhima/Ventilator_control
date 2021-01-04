@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -19,41 +19,41 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
-
+#if 0
 #ifndef SCHED_VENTILATION_SCHEDULER_CONFIG_H
 #define SCHED_VENTILATION_SCHEDULER_CONFIG_H
 
 /************************* DEFINITION DES TACHES **************************/
 /*                                                                        */
-/* On définit les taches et les fonctions a appeler par une étiquette qui */
+/* On dï¿½finit les taches et les fonctions a appeler par une ï¿½tiquette qui */
 /* contient un pointeur sur la tache ou la fonction en question.          */
-/* Les noms des étiquettes sont repris par le fichier scheduler_config.c  */
+/* Les noms des ï¿½tiquettes sont repris par le fichier scheduler_config.c  */
 /* et ne doivent donc pas etre modifies.                                  */
 /*                                                                        */
-/* Pour les étiquettes suivantes:                                         */
+/* Pour les ï¿½tiquettes suivantes:                                         */
 /*    TASK_1_MAIN_FUNC, TASK_2_MAIN_FUNC, TASK_3_MAIN_FUNC,...            */
 /* Il n'est pas possible d'attribuer la pseudo-variable NO_FUNCTION       */
 /*                                                                        */
-/* Les pseudo_variables TASK_1, TASK_2, TASK_3,... contiennent le numéro  */
-/* de priorité des taches correspondantes                                 */
+/* Les pseudo_variables TASK_1, TASK_2, TASK_3,... contiennent le numï¿½ro  */
+/* de prioritï¿½ des taches correspondantes                                 */
 /*                                                                        */
-/* Les étiquettes TACHE1, TACHE2, TACHE3,... sont modifiables. Elles sont */
-/* utilisées pour l'affectation des pas du scheduler                      */
+/* Les ï¿½tiquettes TACHE1, TACHE2, TACHE3,... sont modifiables. Elles sont */
+/* utilisï¿½es pour l'affectation des pas du scheduler                      */
 /*                                                                        */
-/* Le nombre de tache est défini  dans l'étiquette NUMBER_OF_TASKS. C'est */
+/* Le nombre de tache est dï¿½fini  dans l'ï¿½tiquette NUMBER_OF_TASKS. C'est */
 /* cette etiquette qui fige la taille ROM de la table                     */
 /*                                                                        */
-/* REM: On peut définir plus de tache que le nombre inscrit dans          */
-/*      NUMBER_OF_TASKS mais elles ne seront pas ajoutées dans la table   */
+/* REM: On peut dï¿½finir plus de tache que le nombre inscrit dans          */
+/*      NUMBER_OF_TASKS mais elles ne seront pas ajoutï¿½es dans la table   */
 /*                                                                        */
-/* REM: Le chien de garde est rafraîchi a chaque tour de séquenceur et a  */
-/*      chaque réveil                                                     */
+/* REM: Le chien de garde est rafraï¿½chi a chaque tour de sï¿½quenceur et a  */
+/*      chaque rï¿½veil                                                     */
 /*                                                                        */
 /* REM: Une tache d'init est du type:  void MyFuncInit(void)              */
 /*                                                                        */
 /*      Une tache main est du type:    task_state_t MyFuncMain(void)      */
 /*                                                                        */
-/*        afin de renvoyer l'étiquette TASK_ACTIVE ou TASK_INACTIVE       */   
+/*        afin de renvoyer l'ï¿½tiquette TASK_ACTIVE ou TASK_INACTIVE       */   
 /*                                                                        */
 /**************************************************************************/
 
@@ -109,6 +109,7 @@
 #define KEY_EVENT_LAUNCH_TACHE12 TASK_12
 #define TASK_12_MAIN_FUNC HMI_KeyboardEventLaunch 
 /****************************** tache 13 ******************************/
+#if 0
 #define MONIT_FLASH_TACHE_13 TASK_13
 #define TASK_13_MAIN_FUNC DRV_MONIT_Launch
 /****************************** tache 14 ******************************/
@@ -117,6 +118,7 @@
 /****************************** tache 15 ******************************/
 #define DRV_USB_LAUNCH_TACHE15 TASK_15
 #define TASK_15_MAIN_FUNC DRV_USB_Launch
+#endif
 /****************************** tache 16 ******************************/
 #define COM_LAUNCH_TACHE_16 TASK_16
 #define TASK_16_MAIN_FUNC DRV_COM_Launch
@@ -165,30 +167,30 @@
 
 /*********** DEFINITION DES PAS DU SEQUENCEUR PRINCIPAL *******************/
 /*                                                                        */
-/* Un pas de séquenceur est défini par une étiquette dont la construction */
+/* Un pas de sï¿½quenceur est dï¿½fini par une ï¿½tiquette dont la construction */
 /* est imposee: SCHED1_STEP[n]_ACTIVABLE_TASKS                            */
-/*  [n] varie de 1 a 32 et représente le numéro du pas                    */
-/* Ce schéma de construction est repris par le fichier scheduler_configu- */
-/* -ration.c et ne doit donc pas être modifie                             */
+/*  [n] varie de 1 a 32 et reprï¿½sente le numï¿½ro du pas                    */
+/* Ce schï¿½ma de construction est repris par le fichier scheduler_configu- */
+/* -ration.c et ne doit donc pas ï¿½tre modifie                             */
 /*                                                                        */
-/* Le nombre de pas est définit dans l'étiquette SCHED1_STEP_NUMBER. C'est*/
-/* cette étiquette qui fige la taille ROM de la table                     */
+/* Le nombre de pas est dï¿½finit dans l'ï¿½tiquette SCHED1_STEP_NUMBER. C'est*/
+/* cette ï¿½tiquette qui fige la taille ROM de la table                     */
 /*                                                                        */
-/* REM: On peut définir plus de pas que le nombre inscrit dans            */
+/* REM: On peut dï¿½finir plus de pas que le nombre inscrit dans            */
 /*      SCHED1_STEP_NUMBER mais ils ne seront pas ajoutes dans la table   */
 /*                                                                        */
-/* REM: Un pas vide se définit avec la pseudo-variable EMPTY              */
+/* REM: Un pas vide se dï¿½finit avec la pseudo-variable EMPTY              */
 /*                                                                        */
 /**************************************************************************/
 
 /*--------------------------------------------------------------------*/
-/* nombre de pas du séquenceur principal  MINI:1  MAXI:32             */
+/* nombre de pas du sï¿½quenceur principal  MINI:1  MAXI:32             */
 /*--------------------------------------------------------------------*/
 #define cVENTILATION_SCHED1_STEP_NUMBER 4
    
 /*--------------------------------------------------------------------*/
-/* définition de l'ordre de séquencement des taches: pour chaque pas  */
-/* du séquenceur, on déclare le nom des taches a lancer               */
+/* dï¿½finition de l'ordre de sï¿½quencement des taches: pour chaque pas  */
+/* du sï¿½quenceur, on dï¿½clare le nom des taches a lancer               */
 /*--------------------------------------------------------------------*/
 /* step 1 */
 #define SCHED1_STEP_1_ACTIVABLE_TASKS  SYS_INTERPOLATION_TACHE4 + DRV_EVENT_TACHE9 + DISPLAY_FIFO_READ_TACHE10 + TIM_LAUNCH_TACHE3 + SYS_LAUNCH_TACHE2 + VEN_CYCLES_TACHE5 + VEN_ACTUATORS_TACHE7 + VEN_SECURITY_TACHE8 + KEY_EVENT_LAUNCH_TACHE12 + COM_LAUNCH_TACHE_16 + DRV_SPI_POWERSUPPLY_UPDATE_TACHE_17 + DRV_USB_LAUNCH_TACHE15 + MONIT_FLASH_TACHE_13 + TREND_FLASH_TACHE_14
@@ -209,3 +211,16 @@
 
 #endif
 /************************************************************************/
+void DRV_USB_Launch(void)
+{
+
+}
+void DRV_TREND_Launch(void)
+{
+
+}
+void DRV_MONIT_Launch(void)
+{
+
+}
+#endif

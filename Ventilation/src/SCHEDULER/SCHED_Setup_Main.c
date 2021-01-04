@@ -35,11 +35,11 @@
 
 void SCHED_Setup_Main(void)
 {
-#if 0
+
    if (MAIN_TopTimer5ms == TRUE) 
    {
    	SCHED_Setup_entry();
 	  	MAIN_TopTimer5ms = FALSE;
    }
-#endif
+
 }

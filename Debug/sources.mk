@@ -18,9 +18,14 @@ SUBDIRS := \
 Ventilation/src/ACTUATOR \
 Ventilation/src/DATABASE \
 Ventilation/src/DATABASE_SETTINGS \
+Ventilation/src/DISPLAY \
+Ventilation/src/GENERAL \
 Ventilation/src/INTERRUPTS \
 Ventilation/src/MAIN \
 Ventilation/src/SCHEDULER \
+Ventilation/src/SECURITY \
+Ventilation/src/SET_UP \
+Ventilation/src/SYSTEM \
 Ventilation/src/TIMERS \
 Ventilation/src/VENTILATION \
 src \

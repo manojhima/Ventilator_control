@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -24,6 +24,8 @@
 
 #define MAXIMUM_VENTILATION_NUMBER_OF_TASKS 32
 
+#include "typedef.h"
+#include "enum.h"
 #ifdef DECLARATION_MAIN_DATA
 	#ifndef MAIN_DATA_H
 	#define MAIN_DATA_H
@@ -55,7 +57,7 @@ extern UWORD16 MAIN_Interfaces_Second_Init;
 extern UWORD16 MAIN_End_of_init;
 extern UWORD16 MAIN_TopTimer5ms;
 extern UWORD16 MAIN_CrcEepromTrouble;
-extern t_MEASURES_TIMES Ventilation_TimesOfTask[];
+//extern t_MEASURES_TIMES Ventilation_TimesOfTask[];
 
 	#endif
 #endif

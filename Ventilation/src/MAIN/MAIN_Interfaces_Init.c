@@ -32,6 +32,7 @@
 //#include "regf276e.h"
 //#endif
 
+#include <Main_Data.h>
 #include "../GENERAL/typedef.h"
 //#include "../GENERAL/io_declare.h"
 #include "io_stubs.h"
@@ -47,8 +48,6 @@
 #include "../DATABASE/DB_EventMngt.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "MAIN_Interfaces_Init.h"
-#include "Main_Data.h"
-//#include "../PUST/PUST.h"
 #include "../SCHEDULER/SCHED_Ventilation_Main.h"
 #include "../SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"	
 //#include "../DRIVERS/DRV_VarEeprom.h"
@@ -131,15 +130,15 @@ T4 = 19531;
 
 		 /**************************************************/
 	// Init des mesures de t�ches
-
+#if 0 // by bhavya
 	//initilisation des valeurs maxi et mini du temps des taches
 	for (i=0;i < cVENTILATION_NUMBER_OF_TASKS;i++)
 			{
-			Ventilation_TimesOfTask[i].maxi = 0X0	;	//0;
+			Ventilation_TimesOfTask[i].maxi = 0X0;	//0;
 			Ventilation_TimesOfTask[i].current =0X0;	//0;
 			Ventilation_TimesOfTask[i].mini   = 0XFFFF; 	//65535;
 	 		}
-	
+#endif
 	//R�solution de mesure 800ns � 40Mhz
 		T78CON &= 0x00FF;
 		T78CON |= 0x02FF;

@@ -38,8 +38,8 @@
 #include "../VENTILATION/Ventilation_Constants.h"
 #include "../VENTILATION/Ventilation_Datas.h"
 #include "../VENTILATION/Ventilation_Cycles_Datas.h"
-//#include "../VENTILATION/VEN_Cycles.h"
-//#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../VENTILATION/VEN_Cycles.h"
+#include "../VENTILATION/Ventilation_Compute_data.h"
 
 
 

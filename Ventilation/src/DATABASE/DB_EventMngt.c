@@ -256,7 +256,7 @@ void DB_EventMngt (UWORD16 EventNb)
             }                                                                  
         }
 
-#if 0
+
         /*%C  Value size test (8 or 16 bits) (flash writing on 8 bits)                */
         /*%C  MSB value test  */
         if (DB_CommonEventMngtParam[i].StorageType == MSB)
@@ -281,7 +281,7 @@ void DB_EventMngt (UWORD16 EventNb)
     /*******************************************************/   
     /*%C Specific Parameters memorization for each mode    */
     /*******************************************************/   
-#if 0
+
     /*%C Array address memorization function of the ventilation mode              */
     switch (ActualMode)
     {
@@ -528,7 +528,11 @@ void DB_EventMngt (UWORD16 EventNb)
             DRV_EVENT_PushEvent(BeginSpecificEventParam + i, (UBYTE)DataToPush);
         }
 
-#endif
  }
-#endif
 }
+    //by bhavya //driver function
+    void DRV_EVENT_PushEvent(	e_EVENT_PARAMETERS Id_Event,
+                             	UBYTE value)
+    {
+
+    }

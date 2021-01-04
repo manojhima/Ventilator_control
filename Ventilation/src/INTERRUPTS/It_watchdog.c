@@ -34,11 +34,12 @@
 
 void It_watchdog(void)
 {
-#if 0
+ 	#define P2_4 0
+	int WDOG =	P2_4;
+
 /*%C Watch dog Hard activ� dans le scheduler toutes les 20 ms */
 	WDOG = !WDOG;
 
 /*%C Watch dog interne */
 	_srvwdt_();
-#endif
 }

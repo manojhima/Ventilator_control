@@ -23,7 +23,7 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-
+#if 0
 //#ifndef _TASKING
 //#include "LH_ST10F276.h"
 //#include <intrins.h>
@@ -550,3 +550,4 @@ void SCHED_Ventilation_entry(void)
 		Ventilation_CountActivateTaskStep = 0;
 		}
 }
+#endif

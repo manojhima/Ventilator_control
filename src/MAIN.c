@@ -46,12 +46,12 @@
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"	
-#include "Main_Data.h"
+#include <Main_Data.h>
 #include "../DATABASE/DB_Event.h"
 #include "../DATABASE/DB_Config.h"
 #include "../DATABASE/DB_Control.h"
 //#include "../DRIVERS/DRV_VarEeprom.h"
-#include "MAIN.h"
+#include <MAIN.h>
 //#include "../PUST/PUST.h"
 
 

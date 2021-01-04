@@ -54,6 +54,7 @@ void ACT_BlowerCmd(SWORD32 Kp,
                    UWORD16 Consigne,
                    e_VEN_ControllerType TypeRegul)
 {
+#if 0
 	UWORD16 VentilAuthorization = DB_ControlRead (VENTIL_AUTHORIZATION_U16);
 	UWORD16 Alarm_Turbine_overheat = DB_AlarmStatusRead(ALARM_TURBINE_OVERHEAT_U16);
    	UWORD16 MeasureSpeedBlower = DB_ComputeRead(MEASURE_SPEED_BLOWER_U16);
@@ -165,5 +166,6 @@ void ACT_BlowerCmd(SWORD32 Kp,
 	}
 	DB_ComputeWrite(BLOWER_COMMAND_U16, (UWORD16)BlowerCommand);							  	
 	BLOWER_CMD_2 = (UWORD16) BlowerCommand;
+#endif
 }
 
