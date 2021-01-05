@@ -42,10 +42,16 @@
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
+int MASTERBUSY_1 = 0;//bhavya
+UWORD16 T2IR;
+UWORD16 T2IC;
+UWORD16 T2;
+UWORD16 T2CON;
+
 
 void DIS_FifoRead(void)
 {
-#if 0
+
 	UBYTE DisplayFunction;
 	UBYTE *StringAddress;
 	UWORD32 StringAddressCompute;
@@ -63,10 +69,11 @@ void DIS_FifoRead(void)
 		//Si donn�es dans la fifo et temps allou� � l'execution non termin�*/
 	
 		//Demande d'ouverture de l'afficheur
-		DRV_DIS_HostRequest ( 1 ) ;
+		//DRV_DIS_HostRequest ( 1 ) ; //bhavya
 		// D�lai impos� par la carte graphique de fa�on � attendre la lib�ration du bus
-		DRV_DIS_Delay_us(1);
-		if(MASTERBUSY == FALSE)
+		//DRV_DIS_Delay_us(1); //bhavya
+
+		if(MASTERBUSY_1 == FALSE)
 			{
 			while((DIS_FifoIdxWrite != DIS_FifoIdxRead) && (T2IR == 0))
 				{
@@ -86,19 +93,19 @@ void DIS_FifoRead(void)
 						break;
 					case	DRV_BACKLIHGHTADJUST :
 						{
-						DRV_DIS_grBackLight(DIS_FifoDisplay[DIS_FifoIdxRead].Param1);
+						//DRV_DIS_grBackLight(DIS_FifoDisplay[DIS_FifoIdxRead].Param1); //bhavya
 						}			
 						break;
 					
 					case	DRV_BRITHNESSAJUST:
 						{
-						DRV_DIS_grSetContrast(DIS_FifoDisplay[DIS_FifoIdxRead].Param1);
+						//DRV_DIS_grSetContrast(DIS_FifoDisplay[DIS_FifoIdxRead].Param1); //bhavya
 						}			
 						break;
 					
 					case	DRV_NEGATIVE_CAR:
 						{
-						DRV_DIS_grNegative(DIS_FifoDisplay[DIS_FifoIdxRead].Param1);
+						//DRV_DIS_grNegative(DIS_FifoDisplay[DIS_FifoIdxRead].Param1); //bhavya
 						}			
 						break;
 					
@@ -205,8 +212,7 @@ void DIS_FifoRead(void)
 			}
 		}
 		//Fermeture de l'afficheur
-		DRV_DIS_HostRequest (0) ;
+		//DRV_DIS_HostRequest (0) ; //bhavya
 		T2CON = 0x0000;     // stop Timer2
 	}
-#endif
 }

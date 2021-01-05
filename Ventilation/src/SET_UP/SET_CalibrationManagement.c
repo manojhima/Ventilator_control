@@ -43,7 +43,6 @@ t_AD_Digit AD_Digit;
 
 void SET_CalibrationManagement(void)
 {
-#if 0
 	e_CalibrationCommand CalibFasValveReq = 
    											DB_ControlRead(CALIB_FAS_VALVE_REQ_U16);
    e_CalibrationCommand CalibPatientPressReq = 
@@ -82,7 +81,7 @@ void SET_CalibrationManagement(void)
 									  AD_Digit.ProxPressure,
 									  AD_Digit.ValvePressure);
 	}
-				
+
 /*%C Valve pressure sensor																		*/
 
 /*%C Valve pressure calibration verification												*/
@@ -213,5 +212,4 @@ void SET_CalibrationManagement(void)
 							 AD_Digit.Fio2,
 							  0,0);
 	}		
-#endif
 }

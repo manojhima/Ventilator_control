@@ -27,6 +27,7 @@ Ventilation/src/SECURITY \
 Ventilation/src/SET_UP \
 Ventilation/src/SYSTEM \
 Ventilation/src/TIMERS \
+Ventilation/src/USB_SETTINGS \
 Ventilation/src/VENTILATION \
 src \
 startup \

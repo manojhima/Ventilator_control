@@ -41,7 +41,6 @@
 
 void SET_RTC_Mngt(void)
 {
-#if 0
 /*%C Is it a reading or writting of RTC */
    t_RTC_TIME_DATE RtcValue = {0,
                                0,
@@ -132,5 +131,18 @@ void SET_RTC_Mngt(void)
 	}
 /*%C Increasing Step counter  */
 	Nb_Step++;
-#endif
+
+}
+
+//driver prototypes //bhavya
+
+t_RTC_TIME_DATE RTC_Value;
+t_RTC_TIME_DATE DRV_RTC_ReadTimeAndDate(void)
+{
+	return RTC_Value;
+}
+
+void DRV_RTC_WriteTimeAndDate(t_RTC_TIME_DATE RTC_NewValue)
+{
+
 }

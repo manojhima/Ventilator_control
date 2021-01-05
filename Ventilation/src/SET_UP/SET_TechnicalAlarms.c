@@ -34,7 +34,7 @@
 
 void SET_TechnicalAlarms(void)
 {
-#if 0
+
 
 /*%C Inspirated flow offset default alarm call	                           	*/
 	SET_InspFlowOffsetDefault();
@@ -62,10 +62,8 @@ void SET_TechnicalAlarms(void)
 #ifdef CONFIG_ALARM_O2
 /*%C O2 flow offset default alarm call	                           	*/
 	SET_O2FlowOffsetDefault();
-
 /*%C O2 pressure offset default alarm call	                           	*/
 	SET_O2PressureOffsetDefault();
-#endif
 #endif
 }
 

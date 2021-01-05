@@ -45,18 +45,17 @@
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-#if 0
+
 #define sfr unsigned int
-sfr   VANNE_O2_CMD   = 0xFE34;
+sfr   VANNE_O2_CMD_1  = 0xFE34;
 #define P7_2 0
-int CD_VANNE_FIO2 =	P7_2;
-sfr  VALVE_CMD      = 0xFE32;
-sfr BLOWER_CMD = 0xFE30;
-#endif
+int CD_VANNE_FIO2_1 =	P7_2;
+sfr  VALVE_CMD_1      = 0xFE32;
+sfr BLOWER_CMD_3 = 0xFE30;
 
 void SET_Actuator(void)
 {
-#if 0
+
 
 	UWORD16 RegulType = 0;
 	UWORD16  Consigne = 0;
@@ -177,13 +176,13 @@ void SET_Actuator(void)
     	|| (MemO2FlowReq == AUTOCALIB_SEG_1))
 		|| (SYS_CalibProcessing == FALSE))
 		{
-			VANNE_O2_CMD = cVALVEO2_CMD_OFF;
+			VANNE_O2_CMD_1 = cVALVEO2_CMD_OFF;
 /*%C 		Brake: medium reduce speed if over 3000 rpm */
 /*%C 		Maximum reduce speed under 3000 rpm */
 			if( ( RegulType != CONTROL_SPEED)
 			||  ((RegulType == CONTROL_SPEED) && (Consigne == 0)))
 			{	
-				BLOWER_CMD = cBLOWER_CMD_OFF;
+				BLOWER_CMD_3= cBLOWER_CMD_OFF;
 				if( SpeedBlower > 3000 )
 	         {
 	         	ACT_BrakePower(cPOWER);
@@ -255,22 +254,22 @@ void SET_Actuator(void)
 /*%C  Send parameters corresponding to Flow O2 Control */
 		else if(RegulType == CONTROL_FLOW_O2_MANUEL)
 		{             
-			VANNE_O2_CMD = cVALVEO2_CMD_OFF - (UWORD16)Consigne;
+			VANNE_O2_CMD_1 = cVALVEO2_CMD_OFF - (UWORD16)Consigne;
 		}
 		else if(RegulType == CONTROL_PRESSURE_O2)
 		{             
-			VANNE_O2_CMD = cVALVEO2_CMD_ON;
+			VANNE_O2_CMD_1 = cVALVEO2_CMD_ON;
 		}
 /*%C  Close the valve ( Baloon open )	*/
 		if ( (CalibFasValveReq == NO_CALIB)
 		  && (PatientPressRequest == NO_CALIB) )
 		{
-   			VALVE_CMD = cVALVE_CMD_OFF;
+   			VALVE_CMD_1 = cVALVE_CMD_OFF;
 		}
 		else if ( (CalibFasValveReq == NO_CALIB)
 		  && (PatientPressRequest >= NO_CALIB) )
 		{
-			VALVE_CMD = cVALVE_CMD_ON;
+			VALVE_CMD_1= cVALVE_CMD_ON;
 		}
 //    VALVE_CMD = DB_ComputeRead(DEB_SETUP_CMD_VALVE);
 
@@ -278,12 +277,11 @@ void SET_Actuator(void)
 /*%C O2 Valve Open during the max speed blower test */ 
     if (O2ValveCmd == TRUE) 
     { 
- 		CD_VANNE_FIO2 = 1;  
+ 		CD_VANNE_FIO2_1 = 1;
 	} 
 /*%C O2 Valve Close after the max speed blower test */ 
 	else 
 	{ 
-	    CD_VANNE_FIO2 = 0;  
+	    CD_VANNE_FIO2_1 = 0;
 	} 
-#endif
 }

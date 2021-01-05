@@ -11,6 +11,7 @@ RM := rm -rf
 -include startup/subdir.mk
 -include src/subdir.mk
 -include Ventilation/src/VENTILATION/subdir.mk
+-include Ventilation/src/USB_SETTINGS/subdir.mk
 -include Ventilation/src/TIMERS/subdir.mk
 -include Ventilation/src/SYSTEM/subdir.mk
 -include Ventilation/src/SET_UP/subdir.mk
