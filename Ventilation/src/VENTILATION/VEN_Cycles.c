@@ -49,7 +49,7 @@
 /******************************************************************************/
 void VEN_Cycles(void)
 {
-#if 0
+
 	e_MODE_TYPES CurrentMode = DB_ControlRead(CURRENT_MODE_U16);  
 	UWORD16 ChangeMode = DB_ControlRead(CHANGE_MODE_U16);
 	UWORD16 VentilAuthorization = DB_ControlRead(VENTIL_AUTHORIZATION_U16);
@@ -168,6 +168,7 @@ void VEN_Cycles(void)
 
 		}
 
+
 /*---------------------------------------------------------------------------*/
 /*%C	Call of the state machine depending on the current mode :       */
 
@@ -271,7 +272,7 @@ void VEN_Cycles(void)
 		}
 
 	}
-#endif
+
 }
 
 

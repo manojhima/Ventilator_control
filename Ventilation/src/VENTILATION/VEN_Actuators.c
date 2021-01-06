@@ -47,18 +47,18 @@
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-#if 0
+
 #define sfr unsigned int
-sfr   VANNE_O2_CMD   = 0xFE34;
+sfr   VANNE_O2_1_CMD   = 0xFE34;
 #define P7_2 0
-int CD_VANNE_FIO2 =	P7_2;
-sfr  VALVE_CMD      = 0xFE32;
-sfr BLOWER_CMD = 0xFE30;
-#endif
+int CD_VANNE_1_FIO2 =	P7_2;
+sfr  VALVE_1_CMD = 0xFE32;
+sfr BLOWER_1_CMD = 0xFE30;
+
 
 void VEN_Actuators(void)
 {
-#if 0
+
 /*%C Previous regulation phase */
 static e_VEN_Controller_Phase PreviousControllerPhase = 0;
 /*%C Reading the start request in data base */
@@ -141,15 +141,15 @@ SWORD32 ConsQO2 = 0 ;
 		VEN_VentilationStart = FALSE;
 
 /*%C  Valve closing 																				*/
-		VALVE_CMD = cVALVE_CMD_OFF;	 
+		VALVE_1_CMD = cVALVE_CMD_OFF;
 
 /*%C  Stop speed blower																			*/
-		BLOWER_CMD = cBLOWER_CMD_OFF;
+		BLOWER_1_CMD = cBLOWER_CMD_OFF;
 	
 		
 #ifdef CONFIG_REGUL_O2
 /*%C  O2 Valve closed */
-		VANNE_O2_CMD = cVALVEO2_CMD_OFF;
+		VANNE_O2_1_CMD = cVALVEO2_CMD_OFF;
 		//Initialisation de l'etat de calibration automatique FIO2
 	  	DB_AlarmStatusWrite(ALARM_CALIB_FIO2_U16, ALARM_FALSE);
 		DB_ControlWrite(CALIB_FIO2_REQ_U16, NO_CALIB);
@@ -204,7 +204,7 @@ SWORD32 ConsQO2 = 0 ;
 /*%C  Call break management with adjust = No brake										*/
 		ACT_BrakePower(0);
 /*%C  Opening valve 																				*/
-		VALVE_CMD = cVALVE_CMD_ON;
+		VALVE_1_CMD = cVALVE_CMD_ON;
 /*%C  Call regulation function for speed blower test 									*/
 		ACT_BlowerCmd(cVEN_KPB_INIT,
 	   				  cVEN_KIB_INIT,	   				  
@@ -272,7 +272,7 @@ SWORD32 ConsQO2 = 0 ;
 /*%C				- the blower is closed 														*/
 				if (High_Pressure_Exhalation_Detected == TRUE)
 				{
-					VALVE_CMD = cVALVE_CMD_OFF;
+					VALVE_1_CMD= cVALVE_CMD_OFF;
 				}   
 					
 /*%C 				if the Te counter is lower than VEN_TempRiseOpenValve, then		*/
@@ -295,7 +295,7 @@ SWORD32 ConsQO2 = 0 ;
 				}
 	
 				// Commande Turbine d�sactiv�e
-				BLOWER_CMD = cBLOWER_CMD_OFF;
+				BLOWER_1_CMD = cBLOWER_CMD_OFF;
 				
 				/*%C  Breaking adjust depends on Pe value and on the patient circuit type */
 				if (CurrentMode != CPAP) 
@@ -325,7 +325,7 @@ SWORD32 ConsQO2 = 0 ;
 	        		}
 /*%C				Else close the O2 valve */	    
 	        	else
-			   	VANNE_O2_CMD = cVALVEO2_CMD_OFF;
+			   	VANNE_O2_1_CMD = cVALVEO2_CMD_OFF;
 #endif
 
 				break;		   
@@ -356,13 +356,13 @@ SWORD32 ConsQO2 = 0 ;
 				if (FirstExhalationActive == TRUE)
 				{
 				/*%C Open the Valve - Close the Balloon */
-					VALVE_CMD = cVALVE_CMD_ON;
+					VALVE_1_CMD = cVALVE_CMD_ON;
 				}
 				/*%C				If an high pressure is detected:											*/
 				/*%C				- the valve is open 															*/
 				else if (High_Pressure_Exhalation_Detected == TRUE)
 				{
-					VALVE_CMD = cVALVE_CMD_OFF;
+					VALVE_1_CMD= cVALVE_CMD_OFF;
 				}			
 				else if (VenTeCount <= VEN_TempRiseOpenValve)
 				{
@@ -447,7 +447,7 @@ SWORD32 ConsQO2 = 0 ;
 /*%C				- the blower is closed 														*/
 				if (High_Pressure_Exhalation_Detected == TRUE)
 				{
-					BLOWER_CMD = cBLOWER_CMD_OFF;
+					BLOWER_1_CMD = cBLOWER_CMD_OFF;
 				}			
 /*%C 				Pe = 0.6 mbar to obtain a rinse flow with Pep = 0 					*/
 				else if(AdjustPeep == 0)
@@ -481,7 +481,7 @@ SWORD32 ConsQO2 = 0 ;
 /*%C				Else close the O2 valve */
 	        	else
 				{
-			   		VANNE_O2_CMD = cVALVEO2_CMD_OFF;
+			   		VANNE_O2_1_CMD = cVALVEO2_CMD_OFF;
 				}
 #endif
 				break;
@@ -561,7 +561,7 @@ SWORD32 ConsQO2 = 0 ;
 	               				  CONTROL_FLOW);
 	            }
 /*%C 				Valve opening																	*/
-	            VALVE_CMD = cVALVE_CMD_ON;
+	            VALVE_1_CMD= cVALVE_CMD_ON;
 	
 /*%C				Braking off																		*/
 	            ACT_BrakePower(0);
@@ -581,7 +581,7 @@ SWORD32 ConsQO2 = 0 ;
 /*%C				Else close the O2 valve */
 	        	else
 				{
-			   		VANNE_O2_CMD = cVALVEO2_CMD_OFF;
+			   		VANNE_O2_1_CMD = cVALVEO2_CMD_OFF;
 				}
 #endif
 				break;
@@ -645,7 +645,7 @@ SWORD32 ConsQO2 = 0 ;
 	            }
 
 /*%C 				Valve Opening*/
-	            VALVE_CMD = cVALVE_CMD_ON;
+	            VALVE_1_CMD = cVALVE_CMD_ON;
 /*%C				Braking off*/
 	            ACT_BrakePower(0);
 
@@ -664,7 +664,7 @@ SWORD32 ConsQO2 = 0 ;
 /*%C				Else close the O2 valve */
 	        	else
 				{
-			   		VANNE_O2_CMD = cVALVEO2_CMD_OFF;
+			   		VANNE_O2_1_CMD = cVALVEO2_CMD_OFF;
 				}
 #endif
 				break;
@@ -682,7 +682,7 @@ SWORD32 ConsQO2 = 0 ;
 		{
 /*%C 		Brake: medium speed decrease if over 3000 rpm */
 /*%C 		Maximum speed decrease under 3000 rpm */
-			BLOWER_CMD = cBLOWER_CMD_OFF;
+			BLOWER_1_CMD = cBLOWER_CMD_OFF;
 			if( MeasureSpeedBlower > 3000 )
 			{
 				ACT_BrakePower(cPOWER);
@@ -717,16 +717,15 @@ if(VEN_MutexVanneO2 == FALSE)
 		|| (Alarm_Turbine_Overheat >= ALARM_TRUE)
 		|| (CalibFio2Req == TRUE))
 	{
-		CD_VANNE_FIO2 = 0; 
+		CD_VANNE_1_FIO2 = 0;
 	}
 /*%C The O2 valve is opened when device runs without overheat & disconnection	*/
  	else
 	{
-		CD_VANNE_FIO2 = 1; 
+		CD_VANNE_1_FIO2= 1;
 	}
 }
 /******************************************************************************/
 
 //	PreviousCurrentMode = CurrentMode;  commented manoj
-#endif
 }

@@ -47,7 +47,7 @@ UWORD16  EEP_DB_Config[];
 
 void SYS_Fio2Detection(void)
 {
-#if 0
+
 	static UWORD16  Fio2Detected = FALSE;
 	static UWORD16 MemoFio2Detected = FALSE;
 	static UWORD16 Mutex_Detected = FALSE;
@@ -102,5 +102,4 @@ void SYS_Fio2Detection(void)
 
 /*%C Sensor state memorization */
 	MemoFio2Detected = Fio2Detected;
-#endif
 }

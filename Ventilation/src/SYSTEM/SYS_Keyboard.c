@@ -39,7 +39,6 @@
 /******************************************************************************/
 void SYS_Keyboard(void)
 {
-#if 0
    UWORD16 i = 0;
    UWORD16 Key_Detected = 0;
    UWORD16 Monit_Key_Detected = 0;
@@ -195,7 +194,7 @@ void SYS_Keyboard(void)
 			  	  || (Adjust_Key_Tone == BIP_AND_CLOC) )
 				{
 /*%C     		Key press sound  */ 
-	         	DRV_Key_Sound_Cloc();
+	         	//DRV_Key_Sound_Cloc(); //bhavya
 				}
 /*%C			The pulse field for the key is turned to true and the associated*/
 /*%C    		pulse time is reset */
@@ -287,6 +286,5 @@ void SYS_Keyboard(void)
 /*%C                    CALL OF "KEY_Event" Function                          */
 
 	KEY_Event();
-#endif
 }
 

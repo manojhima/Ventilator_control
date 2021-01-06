@@ -16,6 +16,8 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Ventilation/src/ACTUATOR \
+Ventilation/src/COMPUTE \
+Ventilation/src/CYCLES \
 Ventilation/src/DATABASE \
 Ventilation/src/DATABASE_SETTINGS \
 Ventilation/src/DISPLAY \

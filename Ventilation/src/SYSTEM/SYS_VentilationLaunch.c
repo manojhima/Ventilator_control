@@ -35,7 +35,7 @@
 
 void SYS_VentilationLaunch(void)
 {
-#if 0
+
 	static UWORD16 MeasureSpo2Flag = 0;
 	 
 /*%C The function below are launched on this order :      	               */
@@ -59,7 +59,7 @@ void SYS_VentilationLaunch(void)
 	SYS_Counters();
 	SYS_CalibrationManagement();
 	SYS_Monit_Buffer_Write();
-	DRV_Key_Sound_Bip();
+	//DRV_Key_Sound_Bip(); //bhavya
 	SYS_Fio2Detection();
 /*%C	SPO2 read every 500 ms */
 	MeasureSpo2Flag++;
@@ -68,5 +68,4 @@ void SYS_VentilationLaunch(void)
 		SYS_SPO2Interpol();
 		MeasureSpo2Flag = 0;
 	}	  
-#endif
 }

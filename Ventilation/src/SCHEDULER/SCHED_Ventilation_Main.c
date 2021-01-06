@@ -42,11 +42,9 @@
 
 void SCHED_Ventilation_Main(void)
 {
-#if 0
    if (MAIN_TopTimer5ms == TRUE) 
    {
 	  	SCHED_Ventilation_entry();
 	  	MAIN_TopTimer5ms = FALSE;
    }
-#endif
 }

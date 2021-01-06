@@ -23,6 +23,8 @@ RM := rm -rf
 -include Ventilation/src/DISPLAY/subdir.mk
 -include Ventilation/src/DATABASE_SETTINGS/subdir.mk
 -include Ventilation/src/DATABASE/subdir.mk
+-include Ventilation/src/CYCLES/subdir.mk
+-include Ventilation/src/COMPUTE/subdir.mk
 -include Ventilation/src/ACTUATOR/subdir.mk
 -include subdir.mk
 -include objects.mk

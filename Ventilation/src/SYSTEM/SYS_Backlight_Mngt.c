@@ -56,7 +56,7 @@
 
 void SYS_Backlight_Mngt(void)
 {
-#if 0
+
 	UWORD16 Timer_Decounter_Value = 0;
 	UWORD16 Alarm_Detected = DB_ControlRead(ALARM_DETECTED_U16);
 	UWORD16 Adjust_Back_Light = DB_ConfigRead(ADJUST_BACKLIGHT_U16);
@@ -100,6 +100,5 @@ void SYS_Backlight_Mngt(void)
  	  	DIS_Backlight(SWITCH_ON);
 		DB_ControlWrite(BACKLIGHT_OFF_U16, FALSE);
 	}
-#endif
 }
 

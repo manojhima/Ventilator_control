@@ -23,7 +23,6 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#if 0
 //#ifndef _TASKING
 //#include "LH_ST10F276.h"
 //#include <intrins.h>
@@ -101,6 +100,7 @@ extern void TASK_11_MAIN_FUNC();
 extern void TASK_12_MAIN_FUNC();
 #endif
 
+#if 0
 #if cVENTILATION_NUMBER_OF_TASKS > 12
 extern void TASK_13_MAIN_FUNC();
 #endif
@@ -111,6 +111,7 @@ extern void TASK_14_MAIN_FUNC();
 
 #if cVENTILATION_NUMBER_OF_TASKS > 14
 extern void TASK_15_MAIN_FUNC();
+#endif
 #endif
 
 #if cVENTILATION_NUMBER_OF_TASKS > 15
@@ -255,6 +256,7 @@ const tab_ptr_function Ventilation_Tasks_Table[] =
   ,NULL
 #endif 
 
+#if 0
 #if cVENTILATION_NUMBER_OF_TASKS > 12
    ,&TASK_13_MAIN_FUNC
 #else
@@ -272,6 +274,7 @@ const tab_ptr_function Ventilation_Tasks_Table[] =
 #else
   ,NULL
 #endif 
+#endif
 
 #if cVENTILATION_NUMBER_OF_TASKS > 15
    ,&TASK_16_MAIN_FUNC
@@ -550,4 +553,3 @@ void SCHED_Ventilation_entry(void)
 		Ventilation_CountActivateTaskStep = 0;
 		}
 }
-#endif

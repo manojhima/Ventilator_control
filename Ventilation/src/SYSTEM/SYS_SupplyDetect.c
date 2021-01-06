@@ -39,14 +39,15 @@
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
+int AC_SELECT_1 = 0; //bhavya //p8_0 = 0
 
 void SYS_SupplyDetect(void)
 {
-	#if 0
+#if 0
 	UWORD16 PowerType	= DB_PowerSupplyRead(POWER_TYPE_U16);
 
 /*%C Ac supply state record */
- 	DB_ControlWrite(AC_SELECTED_U16,AC_SELECT);
+ 	DB_ControlWrite(AC_SELECTED_U16,AC_SELECT_1);
 
 /*%C Supply Status Read */
 	DB_ControlWrite(SUPPLY_AC_DC_BAT_U16, PowerType); 

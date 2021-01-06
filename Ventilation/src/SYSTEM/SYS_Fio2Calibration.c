@@ -1,0 +1,103 @@
+/******************************************************************************/
+/*                                                                            */
+/* Project N�  :  RC0306                                                      */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* Filename  : SYS_Fio2Calibration.c	 													*/
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+
+
+/******************************************************************************/
+/*%C                     Functionnal description :                            */
+/*%C Description          : Sensors calibration		     								*/
+/******************************************************************************/
+/*%I Input Parameter :  NONE                     										*/
+/*%IO Input/Output :    NONE	                                                */
+/*%O Output Parameter : NONE																	*/
+/******************************************************************************/
+
+/******************************************************************************/
+/*                                INCLUDE FILES		                           */
+/******************************************************************************/
+//#include "../GENERAL/io_declare.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+#include "../GENERAL/Structure.h"
+#include "../DATABASE/DB_Config.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_AlarmStatus.h"
+#include "System_Datas.h"
+#include "../DATABASE/DB_Measurement.h"
+//#include "../DRIVERS/Driver_Datas.h"
+#include "../SET_UP/SET_DefaultCalibration.h"
+/******************************************************************************/
+/*                            FUNCTION BODY                                   */
+/******************************************************************************/
+
+void SYS_Fio2Calibration(UWORD16 RequestType, t_SYS_CalibrationParameters CP, UWORD16 CAN_Digit1)
+{
+
+	e_CalibrationCommand Request;
+//   UWORD16 CalibAdjustCmd, CalibAdjustQO2Cmd;
+   static UWORD16 Indice = 0;
+	e_BOOL TestLimitsOk1;  
+	
+   static UBYTE DigitNb1 = 0;
+	// La calibration doit durer au moins 100ms pour que les donn�es soient correctes
+	UWORD32 FilteredDigit1=0;
+	// Tableau pour le filtrage des valeurs de debit inspi et expi pour la calibration
+	static UWORD16 Digit1[80];
+
+   // Initialisation
+	Request = DB_ControlRead(RequestType);
+
+	// Traitement pour la calibration de la FIO2
+	Indice = 0;
+
+	// Calcule une moyenne du CAN 1
+  	Digit1[DigitNb1++] = CAN_Digit1;
+  	DigitNb1 %= 80;
+	FilteredDigit1 = average(Digit1, 80);                    
+	// Ajout d'1 point de CAN afin de reduire l'erreur sur le point 0 (mbar, l/min, etc...)
+	FilteredDigit1 += 1;
+
+	// IHM demande de contr�ler l'offset choisi par l'utilisateur
+	if (Request == TEST_LIMITES_REQUEST)
+		{
+		// Envoie la valeur filtr�e du CAN 1 � DataBase pour v�rification 
+		TestLimitsOk1 = DB_ConfigWrite(CP.FirstOffsetIndex + Indice, (UWORD16)(FilteredDigit1));
+
+		// Si le test a �chou�
+		if (TestLimitsOk1 == FALSE)
+			{
+ 			// Alarme Echec calibration FIO2 
+			 DB_AlarmStatusWrite(CP.OffsetAlarmIndex, ALARM_DETECTED);
+			 DB_ControlWrite(CALIBRATED_FIO2_SENSOR, FALSE);	
+			 DB_ControlWrite(RequestType, TEST_LIMITES_FALSE);
+			 /*%C  	Long beep request */
+		   DB_ControlWrite(VALIDATION_BIP_U16, BIP_LONG);
+			}
+		// Sinon
+		else
+			{
+         // Ev�nement de calibration
+			DB_EventMngt(CP.EventCalibration);
+ 			//Annulation uniquement de l'alarme Echec calibration FIO2 
+			DB_AlarmStatusWrite(CP.OffsetAlarmIndex, ALARM_FALSE);
+			DB_ControlWrite(CALIBRATED_FIO2_SENSOR, TRUE);
+			DB_ControlWrite(RequestType, TEST_LIMITES_OK);
+			/*%C     Short beep request*/
+		   DB_ControlWrite(VALIDATION_BIP_U16, BIP_SHORT);
+			}
+
+		// On arr�te la calibration
+		#if defined(SUPPORTAIR_M2)
+			DB_ControlWrite(RequestType, NO_CALIB);
+		#endif 
+		}
+
+}

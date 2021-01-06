@@ -44,7 +44,7 @@
 
 void VEN_Compute(void)
 {
-#if 0
+
 	UBYTE RTC_Year = (UBYTE)DB_RTCRead(DB_RTC_YEAR_U16);
 	UBYTE RTC_Month = (UBYTE)DB_RTCRead(DB_RTC_MONTH_U16);
 	UBYTE RTC_Day = (UBYTE)DB_RTCRead(DB_RTC_DAY_U16);
@@ -318,5 +318,5 @@ void VEN_Compute(void)
 			/*%C No function */
 		}
 	}
-#endif
+
 }
