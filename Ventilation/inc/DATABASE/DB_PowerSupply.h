@@ -74,7 +74,7 @@ typedef enum {
 #define BAT_CHARGE						1
 #define BAT_DISCHARGE					2
 
-#ifdef DECLARATION_POWERSUPPLY_BASE
+#ifdef DECLARATION_POWERSUPPLY_BASE //commented this one in DB_PowerSupplyWrite //bhavya
 /******************************************************************************/
 /*                     CONSTANT DECLARATION			                         */
 /******************************************************************************/

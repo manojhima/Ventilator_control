@@ -29,7 +29,7 @@
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 //#include "../DRIVERS/DRV_VarEeprom.h"
-#define DECLARATION_POWERSUPPLY_BASE
+//#define DECLARATION_POWERSUPPLY_BASE //bhavya
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 #include "DB_PowerSupply.h"
 /******************************************************************************/

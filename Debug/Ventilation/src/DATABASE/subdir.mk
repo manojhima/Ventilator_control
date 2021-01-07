@@ -18,6 +18,7 @@ C_SRCS += \
 ../Ventilation/src/DATABASE/DB_CurrentRead.c \
 ../Ventilation/src/DATABASE/DB_CurrentWrite.c \
 ../Ventilation/src/DATABASE/DB_EventMngt.c \
+../Ventilation/src/DATABASE/DB_KeyboardEventRead.c \
 ../Ventilation/src/DATABASE/DB_KeyboardEventWrite.c \
 ../Ventilation/src/DATABASE/DB_MeasurementWrite.c \
 ../Ventilation/src/DATABASE/DB_RTCRead.c \
@@ -44,6 +45,7 @@ OBJS += \
 ./Ventilation/src/DATABASE/DB_CurrentRead.o \
 ./Ventilation/src/DATABASE/DB_CurrentWrite.o \
 ./Ventilation/src/DATABASE/DB_EventMngt.o \
+./Ventilation/src/DATABASE/DB_KeyboardEventRead.o \
 ./Ventilation/src/DATABASE/DB_KeyboardEventWrite.o \
 ./Ventilation/src/DATABASE/DB_MeasurementWrite.o \
 ./Ventilation/src/DATABASE/DB_RTCRead.o \
@@ -70,6 +72,7 @@ C_DEPS += \
 ./Ventilation/src/DATABASE/DB_CurrentRead.d \
 ./Ventilation/src/DATABASE/DB_CurrentWrite.d \
 ./Ventilation/src/DATABASE/DB_EventMngt.d \
+./Ventilation/src/DATABASE/DB_KeyboardEventRead.d \
 ./Ventilation/src/DATABASE/DB_KeyboardEventWrite.d \
 ./Ventilation/src/DATABASE/DB_MeasurementWrite.d \
 ./Ventilation/src/DATABASE/DB_RTCRead.d \

@@ -7,8 +7,10 @@ C_SRCS += \
 ../Ventilation/src/TIMERS/TIM_Launch.c \
 ../Ventilation/src/TIMERS/TIM_ReadCounterValue.c \
 ../Ventilation/src/TIMERS/TIM_ReadDecounterValue.c \
+../Ventilation/src/TIMERS/TIM_ReadMinuteCounterValue.c \
 ../Ventilation/src/TIMERS/TIM_StartCounter.c \
 ../Ventilation/src/TIMERS/TIM_StartDecounter.c \
+../Ventilation/src/TIMERS/TIM_StartMinuteCounter.c \
 ../Ventilation/src/TIMERS/TIM_StopDecounter.c \
 ../Ventilation/src/TIMERS/TIM_Temporize.c \
 ../Ventilation/src/TIMERS/TIM_TestOverflowOk.c 
@@ -17,8 +19,10 @@ OBJS += \
 ./Ventilation/src/TIMERS/TIM_Launch.o \
 ./Ventilation/src/TIMERS/TIM_ReadCounterValue.o \
 ./Ventilation/src/TIMERS/TIM_ReadDecounterValue.o \
+./Ventilation/src/TIMERS/TIM_ReadMinuteCounterValue.o \
 ./Ventilation/src/TIMERS/TIM_StartCounter.o \
 ./Ventilation/src/TIMERS/TIM_StartDecounter.o \
+./Ventilation/src/TIMERS/TIM_StartMinuteCounter.o \
 ./Ventilation/src/TIMERS/TIM_StopDecounter.o \
 ./Ventilation/src/TIMERS/TIM_Temporize.o \
 ./Ventilation/src/TIMERS/TIM_TestOverflowOk.o 
@@ -27,8 +31,10 @@ C_DEPS += \
 ./Ventilation/src/TIMERS/TIM_Launch.d \
 ./Ventilation/src/TIMERS/TIM_ReadCounterValue.d \
 ./Ventilation/src/TIMERS/TIM_ReadDecounterValue.d \
+./Ventilation/src/TIMERS/TIM_ReadMinuteCounterValue.d \
 ./Ventilation/src/TIMERS/TIM_StartCounter.d \
 ./Ventilation/src/TIMERS/TIM_StartDecounter.d \
+./Ventilation/src/TIMERS/TIM_StartMinuteCounter.d \
 ./Ventilation/src/TIMERS/TIM_StopDecounter.d \
 ./Ventilation/src/TIMERS/TIM_Temporize.d \
 ./Ventilation/src/TIMERS/TIM_TestOverflowOk.d 

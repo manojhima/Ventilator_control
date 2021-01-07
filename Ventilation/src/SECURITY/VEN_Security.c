@@ -46,7 +46,7 @@
 
 void VEN_Security(void)
 {
-#if 0
+
 /* Ventil authorization recovery from base	                                 */
    UWORD16 Ventil_Authorization = DB_ControlRead(VENTIL_AUTHORIZATION_U16);
 /* Ventil authorization memorization			                                 */
@@ -73,9 +73,8 @@ void VEN_Security(void)
 
 /*%C Ventil authorization function call         */
    SEC_VentilAuthorization();
-/*%C First cycle detection function call         */
+   /*%C First cycle detection function call         */
    SEC_FirstCycleDetection();
-
 /*%C Voluntary Stop alarm is launched only if it is activated */	
 	if(VoluntaryStopAlarmActivation == TRUE)
 	{
@@ -113,6 +112,7 @@ void VEN_Security(void)
 			DB_ControlWrite(HIGH_PRESSURE_FILTER_WINDOW_U16,
 								 FALSE);
 	   }
+
 /******************************************************************************/
 /*               SCHEDULED ALARMS DURING VENTILATION                          */
 /******************************************************************************/
@@ -167,6 +167,7 @@ void VEN_Security(void)
 		   break;
 #endif
 
+
 /******************************************************************************/
 /*%C                          CPAP MODE													*/
 /******************************************************************************/
@@ -182,7 +183,6 @@ void VEN_Security(void)
 	   default:
 		   break;
 	   }
-
 /*%C    Otherwise, in all modes, alarms below must be launched : */
 
 /*%C  HIGH RATE ALARM */
@@ -281,7 +281,7 @@ void VEN_Security(void)
 	}
 
 	
-	
+
 /******************************************************************************/
 /*%C             SCHEDULED ALARMS OUT OF VENTILATION                          */
 /******************************************************************************/
@@ -331,6 +331,7 @@ void VEN_Security(void)
 		   break;
 	   }
    }
+
 /******************************************************************************/
 /*%C             SCHEDULED ALARMS IN AND OUT OF VENTILATION                   */
 /******************************************************************************/
@@ -364,7 +365,7 @@ void VEN_Security(void)
 
 /*%C NO BATTERY ALARM */
 	SEC_NoBattery();
-	
+#if 0
 /*%C CHECK BUZZER ALARM */
      SEC_CheckBuzzer();
 
@@ -453,5 +454,6 @@ void VEN_Security(void)
 /* Ventilation authorization memorization													*/
 	Ventil_Authorization_Memo = Ventil_Authorization;	  
 	PreviousVolStopAlarmActivation = VoluntaryStopAlarmActivation;
+
 #endif
 }

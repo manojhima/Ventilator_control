@@ -43,7 +43,7 @@ void SYS_SPO2Interpol(void)
 
 // D�tection d'une erreur sur le capteur
 // Possibilit� de lire data.status mais � chaque fois que la mesure est impossible data.spo2 = 127
-// Data.Spo2 = 0 -> Capteur non branch� - rien sur la liaison s�rie
+//Data.Spo2 = 0 -> Capteur non branch� - rien sur la liaison s�rie
 if((Data.Spo2 == 0) || (Data.Spo2 == 127))
 DB_ControlWrite(ERROR_SPO2_SENSOR_DETECTED, TRUE);
 else
