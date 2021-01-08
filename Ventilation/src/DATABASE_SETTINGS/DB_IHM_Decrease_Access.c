@@ -49,8 +49,8 @@ UWORD16 DB_IHM_Decrease_Access(UWORD16 *Value,
 									  	 UWORD16 Id,
 									  	 e_TYPE_OF_DB_TARGET DbType)
 {
-#if 0
 
+#if 0
 /*%C Function result declaration */
    UWORD16 Function_Result = FALSE;
 
@@ -177,8 +177,7 @@ UWORD16 DB_IHM_Decrease_Access(UWORD16 *Value,
 /*%C  Config base decrease */
 		case CONFIG:
 		{
-			Function_Result = DB_IHM_Decrease_Config(Value,
-																  Id);
+			Function_Result = DB_IHM_Decrease_Config(Value,Id);
 			break;
 		}  
 

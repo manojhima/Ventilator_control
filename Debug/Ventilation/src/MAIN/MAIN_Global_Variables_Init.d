@@ -4,22 +4,23 @@ Ventilation/src/MAIN/MAIN_Global_Variables_Init.o: \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/Product.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/Structure.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/io_declare.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/io_stubs.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/define.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/DB_Config.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/DB_AlarmStatus.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Structure.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/io_declare.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/io_stubs.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/define.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Config.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_AlarmStatus.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/MAIN_Global_Variables_Init.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/DB_Event.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../SYSTEM/System_Datas.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../TIMERS/Timer_Data.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DISPLAY/Display_Data.h
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Event.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../SYSTEM/System_Datas.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../TIMERS/Timer_Data.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/Display_Data.h
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/Main_Data.h:
 
@@ -29,34 +30,36 @@ Ventilation/src/MAIN/MAIN_Global_Variables_Init.o: \
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/Product.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/typedef.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/enum.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/Structure.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Structure.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/io_declare.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/typedef.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/io_declare.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/io_stubs.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/../GENERAL/typedef.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/io_stubs.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../GENERAL/define.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/DB_Config.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/define.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/DB_AlarmStatus.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Config.h:
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_AlarmStatus.h:
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/MAIN_Global_Variables_Init.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/DB_Event.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Event.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DATABASE/../GENERAL/typedef.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../SYSTEM/System_Datas.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../SYSTEM/System_Datas.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../TIMERS/Timer_Data.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../TIMERS/Timer_Data.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS/../DISPLAY/Display_Data.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/Display_Data.h:

@@ -365,7 +365,7 @@ void VEN_Security(void)
 
 /*%C NO BATTERY ALARM */
 	SEC_NoBattery();
-#if 0
+
 /*%C CHECK BUZZER ALARM */
      SEC_CheckBuzzer();
 
@@ -386,7 +386,6 @@ void VEN_Security(void)
 
 /*%C Cpu Reference alarm */
 	SEC_CpuReferenceFailure();
-
 
 /**************************/
 /*%C  TECHNICAL ALARMS    */
@@ -449,11 +448,11 @@ void VEN_Security(void)
 /******************************************************************************/
 /*%C             ALARM INDICATION TREATMENT												*/
 /******************************************************************************/
+
 	SEC_AlarmIndication();
 
 /* Ventilation authorization memorization													*/
 	Ventil_Authorization_Memo = Ventil_Authorization;	  
 	PreviousVolStopAlarmActivation = VoluntaryStopAlarmActivation;
 
-#endif
 }

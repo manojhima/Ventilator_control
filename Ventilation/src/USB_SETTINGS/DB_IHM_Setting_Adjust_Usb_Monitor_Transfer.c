@@ -42,7 +42,7 @@ extern UWORD16 DB_UsbRead(e_DB_USB Id);
 UWORD16 DB_IHM_Setting_Adjust_Usb_Monitor_Transfer(UWORD16 *Value,
 																   UWORD16 Id)
 {
-
+#if 0
 /* Function result declaration */
    UWORD16 Function_Result = FALSE;
 
@@ -78,4 +78,5 @@ UWORD16 DB_IHM_Setting_Adjust_Usb_Monitor_Transfer(UWORD16 *Value,
    }
 
 	return(Function_Result);
+#endif
 }

@@ -12,6 +12,7 @@ C_SRCS += \
 ../Ventilation/src/SECURITY/SEC_BatteryTemperature.c \
 ../Ventilation/src/SECURITY/SEC_BuzzerBatteryChargeFailure.c \
 ../Ventilation/src/SECURITY/SEC_BuzzerBatteryLow.c \
+../Ventilation/src/SECURITY/SEC_CalibrationFailure.c \
 ../Ventilation/src/SECURITY/SEC_CanceledStateMngt.c \
 ../Ventilation/src/SECURITY/SEC_CheckBattery.c \
 ../Ventilation/src/SECURITY/SEC_CheckBatteryCharge.c \
@@ -31,18 +32,22 @@ C_SRCS += \
 ../Ventilation/src/SECURITY/SEC_ControlledCycles.c \
 ../Ventilation/src/SECURITY/SEC_CoolingFanFailure.c \
 ../Ventilation/src/SECURITY/SEC_CpapMode.c \
+../Ventilation/src/SECURITY/SEC_CpuReferenceFailure.c \
 ../Ventilation/src/SECURITY/SEC_DCPowerFail.c \
 ../Ventilation/src/SECURITY/SEC_Disconnection.c \
 ../Ventilation/src/SECURITY/SEC_EndOfBattery.c \
 ../Ventilation/src/SECURITY/SEC_ExhFlowOffsetDefault.c \
+../Ventilation/src/SECURITY/SEC_Failure24V.c \
 ../Ventilation/src/SECURITY/SEC_Fio2CalibrationNeeded.c \
 ../Ventilation/src/SECURITY/SEC_Fio2OffsetDefault.c \
 ../Ventilation/src/SECURITY/SEC_FirstCycleDetection.c \
+../Ventilation/src/SECURITY/SEC_ForceUnknownBattery.c \
 ../Ventilation/src/SECURITY/SEC_HighFio2_M2.c \
 ../Ventilation/src/SECURITY/SEC_HighPressure.c \
 ../Ventilation/src/SECURITY/SEC_HighRate.c \
 ../Ventilation/src/SECURITY/SEC_HighVte.c \
 ../Ventilation/src/SECURITY/SEC_HighVti.c \
+../Ventilation/src/SECURITY/SEC_KeyboardDefault.c \
 ../Ventilation/src/SECURITY/SEC_LeakDisconnection.c \
 ../Ventilation/src/SECURITY/SEC_LeakOcclusion.c \
 ../Ventilation/src/SECURITY/SEC_Leakage.c \
@@ -59,12 +64,18 @@ C_SRCS += \
 ../Ventilation/src/SECURITY/SEC_PsimvMode.c \
 ../Ventilation/src/SECURITY/SEC_PsvtMode.c \
 ../Ventilation/src/SECURITY/SEC_ResetAlarms.c \
+../Ventilation/src/SECURITY/SEC_SpeedDefault.c \
+../Ventilation/src/SECURITY/SEC_SupplyMeasureFailure.c \
 ../Ventilation/src/SECURITY/SEC_TechnicalProblem.c \
 ../Ventilation/src/SECURITY/SEC_TurbineOverheat.c \
+../Ventilation/src/SECURITY/SEC_UnknownBattery.c \
 ../Ventilation/src/SECURITY/SEC_ValveAlarmsToReset.c \
 ../Ventilation/src/SECURITY/SEC_ValveLeakage.c \
 ../Ventilation/src/SECURITY/SEC_ValveUseChangeMngt.c \
 ../Ventilation/src/SECURITY/SEC_VentilAuthorization.c \
+../Ventilation/src/SECURITY/SEC_VeryLowInternalPressure.c \
+../Ventilation/src/SECURITY/SEC_VeryLowProximalPressure.c \
+../Ventilation/src/SECURITY/SEC_VeryLowValvePressure.c \
 ../Ventilation/src/SECURITY/SEC_VolMode.c \
 ../Ventilation/src/SECURITY/SEC_VoluntaryStop.c \
 ../Ventilation/src/SECURITY/SEC_VsimvMode.c \
@@ -79,6 +90,7 @@ OBJS += \
 ./Ventilation/src/SECURITY/SEC_BatteryTemperature.o \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryChargeFailure.o \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryLow.o \
+./Ventilation/src/SECURITY/SEC_CalibrationFailure.o \
 ./Ventilation/src/SECURITY/SEC_CanceledStateMngt.o \
 ./Ventilation/src/SECURITY/SEC_CheckBattery.o \
 ./Ventilation/src/SECURITY/SEC_CheckBatteryCharge.o \
@@ -98,18 +110,22 @@ OBJS += \
 ./Ventilation/src/SECURITY/SEC_ControlledCycles.o \
 ./Ventilation/src/SECURITY/SEC_CoolingFanFailure.o \
 ./Ventilation/src/SECURITY/SEC_CpapMode.o \
+./Ventilation/src/SECURITY/SEC_CpuReferenceFailure.o \
 ./Ventilation/src/SECURITY/SEC_DCPowerFail.o \
 ./Ventilation/src/SECURITY/SEC_Disconnection.o \
 ./Ventilation/src/SECURITY/SEC_EndOfBattery.o \
 ./Ventilation/src/SECURITY/SEC_ExhFlowOffsetDefault.o \
+./Ventilation/src/SECURITY/SEC_Failure24V.o \
 ./Ventilation/src/SECURITY/SEC_Fio2CalibrationNeeded.o \
 ./Ventilation/src/SECURITY/SEC_Fio2OffsetDefault.o \
 ./Ventilation/src/SECURITY/SEC_FirstCycleDetection.o \
+./Ventilation/src/SECURITY/SEC_ForceUnknownBattery.o \
 ./Ventilation/src/SECURITY/SEC_HighFio2_M2.o \
 ./Ventilation/src/SECURITY/SEC_HighPressure.o \
 ./Ventilation/src/SECURITY/SEC_HighRate.o \
 ./Ventilation/src/SECURITY/SEC_HighVte.o \
 ./Ventilation/src/SECURITY/SEC_HighVti.o \
+./Ventilation/src/SECURITY/SEC_KeyboardDefault.o \
 ./Ventilation/src/SECURITY/SEC_LeakDisconnection.o \
 ./Ventilation/src/SECURITY/SEC_LeakOcclusion.o \
 ./Ventilation/src/SECURITY/SEC_Leakage.o \
@@ -126,12 +142,18 @@ OBJS += \
 ./Ventilation/src/SECURITY/SEC_PsimvMode.o \
 ./Ventilation/src/SECURITY/SEC_PsvtMode.o \
 ./Ventilation/src/SECURITY/SEC_ResetAlarms.o \
+./Ventilation/src/SECURITY/SEC_SpeedDefault.o \
+./Ventilation/src/SECURITY/SEC_SupplyMeasureFailure.o \
 ./Ventilation/src/SECURITY/SEC_TechnicalProblem.o \
 ./Ventilation/src/SECURITY/SEC_TurbineOverheat.o \
+./Ventilation/src/SECURITY/SEC_UnknownBattery.o \
 ./Ventilation/src/SECURITY/SEC_ValveAlarmsToReset.o \
 ./Ventilation/src/SECURITY/SEC_ValveLeakage.o \
 ./Ventilation/src/SECURITY/SEC_ValveUseChangeMngt.o \
 ./Ventilation/src/SECURITY/SEC_VentilAuthorization.o \
+./Ventilation/src/SECURITY/SEC_VeryLowInternalPressure.o \
+./Ventilation/src/SECURITY/SEC_VeryLowProximalPressure.o \
+./Ventilation/src/SECURITY/SEC_VeryLowValvePressure.o \
 ./Ventilation/src/SECURITY/SEC_VolMode.o \
 ./Ventilation/src/SECURITY/SEC_VoluntaryStop.o \
 ./Ventilation/src/SECURITY/SEC_VsimvMode.o \
@@ -146,6 +168,7 @@ C_DEPS += \
 ./Ventilation/src/SECURITY/SEC_BatteryTemperature.d \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryChargeFailure.d \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryLow.d \
+./Ventilation/src/SECURITY/SEC_CalibrationFailure.d \
 ./Ventilation/src/SECURITY/SEC_CanceledStateMngt.d \
 ./Ventilation/src/SECURITY/SEC_CheckBattery.d \
 ./Ventilation/src/SECURITY/SEC_CheckBatteryCharge.d \
@@ -165,18 +188,22 @@ C_DEPS += \
 ./Ventilation/src/SECURITY/SEC_ControlledCycles.d \
 ./Ventilation/src/SECURITY/SEC_CoolingFanFailure.d \
 ./Ventilation/src/SECURITY/SEC_CpapMode.d \
+./Ventilation/src/SECURITY/SEC_CpuReferenceFailure.d \
 ./Ventilation/src/SECURITY/SEC_DCPowerFail.d \
 ./Ventilation/src/SECURITY/SEC_Disconnection.d \
 ./Ventilation/src/SECURITY/SEC_EndOfBattery.d \
 ./Ventilation/src/SECURITY/SEC_ExhFlowOffsetDefault.d \
+./Ventilation/src/SECURITY/SEC_Failure24V.d \
 ./Ventilation/src/SECURITY/SEC_Fio2CalibrationNeeded.d \
 ./Ventilation/src/SECURITY/SEC_Fio2OffsetDefault.d \
 ./Ventilation/src/SECURITY/SEC_FirstCycleDetection.d \
+./Ventilation/src/SECURITY/SEC_ForceUnknownBattery.d \
 ./Ventilation/src/SECURITY/SEC_HighFio2_M2.d \
 ./Ventilation/src/SECURITY/SEC_HighPressure.d \
 ./Ventilation/src/SECURITY/SEC_HighRate.d \
 ./Ventilation/src/SECURITY/SEC_HighVte.d \
 ./Ventilation/src/SECURITY/SEC_HighVti.d \
+./Ventilation/src/SECURITY/SEC_KeyboardDefault.d \
 ./Ventilation/src/SECURITY/SEC_LeakDisconnection.d \
 ./Ventilation/src/SECURITY/SEC_LeakOcclusion.d \
 ./Ventilation/src/SECURITY/SEC_Leakage.d \
@@ -193,12 +220,18 @@ C_DEPS += \
 ./Ventilation/src/SECURITY/SEC_PsimvMode.d \
 ./Ventilation/src/SECURITY/SEC_PsvtMode.d \
 ./Ventilation/src/SECURITY/SEC_ResetAlarms.d \
+./Ventilation/src/SECURITY/SEC_SpeedDefault.d \
+./Ventilation/src/SECURITY/SEC_SupplyMeasureFailure.d \
 ./Ventilation/src/SECURITY/SEC_TechnicalProblem.d \
 ./Ventilation/src/SECURITY/SEC_TurbineOverheat.d \
+./Ventilation/src/SECURITY/SEC_UnknownBattery.d \
 ./Ventilation/src/SECURITY/SEC_ValveAlarmsToReset.d \
 ./Ventilation/src/SECURITY/SEC_ValveLeakage.d \
 ./Ventilation/src/SECURITY/SEC_ValveUseChangeMngt.d \
 ./Ventilation/src/SECURITY/SEC_VentilAuthorization.d \
+./Ventilation/src/SECURITY/SEC_VeryLowInternalPressure.d \
+./Ventilation/src/SECURITY/SEC_VeryLowProximalPressure.d \
+./Ventilation/src/SECURITY/SEC_VeryLowValvePressure.d \
 ./Ventilation/src/SECURITY/SEC_VolMode.d \
 ./Ventilation/src/SECURITY/SEC_VoluntaryStop.d \
 ./Ventilation/src/SECURITY/SEC_VsimvMode.d \
@@ -210,7 +243,7 @@ Ventilation/src/SECURITY/%.o: ../Ventilation/src/SECURITY/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/COMPUTE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/CYCLES" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SYSTEM" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SECURITY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SET_UP" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/ACTUATOR" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/VENTILATION" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/TIMERS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SCHEDULER" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SECURITY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/CPAP_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/COMPUTE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/CYCLES" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SYSTEM" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SET_UP" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/ACTUATOR" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/VENTILATION" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/TIMERS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SCHEDULER" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

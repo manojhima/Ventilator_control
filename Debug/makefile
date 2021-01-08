@@ -17,6 +17,7 @@ RM := rm -rf
 -include Ventilation/src/SET_UP/subdir.mk
 -include Ventilation/src/SECURITY/subdir.mk
 -include Ventilation/src/SCHEDULER/subdir.mk
+-include Ventilation/src/PRES_SETTINGS/subdir.mk
 -include Ventilation/src/MAIN/subdir.mk
 -include Ventilation/src/INTERRUPTS/subdir.mk
 -include Ventilation/src/GENERAL/subdir.mk
@@ -24,6 +25,7 @@ RM := rm -rf
 -include Ventilation/src/DATABASE_SETTINGS/subdir.mk
 -include Ventilation/src/DATABASE/subdir.mk
 -include Ventilation/src/CYCLES/subdir.mk
+-include Ventilation/src/CPAP_SETTINGS/subdir.mk
 -include Ventilation/src/COMPUTE/subdir.mk
 -include Ventilation/src/ACTUATOR/subdir.mk
 -include subdir.mk

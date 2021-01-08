@@ -44,7 +44,7 @@
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-extern UWORD16 ALARM_CheckRemoteFlag;
+UWORD16 ALARM_CheckRemoteFlag;
 int ALARM_REMOTE_STATE_1 = 0;
 
 

@@ -212,9 +212,9 @@ T4 = 19531;
 		//XS1BG = 129; 
 		
 }
-#if 0
-		
 
+
+#if 0
  	//Initialisation des drivers EEPROM ,RTC et du bus SPI
 	SSCCON = 0x0000;		/*%C Unactivation of SPI										 */
 /*%C	Init of Chanels level SCLK et TSR  on SPI  bus	 */

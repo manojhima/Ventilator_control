@@ -24,6 +24,7 @@
 
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_PowerSupply.h"
+#include "../GENERAL/enum.h"
 /* NONE fixed to 0xAAAA */
 #define NONE 0xAAAA
 

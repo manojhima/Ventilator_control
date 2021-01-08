@@ -8,6 +8,7 @@ C_SRCS += \
 ../Ventilation/src/DATABASE/DB_AlarmInfoWrite.c \
 ../Ventilation/src/DATABASE/DB_AlarmStatusRead.c \
 ../Ventilation/src/DATABASE/DB_AlarmStatusWrite.c \
+../Ventilation/src/DATABASE/DB_ComputeBreathTimingRatios.c \
 ../Ventilation/src/DATABASE/DB_ComputeRead.c \
 ../Ventilation/src/DATABASE/DB_ComputeWrite.c \
 ../Ventilation/src/DATABASE/DB_ConfigRead.c \
@@ -35,6 +36,7 @@ OBJS += \
 ./Ventilation/src/DATABASE/DB_AlarmInfoWrite.o \
 ./Ventilation/src/DATABASE/DB_AlarmStatusRead.o \
 ./Ventilation/src/DATABASE/DB_AlarmStatusWrite.o \
+./Ventilation/src/DATABASE/DB_ComputeBreathTimingRatios.o \
 ./Ventilation/src/DATABASE/DB_ComputeRead.o \
 ./Ventilation/src/DATABASE/DB_ComputeWrite.o \
 ./Ventilation/src/DATABASE/DB_ConfigRead.o \
@@ -62,6 +64,7 @@ C_DEPS += \
 ./Ventilation/src/DATABASE/DB_AlarmInfoWrite.d \
 ./Ventilation/src/DATABASE/DB_AlarmStatusRead.d \
 ./Ventilation/src/DATABASE/DB_AlarmStatusWrite.d \
+./Ventilation/src/DATABASE/DB_ComputeBreathTimingRatios.d \
 ./Ventilation/src/DATABASE/DB_ComputeRead.d \
 ./Ventilation/src/DATABASE/DB_ComputeWrite.d \
 ./Ventilation/src/DATABASE/DB_ConfigRead.d \
@@ -90,7 +93,7 @@ Ventilation/src/DATABASE/%.o: ../Ventilation/src/DATABASE/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/COMPUTE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/CYCLES" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SYSTEM" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SECURITY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SET_UP" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/ACTUATOR" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/VENTILATION" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/TIMERS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SCHEDULER" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SECURITY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/CPAP_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/USB_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/COMPUTE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/CYCLES" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SYSTEM" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SET_UP" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/ACTUATOR" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/VENTILATION" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/TIMERS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN" -I"/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SCHEDULER" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

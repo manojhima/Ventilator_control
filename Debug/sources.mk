@@ -17,6 +17,7 @@ C_DEPS :=
 SUBDIRS := \
 Ventilation/src/ACTUATOR \
 Ventilation/src/COMPUTE \
+Ventilation/src/CPAP_SETTINGS \
 Ventilation/src/CYCLES \
 Ventilation/src/DATABASE \
 Ventilation/src/DATABASE_SETTINGS \
@@ -24,6 +25,7 @@ Ventilation/src/DISPLAY \
 Ventilation/src/GENERAL \
 Ventilation/src/INTERRUPTS \
 Ventilation/src/MAIN \
+Ventilation/src/PRES_SETTINGS \
 Ventilation/src/SCHEDULER \
 Ventilation/src/SECURITY \
 Ventilation/src/SET_UP \
