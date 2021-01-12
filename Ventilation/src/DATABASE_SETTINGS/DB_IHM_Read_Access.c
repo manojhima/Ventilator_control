@@ -36,36 +36,25 @@
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE/DB_Usb.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_Revision.h"
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "../DATABASE/DB_PowerSupply.h"
-//#include "DB_IHM_Read_Access.h"
+#include "DB_IHM_Read_Access.h"
 #include "../DATABASE/DB_KeyboardEvent.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE/DB_Current.h"
-
-
+#include "DB_IHM_Read_Access.h"
 
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-UWORD16  EEP_DB_Config[];
-UWORD16  EEP_DB_CPAP_Adjust[];
-UWORD16  EEP_DB_PRES_Adjust[];
-UWORD16  EEP_DB_PSV_Adjust[];
-UWORD16  EEP_DB_TREND[];
-UWORD16 EEP_DB_Version_Number[end_of_db_version_table];
-
 
 UWORD16 DB_IHM_Read_Access(UWORD16 *Value,
                            UWORD16 Id,
                            e_TYPE_OF_DB_TARGET DbType)
 {
-#if 0
 /* Function result declaration */
    UWORD16 Function_Result = FALSE;
 
@@ -242,7 +231,6 @@ UWORD16 DB_IHM_Read_Access(UWORD16 *Value,
 		}
 	}
 	return(Function_Result);
-#endif
 }
 
 

@@ -35,18 +35,15 @@
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE/DB_Event.h"
 #include "DB_IhmAccessParaDataBase.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "DB_IHM_Decrease_Config.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-UWORD16  EEP_DB_Config[];
-
 
 UWORD16 DB_IHM_Decrease_Config(UWORD16 *Value,
 										 UWORD16 Id)
 {
-#if 0
 UWORD16 Function_Result = FALSE;
 
 /*%C Rolling menu for communication speed setting                             */
@@ -452,7 +449,6 @@ UWORD16 Function_Result = FALSE;
 		}
 	}
 	return (Function_Result);
-#endif
 }  
 
 

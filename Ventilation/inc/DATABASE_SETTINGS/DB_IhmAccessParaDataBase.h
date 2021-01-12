@@ -24,7 +24,6 @@
 
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_PowerSupply.h"
-#include "../GENERAL/enum.h"
 /* NONE fixed to 0xAAAA */
 #define NONE 0xAAAA
 
@@ -1431,8 +1430,9 @@ const t_TEST_EEPROM_DB cDB_TEST_RTC_DB [end_of_db_rtc_table]=
 };
 
 /*USB CONSTANTS*/
-//const t_TEST_EEPROM_DB cDB_TEST_USB_DB [end_of_db_usb_table]=
-const t_TEST_EEPROM_DB cDB_TEST_USB_DB [14]=
+//const t_TEST_EEPROM_DB cDB_TEST_USB_DB [end_of_db_usb_table]= //bhavya
+const t_TEST_EEPROM_DB cDB_TEST_USB_DB []= //bhavya
+
 {
     tADJUST_USB_ERASE_KEY,
     tADJUST_USB_TRANSFER_APPLY,
@@ -1790,8 +1790,9 @@ extern  t_TEST_EEPROM_DB_SATURATE cDB_Saturate_POWERSUPPLY[];
 extern const UWORD16 cMODE_HIGH_LIMIT_VALUE;
 
 /*%C Event number table, corresponding to the adjusted Id  */
-//extern const UWORD16 EventNumber[end_of_adjust_table];
+//extern const UWORD16 EventNumber[end_of_adjust_table];//bhavya
 extern const UWORD16 EventNumber[];
+
 
 /******************************************************************************/
 /*                    EXTERNAL FUNCTION DECLARATION 				          	  	*/

@@ -33,13 +33,13 @@
 #include "../GENERAL/Structure.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "../DATABASE/DB_KeyboardEvent.h"
 #include "../DATABASE/DB_PowerSupply.h"
-//#include "DB_IHM_Read_Info_Access.h"
+#include "DB_IHM_Read_Info_Access.h"
 
 
 /******************************************************************************/
@@ -50,7 +50,6 @@ UWORD16 DB_IHM_Read_Info_Access(UWORD16 *Value,
 								UWORD16 Id,
 								e_TYPE_OF_DB_TARGET DbType)
 {
-#if 0
 /* Function result declaration */
    UWORD16 Function_Result = FALSE;
    *Value = 0;
@@ -71,7 +70,6 @@ UWORD16 DB_IHM_Read_Info_Access(UWORD16 *Value,
 			break;
 	}
 	return(Function_Result);
-#endif
 }
 
 

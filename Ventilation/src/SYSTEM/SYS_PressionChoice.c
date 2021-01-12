@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -138,8 +138,8 @@ void SYS_PressionChoice(void)
         	maxi_prox = FilterPatientPressureProxi;
 			mini_prox =  maxi_prox;
 
-			// Cas special de bloquage en expi du capteur pression interne à un niveau inférieur de la PEEP, menant
-		   	// abusivement à une FLAT PROX=TRUE et FLAT INT=FALSE.(contraire à la réalité).
+			// Cas special de bloquage en expi du capteur pression interne ï¿½ un niveau infï¿½rieur de la PEEP, menant
+		   	// abusivement ï¿½ une FLAT PROX=TRUE et FLAT INT=FALSE.(contraire ï¿½ la rï¿½alitï¿½).
 		   	// Enregitrement de la valeur de la pression proximal lors de la pression haute.   
 
             // In case special blocking expi internal pressure sensor at a lower level of PEEP, leading 
@@ -201,8 +201,8 @@ void SYS_PressionChoice(void)
 			mini_int_CPAP = FilterInternalPressure;
 		}
 	}
-	// Calcul du delta de pression à la transition expi-inspi et réinintilalisation des min et max.
-    // Calculate the delta pressure transition expire inspiration and réinintilalisation of min and max.
+	// Calcul du delta de pression ï¿½ la transition expi-inspi et rï¿½inintilalisation des min et max.
+    // Calculate the delta pressure transition expire inspiration and rï¿½inintilalisation of min and max.
 	if (( VentilState != VEN_EXHALATION )&&( MemoState == VEN_EXHALATION ))
 	 {	
 		 // Calcul des deltas pression prox	et int.
@@ -218,7 +218,7 @@ void SYS_PressionChoice(void)
 		 	Delta_int = maxi_int_CPAP - mini_int_CPAP;
 		 }
 
-		 // Mise à jour à true du flag flat proxi si Delata < 0.3 CmH2O pour CPAP.
+		 // Mise ï¿½ jour ï¿½ true du flag flat proxi si Delata < 0.3 CmH2O pour CPAP.
 		 // ou si Delata < 0.4 CmH2O pour les autres modes.
 
          // Update the flag to true if flat proximal Delata <0.3 cmH2O CPAP. 
@@ -231,7 +231,7 @@ void SYS_PressionChoice(void)
 		 else 
 		 {
 		 	FlatProxi = FALSE;
-		    // Mise à false temporaire des flag de detection de la high pressure
+		    // Mise ï¿½ false temporaire des flag de detection de la high pressure
 			// le temps de la prise en compte du retour du capteur de pression proximal.
 
             // Update the temporary false flag detection of high pressure 
@@ -240,7 +240,7 @@ void SYS_PressionChoice(void)
 			DB_ControlWrite(HIGH_PRESSURE_EXHALATION_DETECTED_U16,FALSE);
 		 }
 
-		 // Mise à jour à true du flag flat internal si Delata < 0.3 CmH2O pour CPAP.
+		 // Mise ï¿½ jour ï¿½ true du flag flat internal si Delata < 0.3 CmH2O pour CPAP.
 		 // ou si Delata < 0.4 CmH2O pour les autres modes.
 
          // Update the flag to true if internal flat Delata <0.3 cmH2O CPAP. 
@@ -253,7 +253,7 @@ void SYS_PressionChoice(void)
 		 else 
 		 {
 		 	FlatInt = FALSE;
-			// Mise à false temporaire des flag de detection de la high pressure
+			// Mise ï¿½ false temporaire des flag de detection de la high pressure
 			// le temps de la prise en compte du retour du capteur de pression interne.
 
             // Update the temporary false flag detection of high pressure 
@@ -267,7 +267,7 @@ void SYS_PressionChoice(void)
 		 DB_ControlWrite(FLAT_PROXI_U16,FlatProxi);
 		 DB_ControlWrite(FLAT_INT_U16,FlatInt);
 		
-		 // Réinitialisation des maxi et des mini.
+		 // Rï¿½initialisation des maxi et des mini.
          // Reset maxi and mini.
 		 maxi_prox = 0x8000; 
 		 mini_prox = 0x7FFF;
@@ -283,7 +283,7 @@ void SYS_PressionChoice(void)
 /* CHOIX DU NIVEAU DE DELTA DE PRESSION INTERNE/PROXI DISCRIMINANT POUR		   */
 /* TEST SWITCH CAPTEUR PRESSION												   */
 /*******************************************************************************/
-// Choix du niveau de Delat Pression entre proximal et interne en fonction du débit pour reconnaitre une perte proximale.
+// Choix du niveau de Delat Pression entre proximal et interne en fonction du dï¿½bit pour reconnaitre une perte proximale.
 // Choix du niveau de Resistance du circuit patient.
 
 
@@ -294,7 +294,7 @@ void SYS_PressionChoice(void)
 // Selecting the level Delat between proximal and internal pressure versus flow to recognize a proximal loss. 
 // Selection of Resistance level of patient circuit.
 
-    // Pour un circuit pédiatrique. 
+    // Pour un circuit pï¿½diatrique. 
     // For a pediatric circuit.
  	if ( AdjustPediatricCircuit == TRUE )
 	{
@@ -337,7 +337,8 @@ void SYS_PressionChoice(void)
 /* Internal to Proximal.                 * / 
 /* Proximal to Internal.                 * / 
 /************************************************* *****************************/
-    // Calculate an estimated leak indicator
+
+	// Calculate an estimated leak indicator
     EQLeak = CalculatedQee - cLEAK_OFFSET;
 
     // Ensure leak level indicator 
@@ -430,8 +431,8 @@ void SYS_PressionChoice(void)
 		TIM_StartDecounter(SYS_PRESSURE_CHOICE_INT,TIME_PRESSURE_CHOICE_INT);
 	}
 
-	// Si les conditions nominales de test interne vers proxi sont respectés pendant 400 ms, on switche à l'inspi suivante.
-	// Si on detecte un défaut de capteur interne (non lié à une déconnection), on switche immédiatement.  
+	// Si les conditions nominales de test interne vers proxi sont respectï¿½s pendant 400 ms, on switche ï¿½ l'inspi suivante.
+	// Si on detecte un dï¿½faut de capteur interne (non liï¿½ ï¿½ une dï¿½connection), on switche immï¿½diatement.  
 
     // If the nominal conditions proximal to internal test are met for 400 ms, we switche to the next inspiration. 
     // If a default internal sensor (not related to a disconnection) is detected, it immediately switche.
@@ -443,8 +444,8 @@ void SYS_PressionChoice(void)
 		DB_ControlWrite(PROXI_DETECTED_U16,TRUE);			
 	} 
 			
-	// Si les conditions nominales de test proxi vers interne sont respectés pendant 50 ms, on switche immédiatement.
-	// Si on detecte un défaut de capteur proximal, on switche immédiatement.
+	// Si les conditions nominales de test proxi vers interne sont respectï¿½s pendant 50 ms, on switche immï¿½diatement.
+	// Si on detecte un dï¿½faut de capteur proximal, on switche immï¿½diatement.
 
     // If the nominal conditions proximal to internal test are met for 50 ms is switche immediately. 
     // If a fault is detected proximal sensor, it switche immediately.
@@ -498,7 +499,7 @@ void SYS_PressionChoice(void)
 	}
 
 
-	// Extrampolation de la pression proximale à partir de la pression interne et de la resistance du circuit
+	// Extrampolation de la pression proximale ï¿½ partir de la pression interne et de la resistance du circuit
 	// afin de minimiser l'erreur sur l'estimation du VTI.
 
     // Extrampolation the proximal pressure from the internal pressure and the resistance of the circuit 
@@ -518,7 +519,7 @@ void SYS_PressionChoice(void)
     // Store the internal pressure as pressure in the patient base.
 	DB_ComputeWrite(ESTIMATED_PROXIMAL_PRESSURE_S16, (UWORD16)EstimatedProximalePressure);
 	
-	// Mémorisation du cycle
+	// Mï¿½morisation du cycle
     // Storing the cycle
 	MemoState = VentilState;
 }

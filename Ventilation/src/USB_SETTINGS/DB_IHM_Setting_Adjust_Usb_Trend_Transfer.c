@@ -54,7 +54,7 @@ UWORD16 DB_IHM_Setting_Adjust_Usb_Trend_Transfer(UWORD16 *Value,
 /*%C  Value limited to its min */
       *Value = cDB_TEST_USB_DB[Id].mini;
 /*%C  Flag writing by DB_UsbWrite function call 	*/
-		DB_UsbWrite(USB_TREND_TRANSFER_SELECT_U16, (UWORD16) FALSE);
+	//	DB_UsbWrite(USB_TREND_TRANSFER_SELECT_U16, (UWORD16) FALSE); //not taking accepting the func file //bhavya
  		Function_Result = FALSE;
 	}
 /*%C Up Limit test */
@@ -68,7 +68,7 @@ UWORD16 DB_IHM_Setting_Adjust_Usb_Trend_Transfer(UWORD16 *Value,
 	else if ((e_BOOL) DB_UsbRead(USB_TREND_TRANSFER_SELECT_U16) == FALSE)
 	{
 /*%C  Flag writing by DB_UsbWrite function call 	*/
-		DB_UsbWrite(USB_TREND_TRANSFER_SELECT_U16, (UWORD16) TRUE);
+		//DB_UsbWrite(USB_TREND_TRANSFER_SELECT_U16, (UWORD16) TRUE);//not taking accepting the func file //bhavya
 		Function_Result = FALSE;
 	}
    else

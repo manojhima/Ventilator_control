@@ -32,7 +32,7 @@
 #include "../DATABASE/DB_Current.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Config.h"
-//#include "DB_IHM_Setting_Adjust_Pres_Mode.h"//bhavya
+//#include "DB_IHM_Setting_Adjust_Pres_Mode.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /* locate database code to specific section */
@@ -43,7 +43,6 @@
 UWORD16 DB_IHM_Setting_Adjust_Pres_Mode(UWORD16 *Value,
                                         UWORD16 Id)
 {
-#if 0
 
 	UWORD16 Valve_Detected = DB_ControlRead(VALVE_DETECTED_U16);
 	UWORD16 AdjsutmentInProgress = DB_ControlRead(ADJUSTMENT_IN_PROGRESS_U16);
@@ -224,5 +223,4 @@ UWORD16 DB_IHM_Setting_Adjust_Pres_Mode(UWORD16 *Value,
 		}
 	}
 	return(Function_Result);
-#endif
 }

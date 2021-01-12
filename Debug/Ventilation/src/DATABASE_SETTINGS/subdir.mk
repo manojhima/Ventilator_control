@@ -7,6 +7,7 @@ C_SRCS += \
 ../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Access.c \
 ../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Config.c \
 ../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Increase_Access.c \
+../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Increase_Config.c \
 ../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Read_Access.c \
 ../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Read_Info_Access.c \
 ../Ventilation/src/DATABASE_SETTINGS/DB_IHM_Setting_Rtc_Day.c \
@@ -18,6 +19,7 @@ OBJS += \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Access.o \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Config.o \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Increase_Access.o \
+./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Increase_Config.o \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Read_Access.o \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Read_Info_Access.o \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Setting_Rtc_Day.o \
@@ -29,6 +31,7 @@ C_DEPS += \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Access.d \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Config.d \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Increase_Access.d \
+./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Increase_Config.d \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Read_Access.d \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Read_Info_Access.d \
 ./Ventilation/src/DATABASE_SETTINGS/DB_IHM_Setting_Rtc_Day.d \

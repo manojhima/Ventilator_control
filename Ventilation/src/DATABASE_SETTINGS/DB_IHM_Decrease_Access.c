@@ -35,22 +35,19 @@
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE/DB_Usb.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Config.h"
-//#include "DB_IHM_Setting_Adjust_Usb.h"
+//#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-UWORD16  EEP_DB_Config[];
 
 UWORD16 DB_IHM_Decrease_Access(UWORD16 *Value,
 									  	 UWORD16 Id,
 									  	 e_TYPE_OF_DB_TARGET DbType)
 {
 
-#if 0
 /*%C Function result declaration */
    UWORD16 Function_Result = FALSE;
 
@@ -177,7 +174,8 @@ UWORD16 DB_IHM_Decrease_Access(UWORD16 *Value,
 /*%C  Config base decrease */
 		case CONFIG:
 		{
-			Function_Result = DB_IHM_Decrease_Config(Value,Id);
+			Function_Result = DB_IHM_Decrease_Config(Value,
+																  Id);
 			break;
 		}  
 
@@ -289,5 +287,4 @@ UWORD16 DB_IHM_Decrease_Access(UWORD16 *Value,
 	}
 
 	return(Function_Result);
-#endif
 }

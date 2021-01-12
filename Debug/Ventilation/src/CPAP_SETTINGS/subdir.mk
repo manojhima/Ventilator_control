@@ -11,7 +11,11 @@ C_SRCS += \
 ../Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_High_R.c \
 ../Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_High_Vti.c \
 ../Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Low_Vti.c \
-../Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Peep.c 
+../Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Peep.c \
+../Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode.c \
+../Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_Disco_Delay.c \
+../Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_High_Vti.c \
+../Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_Low_Vti.c 
 
 OBJS += \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode.o \
@@ -21,7 +25,11 @@ OBJS += \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_High_R.o \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_High_Vti.o \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Low_Vti.o \
-./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Peep.o 
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Peep.o \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode.o \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_Disco_Delay.o \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_High_Vti.o \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_Low_Vti.o 
 
 C_DEPS += \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode.d \
@@ -31,7 +39,11 @@ C_DEPS += \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_High_R.d \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_High_Vti.d \
 ./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Low_Vti.d \
-./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Peep.d 
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Setting_Adjust_Cpap_Mode_Peep.d \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode.d \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_Disco_Delay.d \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_High_Vti.d \
+./Ventilation/src/CPAP_SETTINGS/DB_IHM_Write_Adjust_Cpap_Mode_Low_Vti.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

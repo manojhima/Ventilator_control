@@ -15,7 +15,11 @@ Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Config.o: \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/../DATABASE/DB_Compute.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/../DATABASE/DB_PowerSupply.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/../DATABASE/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/../GENERAL/enum.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/DRV_VarEeprom.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../GENERAL/enum.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../DATABASE/DB_Current.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../DATABASE/DB_Config.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/DB_IHM_Decrease_Config.h
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
@@ -48,6 +52,14 @@ Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Config.o: \
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/../DATABASE/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/../GENERAL/enum.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/DRV_VarEeprom.h:
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../GENERAL/typedef.h:
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../GENERAL/enum.h:
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../DATABASE/DB_Current.h:
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../DATABASE/DB_Config.h:
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DATABASE_SETTINGS/DB_IHM_Decrease_Config.h:

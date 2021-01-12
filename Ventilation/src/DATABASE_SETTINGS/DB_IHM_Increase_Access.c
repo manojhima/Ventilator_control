@@ -34,25 +34,21 @@
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE/DB_Usb.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Event.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_AlarmStatus.h"
 #include "DB_IHM_Increase_Access.h"
 #include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Config.h"
-
-//#include "DB_IHM_Setting_Adjust_Usb.h"
+//#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
-UWORD16  EEP_DB_Config[];
 
 UWORD16 DB_IHM_Increase_Access(UWORD16 *Value,
                               UWORD16 Id,
                               e_TYPE_OF_DB_TARGET DbType)
-{
-#if 0
+{											 
    e_MODE_TYPES ActualMode = VOL;
 
 
@@ -313,5 +309,4 @@ UWORD16 DB_IHM_Increase_Access(UWORD16 *Value,
 	}
 
 	return(Function_Result);
-#endif
 }

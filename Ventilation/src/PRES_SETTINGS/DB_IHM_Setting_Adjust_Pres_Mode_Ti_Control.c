@@ -33,12 +33,11 @@
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h" //bhavya
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-//#include "DB_IHM_Setting_Adjust_Pres_Mode_Ti_Control.h" //bhavya
+//#include "DB_IHM_Setting_Adjust_Pres_Mode_Ti_Control.h"
 
 /* locate database code to specific section */
 #include "../GENERAL/locate_database_code.h"
@@ -46,8 +45,6 @@
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/
-UWORD16  EEP_DB_PRES_Adjust[]; //bhavya
-
 
 UWORD16 DB_IHM_Setting_Adjust_Pres_Mode_Ti_Control(UWORD16 *Value,
                                                    UWORD16 Id)

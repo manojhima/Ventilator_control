@@ -35,9 +35,8 @@
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h" //bhavya
 #include "../DATABASE/DB_Config.h"
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
@@ -48,7 +47,6 @@
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/
-UWORD16  EEP_DB_PRES_Adjust[];
 
 UWORD16 DB_IHM_Setting_Adjust_Pres_Mode_Peep(UWORD16 *Value,
 											 UWORD16 Id,

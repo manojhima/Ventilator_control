@@ -30,7 +30,7 @@
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Current.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
@@ -45,7 +45,6 @@
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/
-UWORD16  EEP_DB_PRES_Adjust[];
 
 UWORD16 DB_IHM_Setting_Adjust_Pres_Mode_Insp_Sens(UWORD16 *Value,
 																  UWORD16 Id)

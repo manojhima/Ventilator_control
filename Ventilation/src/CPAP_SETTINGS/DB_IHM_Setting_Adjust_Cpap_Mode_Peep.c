@@ -31,7 +31,7 @@
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../GENERAL/define.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Current.h"
 #include "../DATABASE/DB_Rtc.h"

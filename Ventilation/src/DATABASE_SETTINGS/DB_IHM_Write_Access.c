@@ -34,10 +34,10 @@
 #include "../GENERAL/Structure.h"
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Rtc.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Event.h"
 #include "../DATABASE/DB_AlarmStatus.h"
-//#include "DB_IHM_Write_Access.h"
+#include "DB_IHM_Write_Access.h"
 #include "DB_IhmAccessParaDataBase.h"
 #include "../DATABASE/DB_KeyboardEvent.h"
 #include "../DATABASE/DB_PowerSupply.h"
@@ -53,7 +53,6 @@ UWORD16 DB_IHM_Write_Access(UWORD16 *Value,
 									 UWORD16 Id,
 									 e_TYPE_OF_DB_TARGET DbType)
 {
-#if 0
 /* Function result declaration */
    UWORD16 Function_Result = FALSE;
    UWORD16 Limit_Flag_Number = Start_Limit_Setting;
@@ -338,7 +337,6 @@ UWORD16 DB_IHM_Write_Access(UWORD16 *Value,
       DB_ControlWrite(Limit_Flag_Number, FALSE);
    }
 	return(Function_Result);
-#endif
 }
 
 

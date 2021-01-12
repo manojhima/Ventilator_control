@@ -12,8 +12,7 @@ Ventilation/src/USB_SETTINGS/DB_IHM_Setting_Adjust_Usb_Trend_Transfer.o: \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../DATABASE/DB_Compute.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../DATABASE/DB_PowerSupply.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../DATABASE/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../GENERAL/enum.h
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../DATABASE/../GENERAL/typedef.h
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
 
@@ -40,5 +39,3 @@ Ventilation/src/USB_SETTINGS/DB_IHM_Setting_Adjust_Usb_Trend_Transfer.o: \
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../DATABASE/DB_PowerSupply.h:
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../DATABASE/../GENERAL/typedef.h:
-
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE_SETTINGS/../GENERAL/enum.h:

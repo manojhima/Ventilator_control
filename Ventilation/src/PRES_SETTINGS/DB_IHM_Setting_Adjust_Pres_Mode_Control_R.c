@@ -32,11 +32,9 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 #include "../GENERAL/typedef.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../GENERAL/Structure.h"
 #include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Compute.h"
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 //#include "DB_IHM_Setting_Adjust_Pres_Mode_Control_R.h"
@@ -47,8 +45,6 @@
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/
-UWORD16  EEP_DB_PRES_Adjust[];
-
 UWORD16 DB_IHM_Setting_Adjust_Pres_Mode_Control_R(UWORD16 *Value,
 																  UWORD16 Id)
 {

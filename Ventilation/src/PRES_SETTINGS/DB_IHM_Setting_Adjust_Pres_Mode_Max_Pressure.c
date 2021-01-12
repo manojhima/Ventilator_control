@@ -31,20 +31,17 @@
 #include "../GENERAL/typedef.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h" //bhavya
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h" //bhavya
-#include "../DATABASE/DB_Config.h"//Bhavya
 #include "../DATABASE/DB_Rtc.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-//#include "DB_IHM_Setting_Adjust_Pres_Mode_Max_Pressure.h" //bhavya
+//#include "DB_IHM_Setting_Adjust_Pres_Mode_Max_Pressure.h"
 
 /* locate database code to specific section */
 #include "../GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/
-UWORD16  EEP_DB_PRES_Adjust[];
 
 UWORD16 DB_IHM_Setting_Adjust_Pres_Mode_Max_Pressure(UWORD16 *Value,
 																	  UWORD16 Id)
