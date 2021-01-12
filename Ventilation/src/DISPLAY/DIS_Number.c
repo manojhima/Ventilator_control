@@ -85,7 +85,7 @@ else if ((font & ~INV) == ARIALBOLD29)
 }
 // Interdit les lignes n�gatives
 if (line < 1) line = 1;
-#if 0
+#if 0 //drv func //bhavya
 DRV_DIS_grSetPage ( page-1 ) ;
 
 if ( font & INV )

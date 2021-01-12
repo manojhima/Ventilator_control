@@ -52,7 +52,7 @@ SWORD32 VEN_RiseCompute(SWORD32 x,
                         SWORD32 x2,
                         SWORD32 y2)
 {
-#if 0
+
 
    SWORD32 Compute = 0;
 
@@ -77,5 +77,5 @@ SWORD32 VEN_RiseCompute(SWORD32 x,
    }
 
    return(Compute);
-#endif
+
 }

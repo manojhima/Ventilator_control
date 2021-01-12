@@ -35,7 +35,7 @@ void DIS_Symbol( UBYTE symbol, UBYTE line
 					, UWORD16 column
 					, UBYTE page )
 {
-#if 0
+#if 0 //drv func //bhavya
 	// For�age de NON inversion vid�o
 	DRV_DIS_grNegative(0) ;
 

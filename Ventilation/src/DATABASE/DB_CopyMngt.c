@@ -34,7 +34,7 @@
 #include "DB_Rtc.h"
 #include "DB_Event.h"
 #include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../DRIVERS/DRV_VarEeprom.h"
 #include "../SECURITY/Security_Datas.h"
 #include "DB_Compute.h"
 #include "DB_CopyMngt.h"
@@ -43,7 +43,7 @@
 /******************************************************************************/
 void DB_CopyMngt(void)
 {
-#if 0
+
     /* Ventilation mode recovery */
     e_MODE_TYPES Adjust_Mode  = DB_ConfigRead(ADJUST_MODE_U16);
 
@@ -450,5 +450,5 @@ void DB_CopyMngt(void)
         }
     }
     Previous_Mode = Current_Mode;
-#endif
+
 } 

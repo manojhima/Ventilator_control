@@ -8,7 +8,7 @@ Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Access.o: \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Control.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/../GENERAL/typedef.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Rtc.h \
- ../Ventilation/src/DATABASE_SETTINGS/../DATABASE/DB_Usb.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Usb.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/DRV_VarEeprom.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../GENERAL/typedef.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/../GENERAL/enum.h \
@@ -37,7 +37,7 @@ Ventilation/src/DATABASE_SETTINGS/DB_IHM_Decrease_Access.o: \
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Rtc.h:
 
-../Ventilation/src/DATABASE_SETTINGS/../DATABASE/DB_Usb.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Usb.h:
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DRIVERS/DRV_VarEeprom.h:
 

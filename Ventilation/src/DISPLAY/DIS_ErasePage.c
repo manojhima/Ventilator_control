@@ -35,7 +35,7 @@
 
 void DIS_ErasePage( UBYTE page )
 {
-#if 0
+#if 0 //driver function //bhavya
 	DRV_DIS_grSetPage ( page-1 ) ;
 
 	DRV_DIS_grSetColor ( WHITE ) ;

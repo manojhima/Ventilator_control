@@ -33,7 +33,7 @@
 
 void DIS_Pixel( UBYTE line, UWORD16 column, UBYTE printon, UBYTE page )
 {
-#if 0
+#if 0 //drv function //bhavya
 	DRV_DIS_grSetPage ( page-1 ) ;
 
 	DRV_DIS_grSetColor ( printon ) ;

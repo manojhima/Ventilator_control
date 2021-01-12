@@ -120,7 +120,7 @@ if (line < 1)
 {
 	line = 1;
 }
-#if 0
+#if 0 //drv function //bhavya
 DRV_DIS_grSetPage ( page-1 ) ;
 
 if ( font & INV )

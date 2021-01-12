@@ -12,6 +12,7 @@ C_SRCS += \
 ../Ventilation/src/SECURITY/SEC_BatteryTemperature.c \
 ../Ventilation/src/SECURITY/SEC_BuzzerBatteryChargeFailure.c \
 ../Ventilation/src/SECURITY/SEC_BuzzerBatteryLow.c \
+../Ventilation/src/SECURITY/SEC_BuzzerCmd.c \
 ../Ventilation/src/SECURITY/SEC_CalibrationFailure.c \
 ../Ventilation/src/SECURITY/SEC_CanceledStateMngt.c \
 ../Ventilation/src/SECURITY/SEC_CheckBattery.c \
@@ -51,6 +52,7 @@ C_SRCS += \
 ../Ventilation/src/SECURITY/SEC_LeakDisconnection.c \
 ../Ventilation/src/SECURITY/SEC_LeakOcclusion.c \
 ../Ventilation/src/SECURITY/SEC_Leakage.c \
+../Ventilation/src/SECURITY/SEC_LedCmd.c \
 ../Ventilation/src/SECURITY/SEC_LooseFlashPointer.c \
 ../Ventilation/src/SECURITY/SEC_LowBattery.c \
 ../Ventilation/src/SECURITY/SEC_LowVte.c \
@@ -90,6 +92,7 @@ OBJS += \
 ./Ventilation/src/SECURITY/SEC_BatteryTemperature.o \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryChargeFailure.o \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryLow.o \
+./Ventilation/src/SECURITY/SEC_BuzzerCmd.o \
 ./Ventilation/src/SECURITY/SEC_CalibrationFailure.o \
 ./Ventilation/src/SECURITY/SEC_CanceledStateMngt.o \
 ./Ventilation/src/SECURITY/SEC_CheckBattery.o \
@@ -129,6 +132,7 @@ OBJS += \
 ./Ventilation/src/SECURITY/SEC_LeakDisconnection.o \
 ./Ventilation/src/SECURITY/SEC_LeakOcclusion.o \
 ./Ventilation/src/SECURITY/SEC_Leakage.o \
+./Ventilation/src/SECURITY/SEC_LedCmd.o \
 ./Ventilation/src/SECURITY/SEC_LooseFlashPointer.o \
 ./Ventilation/src/SECURITY/SEC_LowBattery.o \
 ./Ventilation/src/SECURITY/SEC_LowVte.o \
@@ -168,6 +172,7 @@ C_DEPS += \
 ./Ventilation/src/SECURITY/SEC_BatteryTemperature.d \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryChargeFailure.d \
 ./Ventilation/src/SECURITY/SEC_BuzzerBatteryLow.d \
+./Ventilation/src/SECURITY/SEC_BuzzerCmd.d \
 ./Ventilation/src/SECURITY/SEC_CalibrationFailure.d \
 ./Ventilation/src/SECURITY/SEC_CanceledStateMngt.d \
 ./Ventilation/src/SECURITY/SEC_CheckBattery.d \
@@ -207,6 +212,7 @@ C_DEPS += \
 ./Ventilation/src/SECURITY/SEC_LeakDisconnection.d \
 ./Ventilation/src/SECURITY/SEC_LeakOcclusion.d \
 ./Ventilation/src/SECURITY/SEC_Leakage.d \
+./Ventilation/src/SECURITY/SEC_LedCmd.d \
 ./Ventilation/src/SECURITY/SEC_LooseFlashPointer.d \
 ./Ventilation/src/SECURITY/SEC_LowBattery.d \
 ./Ventilation/src/SECURITY/SEC_LowVte.d \

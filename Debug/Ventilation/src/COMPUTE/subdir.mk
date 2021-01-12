@@ -15,6 +15,8 @@ C_SRCS += \
 ../Ventilation/src/COMPUTE/CMP_LeakComputing.c \
 ../Ventilation/src/COMPUTE/CMP_LeakFactors.c \
 ../Ventilation/src/COMPUTE/CMP_MeanTable.c \
+../Ventilation/src/COMPUTE/CMP_O2Consigne.c \
+../Ventilation/src/COMPUTE/CMP_PiSetPointPsimvMode.c \
 ../Ventilation/src/COMPUTE/CMP_TargetVt.c \
 ../Ventilation/src/COMPUTE/CMP_TimeComputing.c \
 ../Ventilation/src/COMPUTE/CMP_VentilationReport.c 
@@ -31,6 +33,8 @@ OBJS += \
 ./Ventilation/src/COMPUTE/CMP_LeakComputing.o \
 ./Ventilation/src/COMPUTE/CMP_LeakFactors.o \
 ./Ventilation/src/COMPUTE/CMP_MeanTable.o \
+./Ventilation/src/COMPUTE/CMP_O2Consigne.o \
+./Ventilation/src/COMPUTE/CMP_PiSetPointPsimvMode.o \
 ./Ventilation/src/COMPUTE/CMP_TargetVt.o \
 ./Ventilation/src/COMPUTE/CMP_TimeComputing.o \
 ./Ventilation/src/COMPUTE/CMP_VentilationReport.o 
@@ -47,6 +51,8 @@ C_DEPS += \
 ./Ventilation/src/COMPUTE/CMP_LeakComputing.d \
 ./Ventilation/src/COMPUTE/CMP_LeakFactors.d \
 ./Ventilation/src/COMPUTE/CMP_MeanTable.d \
+./Ventilation/src/COMPUTE/CMP_O2Consigne.d \
+./Ventilation/src/COMPUTE/CMP_PiSetPointPsimvMode.d \
 ./Ventilation/src/COMPUTE/CMP_TargetVt.d \
 ./Ventilation/src/COMPUTE/CMP_TimeComputing.d \
 ./Ventilation/src/COMPUTE/CMP_VentilationReport.d 

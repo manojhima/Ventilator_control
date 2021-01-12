@@ -53,7 +53,7 @@
 /******************************************************************************/
 void  SEC_AlarmIndication(void)
 {
-#if 0
+
 /* Alarm detection flag declaration */
    UWORD16 Alarm_Detected = FALSE; 
 
@@ -488,5 +488,5 @@ void  SEC_AlarmIndication(void)
 
  /*%C Reset of uncancel request flag 	*/
 	DB_ControlWrite(UNCANCEL_CMD_U16, FALSE);
-#endif
+
 }

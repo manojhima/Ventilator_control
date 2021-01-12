@@ -25,6 +25,7 @@ C_SRCS += \
 ../Ventilation/src/DATABASE/DB_RTCRead.c \
 ../Ventilation/src/DATABASE/DB_RTCWrite.c \
 ../Ventilation/src/DATABASE/DB_Revision.c \
+../Ventilation/src/DATABASE/DB_RiseTimeCompute.c \
 ../Ventilation/src/DATABASE/DB_StartInitDb.c \
 ../Ventilation/src/DATABASE/DB_TrendRead.c \
 ../Ventilation/src/DATABASE/DB_TrendWrite.c \
@@ -53,6 +54,7 @@ OBJS += \
 ./Ventilation/src/DATABASE/DB_RTCRead.o \
 ./Ventilation/src/DATABASE/DB_RTCWrite.o \
 ./Ventilation/src/DATABASE/DB_Revision.o \
+./Ventilation/src/DATABASE/DB_RiseTimeCompute.o \
 ./Ventilation/src/DATABASE/DB_StartInitDb.o \
 ./Ventilation/src/DATABASE/DB_TrendRead.o \
 ./Ventilation/src/DATABASE/DB_TrendWrite.o \
@@ -81,6 +83,7 @@ C_DEPS += \
 ./Ventilation/src/DATABASE/DB_RTCRead.d \
 ./Ventilation/src/DATABASE/DB_RTCWrite.d \
 ./Ventilation/src/DATABASE/DB_Revision.d \
+./Ventilation/src/DATABASE/DB_RiseTimeCompute.d \
 ./Ventilation/src/DATABASE/DB_StartInitDb.d \
 ./Ventilation/src/DATABASE/DB_TrendRead.d \
 ./Ventilation/src/DATABASE/DB_TrendWrite.d \

@@ -36,7 +36,7 @@
 
 void DIS_DisplayPage( UBYTE page, UBYTE mode )
 {
-#if 0
+#if 0 //driver functions //bhavya
 	if (page == PAGE1)
 		{
 		DRV_DIS_grControlPage ( 0, 1 ) ;
@@ -55,5 +55,6 @@ void DIS_DisplayPage( UBYTE page, UBYTE mode )
 		DRV_DIS_grControlPage ( 0, 1 ) ;
 		DRV_DIS_grControlPage ( mode, page-1 ) ;
 		}
+
 #endif
 }
