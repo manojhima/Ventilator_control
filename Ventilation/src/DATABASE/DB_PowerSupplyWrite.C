@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+//#include "../../inc/DRIVERS/DRV_VarEeprom.h"
 //#define DECLARATION_POWERSUPPLY_BASE //bhavya
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "DB_PowerSupply.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE/DB_PowerSupply.h"
 /******************************************************************************/
 /*                    EXTERNAL FUNCTION DECLARATION                          	*/
 /******************************************************************************/

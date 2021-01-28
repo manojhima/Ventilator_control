@@ -23,24 +23,23 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "DB_Rtc.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "DB_Compute.h"
-#include "DB_Current.h"
-#include "DB_PowerSupply.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_PowerSupply.h"
 #define DECLARATION_EVENT_MNGT_H
-#include "DB_EventMngt.h"
+#include "../../inc/DATABASE/DB_EventMngt.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 void DB_EventMngt (UWORD16 EventNb)
 {
-
 #ifndef _BORLAND
 
     /* Current mode recovery					                                       */
@@ -57,7 +56,7 @@ void DB_EventMngt (UWORD16 EventNb)
     /********************************/  
 
     /*%C Event number writing */
-   // DRV_EVENT_PushEvent(EVENT_NB_ID, EventNb); //Driver file //bhavya
+   // DRV_EVENT_PushEvent(EVENT_NB_ID,EventNb);
 
     /*%C Common parameters flash writing (for all modes) */
     for (i = 0; i < EndCommonEventParam - BeginCommonEventParam + 1; i++)
@@ -246,7 +245,7 @@ void DB_EventMngt (UWORD16 EventNb)
             /*%C     Value reading in powersupply base */
         case DB_POWERSUPPLY :
             {
-              //  DataToPush = DB_PowerSupplyRead(DB_CommonEventMngtParam[i].DataId);
+                DataToPush = DB_PowerSupplyRead(DB_CommonEventMngtParam[i].DataId); 
                 break;                                                          
             }
         default :                                                          
@@ -262,22 +261,22 @@ void DB_EventMngt (UWORD16 EventNb)
         if (DB_CommonEventMngtParam[i].StorageType == MSB)
         {
             /*%C     Flash writing  */
-            DRV_EVENT_PushEvent(i+1, DataToPush >> 8);
+            //DRV_EVENT_PushEvent(i+1, DataToPush >> 8);
         }
         /*%C  LSB value test  */
         else if (DB_CommonEventMngtParam[i].StorageType == LSB)
         {
             /*%C     Flash writing  */
-            DRV_EVENT_PushEvent(i+1, DataToPush & 0x00FF);
+            //DRV_EVENT_PushEvent(i+1, DataToPush & 0x00FF);
         }
         /*%C  The value is already sized on 8 bits  */
         else
         {
             /*%C     Flash writing  */
-            DRV_EVENT_PushEvent(i+1, (UBYTE)DataToPush);
+            //DRV_EVENT_PushEvent(i+1, (UBYTE)DataToPush);
         }
     }
-#endif
+
     /*******************************************************/   
     /*%C Specific Parameters memorization for each mode    */
     /*******************************************************/   
@@ -509,30 +508,24 @@ void DB_EventMngt (UWORD16 EventNb)
         if (ParamTable[i].StorageType == MSB)
         {
             /*%C     Flash writing  */
-            DRV_EVENT_PushEvent(BeginSpecificEventParam + i, DataToPush >> 8);
+           // DRV_EVENT_PushEvent(BeginSpecificEventParam + i, DataToPush >> 8);
         }
         /*%C  LSB value test  */
         else if (ParamTable[i].StorageType == LSB)
         {
             /*%C     Flash writing  */
-            DRV_EVENT_PushEvent(BeginSpecificEventParam + i, DataToPush & 0x00FF);
+            //DRV_EVENT_PushEvent(BeginSpecificEventParam + i, DataToPush & 0x00FF);
         }
         /*%C  The value is constant (0 or 1)  */
         else if (ParamTable[i].StorageType == STORAGE_CONSTANT)
         {
-            DRV_EVENT_PushEvent(BeginSpecificEventParam + i,ParamTable[i].DataId );
+            //DRV_EVENT_PushEvent(BeginSpecificEventParam + i,ParamTable[i].DataId );
         }
         /*%C  The value is already sized on 8 bits  */
         else
         {
-            DRV_EVENT_PushEvent(BeginSpecificEventParam + i, (UBYTE)DataToPush);
+            //DRV_EVENT_PushEvent(BeginSpecificEventParam + i, (UBYTE)DataToPush);
         }
-
- }
-}
-    //by bhavya //driver function
-    void DRV_EVENT_PushEvent(	e_EVENT_PARAMETERS Id_Event,
-                             	UBYTE value)
-    {
-
     }
+#endif
+}

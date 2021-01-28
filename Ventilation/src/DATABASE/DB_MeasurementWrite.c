@@ -25,15 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "DB_Measurement.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DATABASE/DB_Measurement.h"
 /******************************************************************************/
 /*                    EXTERNAL FUNCTION DECLARATION                          	*/
 /******************************************************************************/
 void DB_MeasurementWrite(e_DB_MEASUREMENT Id, UWORD16 Value)
 {
-#if 0
 	if(Id < end_of_db_measurement_table)
 		DB_Measurement[Id] = Value;	
-#endif
 }

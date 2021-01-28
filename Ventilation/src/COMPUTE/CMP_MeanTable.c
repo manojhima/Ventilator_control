@@ -24,10 +24,10 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../VENTILATION/Ventilation_Datas.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

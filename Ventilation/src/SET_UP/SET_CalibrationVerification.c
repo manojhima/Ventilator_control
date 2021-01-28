@@ -24,13 +24,13 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "../SYSTEM/System_Datas.h"
-#include "SET_CalibrationVerification.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/SYSTEM/System_Datas.h"
+#include "../../inc/SET_UP/SET_CalibrationVerification.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

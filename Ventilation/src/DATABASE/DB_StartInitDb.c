@@ -25,31 +25,30 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "DB_Config.h"
-#include "DB_Event.h"
-#include "DB_Control.h"
-#include "DB_Current.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_Event.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Current.h"
 	#define DECLARATION_ALARM_STATUS_BASE
-#include "DB_AlarmStatus.h"
-#include "DB_Rtc.h"
-//#include "DB_Usb.h"
-#include "DB_StartInitDb.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE/DB_Usb.h"
+#include "../../inc/DATABASE/DB_StartInitDb.h"
 	#define DECLARATION_IHM_ACCESS_PARA_DATABASE
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 	#define DECLARATION_SECURITY_DATAS
-#include "../SECURITY/Security_Datas.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
-//#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../../inc/SECURITY/Security_Datas.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/VENTILATION/Ventilation_Compute_data.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
 void DB_StartInitDb(void)
 {
-#if 0 //bhavya
  	UBYTE Id;
 
 /*%C Version test function call                     									*/
@@ -89,5 +88,5 @@ void DB_StartInitDb(void)
 /*%C End of base initialization                                               */
    DB_StartInitRequest = TRUE;
 #endif
-#endif
+
 }

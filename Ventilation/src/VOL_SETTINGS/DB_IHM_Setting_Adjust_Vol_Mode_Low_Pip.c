@@ -32,17 +32,17 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Rtc.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "../VOL_SETTINGS/DB_IHM_Setting_Adjust_Vol_Mode_Low_Pip.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/VOL_SETTINGS/DB_IHM_Setting_Adjust_Vol_Mode_Low_Pip.h"
 
 /* locate database code to specific section */
-#include "../GENERAL/locate_database_code.h"
+#include "../../inc/GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/
 /******************************************************************************/

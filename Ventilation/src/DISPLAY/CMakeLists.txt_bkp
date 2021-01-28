@@ -1,0 +1,40 @@
+set(SOURCES DIS_Backlight.c
+	DIS_Box.c
+	DIS_DisplayPage.c
+	DIS_ErasePage.c
+	DIS_EraseZone.c
+	DIS_FifoRead.c
+	DIS_FifoWrite.c
+	DIS_Line.c
+	DIS_LoadTable.c
+	DIS_NegativeCar.c
+	DIS_Number.c
+	DIS_Pixel.c
+	DIS_String.c
+	DIS_Symbol.c
+	)
+set(HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/DIS_Backlight.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_Box.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_DisplayPage.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_DisplayPage.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_ErasePage.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_EraseZone.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_FifoRead.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_Line.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_NegativeCar.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_Number.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_Pixel.h
+	${CMAKE_CURRENT_SOURCE_DIR}/Display_Data.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_String.h
+	${CMAKE_CURRENT_SOURCE_DIR}/DIS_Symbol.h
+	)
+add_library(Displaylib ${SOURCES} ${HEADER_FILES})
+target_include_directories(Displaylib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
+       	${CMAKE_CURRENT_SOURCE_DIR}/../GENERAL/
+	${CMAKE_CURRENT_SOURCE_DIR}/../DATABASE/
+	${CMAKE_CURRENT_SOURCE_DIR}/../VENTILATION/
+	${CMAKE_CURRENT_SOURCE_DIR}/../DATABASE_SETTINGS/
+	) 
+
+#add_subdirectory(tests)
+

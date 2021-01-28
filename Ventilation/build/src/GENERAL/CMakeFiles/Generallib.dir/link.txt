@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGenerallib.a  CMakeFiles/Generallib.dir/Average.c.o CMakeFiles/Generallib.dir/Saturation.c.o
+/usr/bin/ranlib libGenerallib.a

@@ -24,9 +24,9 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-//#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
-#include "DIS_Box.h"
+#include "../../inc/GENERAL/typedef.h"
+//#include "../../inc/DRIVERS_DISPLAY/Driver_Display_Data.h"
+#include "../../inc/DISPLAY/DIS_Box.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

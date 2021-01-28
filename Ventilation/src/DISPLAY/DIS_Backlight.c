@@ -30,9 +30,9 @@
 //#else
 //#include "regf276e.h"
 //#endif
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "DIS_Backlight.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DISPLAY/DIS_Backlight.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

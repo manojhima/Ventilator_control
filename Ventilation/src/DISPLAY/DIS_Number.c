@@ -25,8 +25,8 @@
 /******************************************************************************/
 
 #include "../GENERAL/typedef.h"
-//#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
-#include "DIS_Number.h"
+//#include "../../inc/DRIVERS_DISPLAY/Driver_Display_Data.h"
+#include "../DISPLAY/DIS_Number.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

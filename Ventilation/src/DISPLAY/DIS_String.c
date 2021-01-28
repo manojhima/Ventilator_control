@@ -24,11 +24,11 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-//#include "../DRIVERS_DISPLAY/Driver_Display_Data.h"
-#include "../DATABASE/DB_Config.h"
-#include "DIS_String.h"
-#include "../GENERAL/enum.h"
+#include "../../inc/GENERAL/typedef.h"
+//#include "../../inc/DRIVERS_DISPLAY/Driver_Display_Data.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DISPLAY/DIS_String.h"
+#include "../../inc/GENERAL/enum.h"
 			
 UBYTE GetFontNameFromLang(UBYTE _Font, e_HMI_LANG _Lang);
 /******************************************************************************/

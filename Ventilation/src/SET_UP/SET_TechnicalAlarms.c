@@ -24,9 +24,9 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "SET_TechnicalAlarms.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/SET_UP/SET_TechnicalAlarms.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

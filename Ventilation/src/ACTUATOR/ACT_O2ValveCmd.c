@@ -35,14 +35,14 @@
 //	#endif
 //#endif
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE/DB_Control.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "ACT_O2ValveCmd.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/ACTUATOR/ACT_O2ValveCmd.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
@@ -95,3 +95,4 @@ UWORD16 O2AdjustMin = 0;
 	DB_ControlWrite(MEMO_CMD_VANNE_FIO2_TO_CALIB, ValveCommand);
 	
 }
+

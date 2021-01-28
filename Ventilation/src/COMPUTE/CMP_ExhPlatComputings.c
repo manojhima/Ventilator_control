@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "CMP_ExhPlatComputings.h"
-#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/COMPUTE/CMP_ExhPlatComputings.h"
+#include "../../inc/VENTILATION/Ventilation_Compute_data.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

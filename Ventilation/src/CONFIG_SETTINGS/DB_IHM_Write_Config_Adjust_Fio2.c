@@ -28,15 +28,15 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/define.h"
-#include "../GENERAL/Structure.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Rtc.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-//#include "DB_IHM_Write_Config_Adjust_Fio2.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/define.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+//#include "../../inc/CONFIG_SETTINGS/DB_IHM_Write_Config_Adjust_Fio2.h"
 
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/

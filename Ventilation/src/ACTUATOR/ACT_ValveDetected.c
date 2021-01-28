@@ -24,11 +24,11 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Compute.h"
-#include "ACT_ValveDetected.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/ACTUATOR/ACT_ValveDetected.h"
 
 
 /******************************************************************************/

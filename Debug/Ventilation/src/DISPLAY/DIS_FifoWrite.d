@@ -1,29 +1,29 @@
 Ventilation/src/DISPLAY/DIS_FifoWrite.o: \
  ../Ventilation/src/DISPLAY/DIS_FifoWrite.c \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Structure.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/Display_Data.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/Main_Data.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/typedef.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/enum.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/Product.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/Structure.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/../GENERAL/enum.h \
+ ../Ventilation/src/DISPLAY/../../inc/DISPLAY/Display_Data.h \
+ ../Ventilation/src/DISPLAY/../../inc/MAIN/Main_Data.h \
+ ../Ventilation/src/DISPLAY/../../inc/MAIN/../GENERAL/typedef.h \
+ ../Ventilation/src/DISPLAY/../../inc/MAIN/../GENERAL/enum.h
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/Product.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Structure.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/Structure.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/../GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/Display_Data.h:
+../Ventilation/src/DISPLAY/../../inc/DISPLAY/Display_Data.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/Main_Data.h:
+../Ventilation/src/DISPLAY/../../inc/MAIN/Main_Data.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h:
+../Ventilation/src/DISPLAY/../../inc/MAIN/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h:
+../Ventilation/src/DISPLAY/../../inc/MAIN/../GENERAL/enum.h:

@@ -23,20 +23,20 @@
 
 
 /******************************************************************************/
-/*                                INCLUDE FILES		                          	*/
+/*                                INCLUDE FILES		                      */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Config.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
 //#include "DB_IHM_Setting_Adjust_Pres_Mode.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /* locate database code to specific section */
-#include "../GENERAL/locate_database_code.h"
+#include "../../inc/GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
@@ -48,7 +48,7 @@ UWORD16 DB_IHM_Setting_Adjust_Pres_Mode(UWORD16 *Value,
 	UWORD16 AdjsutmentInProgress = DB_ControlRead(ADJUSTMENT_IN_PROGRESS_U16);
 	UWORD16 CurrentMode = DB_ConfigRead(ADJUST_MODE_U16);
 /* Function result declaration */
-   UWORD16 Function_Result = FALSE;
+   	UWORD16 Function_Result = FALSE;
 
 /*%C Id choice for the limits check */
 	switch (Id)
@@ -88,7 +88,7 @@ UWORD16 DB_IHM_Setting_Adjust_Pres_Mode(UWORD16 *Value,
 /*%C  Ti control limits check function call */
 		case ADJUST_TI_CONTROL_U16:
 		{
-		Function_Result = DB_IHM_Setting_Adjust_Pres_Mode_Ti_Control(Value,
+			Function_Result = DB_IHM_Setting_Adjust_Pres_Mode_Ti_Control(Value,
 			                                                         Id);
 			break;
 		}

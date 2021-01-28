@@ -25,18 +25,18 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "../GENERAL/enum.h"
-#include "CMP_CalculFlowLeak.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/COMPUTE/CMP_CalculFlowLeak.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

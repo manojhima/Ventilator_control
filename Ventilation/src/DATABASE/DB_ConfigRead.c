@@ -24,16 +24,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
-#include "DB_Config.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
 
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/
 /******************************************************************************/
-UWORD16  EEP_DB_Config[]; //from DRV_VarEEPROM.h
-
 UWORD16 DB_ConfigRead(e_DB_CONFIG Id)
 {
 /*%C Returns the config array element value function of Id                  	*/

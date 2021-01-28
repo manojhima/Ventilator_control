@@ -133,8 +133,6 @@ UWORD16 DB_Compute[end_of_db_compute_table];
 /*                     CONSTANT DECLARATION			                         	*/
 /******************************************************************************/
 /* Base Compute Array*/
-UWORD16 DB_ComputeRead(e_DB_COMPUTE Id);
-
 extern UWORD16 DB_Compute[end_of_db_compute_table];
 #endif
 

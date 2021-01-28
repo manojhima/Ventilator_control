@@ -32,12 +32,12 @@
 //   #endif
 //#endif
 #include "../GENERAL/typedef.h"
-//#include "../GENERAL/io_declare.h"
+//#include "../../inc/GENERAL/io_declare.h"
 #include "../GENERAL/enum.h"
 #include "../GENERAL/Structure.h"
 #include "../DISPLAY/Display_Data.h"
 #include "../MAIN/Main_Data.h"
-#include "DIS_FifoRead.h"
+#include "../DISPLAY/DIS_FifoRead.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

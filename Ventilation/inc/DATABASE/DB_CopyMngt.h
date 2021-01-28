@@ -27,7 +27,7 @@
 /******************************************************************************/
 
 /* Access to the config read value */
-//extern UWORD16 DB_ConfigRead(e_DB_CONFIG Id); //bhavya
+extern UWORD16 DB_ConfigRead(e_DB_CONFIG Id);
 
 /* Access to the config read value */
 extern UWORD16 DB_ControlRead(e_DB_CONTROL Id);
@@ -44,7 +44,8 @@ extern void DB_CurrentWrite(e_DB_ADJUST_CURRENT Id, UWORD16 Value);
 /* Access to the rise time compute function */
 extern void DB_RiseTimeCompute(UWORD16 Current_Mode);
 
-//extern UWORD16 DB_ConfigWrite(e_DB_CONFIG Id,UWORD16 Value); //bhavya
+extern UWORD16 DB_ConfigWrite(e_DB_CONFIG Id,
+										UWORD16 Value);
 
 extern void SEC_ResetAlarms(void);
 

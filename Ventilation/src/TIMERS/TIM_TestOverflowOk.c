@@ -29,10 +29,10 @@
 //#include "regf276e.h"
 //#endif
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../TIMERS/Timer_Data.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/TIMERS/Timer_Data.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

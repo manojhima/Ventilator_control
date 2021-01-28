@@ -24,20 +24,20 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../GENERAL/define.h"
-#include "DB_AlarmStatus.h"
-#include "DB_Control.h"
-#include "DB_Current.h"
-#include "DB_Rtc.h"
-#include "DB_Event.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../SECURITY/Security_Datas.h"
-#include "DB_Compute.h"
-#include "DB_CopyMngt.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/GENERAL/define.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE/DB_Event.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/SECURITY/Security_Datas.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_CopyMngt.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
@@ -450,5 +450,4 @@ void DB_CopyMngt(void)
         }
     }
     Previous_Mode = Current_Mode;
-
 } 

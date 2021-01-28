@@ -28,18 +28,18 @@
 //#else
 //#include "regf276e.h"
 //#endif
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/define.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Current.h"
-#include "../SYSTEM/System_Datas.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../SET_UP/SET_Actuator.h"
+#include "../../inc/GENERAL/define.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/SYSTEM/System_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/SET_UP/SET_Actuator.h"
 
 
 /******************************************************************************/
@@ -285,3 +285,5 @@ void SET_Actuator(void)
 	    CD_VANNE_FIO2_1 = 0;
 	} 
 }
+
+

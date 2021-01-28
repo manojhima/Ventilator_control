@@ -34,6 +34,8 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
 								<option id="gnu.c.compiler.option.include.paths.807850562" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/DATABASE}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/PRES_SETTINGS}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/CONFIG_SETTINGS}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/DRIVERS}&quot;"/>
@@ -50,7 +52,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/SYSTEM}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/DISPLAY}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/SET_UP}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/DATABASE}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/ACTUATOR}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/VENTILATION}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Ventilation/inc/TIMERS}&quot;"/>
@@ -115,6 +116,27 @@
 							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.452287547" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.2115623683">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.500827717" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.903729961" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1068095247.1305598921" name="/" resourcePath="Ventilation/src/PSV_SETTINGS">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.814709284" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.226062215.1887673213.1020698377" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.226062215.1887673213"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.278299267.1302817429.875833260" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.278299267.1302817429"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.478990476.963283523.1011538067" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.478990476.963283523"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.2112233915.1743813764.995879264" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.2112233915.1743813764"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.356993185" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1086886525">
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.968418487" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1179518365" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.692635343" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1422969479"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1881623052" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.919232152"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.501679685" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1243007399"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1125413317" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.1253946147"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1013488724" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.452287547">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1445138823" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1633082423" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>

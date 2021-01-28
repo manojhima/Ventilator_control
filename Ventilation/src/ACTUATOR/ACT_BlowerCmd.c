@@ -32,16 +32,16 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 	
-//#include "../GENERAL/io_declare.h"  // platform specific header
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "ACT_BlowerCmd.h"
-#include "../VENTILATION/Ventilation_Constants.h"
+//#include "../../inc/GENERAL/io_declare.h"  // platform specific header
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/ACTUATOR/ACT_BlowerCmd.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
 #define DECLARATION_VENTILATION_DATAS
-#include "../VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/
@@ -71,6 +71,14 @@ void ACT_BlowerCmd(SWORD32 Kp,
 	SWORD32 BlowerCommand = 0;
 	SWORD32 Prop = 0;
 	SWORD32 Error = 0;
+
+
+#ifndef TESTING
+MeasureSpeedBlower = 2025;
+MeasurePatientPressure = 2977;
+MeasureValvePressure = 2999;
+MeasureQinsp = 2001;
+#endif
 
 
 /*%C If control type is speed */
@@ -117,9 +125,7 @@ void ACT_BlowerCmd(SWORD32 Kp,
 /*%C for increasing Ki adjust sensibility */
 	VEN_IntegralBlower = VEN_IntegralBlower + (Ki * Error) / 1000;
 /*%C Integral blower saturation */
-	VEN_IntegralBlower = saturation(VEN_IntegralBlower,
-									cVEN_INTEGRAL_MIN,
-									cVEN_INTEGRAL_MAX);
+	VEN_IntegralBlower = saturation(VEN_IntegralBlower,cVEN_INTEGRAL_MIN,cVEN_INTEGRAL_MAX);
 
 /*%C Proportionnal + integral computing */
 	BlowerCommand = (Prop + VEN_IntegralBlower) / 10;

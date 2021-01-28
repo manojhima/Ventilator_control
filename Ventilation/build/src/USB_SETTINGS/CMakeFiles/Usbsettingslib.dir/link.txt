@@ -1,0 +1,2 @@
+/usr/bin/ar qc libUsbsettingslib.a  CMakeFiles/Usbsettingslib.dir/DB_IHM_Setting_Adjust_Usb.c.o CMakeFiles/Usbsettingslib.dir/DB_IHM_Setting_Adjust_Usb_Default.c.o CMakeFiles/Usbsettingslib.dir/DB_IHM_Setting_Adjust_Usb_Monitor_Transfer.c.o CMakeFiles/Usbsettingslib.dir/DB_IHM_Setting_Adjust_Usb_Trend_Transfer.c.o
+/usr/bin/ranlib libUsbsettingslib.a

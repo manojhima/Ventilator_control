@@ -74,7 +74,7 @@ typedef enum {
 #define BAT_CHARGE						1
 #define BAT_DISCHARGE					2
 
-#ifdef DECLARATION_POWERSUPPLY_BASE //commented this one in DB_PowerSupplyWrite //bhavya
+#ifdef DECLARATION_POWERSUPPLY_BASE
 /******************************************************************************/
 /*                     CONSTANT DECLARATION			                         */
 /******************************************************************************/
@@ -86,7 +86,6 @@ UWORD16 DB_powerSupply[end_of_db_powersupply_table];
 /*                     CONSTANT DECLARATION			                           */
 /******************************************************************************/
 /* Base Control array */
-UWORD16 DB_PowerSupplyRead(e_DB_POWERSUPPLY Id);
 extern UWORD16 DB_powerSupply[end_of_db_powersupply_table];
 #endif
 

@@ -31,18 +31,18 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Rtc.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "../VSIMV_SETTINGS/DB_IHM_Setting_Adjust_Vsimv_Mode_High_Vti.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/VSIMV_SETTINGS/DB_IHM_Setting_Adjust_Vsimv_Mode_High_Vti.h"
 
 /* locate database code to specific section */
-#include "../GENERAL/locate_database_code.h"
+#include "../../inc/GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                                FUNCTION BODY		                          	*/

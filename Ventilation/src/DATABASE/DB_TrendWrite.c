@@ -25,16 +25,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "DB_TrendWrite.h"
-
-UWORD16  EEP_DB_TREND[];
-
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE/DB_TrendWrite.h"
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/
 /******************************************************************************/
@@ -62,11 +58,10 @@ UWORD16 Result = FALSE;
 			TempValue = Value;
 			Result = TRUE;
 			}
-#if 0 //driver file //bhavya
+		
 /*%C 	Value writing in eeprom and ram						  								*/
 		DB_WriteDataInEepAndRam(&EEP_DB_TREND[Id],
 										TempValue);
-#endif
 	}
 
 return(Result);

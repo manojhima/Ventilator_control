@@ -25,14 +25,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Control.h"
-#include "../GENERAL/enum.h"
-#include "../VENTILATION/Ventilation_Compute_data.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "CMP_CalculAutoAdaptInsp.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/VENTILATION/Ventilation_Compute_data.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/COMPUTE/CMP_CalculAutoAdaptInsp.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

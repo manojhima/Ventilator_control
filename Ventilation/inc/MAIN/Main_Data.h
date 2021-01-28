@@ -24,8 +24,8 @@
 
 #define MAXIMUM_VENTILATION_NUMBER_OF_TASKS 32
 
-#include "typedef.h"
-#include "enum.h"
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
 #ifdef DECLARATION_MAIN_DATA
 	#ifndef MAIN_DATA_H
 	#define MAIN_DATA_H

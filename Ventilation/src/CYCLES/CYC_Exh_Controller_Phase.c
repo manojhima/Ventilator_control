@@ -24,14 +24,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Current.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "../VENTILATION/Ventilation_Cycles_Datas.h"
-#include "CYC_Exh_Controller_Phase.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/VENTILATION/Ventilation_Cycles_Datas.h"
+#include "../../inc/CYCLES/CYC_Exh_Controller_Phase.h"
 						 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

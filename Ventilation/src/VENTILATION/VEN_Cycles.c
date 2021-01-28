@@ -26,20 +26,20 @@
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Config.h"
-#include "../TIMERS/Timer_Data.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../VENTILATION/Ventilation_Cycles_Datas.h"
-#include "../VENTILATION/VEN_Cycles.h"
-#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/TIMERS/Timer_Data.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Cycles_Datas.h"
+#include "../../inc/VENTILATION/VEN_Cycles.h"
+#include "../../inc/VENTILATION/Ventilation_Compute_data.h"
 
 
 

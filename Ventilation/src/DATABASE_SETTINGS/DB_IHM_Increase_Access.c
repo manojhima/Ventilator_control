@@ -28,19 +28,19 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Rtc.h"
-#include "../DATABASE/DB_Usb.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Event.h"
-#include "DB_IhmAccessParaDataBase.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "DB_IHM_Increase_Access.h"
-#include "../DATABASE/DB_Current.h"
-//#include "../USB_SETTINGS/DB_IHM_Setting_Adjust_Usb.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE/DB_Usb.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Event.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IHM_Increase_Access.h"
+#include "../../inc/DATABASE/DB_Current.h"
+//#include "../../inc/USB_SETTINGS/DB_IHM_Setting_Adjust_Usb.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

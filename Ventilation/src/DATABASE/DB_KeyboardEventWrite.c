@@ -28,13 +28,13 @@
 /*                              INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
 	#define DECLARATION_EVENT_BASE
-#include "DB_KeyboardEvent.h"
-#include "DB_Control.h"
-#include "DB_Config.h"
-#include "../SYSTEM/KEY_Event.h"
+#include "../../inc/DATABASE/DB_KeyboardEvent.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/SYSTEM/KEY_Event.h"
 
 /******************************************************************************/
 /*                       FUNCTION BODY               	                        */

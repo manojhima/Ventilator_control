@@ -1,17 +1,17 @@
 Ventilation/src/DISPLAY/DIS_String.o: \
  ../Ventilation/src/DISPLAY/DIS_String.c \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Config.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY/DIS_String.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/typedef.h \
+ ../Ventilation/src/DISPLAY/../../inc/DATABASE/DB_Config.h \
+ ../Ventilation/src/DISPLAY/../../inc/DISPLAY/DIS_String.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/enum.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/Product.h
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DATABASE/DB_Config.h:
+../Ventilation/src/DISPLAY/../../inc/DATABASE/DB_Config.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY/DIS_String.h:
+../Ventilation/src/DISPLAY/../../inc/DISPLAY/DIS_String.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/Product.h:

@@ -24,13 +24,13 @@
 /******************************************************************************/
 /*                              INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/define.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../VENTILATION/Ventilation_Cycles_Datas.h"
-#include "CYC_TiLimitsCompute.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/define.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/VENTILATION/Ventilation_Cycles_Datas.h"
+#include "../../inc/CYCLES/CYC_TiLimitsCompute.h"
 
 
 /******************************************************************************/

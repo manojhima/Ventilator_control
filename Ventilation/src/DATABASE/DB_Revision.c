@@ -38,12 +38,12 @@
 #endif /* _BORLAND */
 
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "DB_Current.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "DB_Revision.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE/DB_Revision.h"
 
 
 /******************************************************************************/

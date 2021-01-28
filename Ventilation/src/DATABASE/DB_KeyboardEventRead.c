@@ -27,8 +27,8 @@
 /*                              INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "DB_KeyboardEvent.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DATABASE/DB_KeyboardEvent.h"
 
 /******************************************************************************/
 /*                       FUNCTION BODY               	                        */

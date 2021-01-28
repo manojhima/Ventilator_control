@@ -29,14 +29,14 @@
 //#else
 //#include "regf276e.h"
 //#endif
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
 //#include "../GENERAL/io_declare.h"
-#include "../MAIN/Main_Data.h"
-#include "../SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"
-#include "../SCHEDULER/Scheduler_Data.h"
-#include "../SCHEDULER/SCHED_Ventilation_Main.h"
+#include "../../inc/MAIN/Main_Data.h"
+#include "../../inc/SCHEDULER/SCHED_Ventilation_Scheduler_Config.h"
+#include "../../inc/SCHEDULER/Scheduler_Data.h"
+#include "../../inc/SCHEDULER/SCHED_Ventilation_Main.h"
 
 /************************************************************************/
 /*                             #DEFINE		                        		*/

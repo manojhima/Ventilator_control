@@ -33,7 +33,10 @@
 /*             EXTERNAL FUNCTION DECLARATION                    	            */
 /******************************************************************************/
 
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Compute.h"
 
+void CMP_AveragePressureComputing(void);
 extern void DB_ComputeWrite(e_DB_COMPUTE Id,
                             UWORD16 Value);
 

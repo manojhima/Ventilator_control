@@ -1,0 +1,1 @@
+/usr/bin/c++       -o cycles_test -lcycleslib ../../../lib/libgtest.a -lpthread 

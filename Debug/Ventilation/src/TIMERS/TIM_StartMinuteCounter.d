@@ -1,20 +1,20 @@
 Ventilation/src/TIMERS/TIM_StartMinuteCounter.o: \
  ../Ventilation/src/TIMERS/TIM_StartMinuteCounter.c \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Structure.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../TIMERS/Timer_Data.h
+ ../Ventilation/src/TIMERS/../../inc/GENERAL/typedef.h \
+ ../Ventilation/src/TIMERS/../../inc/GENERAL/enum.h \
+ ../Ventilation/src/TIMERS/../../inc/GENERAL/Product.h \
+ ../Ventilation/src/TIMERS/../../inc/GENERAL/Structure.h \
+ ../Ventilation/src/TIMERS/../../inc/GENERAL/../GENERAL/enum.h \
+ ../Ventilation/src/TIMERS/../../inc/TIMERS/Timer_Data.h
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
+../Ventilation/src/TIMERS/../../inc/GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h:
+../Ventilation/src/TIMERS/../../inc/GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h:
+../Ventilation/src/TIMERS/../../inc/GENERAL/Product.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Structure.h:
+../Ventilation/src/TIMERS/../../inc/GENERAL/Structure.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h:
+../Ventilation/src/TIMERS/../../inc/GENERAL/../GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../TIMERS/Timer_Data.h:
+../Ventilation/src/TIMERS/../../inc/TIMERS/Timer_Data.h:

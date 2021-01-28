@@ -1,14 +1,14 @@
 Ventilation/src/DISPLAY/DIS_Backlight.o: \
  ../Ventilation/src/DISPLAY/DIS_Backlight.c \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY/DIS_Backlight.h
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/typedef.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/enum.h \
+ ../Ventilation/src/DISPLAY/../../inc/GENERAL/Product.h \
+ ../Ventilation/src/DISPLAY/../../inc/DISPLAY/DIS_Backlight.h
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h:
+../Ventilation/src/DISPLAY/../../inc/GENERAL/Product.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY/DIS_Backlight.h:
+../Ventilation/src/DISPLAY/../../inc/DISPLAY/DIS_Backlight.h:

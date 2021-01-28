@@ -24,19 +24,19 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Rtc.h"
-#include "../DATABASE/DB_Config.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../VENTILATION/VEN_Compute.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/VEN_Compute.h"
 
 #define DECLARATION_VENTILATION_COMPUTE_DATA_H
-#include "../VENTILATION/Ventilation_Compute_data.h"
+#include "../../inc/VENTILATION/Ventilation_Compute_data.h"
 
-//#include "../GENERAL/io_declare.h"
+//#include "../../inc/GENERAL/io_declare.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE/DB_Usb.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Usb.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 extern void DB_UsbWrite(e_DB_USB Id, UWORD16 Value);
 extern UWORD16 DB_UsbRead(e_DB_USB Id);

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/actutor_test.dir/main.cpp.o CMakeFiles/actutor_test.dir/test_BrakePower.cpp.o  -o actutor_test -lactutorlib ../../../lib/libgtest.a -lpthread 

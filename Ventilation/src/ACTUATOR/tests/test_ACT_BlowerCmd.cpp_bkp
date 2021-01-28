@@ -1,0 +1,17 @@
+#include "../../../lib/googletest-master/googletest/include/gtest/gtest.h"
+#include "../../../inc/ACTUATOR/ACT_BlowerCmd.h"
+#include "../../../inc/GENERAL/enum.h"
+#define TESTING
+
+TEST(ACT_BlowerCmd_test, test1){
+	Assert::AreEqual(2897, ACT_BlowerCmd (1000,50,3000,CONTROL_SPEED) );  
+        EXPECT_EQ(2807, ACT_BlowerCmd (80000,4000,3000,CONTROL_PRESSURE) );
+        EXPECT_EQ(2992, ACT_BlowerCmd (80000,4000,3000,CONTROL_PRESSURE_VALVE) );
+        EXPECT_EQ(903,  ACT_BlowerCmd (20000,1000,3000,CONTROL_FLOW) );
+}
+TEST(testing, test2){
+
+        EXPECT_EQ(0,0);
+}
+
+

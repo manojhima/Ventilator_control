@@ -1,14 +1,14 @@
 Ventilation/src/SET_UP/SET_TechnicalAlarms.o: \
  ../Ventilation/src/SET_UP/SET_TechnicalAlarms.c \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SET_UP/SET_TechnicalAlarms.h
+ ../Ventilation/src/SET_UP/../../inc/GENERAL/typedef.h \
+ ../Ventilation/src/SET_UP/../../inc/GENERAL/enum.h \
+ ../Ventilation/src/SET_UP/../../inc/GENERAL/Product.h \
+ ../Ventilation/src/SET_UP/../../inc/SET_UP/SET_TechnicalAlarms.h
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
+../Ventilation/src/SET_UP/../../inc/GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/enum.h:
+../Ventilation/src/SET_UP/../../inc/GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/Product.h:
+../Ventilation/src/SET_UP/../../inc/GENERAL/Product.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/SET_UP/SET_TechnicalAlarms.h:
+../Ventilation/src/SET_UP/../../inc/SET_UP/SET_TechnicalAlarms.h:

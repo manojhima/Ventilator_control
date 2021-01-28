@@ -23,11 +23,11 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../MAIN/Main_Data.h"
-#include "../SCHEDULER/SCHED_Setup_Main.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/MAIN/Main_Data.h"
+#include "../../inc/SCHEDULER/SCHED_Setup_Main.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

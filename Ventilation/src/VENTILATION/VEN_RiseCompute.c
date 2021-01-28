@@ -38,8 +38,8 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../VENTILATION/VEN_RiseCompute.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/VENTILATION/VEN_RiseCompute.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

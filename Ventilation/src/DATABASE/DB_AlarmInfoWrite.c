@@ -24,9 +24,9 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "DB_AlarmStatus.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/
 /******************************************************************************/

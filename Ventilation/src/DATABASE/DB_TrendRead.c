@@ -24,16 +24,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
 
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                          */
 /******************************************************************************/
-UWORD16  EEP_DB_TREND[];
-
-
 UWORD16 DB_TrendRead(e_DB_Trend Id)
 {
 /*%C Returns the trend array element value function of Id                   */

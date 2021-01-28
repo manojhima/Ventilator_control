@@ -25,16 +25,16 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "DB_Control.h"
-#include "DB_Event.h"
-#include "DB_Rtc.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "DB_Current.h"
-#include "DB_RiseTimeCompute.h"
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Event.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_RiseTimeCompute.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

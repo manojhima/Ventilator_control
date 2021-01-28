@@ -24,11 +24,11 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DISPLAY/Display_Data.h"
-#include "../MAIN/Main_Data.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DISPLAY/Display_Data.h"
+#include "../../inc/MAIN/Main_Data.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

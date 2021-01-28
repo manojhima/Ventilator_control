@@ -27,14 +27,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Control.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../VENTILATION/Ventilation_Cycles_Datas.h"
-#include "CYC_TriggerEDetection.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Cycles_Datas.h"
+#include "../../inc/CYCLES/CYC_TriggerEDetection.h"
 
 
 /******************************************************************************/

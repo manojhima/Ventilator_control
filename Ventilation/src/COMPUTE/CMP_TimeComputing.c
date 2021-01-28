@@ -29,11 +29,11 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "CMP_TimeComputing.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/COMPUTE/CMP_TimeComputing.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

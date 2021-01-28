@@ -1,9 +1,9 @@
 Ventilation/src/MAIN/MAIN_Interfaces_Init.o: \
  ../Ventilation/src/MAIN/MAIN_Interfaces_Init.c \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/Main_Data.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/Product.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/../GENERAL/enum.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/../GENERAL/Product.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/io_stubs.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h \
@@ -28,11 +28,11 @@ Ventilation/src/MAIN/MAIN_Interfaces_Init.o: \
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/Main_Data.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/../GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/Product.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/MAIN/../GENERAL/Product.h:
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
 

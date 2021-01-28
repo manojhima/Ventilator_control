@@ -26,14 +26,14 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Config.h"
-#include "../VSIMV_SETTINGS/DB_IHM_Write_Adjust_Vsimv_Mode.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/VSIMV_SETTINGS/DB_IHM_Write_Adjust_Vsimv_Mode.h"
 
 /* locate database code to specific section */
-#include "../GENERAL/locate_database_code.h"
+#include "../../inc/GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

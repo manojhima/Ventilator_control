@@ -28,13 +28,13 @@
 //#else
 //#include "regf276e.h"
 //#endif
-#include "../GENERAL/io_stubs.h"
+#include "../../inc/GENERAL/io_stubs.h"
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../TIMERS/Timer_Data.h"
-#include "../TIMERS/TIM_Temporize.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/TIMERS/Timer_Data.h"
+#include "../../inc/TIMERS/TIM_Temporize.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

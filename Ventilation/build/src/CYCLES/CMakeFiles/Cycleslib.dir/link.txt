@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCycleslib.a  CMakeFiles/Cycleslib.dir/CYC_CpapCyclesMngt.c.o CMakeFiles/Cycleslib.dir/CYC_Exh_Controller_Phase.c.o CMakeFiles/Cycleslib.dir/CYC_Insp_Controller_Phase.c.o CMakeFiles/Cycleslib.dir/CYC_Pres_Vol_CyclesMngt.c.o CMakeFiles/Cycleslib.dir/CYC_Psvt_CyclesMngt.c.o CMakeFiles/Cycleslib.dir/CYC_TiLimitsCompute.c.o CMakeFiles/Cycleslib.dir/CYC_TriggerEDetection.c.o CMakeFiles/Cycleslib.dir/CYC_TriggerIDetection.c.o
+/usr/bin/ranlib libCycleslib.a

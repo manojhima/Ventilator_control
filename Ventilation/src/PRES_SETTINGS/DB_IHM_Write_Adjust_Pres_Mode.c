@@ -26,12 +26,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Current.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Current.h"
 //#include "DB_IHM_Write_Adjust_Pres_Mode.h"
 
 /* locate database code to specific section */
-#include "../GENERAL/locate_database_code.h"
+#include "../../inc/GENERAL/locate_database_code.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

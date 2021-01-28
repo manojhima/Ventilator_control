@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/src/GENERAL/Average.c
+../../inc/GENERAL/typedef.h
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h
+
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/src/GENERAL/Saturation.c
+../../inc/GENERAL/typedef.h
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h
+

@@ -25,13 +25,13 @@
 /*                              INCLUDE FILES		                           */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Current.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../VENTILATION/Ventilation_Cycles_Datas.h"
-#include "CYC_Pres_Vol_CyclesMngt.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Cycles_Datas.h"
+#include "../../inc/CYCLES/CYC_Pres_Vol_CyclesMngt.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

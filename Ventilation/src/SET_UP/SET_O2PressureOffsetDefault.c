@@ -24,12 +24,12 @@
 /******************************************************************************/
 /*                                INCLUDE FILES	                              */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../DATABASE/DB_Event.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "../SECURITY/Security_Datas.h"
-#include "SET_O2PressureOffsetDefault.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DATABASE/DB_Event.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/SECURITY/Security_Datas.h"
+#include "../../inc/SET_UP/SET_O2PressureOffsetDefault.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -6,6 +6,7 @@
 C_SRCS += \
 ../Ventilation/src/DATABASE/DB_AlarmInfoRead.c \
 ../Ventilation/src/DATABASE/DB_AlarmInfoWrite.c \
+../Ventilation/src/DATABASE/DB_AlarmIsActive.c \
 ../Ventilation/src/DATABASE/DB_AlarmStatusRead.c \
 ../Ventilation/src/DATABASE/DB_AlarmStatusWrite.c \
 ../Ventilation/src/DATABASE/DB_ComputeBreathTimingRatios.c \
@@ -19,22 +20,29 @@ C_SRCS += \
 ../Ventilation/src/DATABASE/DB_CurrentRead.c \
 ../Ventilation/src/DATABASE/DB_CurrentWrite.c \
 ../Ventilation/src/DATABASE/DB_EventMngt.c \
+../Ventilation/src/DATABASE/DB_IHM_Setting_Rtc_Day.c \
+../Ventilation/src/DATABASE/DB_InitializeTables.c \
 ../Ventilation/src/DATABASE/DB_KeyboardEventRead.c \
 ../Ventilation/src/DATABASE/DB_KeyboardEventWrite.c \
+../Ventilation/src/DATABASE/DB_LoadAndCheckEepromIntoRam.c \
 ../Ventilation/src/DATABASE/DB_MeasurementWrite.c \
 ../Ventilation/src/DATABASE/DB_RTCRead.c \
 ../Ventilation/src/DATABASE/DB_RTCWrite.c \
 ../Ventilation/src/DATABASE/DB_Revision.c \
 ../Ventilation/src/DATABASE/DB_RiseTimeCompute.c \
+../Ventilation/src/DATABASE/DB_SoftwareVersionTest.c \
 ../Ventilation/src/DATABASE/DB_StartInitDb.c \
 ../Ventilation/src/DATABASE/DB_TrendRead.c \
 ../Ventilation/src/DATABASE/DB_TrendWrite.c \
 ../Ventilation/src/DATABASE/DB_UsbRead.c \
+../Ventilation/src/DATABASE/DB_VersionRead.c \
+../Ventilation/src/DATABASE/DB_VersionWrite.c \
 ../Ventilation/src/DATABASE/DB_WriteDataInEepAndRam.c 
 
 OBJS += \
 ./Ventilation/src/DATABASE/DB_AlarmInfoRead.o \
 ./Ventilation/src/DATABASE/DB_AlarmInfoWrite.o \
+./Ventilation/src/DATABASE/DB_AlarmIsActive.o \
 ./Ventilation/src/DATABASE/DB_AlarmStatusRead.o \
 ./Ventilation/src/DATABASE/DB_AlarmStatusWrite.o \
 ./Ventilation/src/DATABASE/DB_ComputeBreathTimingRatios.o \
@@ -48,22 +56,29 @@ OBJS += \
 ./Ventilation/src/DATABASE/DB_CurrentRead.o \
 ./Ventilation/src/DATABASE/DB_CurrentWrite.o \
 ./Ventilation/src/DATABASE/DB_EventMngt.o \
+./Ventilation/src/DATABASE/DB_IHM_Setting_Rtc_Day.o \
+./Ventilation/src/DATABASE/DB_InitializeTables.o \
 ./Ventilation/src/DATABASE/DB_KeyboardEventRead.o \
 ./Ventilation/src/DATABASE/DB_KeyboardEventWrite.o \
+./Ventilation/src/DATABASE/DB_LoadAndCheckEepromIntoRam.o \
 ./Ventilation/src/DATABASE/DB_MeasurementWrite.o \
 ./Ventilation/src/DATABASE/DB_RTCRead.o \
 ./Ventilation/src/DATABASE/DB_RTCWrite.o \
 ./Ventilation/src/DATABASE/DB_Revision.o \
 ./Ventilation/src/DATABASE/DB_RiseTimeCompute.o \
+./Ventilation/src/DATABASE/DB_SoftwareVersionTest.o \
 ./Ventilation/src/DATABASE/DB_StartInitDb.o \
 ./Ventilation/src/DATABASE/DB_TrendRead.o \
 ./Ventilation/src/DATABASE/DB_TrendWrite.o \
 ./Ventilation/src/DATABASE/DB_UsbRead.o \
+./Ventilation/src/DATABASE/DB_VersionRead.o \
+./Ventilation/src/DATABASE/DB_VersionWrite.o \
 ./Ventilation/src/DATABASE/DB_WriteDataInEepAndRam.o 
 
 C_DEPS += \
 ./Ventilation/src/DATABASE/DB_AlarmInfoRead.d \
 ./Ventilation/src/DATABASE/DB_AlarmInfoWrite.d \
+./Ventilation/src/DATABASE/DB_AlarmIsActive.d \
 ./Ventilation/src/DATABASE/DB_AlarmStatusRead.d \
 ./Ventilation/src/DATABASE/DB_AlarmStatusWrite.d \
 ./Ventilation/src/DATABASE/DB_ComputeBreathTimingRatios.d \
@@ -77,17 +92,23 @@ C_DEPS += \
 ./Ventilation/src/DATABASE/DB_CurrentRead.d \
 ./Ventilation/src/DATABASE/DB_CurrentWrite.d \
 ./Ventilation/src/DATABASE/DB_EventMngt.d \
+./Ventilation/src/DATABASE/DB_IHM_Setting_Rtc_Day.d \
+./Ventilation/src/DATABASE/DB_InitializeTables.d \
 ./Ventilation/src/DATABASE/DB_KeyboardEventRead.d \
 ./Ventilation/src/DATABASE/DB_KeyboardEventWrite.d \
+./Ventilation/src/DATABASE/DB_LoadAndCheckEepromIntoRam.d \
 ./Ventilation/src/DATABASE/DB_MeasurementWrite.d \
 ./Ventilation/src/DATABASE/DB_RTCRead.d \
 ./Ventilation/src/DATABASE/DB_RTCWrite.d \
 ./Ventilation/src/DATABASE/DB_Revision.d \
 ./Ventilation/src/DATABASE/DB_RiseTimeCompute.d \
+./Ventilation/src/DATABASE/DB_SoftwareVersionTest.d \
 ./Ventilation/src/DATABASE/DB_StartInitDb.d \
 ./Ventilation/src/DATABASE/DB_TrendRead.d \
 ./Ventilation/src/DATABASE/DB_TrendWrite.d \
 ./Ventilation/src/DATABASE/DB_UsbRead.d \
+./Ventilation/src/DATABASE/DB_VersionRead.d \
+./Ventilation/src/DATABASE/DB_VersionWrite.d \
 ./Ventilation/src/DATABASE/DB_WriteDataInEepAndRam.d 
 
 

@@ -24,8 +24,8 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "DIS_Symbol.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DISPLAY/DIS_Symbol.h"
 			 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

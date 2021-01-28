@@ -34,13 +34,13 @@
 //		#include "regf276e.h"
 //	#endif
 //#endif
-//#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "ACT_ValveCmd.h"
+//#include "../../inc/GENERAL/io_declare.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/ACTUATOR/ACT_ValveCmd.h"
 
 
 /******************************************************************************/

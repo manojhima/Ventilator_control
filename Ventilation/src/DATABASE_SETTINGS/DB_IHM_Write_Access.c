@@ -29,20 +29,20 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Rtc.h"
-#include "../DRIVERS/DRV_VarEeprom.h"
-#include "../DATABASE/DB_Event.h"
-#include "../DATABASE/DB_AlarmStatus.h"
-#include "DB_IHM_Write_Access.h"
-#include "DB_IhmAccessParaDataBase.h"
-#include "../DATABASE/DB_KeyboardEvent.h"
-#include "../DATABASE/DB_PowerSupply.h"
-#include "../DATABASE/DB_Usb.h"
-#include "../DATABASE/DB_Compute.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Rtc.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/DATABASE/DB_Event.h"
+#include "../../inc/DATABASE/DB_AlarmStatus.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IHM_Write_Access.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE/DB_KeyboardEvent.h"
+#include "../../inc/DATABASE/DB_PowerSupply.h"
+#include "../../inc/DATABASE/DB_Usb.h"
+#include "../../inc/DATABASE/DB_Compute.h"
 
 
 /******************************************************************************/

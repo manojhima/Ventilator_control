@@ -25,6 +25,9 @@
 /*                     ENUM DECLARATION				                         	*/
 /******************************************************************************/
 /* Alarm base */
+#include "../GENERAL/typedef.h"
+#include "../GENERAL/enum.h"
+
 typedef enum {
 	Mark_Begin_Alarm=0,
 	ALARM_DISCONNECTION_U16,

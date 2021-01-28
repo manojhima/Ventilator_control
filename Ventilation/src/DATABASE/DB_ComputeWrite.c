@@ -25,13 +25,13 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/Structure.h"
-//#include "../DRIVERS/DRV_VarEeprom.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/Structure.h"
+#include "../../inc/DRIVERS/DRV_VarEeprom.h"
 #define DECLARATION_COMPUTE_BASE
-#include "../DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
-#include "DB_Compute.h"
+#include "../../inc/DATABASE_SETTINGS/DB_IhmAccessParaDataBase.h"
+#include "../../inc/DATABASE/DB_Compute.h"
 /******************************************************************************/
 /*                     EXTERNAL FUNCTION DECLARATION                         	*/
 /******************************************************************************/

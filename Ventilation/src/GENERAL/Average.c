@@ -28,7 +28,7 @@
 //#ifndef _TASKING
 //#include <intrins.h>
 //#endif
-#include "typedef.h"
+#include "../../inc/GENERAL/typedef.h"
 
 
 /******************************************************************************/

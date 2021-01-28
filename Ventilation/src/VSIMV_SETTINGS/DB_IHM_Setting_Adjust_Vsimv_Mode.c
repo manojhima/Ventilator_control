@@ -26,12 +26,12 @@
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/
 
-#include "../GENERAL/typedef.h"
-#include "../DATABASE/DB_Current.h" //MODIFIED BY SUDHEER
-#include "../VSIMV_SETTINGS/DB_IHM_Setting_Adjust_Vsimv_Mode.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/DATABASE/DB_Current.h" //MODIFIED BY SUDHEER
+#include "../../inc/VSIMV_SETTINGS/DB_IHM_Setting_Adjust_Vsimv_Mode.h"
 
 /* locate database code to specific section */
-#include "../GENERAL/locate_database_code.h"
+#include "../../inc/GENERAL/locate_database_code.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

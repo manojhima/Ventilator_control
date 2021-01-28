@@ -25,15 +25,15 @@
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
 //#include "../GENERAL/io_declare.h"
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
-#include "../GENERAL/define.h"
-#include "../VENTILATION/Ventilation_Constants.h"
-#include "../DATABASE/DB_Control.h"
-#include "../DATABASE/DB_Config.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../DATABASE/DB_Current.h"
-#include "CMP_O2Consigne.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
+#include "../../inc/GENERAL/define.h"
+#include "../../inc/VENTILATION/Ventilation_Constants.h"
+#include "../../inc/DATABASE/DB_Control.h"
+#include "../../inc/DATABASE/DB_Config.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/COMPUTE/CMP_O2Consigne.h"
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

@@ -24,14 +24,14 @@
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
-#include "../GENERAL/typedef.h"
-#include "../GENERAL/enum.h"
+#include "../../inc/GENERAL/typedef.h"
+#include "../../inc/GENERAL/enum.h"
 #include "math.h"
-#include "../DATABASE/DB_Current.h"
-#include "../DATABASE/DB_Compute.h"
-#include "../VENTILATION/Ventilation_Datas.h"
-#include "../VENTILATION/Ventilation_Compute_data.h"
-#include "CMP_InspPlatComputings.h"
+#include "../../inc/DATABASE/DB_Current.h"
+#include "../../inc/DATABASE/DB_Compute.h"
+#include "../../inc/VENTILATION/Ventilation_Datas.h"
+#include "../../inc/VENTILATION/Ventilation_Compute_data.h"
+#include "../../inc/COMPUTE/CMP_InspPlatComputings.h"
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */
 /******************************************************************************/

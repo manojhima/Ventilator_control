@@ -30,6 +30,11 @@
 /******************************************************************************/
 
 /* Access to the config write value */
+#include "../GENERAL/typedef.h"
+#include "../DATABASE/DB_Control.h"
+#include "../DATABASE/DB_Config.h"
+UWORD16 DB_IHM_Setting_Config_Adjust_High_Fio2(UWORD16 *Value, UWORD16 Id);
+
 extern void DB_ControlWrite(e_DB_CONTROL Id,
                             UWORD16 Value);
 extern UWORD16 DB_ControlRead(e_DB_CONTROL Id);

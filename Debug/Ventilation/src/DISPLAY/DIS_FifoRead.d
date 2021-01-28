@@ -7,9 +7,9 @@ Ventilation/src/DISPLAY/DIS_FifoRead.o: \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/../GENERAL/enum.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/Display_Data.h \
  /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/Main_Data.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h \
- /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY/DIS_FifoRead.h
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/../GENERAL/typedef.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/../GENERAL/enum.h \
+ /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/DIS_FifoRead.h
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../GENERAL/typedef.h:
 
@@ -25,8 +25,8 @@ Ventilation/src/DISPLAY/DIS_FifoRead.o: \
 
 /home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/Main_Data.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/typedef.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/../GENERAL/typedef.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/enum.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../MAIN/../GENERAL/enum.h:
 
-/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/DISPLAY/DIS_FifoRead.h:
+/home/bhavya/Main_WS/Ventilation_Maintest/Ventilation/inc/GENERAL/../DISPLAY/DIS_FifoRead.h:
