@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+LOW VTI
+the software shall record this event when the LOW VTI alarm is detected
+
+SFSYSTEV3.14
+END OF LOW VTI
+the software shall record this event when the LOW VTI alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

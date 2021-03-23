@@ -36,6 +36,33 @@
 #include "System_Datas.h"
 #include "SYS_Counters.h"
 
+/*
+PATIENT COUNTER : Patient ventilation counter displayed in SET UP MENU.
+1) SFSYSTSETUP2.2
+PATIENT COUNTER
+when the VALIDATION KEY is SHORT PRESS on the PATIENT COUNTER field, the cursor
+must go on the field "Reset Counter". To reset the PATIENT COUNTER the user must first make
+a SHORT PRESS on VALIDATION KEY then press on UP KEY to change the display from "OFF"
+to "YES" and finally make a SHORT PRESS on VALIDATION KEY to reset the counter.
+When the PATIENT COUNTER is reset, a long beep must be triggered.
+
+2)SFSYSTEV1.21
+PATIENT COUNTER RESET
+The software shall record the PATIENT COUNTER RESET
+
+3)SFSYSTUSB2.8
+TRANSFER MACHINE COUNTER
+
+4)SFSYSTCOMDP325.2.1
+Machine counter
+Offset (byte): 0
+Format: 2*8 bits
+Data: Machine counter
+Range: 0 to 65535
+Unit: h
+*/
+
+
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

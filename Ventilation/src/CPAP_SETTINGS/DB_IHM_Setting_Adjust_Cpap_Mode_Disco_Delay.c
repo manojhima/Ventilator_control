@@ -10,6 +10,23 @@
 
 /*----------------------------------------------------------------------------*/
 
+/*
+SFSYSTSETUP3.9
+Disconnection delay
+The software must allow the user to set a disconnection delay.
+
+SFSYSTEV2.33
+DISCONNECTION DELAY
+the software shall record this event when the DISCONNECTION DELAY is set
+
+SFSYSTCOMDP93.2.48
+Disconnection delay
+Offset (byte): 58
+Format: 8 bits
+Data: Disconnection delay
+Range: 5 to 62
+Unit: s
+*/
 
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function controls the limits		*/

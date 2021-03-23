@@ -27,6 +27,42 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET2.8
+HIGH PIP
+Unit: cmH2O, mbar, hPa
+Min Value: 12
+Max Value: 90
+List of Values: N.A.
+Step: 1
+Default Value: 40
+Links: LOW PIP <= HIGH PIP – 8
+PEEP + 10 <= HIGH PIP
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTSET5.14
+HIGH PIP
+Unit: cmH2O, mbar, hPa
+Min Value: 12
+Max Value: 90
+List of Values: N.A.
+Step: 1
+Default Value: 40
+Links: in relative pressure:
+P SUPPORT + PEEP <= HIGH PIP - 2
+in absolute pressure:
+P SUPPORT <= HIGH PIP - 2
+in both:
+LOW PIP <= HIGH PIP - 8
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV2.22
+High PIP
+the software shall record this event when a new High PIP is set
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

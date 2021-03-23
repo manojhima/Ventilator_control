@@ -9,7 +9,81 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+SFSYSTAL4
+HIGH VTI
+Detection Conditions: when VTI > HIGH VTI
+Validation Delay: 3 consecutive cycles
+Cancel Conditions: Auto + DISCONNECTION alarm on
+Priority: High priority
+Audio Pause: yes
+Alarm Pause: No
+Modes: PRES A/C; PSV; PRES SIMV; CPAP
+Actions: Events HIGH VTI + END OF VTI
+Resetconditions: ventilation change; Ventilation std-by
+Replaceventifpersistmessage: No
+Circuit: all
 
+SFSYSTSET3.8
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: HIGH VTI >= LOW VTI + 20
+High Vti >= Vt target + 10
+Auto-adjustement: N.A.
+Comments: OFF is available upside
+OFF = 3000 output value = 3000
+
+SFSYSTSET4.11
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: HIGH VTI >= LOW VTI + 20
+High Vti >= Vt target + 10
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+OFF (=3000) output value = 3000
+
+SFSYSTSET6.13
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: HIGH VTI >= LOW VTI + 20
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+
+SFSYSTSET31.4
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: LOW VTI <= HIGH VTI - 20
+Auto-adjustement: N.A.
+Comments: OFF is reached upside
+OFF (=3000) output value = 3000
+
+SFSYSTEV2.16
+High VTI
+the software shall record this event when a new High VTI is set
+
+SFSYSTSET31
+CPAP settings
+*/
 
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function writes the            	*/

@@ -26,7 +26,25 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTCOMDP93.2.29
+Vm measure
+Offset (byte): 45
+46
+Format: 2*8 bits
+Data: Vm
+Range: 0 to 999
+Unit: 10-1 l/min
 
+SFSYSTCOMDP303.2.11
+Vm measure
+Offset (byte): 14
+15
+Format: 2*8 bits
+Data: Vm
+Range: 0 to 999
+Unit: 10-1 l/min
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

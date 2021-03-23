@@ -21,7 +21,11 @@
 /*%IO Input/Output :      NONE                                                */
 /*%O  Output Parameter :  NONE                                                */
 /******************************************************************************/
-
+/*
+SFSYST23.1
+the software must display (sounds and leds) the highest priority level alarm when several alarms
+are active.
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

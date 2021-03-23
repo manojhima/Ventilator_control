@@ -23,7 +23,21 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTEV2.3
+Rise Time
+the software shall record this event when a new Rise Time is set
 
+SFSYSTSET4.3
+RISE TIME
+Unit: N.A.
+Min Value: 1
+Max Value: 4
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: N.A.
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

@@ -23,7 +23,11 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTEV2.5
+Apnea Time
+the software shall record this event when a new Apnea Time is set
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

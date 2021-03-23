@@ -9,7 +9,68 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+1) SFSYSTAL5
+LOW VTI
+Detection Conditions: when VTI < LOW VTI
+Validation Delay: 3 consecutive cycles
+Cancel Conditions: Auto + DISCONNECTION alarm on
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: No
+Modes: PRES A/C; PSV; PRES SIMV; CPAP
+Actions: Events LOW VTI + END OF LOW VTI
+Resetconditions: ventilation change; Ventilation std-by
+Replaceventifpersistmessage: No
+Circuit: all
 
+2) SFSYSTSET3.7
+LOW VTI
+Unit: ml
+Min Value: 30
+Max Value: 2000
+List of Values: N.A.
+Step: 10
+Default Value: 300
+Links: LOW VTI <= HIGH VTI - 20
+Low Vti <= Vt target - 10
+Auto-adjustement: N.A.
+Comments: OFF is available downside. OFF(=30) output value = 30
+
+3) SFSYSTSET6.12
+LOW VTI
+Unit: ml
+Min Value: 30
+Max Value: 2000
+List of Values: N.A.
+Step: 10
+Default Value: 300
+Links: LOW VTI <= HIGH VTI - 20
+Auto-adjustement: N.A.
+Comments: OFF is available by the DOWN KEY
+
+4) SFSYSTSET31.3
+LOW VTI
+Unit: ml
+Min Value: 30
+Max Value: 2000
+List of Values: N.A.
+Step: 10
+Default Value: 300
+Links: LOW VTI <= HIGH VTI - 20
+Auto-adjustement: N.A.
+Comments: OFF is reached downside
+OFF (=30) output value = 30
+
+5) SFSYSTEV2.15
+Low VTI
+the software shall record this event when a new Low VTI is set
+
+6) SFSYSTEV3.13
+LOW VTI
+the software shall record this event when the LOW VTI alarm is detected.
+
+*/
 
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function controls the limits		*/

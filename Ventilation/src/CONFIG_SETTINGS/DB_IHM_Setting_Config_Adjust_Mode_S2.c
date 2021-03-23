@@ -9,7 +9,26 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+1) SFSYSTHMI10.2
+When VALIDATION KEY is SHORT PRESS on a selected new mode in stand by mode, the
+software must display the new mode settings
 
+2) SFSYSTHMI10.5
+the software shall record the new mode settings and display the running mode settings if there is
+no key action before 14 s
+
+3) SFSYSTHMI10.6
+the software must display and activate the new mode settings, if the Accept mode is set to Yes
+
+4) SFSYSTHMI10.7
+If a valve is detected, only Vol control, Pres Control, PSV, PSIMV and VSIMV modes are
+available
+
+5) SFSYSTHMI10.8
+If no valve is detected, only CPAP, Pres Control and PSV modes are available
+
+*/
 
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function controls the limits		*/

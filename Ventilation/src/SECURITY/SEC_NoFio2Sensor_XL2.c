@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RA0104                                                      */
+/* Project Nï¿½  :  RA0104                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTEV3.134
+NO FiO2 SENSOR
+the software shall record this event when the NO FiO2 SENSOR alarm is detected
+SFSYSTEV3.135
+END OF NO FiO2 SENSOR
+the software shall record this event when the NO FiO2 SENSOR alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

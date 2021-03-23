@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSchedulerlib.a  CMakeFiles/Schedulerlib.dir/SCHED_Setup_entry.c.o CMakeFiles/Schedulerlib.dir/SCHED_Setup_Main.c.o CMakeFiles/Schedulerlib.dir/SCHED_Ventilation_entry.c.o CMakeFiles/Schedulerlib.dir/SCHED_Ventilation_Main.c.o
+/usr/bin/ranlib libSchedulerlib.a

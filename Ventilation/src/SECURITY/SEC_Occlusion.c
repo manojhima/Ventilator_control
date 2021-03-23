@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.93
+OCCLUSION
+the software shall record when the OCCLUSION alarm is detected
+SFSYSTEV3.94
+END OF OCCLUSION
+the software must detect when the OCCLUSION alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/

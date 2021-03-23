@@ -21,7 +21,22 @@
 /*%IO Input/Output :    NONE	                                              	*/
 /*%O Output Parameter : UWORD16  TriggerEDetected      								*/
 /******************************************************************************/
+/*
+SFSYSTCOMDP93.6.5
+Exhalation trigger
+Offset (byte): 70
+Format: 8 bits
+Data: Exhalation trigger setting
+Range: 5 to 95
+Unit: %
 
+SFSYSTCOMDP93.7.5
+Exhalation trigger
+Offset (byte): 70
+Format: 8 bits
+Data: Exhalation trigger setting
+Range: 5 to 95
+Unit: %
 
 											  
 /******************************************************************************/

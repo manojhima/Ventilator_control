@@ -30,7 +30,10 @@
 // DO NOT delete an enumerator, replace it with COMPUTED_USED_XX_U16
 // instead. This allows PB VST to maintain backwards compatibility with
 // older vent software.
-//
+
+#include"../GENERAL/enum.h"
+#include"../GENERAL/typedef.h"
+
 typedef enum
 {
 	MEASURE_VALVE_PRESSURE_S16=0,
@@ -135,5 +138,7 @@ UWORD16 DB_Compute[end_of_db_compute_table];
 /* Base Compute Array*/
 extern UWORD16 DB_Compute[end_of_db_compute_table];
 #endif
+void DB_ComputeWrite(e_DB_COMPUTE Id, UWORD16 Value);
+UWORD16 DB_ComputeRead(e_DB_COMPUTE Id);
 
 #endif

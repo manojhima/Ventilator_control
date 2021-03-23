@@ -21,6 +21,17 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+1) SFSYSTCOMDP14.2.54
+Absolute or relative pressure
+Offset (byte): 108
+109
+Format: 16 bits
+Data: pressure support relative
+Range: 0 = absolute pressure
+1 = relative pressure
+Unit: NA
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES                               */

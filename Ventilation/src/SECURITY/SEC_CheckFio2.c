@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,34 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTAL93
+CHECK FIO2
+Detection Conditions: FIO2 MEASURE < 18 %
+and
+FiO2 CALIBRATION = YES
+Validation Delay: 15s
+Cancel Conditions: FIO2 MEASURE >= 18 %
+or
+FiO2 CALIBRATION <> YES
+Priority: High priority
+Audio Pause: yes
+Alarm Pause: No
+Modes: All
+Actions: Event CHECK FIO2 + END OF CHECK FIO2
+Resetconditions: ventilation change; Ventilation std-by
+Replaceventifpersistmessage: No
+Circuit: all
+
+SFSYSTEV3.154
+CHECK FIO2
+the software shall record this event when the CHECK FIO2 alarm is detected
+
+SFSYSTEV3.155
+END OF CHECK FIO2
+the software shall record this event when the CHECK FIO2 alarm is cancelled
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

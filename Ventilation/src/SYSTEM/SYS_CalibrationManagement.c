@@ -20,6 +20,22 @@
 /*%O Output Parameter : NONE																	*/
 /******************************************************************************/
 
+/*
+* 1)SFSYSTEV3.99
+* CALIBRATION
+* the software shall record this event when a CALIBRATION failure is detected
+
+ 2)SFSYSTEV3.4
+* Exh Flow calibration
+* the software shall record this event when the VALIDATION KEY is SHORT PRESS on the Exh
+Flow calibration field
+
+ 3)SFSYSTEV3.138
+FiO2 calibration
+the software shall record this event when the VALIDATION KEY is SHORT PRESS on the FiO2
+calibration field
+*/
+
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

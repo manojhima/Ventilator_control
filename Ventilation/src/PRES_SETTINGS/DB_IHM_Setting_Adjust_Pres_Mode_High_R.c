@@ -9,8 +9,24 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+1) SFSYSTSET31.6
+High R
+Unit: bpm
+Min Value: 10
+Max Value: 70
+List of Values: N.A.
+Step: 1
+Default Value: OFF (=70) output value = 70
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: OFF is reached upside
+OFF(=70) output value = 70
 
-
+2) SFSYSTEV2.20
+High R
+the software shall record this event when a new High R is set
+*/
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function controls the limits		*/
 /*%C        of the High_R setting in the Pres mode										*/

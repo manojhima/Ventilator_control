@@ -22,7 +22,92 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTAL46
+HIGH VTE
+Detection Conditions: when VTE > HIGH VTE
+Validation Delay: 3 consecutive cycles
+Cancel Conditions: auto
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: No
+Modes: VOL A/C; PRES A/C; PSV; VOL SIMV; PRES SIMV
+Actions: Events HIGH VTE + END OF HIGHVTE
+Resetconditions: ventilation change; Ventilation std-by
+Replaceventifpersistmessage: No
+Circuit: valve
 
+SFSYSTSET2.13
+HIGH VTE
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 1000
+Links: HIGH VTE + 10 >= VOL CONTROL
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+output value = 3000
+
+SFSYSTSET3.13
+HIGH VTE
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 1000
+Links: LOW VTE <= HIGH VTE - 20
+High Vte >= Vt target +10
+Auto-adjustement: N.A.
+Comments: OFF is available upside
+display only if exhalation valve is detected
+OFF (=3000) output value = 3000
+
+SFSYSTSET4.16
+HIGH VTE
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 1000
+
+SFSYSTSET5.21
+HIGH VTE
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 1000
+Links: HIGH VTE >= VOL CONTROL + 10
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+
+SFSYSTSET6.18
+HIGH VTE
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 1000
+Links: LOW VTE <= HIGH VTE - 20
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+
+SFSYSTEV2.23
+High VTE
+The software shall record this event when a new HIGH VTE is set
+
+SFSYSTEV3.78
+HIGH VTE
+The software shall record this event when a HIGH VTE alarm is detected
+
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

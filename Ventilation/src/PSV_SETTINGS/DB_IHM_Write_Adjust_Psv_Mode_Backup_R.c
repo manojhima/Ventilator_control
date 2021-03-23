@@ -25,7 +25,12 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYST9.11
+If no breath (either VIM, PIM or PS) is delivered in a period equal to APNEA TIME (if Apnea alarm
+is equal to YES or OFF in preferences menu), the software must start an apnea ventilation with
+Vol AC breaths at Backup Rate.
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

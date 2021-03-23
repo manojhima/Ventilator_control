@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTEV3.15
+LOW VTE
+the software shall record this event when the LOW VTE alarm is detected
+
+SFSYSTEV3.16
+END OF LOW VTE
+the software shall record this event when the LOW VTE alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

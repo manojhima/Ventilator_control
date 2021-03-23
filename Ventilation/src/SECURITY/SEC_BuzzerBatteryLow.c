@@ -20,6 +20,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                 						  */
 /******************************************************************************/
+/*
+SFSYSTEV3.102
+LOW BUZZER BATTERY
+the software shall record this event when the LOW BUZZER BATTERY alarm is detected
+
+SFSYSTEV3.104
+END OF LOW BUZZER BATTERY
+the software shall record this event when the LOW BUZZER BATTERY alarm is cancelled.
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */

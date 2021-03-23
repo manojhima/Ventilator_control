@@ -9,7 +9,14 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
-
+/*
+SFSYST6.6
+After the first cycle, if the VTI measurement is below VOL CONTROL - 2 ml or above VOL
+CONTROL + 2 ml, the software must increase or decrease proportionally the inspiratory FLOW
+SET POINT with a 5% maximum variation within [200%;50%] of THEORETICAL FLOW SET
+POINT if THEORETICAL FLOW SET POINT >20mL or [300%;50%] of THEORETICAL FLOW
+SET POINT if THEORETICAL FLOW SET POINT <20mL.
+*/
 
 /******************************************************************************/
 /*%C                     Functionnal description :                            */

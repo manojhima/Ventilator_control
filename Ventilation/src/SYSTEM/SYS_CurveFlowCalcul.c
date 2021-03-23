@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -21,6 +21,31 @@
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
 
+/*
+1) SFSYSTHMI9
+WAVEFORM MENU
+
+2)SFSYSTSET1.15
+WAVEFORM DISPLAY
+Unit: N.A.
+Min Value: N.A.
+Max Value: N.A.
+List of Values: YES / OFF
+Step: 0
+Default Value: OFF
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+3)SFSYSTSETUP3.4
+Waveform Display
+Once the Waveform Display field has been selected, the software must display in loop "YES" or
+"OFF" when the UP KEY or DOWN KEY is pressed.
+If "YES" is validated, the software must display WAVEFORM MENU when the ventilation is
+running.
+If "NO" is validated, the software mustn't display WAVEFORM MENU.
+*/
+
 /******************************************************************************/
 /*                                INCLUDE FILES	                             */
 /******************************************************************************/
@@ -31,6 +56,7 @@
 #include "../DATABASE/DB_Control.h"
 #include "../DATABASE/DB_Compute.h"
 #include "SYS_CurveFlowCalcul.h"
+
 
 
 /******************************************************************************/

@@ -23,7 +23,15 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTCOMDP93.2.11
+Pressure unit setting
+Offset (byte): 12
+Format: 8 bits
+Data: P unit conv
+Range: 0 = mbar , 1 = cmH2O , 2 = hPa
+Unit: NA
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

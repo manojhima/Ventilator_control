@@ -9,7 +9,11 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
-
+/*
+SFSYSTEV2.5
+Apnea Time
+the software shall record this event when a new Apnea Time is set
+*/
 
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function controls the limits		*/

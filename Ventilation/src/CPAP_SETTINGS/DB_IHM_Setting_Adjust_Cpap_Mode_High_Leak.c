@@ -22,7 +22,29 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTCOMDP93.3.18
+Leak maxi setting
+Offset (byte): 87
+Format: 8 bits
+Data: Leak maxi
+Range: 0 to 150
+Unit: l/min
 
+SFSYSTCOMDP93.4.18
+Leak maxi setting
+Offset (byte): 87
+Format: 8 bits
+Data: Leak max
+
+SFSYSTCOMDP93.8.21
+Leak maxi setting
+Offset (byte): 87
+Format: 8 bits
+Data: Leak maxi
+Range: 0 to 150
+Unit: l/min
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

@@ -1,6 +1,6 @@
 			 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,25 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+FSYSTAL62
+LOOSE FLASH POINTER FAULT (nÂ°12)
+Detection Conditions: The pointer address is not at a value consistent with the event logs size
+Validation Delay: immediate
+Cancel Conditions: NA
+Priority: Visual
+Audio Pause: no
+Alarm Pause: No
+Modes: All
+Actions: Event LOOSE FLASH POINTER DEFAULT
+Resetconditions: N/A
+Replaceventifpersistmessage: No
+Circuit: all
 
+SFSYSTEV3.100
+LOOSE FLASH POINTER
+the software shall record this event when a LOOSE FLASH POINTER is detected
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

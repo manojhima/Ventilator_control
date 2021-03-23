@@ -20,8 +20,27 @@
 /*%IO Input/Output :    NONE	                                              	*/
 /*%O Output Parameter : UWORD16  TriggerIDetected      								*/
 /******************************************************************************/
+/*
+SFSYST15
+INSPIRATORY TRIGGER
 
+SFSYST15.1
+The software must detect the INSPIRATORY TRIGGER when the (current QI + 2 x previous
+QI)/3 is varying more than INSP SENS in 20 ms during the exhalation phase after MIN EXH
+DELAY
 
+SFSYST10.6
+The software must deliver a VIM two seconds after the ventilation has started (starting at the end
+of the turbine test) if no inspiratory trigger is detected during this period.
+
+SFSYST10.7
+The software must deliver a PIM if an inspiratory trigger is detected during two seconds after the
+ventilation has started (starting at the end of the turbine test). The SIMV period (60/rate) then
+starts from the beginning of this PIM.
+
+SFSYST10.8
+The software must deliver a PS breath if an inspiratory trigger is detected before a period of
+INSP TIME from the end of the SIMV period
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

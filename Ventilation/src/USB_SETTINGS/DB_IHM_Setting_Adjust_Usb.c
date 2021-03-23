@@ -21,7 +21,18 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTHMI28
+USB MENU
 
+SFSYSTHMI28.3
+The software must display the USB MANAGEMENT MENU automatically when a new USB
+message have to be displayed, except when a medium or high priority alarm is active and except
+for first wait message when a key is connected at device start up.
+
+SFSYSTSET44
+USB menu
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

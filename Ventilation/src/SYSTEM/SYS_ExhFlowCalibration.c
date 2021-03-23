@@ -19,7 +19,35 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE																	*/
 /******************************************************************************/
+/*
+/*
+SFSYSTHMI13
+Exhalation Flow calibration
+When the VTE MIN alarm field is validated, the software must display a message "Exhalation
+Flow calibration ?". If the answer Yes is validated, the software must start a exhalation flow
+calibration procedure like described in the SFSYSTCAL requirements displaying only "... Exp
+Calib Processing" in the central field instead of the displays described in the SFSYSTCAL
+requirements.
+If the answer OFF is validated or when exh calibration ends, the software must go to VTE max
+field.
 
+SFSYSTSET1.16
+EXH CALIBRATION
+Unit: N.A.
+Min Value: N.A.
+Max Value: N.A.
+List of Values: YES / OFF
+Step: 0
+Default Value: OFF
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV3.4
+Exh Flow calibration
+the software shall record this event when the VALIDATION KEY is SHORT PRESS on the Exh
+Flow calibration field.
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

@@ -20,7 +20,17 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTEV3.108
+END OF BUZZER BATTERY CHARGE FAILURE
+the software shall record this event when a BUZZER BATTERY CHARGE FAILURE is cancelled
 
+
+SFSYSTEV3.110
+BUZZER BATTERY CHARGE FAILURE
+the software shall record this event when the BUZZER BATTERY CHARGE FAILURE alarm is
+detected
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

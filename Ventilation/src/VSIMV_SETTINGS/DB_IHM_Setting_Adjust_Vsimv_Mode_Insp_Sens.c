@@ -22,7 +22,76 @@
 /*%IO Input/Output Parameter : 	None  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET2.6
+INSP SENS
+Unit: N.A.
+Min Value: 0P
+Max Value: 5
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: OFF available under the minimum value OFF. output value = 0
+loop setting.
+HIGH R = OFF if INSP SENS = OFF
 
+SFSYSTSET3.6
+INSP SENS
+Unit: N.A.
+Min Value: 0P
+Max Value: 5
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: N.A.
+Auto-adjustement: High Rate = OFF if Insp Sens = OFF
+Comments: OFF is available only under minimum value OFF. output value =0.
+HIGH R = OFF if INSP SENS = OFF
+loop setting
+
+SFSYSTSET4.6
+INSP SENS
+Unit: N.A.
+Min Value: 0P
+Max Value: 5
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: loop setting.
+
+SFSYSTSET5.7
+INSP SENS
+Unit: N.A.
+Min Value: 0P
+Max Value: 5
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTSET31.7
+Insp Sens
+Unit: N.A.
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step: 0
+Default Value: 2
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV2.6
+Insp Sens
+the software shall record this event when a new Insp Sens is set
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

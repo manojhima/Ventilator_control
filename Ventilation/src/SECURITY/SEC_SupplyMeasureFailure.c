@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -28,6 +28,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter :    Alarm_Error                                        */
 /******************************************************************************/
+/*
+SFSYSTEV3.84
+SUPPLY MEASURE FAILURE
+the software shall record this event when the SUPPLY MEASURE FAILURE alarm is detected
+
+SFSYSTEV3.90
+END OF SUPPLY MEASURE FAILURE
+the software shall record this event when the SUPPLY MEASURE FAILURE alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES                               */

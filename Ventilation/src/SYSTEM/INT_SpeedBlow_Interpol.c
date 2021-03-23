@@ -20,6 +20,13 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTMON42
+BLOWER TEMPERATURE
+Min Val: -99.9
+Max Val: 99.9
+Rounded to: 0.1
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

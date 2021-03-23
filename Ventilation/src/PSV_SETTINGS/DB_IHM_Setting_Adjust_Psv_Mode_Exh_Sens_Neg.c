@@ -24,7 +24,21 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTSET4.20
+Exh Sens (negative)
+Unit: %
+Min Value: -5
+Max Value: -95
+List of Values: N.A.
+Step: 5
+Default Value: Auto = -75 output value = -75
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: Available if Esens in setup menu is set to Negative
+Auto = -75 output value = -75
+Auto is reached by down key
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

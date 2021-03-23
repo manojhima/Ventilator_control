@@ -21,6 +21,14 @@
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
 
+/*
+1) SFSYSTEV3.68
+CHECK SUPPLY
+the software shall record this event when the CHECK SUPPLY alarm is detected
+2) SFSYSTEV3.69
+END OF CHECK SUPPLY
+the software shall record this event when the CHECK SUPPLY alarm is cancelled
+*/
 /******************************************************************************/
 /*                           INCLUDE FILES		                              */
 /******************************************************************************/

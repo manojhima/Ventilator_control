@@ -22,7 +22,40 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET3.18
+High leak
+Unit: lpm
+Min Value: 5
+Max Value: 150
+List of Values: N.A.
+Step: 5
+Default Value: OFF (=200) output value = 200
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: available only if no valve is detected
+OFF is available upside
+OFF = 200 output value = 200
 
+SFSYSTSET4.19
+High leak
+Unit: lpm
+Min Value: 5
+Max Value: 150
+List of Values: N.A.
+Step: 5
+Default Value: OFF (=200) output value = 200
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: available only if no valve is detected
+OFF is available upside
+OFF = 200 output value = 200
+
+SFSYSTEV2.30
+HIGH LEAK
+the software shall record this event when a new high leak is set
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

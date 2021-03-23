@@ -26,7 +26,25 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTEV2.4
+Back-up R
+the software shall record this event when a new Back-up R is set
 
+SFSYSTSET5.22
+BACK UP R
+Unit:
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step: 0
+Default Value: max[8,CONTROL R]
+Links:
+Auto-adjustement: N.A
+Comments: No comment
+
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

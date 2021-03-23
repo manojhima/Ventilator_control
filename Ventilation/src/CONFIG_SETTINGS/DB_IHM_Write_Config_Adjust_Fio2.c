@@ -9,8 +9,31 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+SFSYSTCOMDP93.2.39
+FIO2 setting
+Offset (byte): 62
+Format: 8 bits
+Data: FIO2
+Range: 0 to 99
+Unit: %
 
+SFSYSTCOMDP93.2.40
+FiO2 min setting
+Offset (byte): 63
+Format: 8 bits
+Data: FiO2 mini
+Range: 0 to 99
+Unit: %
 
+SFSYSTCOMDP93.2.41
+FiO2 max setting
+Offset (byte): 64
+Format: 8 bits
+Data: FiO2 maxi
+Range: 0 to 99
+Unit: %
+*/
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function writes the 					*/
 /*%C        Fio2 setting and its dependancies in the Config base 					*/

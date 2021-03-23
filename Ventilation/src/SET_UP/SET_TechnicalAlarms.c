@@ -19,7 +19,11 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE																	*/
 /******************************************************************************/
-
+/*
+SFSYSTEV3.33
+TECHNICAL PROBLEM
+the software shall record this event when the TECHNICAL PROBLEM alarm is detected.
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

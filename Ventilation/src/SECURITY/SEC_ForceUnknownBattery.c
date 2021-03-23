@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Unknow battery alarm has to be (or not) forced        */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.70
+UNKNOWN BATTERY
+the software shall record this event when the UNKNOWN BATTERY alarm is detected
+SFSYSTEV3.71
+END OF UNKNOWN BATTERY
+the software shall record this event when the UNKNOWN BATTERY alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/

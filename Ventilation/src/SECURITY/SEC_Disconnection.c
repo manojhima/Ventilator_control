@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -21,7 +21,14 @@
 /*%IO Input/Output :    NONE                                                  */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.5
+DISCONNECTION
+the software shall record this event when the DISCONNECTION alarm is detected
+SFSYSTEV3.6
+END OF DISCONNECTION
+the software shall record this event when the DISCONNECTION alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/

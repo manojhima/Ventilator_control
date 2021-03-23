@@ -20,7 +20,46 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET5.4
+P SUPPORT
+Unit: cmH2O, mbar, hPa
+Min Value: 5
+Max Value: 55
+List of Values: N.A.
+Step: 1
+Default Value: 15
+Links: PEEP <= Psupport - 5 in absolute pressure
+P SUPPORT + PEEP <= 55 in relative pressure
+P SUPPORT + PEEP >= LOW PIP in relative pressure
+P SUPPORT + PEEP <= HIGH PIP - 2 in relative pressure
+P SUPPORT >= LOW PIP in absolute pressure
+P SUPPORT <= HIGH PIP - 2 in absolute pressure
+Auto-adjustement: LOW PIP
+HIGH PIP
+Comments: No comment
 
+SFSYSTSET6.4
+P SUPPORT
+Unit: cmH2O, mbar, hPa
+Min Value: 5
+Max Value: 55
+List of Values: N.A.
+Step: 1
+Default Value: 15
+Links: in absolute pressure:
+PEEP <= P SUPPORTL - 5
+in relative pressure:
+P SUPPORT + PEEP <= 55
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV2.1
+P Support
+the software shall record this event when a new P Support is set
+
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

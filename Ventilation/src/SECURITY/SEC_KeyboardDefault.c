@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTEV3.63
+KEYBOARD
+the software shall record this event when the KEYBOARD alarm is detected
+
+SFSYSTEV3.92
+END OF KEYBOARD
+the software shall record this event when the KEYBOARD alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

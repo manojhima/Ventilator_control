@@ -1,0 +1,2 @@
+/usr/bin/ar qc libActuatorlib.a  CMakeFiles/Actuatorlib.dir/ACT_BlowerCmd.c.o CMakeFiles/Actuatorlib.dir/ACT_BrakePower.c.o CMakeFiles/Actuatorlib.dir/ACT_O2ValveCmd.c.o CMakeFiles/Actuatorlib.dir/ACT_ValveCmd.c.o CMakeFiles/Actuatorlib.dir/ACT_ValveDetected.c.o
+/usr/bin/ranlib libActuatorlib.a

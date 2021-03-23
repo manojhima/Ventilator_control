@@ -19,6 +19,22 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTSETUP2
+SET UP MENU
+In the SETUP MENU the software must provide following fields :
+- machine hours
+- language
+- date
+- time
+- intentional vent stop
+- pressure unit
+- alarm tone
+- patient hours
+- Restore Defaults
+- maintenance
+- next
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

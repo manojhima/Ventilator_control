@@ -19,6 +19,22 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE																	*/
 /******************************************************************************/
+/*
+SFSYSTAL47
+CALIBRATION FAILURE
+Detection Conditions: Failure of one calibration point of exhaled flow sensor
+Validation Delay: immediate
+Cancel Conditions: N.A.
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: Yes
+Modes: All
+
+SFSYSTEV3.99
+CALIBRATION
+the software shall record this event when a CALIBRATION failure is detected.
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTEV3.72
+CHECK BATTERY CHARGE
+the software shall record this event when the CHECK BATTERY CHARGE alarm is detected
+
+SFSYSTEV3.73
+END OF CHECK BATTERY CHARGE
+the software shall record this event when the CHECK BATTERY CHARGE alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

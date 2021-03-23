@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -22,6 +22,25 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTAL21
+CHECK SETTINGS
+Detection Conditions: setting out of range
+or download of a new LXxxxxx version
+or loss of SETUP MENU Settings
+Validation Delay: Immediate
+Cancel Conditions: No
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: Yes
+Modes: All
+Actions: Lock key function deactivation
+default value for out of range settings.
+Events NEW VERSION + EEPROM OUT OF RANGE + LOOSING SETTINGS
+Resetconditions: N/A
+Replaceventifpersistmessage: No
+Circuit: all
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

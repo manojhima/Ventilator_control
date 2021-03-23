@@ -19,7 +19,13 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE																	*/
 /******************************************************************************/
+/*
+SFSYSTEV3.138
+FiO2 calibration
+the software shall record this event when the VALIDATION KEY is SHORT PRESS on the FiO2
+calibration field
 
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

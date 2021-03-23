@@ -31,6 +31,14 @@
 //#include "regf276e.h"
 //#endif
 //#include "../GENERAL/io_declare.h"
+
+
+
+/*SFSYSTAL31
+CHECK REMOTE ALARM 
+Detection Conditions : ALARM_REMOTE_STATE != BUZZER COMMAND during the initialization
+buzzer test or when an alarm is active
+*/
 #include "../DATABASE/DB_Control.h"
 #include "SYS_Alarm_Remote_Detect.h"
 

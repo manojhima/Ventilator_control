@@ -20,6 +20,11 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error											  */
 /******************************************************************************/
+/*
+SFSYSTEV3.31
+CHECK BUZZER
+the software shall record this event when the CHECK BUZZER alarm is detected
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

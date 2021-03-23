@@ -21,6 +21,18 @@
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
 
+/*
+SFSYSTAL40
+PROXIMAL PRESSURE OFFSET FAULT (n°8)
+Detection Conditions: proximal pressure sensor offset out of range after calibration
+Validation Delay: Immediate
+Cancel Conditions: NA
+Priority: Visual
+Audio Pause: no
+Alarm Pause: No
+*/
+
+
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/

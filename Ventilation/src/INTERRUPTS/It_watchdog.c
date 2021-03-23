@@ -7,7 +7,18 @@
 /* Filename  : It_watchdog.c 				                                       */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
+/*
+1)SFSYSTMON15
+WATCHDOG CHECK
+Min Val: 0
+Max Val: 99.9
+Rounded to: 0.1
 
+2)SSOFT12
+watchdog function
+the software must be protected from a 200 ms software task overflow (watchdog function).
+
+*/
 /*----------------------------------------------------------------------------*/
 
 

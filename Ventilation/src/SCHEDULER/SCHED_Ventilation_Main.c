@@ -9,7 +9,16 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+SFSYSTSETUP3.3.1
+when the VALIDATION KEY is SHORT PRESS on "Back to ventilation" field, the software must
+display the VENTILATION MENU
 
+SFSYSTSETUP3.3.2
+the software must switch to the VENTILATION MENU if there is no key activation until 14
+seconds or if a high priority alarm occurs or if the ventilation is launched (one press on ventilation
+key)
+*/
 
 /******************************************************************************/
 /*%C                     Functionnal description :                            */

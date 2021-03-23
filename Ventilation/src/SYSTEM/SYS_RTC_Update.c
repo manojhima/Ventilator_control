@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -31,7 +31,11 @@
 #include "../DATABASE/DB_Rtc.h"
 #include "SYS_RTC_Update.h"	
 
-
+/*
+SFSYSTEV2.24
+Date (RTC)
+The software shall memorize any date change in order to retrieve the former date.
+*/
 
 /******************************************************************************/
 /*                            FUNCTION BODY                                   */

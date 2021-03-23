@@ -24,7 +24,60 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET4.7
+EXH SENS
+Unit: %
+Min Value: 5
+Max Value: 95
+List of Values: N.A
 
+SFSYSTSET5.12
+EXH SENS
+Unit: %
+Min Value: 5
+Max Value: 95
+List of Values: N.A.
+Step: 5
+Default Value: 75
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: Available if Esens in setup menu is set to Positive
+Auto = 75 output value = 75
+Auto available downsid
+
+SFSYSTSET6.11
+EXH SENS
+Unit: %
+Min Value: 5
+Max Value: 95
+List of Values: N.A.
+Step: 5
+Default Value: 75
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: Available if Esens in setup menu is set to Positive
+Auto = 75 output value = 75
+Auto available downside
+
+SFSYSTSET31.10
+Exh sens
+Unit: %
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step:
+Default Value: 25
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV2.7
+Exh Sens
+the software shall record this event when a new Exh Sens is set
+
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

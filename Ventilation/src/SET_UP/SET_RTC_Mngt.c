@@ -10,6 +10,14 @@
 
 /*----------------------------------------------------------------------------*/
 
+/*
+SFSYSTEV2.24
+Date (RTC)
+The software shall memorize any date change in order to retrieve the former date.
+SFSYSTEV2.25
+Hour (RTC)
+The software shall memorize any hour change in order to retrieve the former hour.
+*/
 
 /******************************************************************************/
 /*%C                     Functionnal description :                            */

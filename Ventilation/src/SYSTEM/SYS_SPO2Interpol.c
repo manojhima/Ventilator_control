@@ -20,6 +20,24 @@
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
 
+/*
+1) SFSYSTCOMDP93.2.38
+SpO2 measure
+Offset (byte): 31
+Format: 8 bits
+Data: SpO2
+Range: 0 = NO, 0 to 100
+Unit: %
+
+2)SFSYSTCOMDP303.2.18
+SpO2 measure
+Offset (byte): 24
+Format: 8 bits
+Data: SpO2
+Range: 0 to 100
+Unit: %
+*/
+
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/

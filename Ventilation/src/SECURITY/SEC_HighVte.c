@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,34 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYSTSET3.13
+HIGH VTE
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 1000
+Links: LOW VTE <= HIGH VTE - 20
+High Vte >= Vt target +10
+Auto-adjustement: N.A.
+Comments: OFF is available upside
+display only if exhalation valve is detected
+OFF (=3000) output value = 3000
 
+SFSYSTEV3.78
+HIGH VTE
+The software shall record this event when a HIGH VTE alarm is detected
+
+SFSYSTEV3.79
+END OF HIGH VTE
+the software shall record this event when the HIGH VTE alarm is cancelled
+
+SFSYSTEV2.23
+High VTE
+The software shall record this event when a new HIGH VTE is set
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

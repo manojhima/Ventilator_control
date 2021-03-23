@@ -9,7 +9,22 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+SFSYSTSET31
+CPAP settings
 
+SFSYSTSET31.1
+Cpap
+Unit: cmH2O, mbar, hPa
+Min Value: 4
+Max Value: 20
+List of Values: N.A.
+Step: 1
+Default Value: 10
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+*/
 
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function manages the different		*/

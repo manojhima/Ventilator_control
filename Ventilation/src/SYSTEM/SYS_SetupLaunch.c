@@ -9,7 +9,11 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
-
+/*
+SFSYST1.3
+When the inhibition key is pressed continuously during the INITIALIZATION PHASE and the
+ventilation was VOLUNTARILY SWITCHED OFF, the software starts in SETUP MENU
+*/
 
 /******************************************************************************/
 /*%C                     Functionnal description :                            */

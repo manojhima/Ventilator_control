@@ -24,6 +24,30 @@
 /*%IO Input/Output Parameter : 	None  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET2
+VOL CONTROL settings
+
+SFSYSTSET5.1
+VOL CONTROL
+Unit: ml
+Min Value: 50
+Max Value: 2000
+List of Values: N.A.
+Step: 10
+Default Value: 500
+Links: 3 lpm <= (VOL CONTROL*60) / (TI CONTROL*1000) <= 100 lpm
+LOW VTE <= VOL CONTROL - 10
+VOL CONTROL <= HIGH VTE - 10
+Auto-adjustement: LOW VTE
+HIGH VTE
+Comments: No comment
+
+SFSYSTEV2.10
+Vol Control
+the software shall record this event when a new Vol Control is set
+
+*/
 
 
 /******************************************************************************/

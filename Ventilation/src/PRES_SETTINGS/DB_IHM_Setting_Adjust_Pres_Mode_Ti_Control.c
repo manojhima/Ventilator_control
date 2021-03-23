@@ -25,7 +25,70 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET2.19
+TI CONTROL
+Unit: s
+Min Value: 0.3
+Max Value: 6.0
+List of Values: N.A.
+Step: 0.1
+Default Value: 1.5
+Links: 3 lpm <= (VOL CONTROL x 60) /(TI CONTROL*1000) <= 100 lpm in R RAMP
+3 lpm <= 3*(VOL CONTROL x 60) / 2*(TI CONTROL*1000) <= 100 lpm in D RAMP and S RAMP
+TI CONTROL <= (0.5*60 / CONTROL R)
+Comments: I:E <= 1:1
 
+SFSYSTSET3.21
+TI CONTROL
+Unit: s
+Min Value: 0.3
+Max Value: 6.0
+List of Values: N.A.
+Step: 0.1
+Default Value: 1.5
+Links: TI CONTROL <= (0.5*60 / CONTROL R)
+Auto-adjustment: N.A.
+Comments: I:E <= 1:1
+
+SFSYSTSET5.2
+TI CONTROL
+Unit: s
+Min Value: 0.3
+Max Value: 2.4
+List of Values: N.A.
+Step: 0
+Default Value: 1.5
+Links: 3 lpm <= (VOL CONTROL*60) / (TI CONTROL*1000) <= 100 lpm
+APNEA TIME >= 2 * TI CONTROL
+if CONTROL R >= 8 :
+TI CONTROL <= 0.33 * 60 / CONTROL R
+if CONTROL R < 8 :
+TI CONTROL <= 2.4
+Auto-adjustement: APNEA TIME
+Comments: Step is 0.1
+
+SFSYSTSET6.2
+TI CONTROL
+Unit: s
+Min Value: 0.3
+Max Value: 2.4
+List of Values: N.A.
+Step: 0
+Default Value: 1.5
+Links: if CONTROL R >= 8 :
+TI CONTROL <= 0.33 * 60 / CONTROL R
+if CONTROL R < 8 :
+TI CONTROL <= 2.4
+APNEA TIME >= 2 * TI CONTROL
+Auto-adjustement: APNEA TIME
+Comments: Step is 0.1
+
+SFSYSTEV2.11
+Ti Control
+the software shall record this event when a new Ti Control is set
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

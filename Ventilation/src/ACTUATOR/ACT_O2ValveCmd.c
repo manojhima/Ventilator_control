@@ -20,6 +20,57 @@
 /*%IO Input/Output :    NONE	                                              */
 /*%O Output Parameter : NONE												  */
 /******************************************************************************/
+/*
+
+1) SFSYSTHMI10.7
+If a valve is detected, only Vol control, Pres Control, PSV, PSIMV and VSIMV modes are
+available
+
+2) SFSYSTHMI10.8
+If no valve is detected, only CPAP, Pres Control and PSV modes are available
+
+3) SFSYSTEV3.48
+CHECK VALVE
+the software shall record this event when the CHECK VALVE alarm is detected
+
+4) SFSYSTEV3.118
+CONNECT VALVE / CHANGE PRESS
+the software shall record this event when the CONNECT VALVE / CHANGE PRESS alarm is
+detected
+
+5) SFSYSTEV3.119
+END OF CONNECT VALVE / CHANGE PRESS
+the software shall record this event when the CONNECT VALVE / CHANGE PRESS alarm is
+canceled
+
+6) SFSYSTEV3.120
+DISCONNECT VALVE / CHANGE PI PE
+the software shall record this event when the DISCONNECT VALVE / CHANGE PI PE alarm is
+detected
+
+7) SFSYSTEV3.121
+END OF DISCONNECT VALVE / CHANGE PI PE
+the software shall record this event when the DISCONNECT VALVE / CHANGE PI PE alarm is
+canceled
+
+8) SFSYSTEV3.122
+CONNECT VALVE
+the software shall record this event when the CONNECT VALVE alarm is detected
+
+9) SFSYSTEV3.123
+END OF CONNECT VALVE
+the software shall record this event when the CONNECT VALVE alarm is cancelled
+
+10) SFSYSTEV3.124
+DISCONNECT VALVE
+the software shall record this event when the DISCONNECT VALVE alarm is detected
+
+11) SFSYSTEV3.125
+END OF DISCONNECT VALVE
+the software shall record this event when the CONNECT VALVE alarm is cancelled
+*/
+
+
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

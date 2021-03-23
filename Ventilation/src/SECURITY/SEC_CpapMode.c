@@ -20,6 +20,11 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+SFSYST8
+CPAP mode (leak)
+the software must control the PRESSURE SET POINT to the adjusted PEEP
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

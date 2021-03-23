@@ -19,7 +19,16 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTCOMDP14.2.4
+Not implemented yet
+Offset (byte): 006
+007
+Format: 16 bits
+Data: low spo2
+Range: Not implemented yet
+Unit: NA
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

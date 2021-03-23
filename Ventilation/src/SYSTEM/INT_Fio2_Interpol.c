@@ -20,6 +20,85 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
+/*
+1) SFSYSTMON44
+FiO2
+Min Val: 0
+Max Val: 250
+Rounded to:
+
+2) SFSYSTEV2.31
+HIGH FiO2
+the software shall record this event when a new High FiO2 is set
+
+3) SFSYSTEV2.32
+LOW FiO2
+the software shall record this event when the LOW FiO2 is set
+
+4) SFSYSTEV3.130
+LOW FiO2
+the software shall record this event when the LOW FiO2 alarm is detected
+
+5) SFSYSTEV3.131
+END OF LOW FiO2
+the software shall record this event when the LOW FiO2 alarm is cancelled
+
+6) SFSYSTEV3.132
+HIGH FiO2
+the software shall record this event when the HIGH FiO2 alarm is detected
+
+7) SFSYSTEV3.133
+END OF HIGH FiO2
+the software shall record this event when the HIGH FiO2 alarm is cancelled
+
+8) SFSYSTEV3.134
+NO FiO2 SENSOR
+the software shall record this event when the NO FiO2 SENSOR alarm is detected
+
+9) SFSYSTEV3.135
+END OF NO FiO2 SENSOR
+the software shall record this event when the NO FiO2 SENSOR alarm is cancelled
+
+10) SFSYSTEV3.154
+CHECK FIO2
+the software shall record this event when the CHECK FIO2 alarm is detected
+
+11) SFSYSTEV3.155
+END OF CHECK FIO2
+the software shall record this event when the CHECK FIO2 alarm is cancelle
+
+12) SFSYSTCOMDP93.2.37
+FiO2 measure
+Offset (byte): 30
+Format: 8 bits
+Data: FIO2
+Range: 0 = NO, 0 to 100
+Unit: %
+
+13) SFSYSTCOMDP93.2.39
+FIO2 setting
+Offset (byte): 62
+Format: 8 bits
+Data: FIO2
+Range: 0 to 99
+Unit: %
+
+14) SFSYSTCOMDP93.2.40
+FiO2 min setting
+Offset (byte): 63
+Format: 8 bits
+Data: FiO2 mini
+Range: 0 to 99
+Unit: %
+
+15)SFSYSTCOMDP93.2.41
+FiO2 max setting
+Offset (byte): 64
+Format: 8 bits
+Data: FiO2 maxi
+Range: 0 to 99
+Unit: %
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

@@ -20,7 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.70
+UNKNOWN BATTERY
+the software shall record this event when the UNKNOWN BATTERY alarm is detected
+SFSYSTEV3.71
+END OF UNKNOWN BATTERY
+the software shall record this event when the UNKNOWN BATTERY alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/

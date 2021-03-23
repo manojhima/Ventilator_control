@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.52
+VALVE LEAKAGE
+the software shall record this event when the VALVE LEAKAGE alarm is detected
+SFSYSTEV3.53
+END OF VALVE LEAKAGE
+the software shall record this event when the VALVE LEAKAGE alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

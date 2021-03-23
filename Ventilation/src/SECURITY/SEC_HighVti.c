@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -21,7 +21,58 @@
 /*%O Output Parameter : Alarm_Error
 */
 /******************************************************************************/
+/*
+SFSYSTSET4.11
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: HIGH VTI >= LOW VTI + 20
+High Vti >= Vt target + 10
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+OFF (=3000) output value = 3000
 
+SFSYSTSET6.13
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: HIGH VTI >= LOW VTI + 20
+Auto-adjustement: N.A.
+Comments: OFF is available by the UP KEY
+
+SFSYSTSET31.4
+HIGH VTI
+Unit: ml
+Min Value: 80
+Max Value: 3000
+List of Values: N.A.
+Step: 10
+Default Value: 2000
+Links: LOW VTI <= HIGH VTI - 20
+Auto-adjustement: N.A.
+Comments: OFF is reached upside
+OFF (=3000) output value = 3000
+
+SFSYSTEV2.16
+High VT
+the software shall record this event when a new High VTI is set
+
+SFSYSTEV3.11
+HIGH VTI
+the software shall record this event when the HIGH VTI alarm is detected
+SFSYSTEV3.12
+END OF HIGH VTI
+the software shall record this event when the HIGH VTI alarm is cancelled
+
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

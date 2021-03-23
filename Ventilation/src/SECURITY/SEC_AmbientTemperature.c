@@ -20,7 +20,17 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter :	Alarm_Error  										  */
 /******************************************************************************/
+/*
+SFSYSTEV3.82
+AMBIENT TEMP OUTOFBOUNDS
+the software shall record this event when the AMBIENT TEMP OUTOFBOUNDS alarm is
+detected
 
+SFSYSTEV3.88
+END OF AMBIENT TEMP OUTOFBOUNDS
+the software shall record the event when the AMBIENT TEMP OUTOFBOUNDS alarm is
+cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

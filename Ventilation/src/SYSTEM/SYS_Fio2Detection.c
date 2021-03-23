@@ -21,6 +21,12 @@
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
 
+/*SFSYST80
+FiO2 sensor detection
+if FiO2 > 0.3V during 2s, the software must detect a FiO2 sensor .
+The software must display FiO2 value when a sensor is detected and ventilation is on
+*/
+
 /******************************************************************************/
 /*                           INCLUDE FILES                                    */
 /******************************************************************************/

@@ -20,7 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error*/
 /******************************************************************************/
-
+/*
+FSYSTEV3.21
+HIGH RATE
+the software shall record this event when the HIGH RATE alarm is detected
+SFSYSTEV3.22
+END OF HIGH RATE
+the software shall record this event when the HIGH RATE alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

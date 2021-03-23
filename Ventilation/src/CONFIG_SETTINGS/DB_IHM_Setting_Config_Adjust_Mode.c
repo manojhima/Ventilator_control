@@ -19,7 +19,25 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYST25.2
+the software shall record the current ventilation mode and settings.
 
+SFSYSTHMI10
+Mode change
+
+SFSYSTHMI10.5
+the software shall record the new mode settings and display the running mode settings if there is
+no key action before 14 s
+
+SFSYSTHMI10.6
+the software must display and activate the new mode settings, if the Accept mode is set to Yes
+
+SFSYSTEV1.5
+CHANGE MODE
+the software shall record this event when the VALIDATION KEY is SHORT PRESS on the
+change mode field to yes
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

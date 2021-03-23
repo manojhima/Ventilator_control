@@ -20,6 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter :	Alarm_Error  	  									  */
 /******************************************************************************/
+/*
+SFSYSTEV3.95
+CPU REFERENCE
+the software shall record this event when the CPU REFERENCE alarm is detected
+SFSYSTEV3.96
+END OF CPU REFERENCE
+the software shall record this event when the CPU REFERENCE alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

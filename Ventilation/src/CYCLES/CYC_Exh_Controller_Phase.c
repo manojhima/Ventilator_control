@@ -20,6 +20,12 @@
 /*%IO Input/Output :    NONE	                                              	*/
 /*%O Output Parameter : NONE       															*/
 /******************************************************************************/
+/*
+SFSYST6.13
+If a sigh is set to YES, at each CPT SIGH cycles, the software must control the EXPIRATORY
+FLOW SETPOINT to the adjusted PEEP until the patient INSPIRATORY TRIGGER if an INSP
+SENS is adjusted or until the end of the VT SIGH x TE.
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */

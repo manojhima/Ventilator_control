@@ -41,7 +41,7 @@ void DB_ComputeWrite(e_DB_COMPUTE Id, UWORD16 Value)
 /*%C belongs to the compute base   */                      	                    
 	if(Id < end_of_db_compute_table)
 		{
-		if (cDB_Saturate_COMPUTE[Id].issigned == 1	)
+		if (cDB_Saturate_COMPUTE[Id].issigned == 1)
 			{
 			if ((SWORD16)Value > (SWORD16)cDB_Saturate_COMPUTE[Id].cDB_TEST_DB.maxi) Value = cDB_Saturate_COMPUTE[Id].cDB_TEST_DB.maxi;
 			else if ((SWORD16)Value < (SWORD16)cDB_Saturate_COMPUTE[Id].cDB_TEST_DB.mini) Value = cDB_Saturate_COMPUTE[Id].cDB_TEST_DB.mini; 

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,25 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                        	  */
 /******************************************************************************/
+/*
+SFSYST11
+HIGH PRESSURE
+This applies to Valve and Leak configurations. In leak configuration, HIGH PIP, VALVE
+PRESSURE and EXHALATION valve actions do not apply.
 
+SFSYSTAL2
+HIGH PRESSURE
+Detection Conditions: (PATIENTPRESSURE> HIGH PRESSURE LEVEL
+or (PROXIMAL PRESSURE> HIGH PRESSURE LEVEL and CHECK PROXIMAL ALARM =
+FALSE)
+
+SFSYSTEV3.7
+HIGH PRESSURE
+the software shall record this event when the HIGH PRESSURE alarm is detected
+SFSYSTEV3.8
+END OF HIGH PRESSURE
+the software shall record this event when the HIGH PRESSURE alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

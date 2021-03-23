@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RA0104                                                      */
+/* Project Nï¿½  :  RA0104                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -27,6 +27,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTEV3.152
+LEAK OCCLUSION
+the software shall record this event when the LEAK OCCLUSION alarm is detected
+
+SFSYSTEV3.153
+END OF LEAK OCCLUSION
+the software shall record this event when the LEAK OCCLUSION alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

@@ -27,7 +27,20 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTSET2.7
+LOW PIP
+Unit: cmH2O, mbar, hPa
+Min Value: 2
+Max Value: 82
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: LOW PIP <= HIGH PIP – 8
+LOW PIP >= PEEP + 2
+Auto-adjustement: N.A.
+Comments: No comment
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTEV3.68
+CHECK SUPPLY
+the software shall record this event when the CHECK SUPPLY alarm is detected
+
+SFSYSTEV3.69
+END OF CHECK SUPPLY
+the software shall record this event when the CHECK SUPPLY alarm is cancelled
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

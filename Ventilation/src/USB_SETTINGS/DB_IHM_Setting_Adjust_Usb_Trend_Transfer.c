@@ -20,7 +20,23 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET44.5
+Trend transfer
+Unit: N.A.
+Min Value: N.A.
+Max Value: N.A.
+List of Values: OFF, 3, 6, 9, 12
+Step: 0
+Default Value: OFF
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: Not available during any USB key operation.
+= OFF when an USB key operation is finished.
 
+SFSYSTUSB1.6
+TRANSFER TRENDS
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

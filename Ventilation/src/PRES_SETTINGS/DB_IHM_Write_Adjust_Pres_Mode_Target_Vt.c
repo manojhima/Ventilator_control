@@ -20,7 +20,39 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTEV2.27
+Vt target
+the software shall record this event when a new Vt target is set
 
+SFSYSTCOMDP14.2.26
+Vt Target setting
+Offset (byte): 052
+053
+Format: 16 bits
+Data: target vt
+Range: 50 to 2000
+AA AA = not used
+Unit: ml
+
+SFSYSTCOMDP93.3.11
+Vt Target setting
+Offset (byte): 75
+76
+Format: 2*8 bits
+Data: Vt Target
+Range: 0 to 2000
+Unit: ml
+
+SFSYSTCOMDP93.4.11
+Vt Target setting
+Offset (byte): 75
+76
+Format: 2*8 bits
+Data: Vt Target
+Range: 0 to 2000
+Unit: ml
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

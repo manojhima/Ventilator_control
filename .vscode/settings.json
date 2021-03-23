@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "timer_data.h": "c",
+        "enum.h": "c",
+        "typedef.h": "c",
+        "sys_alarm_remote_detect.h": "c",
+        "DB_PowerSupplyRead.C": "cpp"
+    }
+}

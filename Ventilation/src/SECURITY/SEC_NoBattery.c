@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,31 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTAL18
+NO BATTERY
+Detection Conditions: BATTERY PRESENCE flag = No
+Validation Delay: Immediate
+Cancel Conditions: Auto
+or CHECK SUPPLY alarm on
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: No
+Modes: All
+Actions: Events NO BATTERY + END OF NO BATTERY + display neutral symbol on BATTERY
+LEVEL HOURMETER displayed
+Resetconditions: N/A
+Replaceventifpersistmessage: No
+Circuit: all
 
+SFSYSTEV3.29
+NO BATTERY
+the software shall record this event when the NO BATTERY alarm is detected
+
+SFSYSTEV3.30
+END OF NO BATTERY
+the software shall record this event when the NO BATTERY alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libVolsettingslib.a  CMakeFiles/Volsettingslib.dir/VEN_Actuators.c.o CMakeFiles/Volsettingslib.dir/VEN_Compute.c.o CMakeFiles/Volsettingslib.dir/VEN_Cycles.c.o CMakeFiles/Volsettingslib.dir/VEN_LeakActuators.c.o CMakeFiles/Volsettingslib.dir/VEN_RiseCompute.c.o
+/usr/bin/ranlib libVolsettingslib.a

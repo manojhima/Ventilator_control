@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,15 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTEV3.42
+PROXIMAL DISCONNECTION
+the software shall record this event when the PROXIMAL DISCONNECTION alarm is detected
+SFSYSTEV3.43
+END OF PROXIMAL DISCONNECTION
+the software shall record this event when the PROXIMAL DISCONNECTION alarm is cancelled
+
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

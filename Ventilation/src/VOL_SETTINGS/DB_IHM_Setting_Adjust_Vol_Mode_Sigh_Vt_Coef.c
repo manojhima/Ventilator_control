@@ -24,7 +24,11 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTEV2.35
+SIGH COEF
+the software shall record this event when the SIGH COEF is set
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

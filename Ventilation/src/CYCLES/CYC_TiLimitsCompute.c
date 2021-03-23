@@ -20,6 +20,36 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : t_CYC_TiLimit TiLimit                                 */
 /******************************************************************************/
+/*
+SFSYSTSET4.8
+TI MIN
+Unit: s
+Min Value: 0.1
+Max Value: 2.8
+List of Values: N.A.
+Step: 0
+Default Value: Auto = 0.7 output value = 0.7
+Links: TI MIN <= (60*1/2)/BACK UP R
+TI MIN <= TI MAX
+Auto-adjustement: N.A.
+Comments: Auto is available by the DOWN KEY
+Step is 0.1
+Auto = Rise time +300 ms
+
+SFSYSTSET4.9
+TI MAX
+Unit: s
+Min Value: 0.8
+Max Value: 3
+List of Values: N.A.
+Step: 0
+Default Value: Auto = 3s output value = 3s
+Links: TI MIN <= TI MAX
+Auto-adjustement: N.A.
+Comments: Auto is available by the UP KEY
+Step is 0.1
+Auto = Min [ 3s;(60*1/2)/R]
+*/
 
 /******************************************************************************/
 /*                              INCLUDE FILES		                           */

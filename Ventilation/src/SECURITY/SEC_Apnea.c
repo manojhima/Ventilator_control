@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,6 +20,23 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O *%O Output Parameter : Alarm_Error                                       */
 /******************************************************************************/
+/*
+SFSYSTHMI4.12
+the software must erase the ALARM OFF SYMBOL when the apnea alarm setting is set to YES
+
+SFSYSTSET1.23
+Apnea alarm
+Unit: N.A.
+Min Value: N.A.
+Max Value: N.A.
+List of Values: Yes, OFF
+Step: 0
+Default Value: Yes
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+common in all mode
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

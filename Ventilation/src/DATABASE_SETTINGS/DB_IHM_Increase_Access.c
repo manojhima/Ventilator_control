@@ -23,7 +23,24 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+1) SFSYSTUSB1.6.23
+The software shall read the settings in database and write them in the settings file according to
+SFSYSTCOMFILE1
 
+2) SFSYSTUSB1.4.24
+The software shall read the settings in database and write them in the settings file according to
+SFSYSTCOMFILE
+
+note: SFSYSTCOMFILE1
+SETTINGS FILE FORMAT
+Settings data shall be recorded in a "SPR_Settings.spr" file.
+Settings file shall have the following format :
+Serial Number (12 bytes).
+Date and Hour (5 bytes).
+Setting data packet (108 bytes) (Refers to SFSYSTCOMDP14).
+CCITT CRC (2 bytes) (CRC computed on all data excepted the 2 last bytes).
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/
 /******************************************************************************/

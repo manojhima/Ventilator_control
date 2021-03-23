@@ -21,7 +21,11 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NONE                                                  */
 /******************************************************************************/
-
+/*SFSYSTSETUP3.3.2
+the software must switch to the VENTILATION MENU if there is no key activation until 14
+seconds or if a high priority alarm occurs or if the ventilation is launched (one press on ventilation
+key)
+*/
 /******************************************************************************/
 /*                           INCLUDE FILES                                    */
 /******************************************************************************/

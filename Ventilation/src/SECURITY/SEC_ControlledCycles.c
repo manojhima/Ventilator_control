@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,28 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O *%O Output Parameter : Alarm_Error                                       */
 /******************************************************************************/
+/*
+SFSYSTAL89
+CONTROLLED CYCLES
+Detection Conditions: when the patient does not receive any breath during the apnea time
+Validation Delay: immediate
+Cancel Conditions: when the third successive patient breath is triggered
+Priority: Visual
+Audio Pause: no
+Alarm Pause: No
+Modes: PSV; VOL SIMV; PRES SIMV
+Actions: Event CONTROLLED CYCLES + END OF CONTROLLED CYCLES
+Resetconditions: ventilation change; Ventilation std-by
+Replaceventifpersistmessage: No
+Circuit: all
 
+SFSYSTEV3.158
+CONTROLLED CYCLES
+the software shall record this event when the CONTROLLED CYCLES alarm is detected
+SFSYSTEV3.159
+END OF CONTROLLED CYLES
+the software shall record this event when the CONTROLLED CYCLES alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */
 /******************************************************************************/

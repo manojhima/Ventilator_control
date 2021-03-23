@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,17 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter :	Alarm_Error  														*/
 /******************************************************************************/
-
+/*
+SFSYSTAL47
+CALIBRATION FAILURE
+Detection Conditions: Failure of one calibration point of exhaled flow sensor
+Validation Delay: immediate
+Cancel Conditions: N.A.
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: Yes
+Modes: All
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

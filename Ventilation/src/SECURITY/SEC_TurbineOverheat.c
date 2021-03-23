@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,11 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.80
+TURBINE OVERHEAT
+the software shall record this event when the TURBINE OVERHEAT alarm is detected
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES                               */
 /******************************************************************************/
@@ -85,8 +89,8 @@ e_ALARM_ERROR SEC_TurbineOverheat(void)
 /*%C                                  "DETECTED" State                        */
 /******************************************************************************/
     case ALARM_DETECTED :
-/*%C    If ( -30°C < MEASURE_BLOWER_TEMPERATURE_S16 and                       */
-/*%C    MEASURE_BLOWER_TEMPERATURE_S16 < 70°C ) or                            */
+/*%C    If ( -30ï¿½C < MEASURE_BLOWER_TEMPERATURE_S16 and                       */
+/*%C    MEASURE_BLOWER_TEMPERATURE_S16 < 70ï¿½C ) or                            */
 /*%C    MEASURE_SPEED_BLOWER_U16 > 1000rpm, then                              */
         if (((MeasureBlowerTemperature < 700)  
             &&(MeasureBlowerTemperature > -300 ))

@@ -27,7 +27,19 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTCOMDP14.2.13
+Ramp setting
+Offset (byte): 026
+027
+Format: 16 bits
+Data: ramp
+Range: 0 = Decelerated
+1 = Rectangle
+2 = Sinus
+AA AA = not used
+Unit: NA
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

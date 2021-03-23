@@ -20,7 +20,14 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : Alarm_Error                                           */
 /******************************************************************************/
-
+/*
+SFSYSTEV3.40
+CHECK PROXIMAL
+the software shall record this event when the CHECK PROXIMAL alarm is detected
+SFSYSTEV3.41
+END OF CHECK PROXIMAL
+the software shall record this event when the CHECK PROXIMAL alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

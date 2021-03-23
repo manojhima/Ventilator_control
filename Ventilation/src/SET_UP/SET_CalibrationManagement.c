@@ -19,6 +19,19 @@
 /*%IO Input/Output :    NONE	                                                */
 /*%O Output Parameter : NONE																	*/
 /******************************************************************************/
+/*
+1) SFSYST81
+FiO2 sensor calibration
+when the FiO2 sensor calibration is launched, the software must,
+- close the O2 valve until the end of the process
+- memorize the FIO2 OFFSET
+- a message must be displayed during the calibration process.
+
+
+2) SFSYSTSETUP1.5
+Sensors calibration
+No text (title)
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                           */

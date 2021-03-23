@@ -9,8 +9,17 @@
 /*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*/
+/*
+SFSYSTEV2.5
+Apnea Time
+the software shall record this event when a new Apnea Time is set
 
+SFSYST15.8
+The software must set the INSP SENS level to 1.2 l/min in CPAP mode.
 
+SFSYSTSET31
+CPAP settings
+*/
 /******************************************************************************/
 /*%C 			Functionnal description : 	this function controls the limits		*/
 /*%C        of the Apnea Time setting in the Cpap mode	  							*/

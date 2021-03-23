@@ -23,7 +23,68 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET4.8
+TI MIN
+Unit: s
+Min Value: 0.1
+Max Value: 2.8
+List of Values: N.A.
+Step: 0
+Default Value: Auto = 0.7 output value = 0.7
+Links: TI MIN <= (60*1/2)/BACK UP R
+TI MIN <= TI MAX
+Auto-adjustement: N.A.
+Comments: Auto is available by the DOWN KEY
+Step is 0.1
+Auto = Rise time +300 ms
 
+SFSYSTSET5.8
+TI MIN
+Unit: s
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step: 0
+Default Value: Auto = Rise time + 300ms
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTSET6.8
+TI MIN
+Unit: s
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step: 0
+Default Value: Auto = Rise time + 300ms
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV2.8
+Ti min
+the software shall record this event when a new Ti min is set
+
+SFSYSTCOMDP14.2.43
+Ti mini setting
+Offset (byte): 086
+087
+Format: 16 bits
+Data: ti min
+Range: 100 to 2800
+AA AA = not used
+Unit: ms
+
+SFSYSTCOMDP93.3.19
+Ti mini setting
+Offset (byte): 88
+Format: 8 bits
+Data: Ti mini
+Range: 1 to 28
+Unit: 10-1 s
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

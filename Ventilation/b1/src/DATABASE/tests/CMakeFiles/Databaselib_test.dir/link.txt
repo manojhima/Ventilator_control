@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Databaselib_test.dir/main.cpp.o CMakeFiles/Databaselib_test.dir/test_DB_AlarmInfoRead.cpp.o  -o Databaselib_test ../libDatabaselib.a ../../../lib/libgtest.a -lpthread 

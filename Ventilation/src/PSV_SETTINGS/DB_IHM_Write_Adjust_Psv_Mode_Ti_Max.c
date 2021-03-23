@@ -24,6 +24,72 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYST7.5
+TI MAX = min [TI MAX setting, 30 /R]
+If TIMAX is set to auto, the TIMAX must not exceed 3 s.
+This applies only in PSV cycles of PSV mode and SIMV modes
+
+SFSYSTSET4.9
+TI MAX
+Unit: s
+Min Value: 0.8
+Max Value: 3
+List of Values: N.A.
+Step: 0
+Default Value: Auto = 3s output value = 3s
+Links: TI MIN <= TI MAX
+Auto-adjustement: N.A.
+Comments: Auto is available by the UP KEY
+Step is 0.1
+Auto = Min [ 3s;(60*1/2)/R]
+
+SFSYSTSET5.9
+TI MAX
+Unit: s
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step: 0
+Default Value: Auto = Min [ 3s;(60*1/2)/R]
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTSET6.9
+TI MAX
+Unit: s
+Min Value: N.A.
+Max Value: N.A.
+List of Values: N.A.
+Step: 0
+Default Value: Auto = Min [ 3s;(60*1/2)/R]
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: No comment
+
+SFSYSTEV2.9
+Ti max
+the software shall record this event when a new Ti max is set
+
+SFSYSTCOMDP14.2.45
+Ti maxi setting
+Offset (byte): 090
+091
+Format: 16 bits
+Data: ti max
+Range: 800 to 3000
+AA AA = not used
+Unit: ms
+
+SFSYSTCOMDP93.3.20
+Ti maxi setting
+Offset (byte): 89
+Format: 8 bits
+Data: Ti maxi
+Range: 8 to 30
+Unit: 10-1 s
+*/
 
 
 /******************************************************************************/

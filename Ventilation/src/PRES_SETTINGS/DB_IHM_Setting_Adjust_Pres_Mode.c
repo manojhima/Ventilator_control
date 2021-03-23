@@ -20,7 +20,10 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
-
+/*
+SFSYSTSET6
+PRES SIMV settings
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                      */

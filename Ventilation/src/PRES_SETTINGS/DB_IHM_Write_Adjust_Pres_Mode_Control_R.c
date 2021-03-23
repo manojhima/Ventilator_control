@@ -22,7 +22,19 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTEV2.12
+Control R
+the software shall record this event when a new Control R is set
 
+SFSYSTSET2.2
+CONTROL R
+Unit: bpm
+Min Value: 1
+Max Value: 60
+List of Values: N.A.
+Step: 1
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

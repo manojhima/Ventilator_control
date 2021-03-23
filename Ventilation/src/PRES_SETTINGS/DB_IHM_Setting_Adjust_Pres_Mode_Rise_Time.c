@@ -23,7 +23,37 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYST17
+RISE TIME
+No text (title)
 
+SFSYST17.1
+RISE TIME 1 = 200 ms
+
+SFSYST17.2
+RISE TIME 2 = 400 ms
+
+SFSYST17.3
+RISE TIME 3 = 600 ms
+
+SFSYST17.4
+RISE TIME 4 = 800 ms
+
+SFSYSTEV2.3
+Rise Time
+the software shall record this event when a new Rise Time is set
+
+SFSYSTSET4.3
+RISE TIME
+Unit: N.A.
+Min Value: 1
+Max Value: 4
+List of Values: N.A.
+Step: 1
+Default Value: 2
+Links: N.A.
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

@@ -20,6 +20,11 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter :	Alarm_Error                                           */
 /******************************************************************************/
+/*
+SFSYSTEV3.23
+AC POWER FAIL
+the software shall record this event when the AC POWER FAIL alarm is detected
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */

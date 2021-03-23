@@ -23,7 +23,37 @@
 /*%IO Input/Output Parameter : 	*Value  	        			                  	*/
 /*%O 	Output Parameter : 			True/False 	                 				  		*/
 /******************************************************************************/
+/*
+SFSYSTSET2.18
+Cpt Sigh
+Unit: N.A.
+Min Value: 50
+Max Value: 250
+List of Values: N.A.
+Step: 50
+Default Value: 50
+Links: N.A.
+Auto-adjustement: N.A.
+Comments: available only if Sigh is set to Yes
 
+SFSYSTCOMDP14.2.51
+Cpt Sigh setting
+Offset (byte): 102
+103
+Format: 16 bits
+Data: sigh cpt
+Range: 50 to 250
+AA AA = not used
+Unit: NA
+
+SFSYSTCOMDP93.5.24
+Cpt Sigh setting
+Offset (byte): 91
+Format: 8 bits
+Data: Cpt Sigh
+Range: 50 to 250 0 = not used
+Unit: NA
+*/
 
 /******************************************************************************/
 /*                                INCLUDE FILES		                          	*/

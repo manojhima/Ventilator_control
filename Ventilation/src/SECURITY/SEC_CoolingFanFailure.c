@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,25 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter :	Alarm_Error  										  */
 /******************************************************************************/
+/*
+SFSYSTAL48
+COOLING FAN FAILURE
+Detection Conditions: COOLING_FAN_FAILURE_FLAG = TRUE
+Validation Delay: immediate
+Cancel Conditions: auto
+Priority: Medium priority
+Audio Pause: yes
+Alarm Pause: Yes
+Modes: All
+Actions: Events COOLING FAN FAILURE + END OF COOLING FAN FAILURE
+Resetconditions: N/A
+Replaceventifpersistmessage: No
+Circuit: all
 
+SFSYSTEV3.81
+COOLING FAN FAILURE
+the software shall record this event when the COOLING FAN FAILURE alarm is detected
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/

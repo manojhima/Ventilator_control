@@ -1,6 +1,6 @@
 /******************************************************************************/
 /*                                                                            */
-/* Project N°  :  RB0505                                                      */
+/* Project Nï¿½  :  RB0505                                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -20,7 +20,42 @@
 /*%IO Input/Output : NONE                                                     */
 /*%O Output Parameter : NO_ERR_AL                                             */
 /******************************************************************************/
+/*
+SFSYSTAL94
+VOLUNTARY STOP
+Detection Conditions: each voluntary stop
+Validation Delay: immediate
+Cancel Conditions: Auto
+or
+Ventilation restart
+Priority: High priority
+Audio Pause: yes
+Alarm Pause: yes
+Modes: All
+Actions: Event VOLUNTARY STOP + END OF VOLUNTARY STOP
+Resetconditions: N/A
+Replaceventifpersistmessage: No
+Circuit: all
 
+SFSYSTSET1.26
+Voluntary stop alarm
+Unit:
+Min Value: N.A.
+Max Value: N.A.
+List of Values: Yes, OFF
+Step: 0
+Default Value: Yes
+Links:
+Auto-adjustement:
+Comments:
+
+SFSYSTEV3.160
+VOLUNTARY STOP
+the software shall record this event when the VOLUNTARY STOP alarm is detected
+SFSYSTEV3.161
+END OF VOLUNTARY STOP
+the software shall record this event when the VOLUNTARY STOP alarm is cancelled
+*/
 /******************************************************************************/
 /*                                INCLUDE FILES		                          */
 /******************************************************************************/
